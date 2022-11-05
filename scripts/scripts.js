@@ -1,7 +1,7 @@
 //open mega menu upon clicking hamburger icon
 //toggle hamburger icon and x icon on click
 function openHamburger() {
-    document.getElementById("megaNav").classList.toggle("megaNavToggle");
+    document.getElementById("nav-container").classList.toggle("nav-container-toggle");
     let hamburger = document.getElementById("hamburger");
     if (hamburger.innerHTML === "✕") {
         hamburger.innerHTML = "&#9776;";
@@ -11,29 +11,29 @@ function openHamburger() {
 }
 
 function openBodyMenu() {
-    document.getElementsByClassName("bodyMenu")[0].classList.toggle("slideToggle");
+    document.getElementsByClassName("body-nav")[0].classList.toggle("slide-toggle");
     let arrow = document.getElementsByClassName("arrow")[0];
     if (arrow.innerHTML === "‹") {
         arrow.innerHTML = "›";
       } else {
         arrow.innerHTML = "‹";
       }
-    arrow.classList.toggle("arrowToggle");
+    arrow.classList.toggle("arrow-toggle");
 }
 
 
 //open SBIT contact info when "Contact SBIT" is clicked
 //close contact info when the 'x' on SBIT contact info div is clicked
 function contactSBIT() {
-    document.getElementById("sbitContact").classList.toggle("contactToggle");
+    document.getElementById("sbit-contact").classList.toggle("contact-toggle");
 }
 
 
-let menuContainer = document.getElementsByClassName('menuContainer');
+let dropContainer = document.getElementsByClassName('drop-container');
 
-for (i=0; i<menuContainer.length; i++) {
-  menuContainer[i].addEventListener('click', function dropdown() {
-    this.classList.toggle('menuToggle')
+for (i=0; i<dropContainer.length; i++) {
+  dropContainer[i].addEventListener('click', function dropdown() {
+    this.classList.toggle('nav-toggle')
   })
 }
 
@@ -51,22 +51,22 @@ programImage[7]="images/sbit-program-8.jpg";
 programImage[8]="images/sbit-program-9.jpg";
 
 for (let i = 0; i < programImage.length; i++) {
-document.getElementsByClassName("sbitProgram")[i].style.backgroundImage = "url('" + programImage[i] + "')";
+document.getElementsByClassName("sbit-program")[i].style.backgroundImage = "url('" + programImage[i] + "')";
 }
 
 for (let i = 0; i < 3; i++) {
-    document.getElementsByClassName("sbitProgram")[i].style.border = "3px solid var(--emerald)";
-    document.getElementsByClassName("programTitle")[i].style.backgroundColor = "var(--emerald)";
+    document.getElementsByClassName("sbit-program")[i].style.border = "3px solid var(--emerald)";
+    document.getElementsByClassName("program-title")[i].style.backgroundColor = "var(--emerald)";
 }
 for (let i = 3; i < 4; i++) {
-    document.getElementsByClassName("sbitProgram")[i].style.border = "3px solid var(--raspberry)";
-    document.getElementsByClassName("programTitle")[i].style.backgroundColor = "var(--raspberry)";
+    document.getElementsByClassName("sbit-program")[i].style.border = "3px solid var(--raspberry)";
+    document.getElementsByClassName("program-title")[i].style.backgroundColor = "var(--raspberry)";
 }
 for (let i = 4; i < 6; i++) {
-    document.getElementsByClassName("sbitProgram")[i].style.border = "3px solid var(--ocean)";
-    document.getElementsByClassName("programTitle")[i].style.backgroundColor = "var(--ocean)";
+    document.getElementsByClassName("sbit-program")[i].style.border = "3px solid var(--ocean)";
+    document.getElementsByClassName("program-title")[i].style.backgroundColor = "var(--ocean)";
 }
 for (let i = 6; i < 9; i++) {
-    document.getElementsByClassName("sbitProgram")[i].style.border = "3px solid var(--gray11)";
-    document.getElementsByClassName("programTitle")[i].style.backgroundColor = "var(--gray11)";
+    document.getElementsByClassName("sbit-program")[i].style.border = "3px solid var(--gray11)";
+    document.getElementsByClassName("program-title")[i].style.backgroundColor = "var(--gray11)";
 }

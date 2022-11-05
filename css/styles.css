@@ -1,13 +1,119 @@
+/*
+This file contains styling for the School of Business and Industrial Trades 
+site under Reynolds Community College
+*/
+
+/*------------------------------------*\
+  TABLE OF CONTENTS
+\*------------------------------------*/
+
+/*
+GENERAL -------------------------------------------------------------------
+
+reset defaults ----- change default settings site-wide
+colors ------------- global variables for colors defined in brand guide
+
+
+MOBILE/DEFAULT VIEW -------------------------------------------------------
+
+HEADER ------------- site-wide header containing two navs
+	top nav -------- contains site-wide secondary menu items and search
+	main nav ------- contains site-wide main menu items
+
+SBIT-GENERAL ------- elements that appear on all SBIT-specific pages
+	body nav ------- SBIT-specific navigation
+	SBIT contact --- SBIT contact info module
+	carousel ------- bootstrap carousel styling
+	content -------- main page content/text
+	breadcrumbs ---- breadcrumb links to previous pages
+
+SBIT-HOMEPAGE ------ elements specific to SBIT's homepage
+	programs ------- list of programs under SBIT
+
+FOOTER ------------- site-wide footer
+
+
+MOBILE - SMALL SCREENS ----------------------------------------------------
+
+#SBIT-GENERAL ------ 
+	#content ------- 
+
+#SBIT-HOMEPAGE ------ 
+	#programs ------- 
+
+
+TABLET - MINI SCREENS ----------------------------------------------------- 
+
+$SBIT-GENERAL ------- 
+	$carousel ------- 
+
+$SBIT-HOMEPAGE ------ 
+	$programs ------- 
+
+
+TABLET - SMALL SCREENS ----------------------------------------------------
+
+%HEADER ------------- 
+	%top nav -------- 
+	
+%SBIT-GENERAL ------- 
+
+%SBIT-HOMEPAGE ------ 
+	%programs ------- 
+
+
+TABLET - LARGE SCREENS ----------------------------------------------------
+
+&SBIT-GENERAL ------- 
+	&body nav -------
+	&carousel -------
+	&content --------
+
+&SBIT-HOMEPAGE ------
+	&programs -------
+
+
+DESKTOP -------------------------------------------------------------------
+
+!HEADER ------------- 
+	!top nav --------
+	!main nav -------
+
+!SBIT-GENERAL ------- 
+	!carousel -------
+
+!SBIT-HOMEPAGE ------ 
+	!programs -------
+
+*/
+
+
+
+/*------------------------------------*\
+  #GENERAL
+\*------------------------------------*/
+
+
+
 /*reset defaults*/
+
 * {
 	margin: 0;
 	padding: 0;
 }
+
 ul {
 	margin: 0;
 	padding: 0;
 }
-/*colors - from brand guide*/
+
+body {
+	font-family: roboto;
+}
+
+
+/*colors*/
+
 :root {
     /*primary*/
     --reynoldsred: #a31f36;
@@ -37,11 +143,18 @@ ul {
     --lighttan: #f1efde;
     /*note that grays go from lighter to darker in order of number (odd numbers 3-11)*/
 }
-body {
-    font-family: roboto;
-}
-/*mobile view*/
-/*header contains grid layout for logo and two navs*/
+
+
+
+/*------------------------------------*\
+  MOBILE/DEFAULT VIEW
+\*------------------------------------*/
+
+
+
+/*HEADER*/
+
+/*contains grid layout for logo and two navs*/
 header {
 	align-items: center;
 	background-color: var(--reynoldsred);
@@ -52,12 +165,15 @@ header {
     position: relative;
     z-index: 5;
 }
+
 .logo {
 	grid-column: 1;
 	grid-row: 1;
 	padding: 15px 20px;
 	width: 230px;
 }
+
+/*appears on mobile and tablet views + opens nav-container when clicked*/
 #hamburger {
 	cursor: pointer;
 	font-size: 50px;
@@ -67,7 +183,9 @@ header {
 	margin-right: 20px;
 	padding: 20px;
 }
-#megaNav {
+
+/*contains top-nav and main-nav*/
+#nav-container {
 	display: flex;
 	flex-direction: column-reverse;
 	grid-column: 1 / span 2;
@@ -75,79 +193,121 @@ header {
 	max-height: 0px;
 	overflow: hidden;
 }
-.megaNavToggle {
+
+/*container expands to display navs on hamburger click*/
+.nav-container-toggle {
 	max-height: fit-content !important;
 }
+
+/*line displays between navs on desktop screens*/
 #header-line {
 	display: none;
 }
-#topMenu {
+
+
+/*top nav*/
+
+/*appears under main-nav on mobile/tablet and displays links in columns*/
+#top-nav {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto auto;
+	margin-left: 20px;
     padding: 10px 10px;
     text-align: left;
 }
-#topMenu li {
+
+#top-nav li,
+#top-nav a {
+	color: white;
 	cursor: pointer;
 	list-style: none;
-	padding: 10px;
-}
-#topMenu a {
-	color: white;
+	padding: 10px 0;
 	text-decoration: none;
 }
-#topMenu .dropdown {
-	background-color: none;
+
+/*search icon size*/
+#top-nav .search img {
+	height: 17px;
+}
+
+/*display 'Search' alongside icon when top-nav is in column format*/
+#top-nav .search::before {
+	content: 'Search ';
+}
+
+/*display '+' next to nav items that contain dropdown*/
+#top-nav .top-level span::after {
+	content: "+";
+	margin-left: 5px;
+}
+
+/*'+' displays as '-' when dropdown is open*/
+#top-nav .nav-toggle .top-level span::after {
+	content: '-';
+}
+
+/*hide top-nav dropdowns until opened*/
+#top-nav .dropdown {
 	display: block;
 	max-height: 0;
 	overflow: hidden;
 }
-#topMenu .menuToggle .dropdown {
+
+/*dropdown opens on drop-container click*/
+#top-nav .nav-toggle .dropdown {
 	max-height: fit-content;
 }
-#topMenu li.topLevel span::after {
-	content: "+";
-	margin-left: 5px;
-}
-#topMenu .menuToggle .topLevel span::after {
-	content: '-';
-}
-#mainMenu {
+
+
+/*main nav*/
+
+/*appears above top-nav on mobile/tablet as one column*/
+#main-nav {
 	background-color: white;
 	padding: 10px 15px;
 }
-#mainMenu li {
+
+#main-nav li {
 	color: black;
 	cursor: pointer;
+	font-size: 1.5em;
 	list-style: none;
 	padding: 5px 20px;
 }
-#mainMenu .topLevel span {
-	font-size: 1.5em;
-}
-#mainMenu .topLevel span::after {
+
+/*display '+' next to nav items that contain dropdown*/
+#main-nav .top-level span::after {
 	content: '+';
 	margin-left: 5px;
 }
-#mainMenu .menuToggle .topLevel span::after {
+
+/*'+' displays as '-' when dropdown is open*/
+#main-nav .nav-toggle .top-level span::after {
 	content: '-';
 }
-#mainMenu .dropdown {
+
+#main-nav .dropdown,
+#main-nav .dropdown a {
+	color: black;
+	font-size: .7em;
 	max-height: 0;
 	overflow: hidden;
+	text-decoration: none;
 	transition: .3s;
 }
-#mainMenu .dropdown a {
-	color: black;
-	font-size: 1.3em;
-	text-decoration: none;
-}
-#mainMenu .menuContainer.menuToggle .dropdown {
+
+/*dropdown opens on drop-container click*/
+#main-nav .nav-toggle .dropdown {
 	max-height: fit-content;
 }
-/*SBIT homepage*/
+
+
+
+/*SBIT - GENERAL*/
+
+/*title of each SBIT page sticks to top of page when scrolled*/
 .page-title {
 	background-color: var(--tan);
 	box-shadow: 0px 5px 10px #0000002c;
@@ -157,85 +317,105 @@ header {
 	width: 100%;
     z-index: 3;
 }
+
 .page-title h1 {
 	font-size: 1em;
 	font-weight: 600;
 	line-height: 50px;
 	text-align: center;
 }
-.previous-page {
+
+/*back arrow displays next to title*/
+.prev-page {
 	color: black;
 	line-height: 50px;
 	padding-left: 10px;
 	position: absolute;
 	text-decoration: none;
 }
-.previous-page:hover {
+
+.prev-page:hover {
 	color: var(--darkred);
 	transition: .2s;
 }
+
+/*contains all main elements in grid aside from page-title*/
 .grid-container {
 	display: grid;
 	grid-template-columns: 5% 90% 5%;
 	margin: 0 auto;
 }
-.bodyMenu {
+
+
+/*body nav*/
+
+/*SBIT-specific navigation located to left of content*/
+.body-nav {
 	background-color: var(--reynoldsred);
 	border: 1px solid var(--reynoldsred);
 	border-radius: 0 15px 15px 0;
 	box-shadow: 2px 5px 10px #0000002c;
-	color: white;
 	height: fit-content;
 	margin-left: -290px;
+	padding-bottom: 10px;
+	padding-left: 25px;
 	position: sticky;
 	top: 60px;
 	transition: .2s;
 	width: 300px;
 	z-index: 2;
 }
-.bodyMenu ul {
+
+.body-nav li,
+.body-nav a {
+	cursor: pointer;
+	color: white;
 	line-height: 2em;
 	list-style: none;
-	padding-bottom: 10px;
-	padding-left: 25px;
-	width: 300px;
+	margin-top: 5px;
+	text-decoration: none;
+	width: 100%;
 }
-.bodyMenu .arrow {
+
+.body-nav li:hover, 
+.body-nav a:hover {
+	color: black;
+	transition: .2s;
+}
+
+/*arrow displays on smaller screens and opens body-nav on click*/
+.body-nav .arrow {
 	border: 1px solid var(--reynoldsred);
 	border-radius: 10px;
 	box-shadow: none;
+	color: white;
 	cursor: pointer;
 	font-size: 30pt;
 	height: 70px;
-	margin-left: 285px;
+	margin-left: 260px;
 	padding: 0px 5px 8px 10px;
 	position: absolute;
 	top: 30%;
 	width: fit-content;
 	z-index: 3;
 }
-.bodyMenu li {
-	cursor: pointer;
-	margin-top: 5px;
-	width: fit-content;
-}
-.bodyMenu a {
-	color: white;
-	text-decoration: none;
-}
-.bodyMenu li:hover, .bodyMenu a:hover {
-	color: black;
-	transition: .2s;
-}
-.arrowToggle {
+
+/*arrow styling changes when body-nav is open*/
+.arrow-toggle {
 	background-color: var(--darkred);
 	border: 1px solid var(--darkred) !important;
 }
-.slideToggle {
+
+.slide-toggle {
 	margin-left: 0px;
 	transition: .2s;
 }
-#sbitContact {
+
+
+/*SBIT contact*/
+
+/*SBIT-specific contact info contained in module that shows on click*/
+#sbit-contact {
 	background-color: white;
     border: 2px solid var(--reynoldsred);
 	bottom: 0;
@@ -252,14 +432,21 @@ header {
 	width: fit-content;
 	z-index: 2;
 }
-#sbitContact h3 {
+#sbit-contact h3 {
 	font-size: 1.1em;
 	font-weight: 600;
 	margin-bottom: 20px;
 	margin-top: 25px;
 	text-align: center;
 }
-#sbitContact .xOut {
+
+/*display contact info when 'Contact SBIT' is clicked*/
+.contact-toggle {
+	display: block !important;
+}
+
+/*allows user to click the 'x' to stop displaying contact info*/
+#sbit-contact .x-out {
 	cursor: pointer;
 	font-size: 1.4em;
 	position: absolute;
@@ -267,40 +454,57 @@ header {
 	top: 5px;
 	-webkit-text-stroke: 1px black;
 }
+
 #sbitContact .xOut:hover {
 	-webkit-text-stroke: 2px black;
 }
-.contactToggle {
-	display: block !important;
-}
+
+
+/*carousel*/
+
+/*bootstrap carousel element*/
 #sbit-carousel {
 	display: block;
 	grid-column: 1 / span 3;
 	grid-row: 1;
 }
-#sbit-carousel .slide {
-	height: 200px;
-	object-fit: cover;
-	width: 100%;
-}
-.carousel-caption {
-	bottom: -10px;
-	left: 0;
-	right: 0;
-}
-.carousel-fade .carousel-item {
-	display: block;
-	transition: opacity ease-out .8s;
-}
-.carousel-fade .carousel-item.active {
-	opacity: 1;
-}
+
 #sbit-carousel h5 {
 	background-color: #a31f36ba;
 	font-size: 1em;
 	font-weight: 400;
 	padding: 5px;
 }
+
+/*carousel slide sizing*/
+#sbit-carousel .slide {
+	height: 200px;
+	object-fit: cover;
+	width: 100%;
+}
+
+/*change caption positioning*/
+.carousel-caption {
+	bottom: -10px;
+	left: 0;
+	right: 0;
+}
+
+/*fade transition between slides*/
+.carousel-fade .carousel-item {
+	display: block;
+	transition: opacity ease-out .8s;
+}
+
+/*continue showing previous slide until new one fades into place*/
+.carousel-fade .carousel-item.active {
+	opacity: 1;
+}
+
+
+/*content*/
+
+/*main page content located under carousel/to right of body-nav*/
 .content {
 	grid-column: 2;
 	grid-row: 2;
@@ -308,84 +512,165 @@ header {
 	margin-left: 20px;
 	margin-top: 5px;
 }
+
 .content p {
 	text-align: justify;
 }
-ul.breadcrumbs li {
-	display: inline-block;
-	font-size: 10pt;
-	list-style: none;
-}
-ul.breadcrumbs a {
-	color: var(--darkred);
-	text-decoration: underline #00000000;
-	text-underline-offset: 2.5px;
-}
-ul.breadcrumbs a:hover {
-	text-decoration: underline var(--darkred);
-	transition: .2s;
-}
-ul.breadcrumbs :not(:last-child):after {
-	content: ">";
-	padding: 5px;
-}
+
 .content h2 {
 	font-size: 17pt;
 	margin: 25px 0px;
 }
+
+
+/*breadcrumbs*/
+
+.breadcrumbs li {
+	display: inline-block; /*keep each list item's text on one line*/
+	font-size: 10pt;
+	list-style: none;
+}
+
+.breadcrumbs a {
+	color: var(--darkred);
+	text-decoration: underline #00000000;
+	text-underline-offset: 2.5px;
+}
+
+.breadcrumbs a:hover {
+	text-decoration: underline var(--darkred);
+	transition: .2s;
+}
+
+/*display arrow leading to next list item until last item*/
+.breadcrumbs :not(:last-child):after {
+	content: ">";
+	padding: 5px;
+}
+
+
+
+/*SBIT-HOMEPAGE*/
+
+
+/*programs*/
+
+/*display list of SBIT's programs in columns*/
 #programs {
 	display: grid;
 	gap: 40px 0px;
 	grid-template-columns: 50% 50%;
 	margin-bottom: 50px;
 	max-width: 400px;
+	padding-top: 15px;
 	place-items: center;
 }
+
 #programs button {
 	height: 30vw;
 	min-height: 120px;
 	min-width: 120px;
 	width: 30vw;
 }
-.sbitProgram {
+
+/*links to javascript array with differing background images on each item*/
+.sbit-program {
 	background-size: cover;
 	color: white;
 }
-.sbitProgram:hover {
+
+.sbit-program:hover {
 	background-blend-mode: multiply;
 	background-color: var(--gray11);
 	transition: .2s;
 }
-.programTitle {
+
+.program-title {
 	align-items: center;
 	display: flex;
 	height: 60px;
 	justify-content: center;
 	opacity: .9;
 }
-/*footer*/
+
+
+
+/*FOOTER*/
+
 footer {
 	background-color: var(--darkred);
 	height: 500px;
 	width: 100%;
 }
-/*small phone screens*/
+
+
+
+/*------------------------------------*\
+  MOBILE - SMALL SCREENS
+\*------------------------------------*/
+
+
+
 @media (max-width: 350px) {
-    /*SBIT homepage*/
-	.previous-page {
+    
+	/*#SBIT-GENERAL*/
+	
+	/*remove back arrow next to title on screens where it's too crowded*/
+	.prev-page {
 		display: none;
 	}
+
+	
+	/*#content*/
+
+	/*bring content closer to body nav*/
 	.content {
 		margin-left: 15px;
 	}
+
+
+
+	/*#SBIT-HOMEPAGE*/
+
+
+	/*#programs*/
+
+	/*change space between program buttons*/
 	#programs {
 		gap: 20px 0px;
 		max-width: 280px;
 	}
+
 }
-/*mini tablet*/
+
+
+
+/*------------------------------------*\
+  TABLET - MINI SCREENS
+\*------------------------------------*/
+
+
+
 @media (min-width: 500px) {
-    /*SBIT homepage*/
+    
+	/*$SBIT-GENERAL*/
+
+	
+	/*$carousel*/
+
+	/*change carousel height*/
+	#sbit-carousel .slide {
+		height: 250px;
+	}
+	
+	
+	
+	/*$SBIT-HOMEPAGE*/
+
+	
+	/*$programs*/
+
+	/*change spacing between program buttons and increase column count*/
 	#programs {
 		gap: 20px 0px;
 		grid-template-columns: 33% 33% 33%;
@@ -393,168 +678,207 @@ footer {
 		margin-bottom: 50px;
 		max-width: 600px;
 	}
+
+	/*change program button size*/
 	#programs button {
 		height: 25vw;
 		width: 25vw;
 	}
-	#sbit-carousel .slide {
-		height: 250px;
-	}
+
 }
-/*small tablet*/
+
+
+
+/*------------------------------------*\
+  TABLET - SMALL SCREENS
+\*------------------------------------*/
+
+
+
 @media (min-width: 730px) {
-    /*header and navigation*/
-	#topMenu {
+    
+	/*%HEADER*/
+
+
+
+	/*%top nav*/
+
+	/*increase column count*/
+	#top-nav {
 		grid-template-columns: 33% 33% 33%;
 		grid-template-rows: auto auto auto;
 	}
-    /*SBIT homepage*/
+
+
+
+    /*%SBIT-GENERAL*/
+
+	/*increase title size*/
 	.page-title h1 {
 		font-size: 1.3em;
 	}
-	.previous-page {
+
+	/*increase prev button size*/
+	.prev-page {
 		font-size: 1.3em;
 		margin-left: 20px;
 	}
+
+
+
+	/*%SBIT-HOMEPAGE*/
+
+
+	/*%programs*/
 	#programs button {
 		height: 20vw;
 		width: 20vw;
 	}
 }
-    /*large tablet*/
+
+
+
+/*------------------------------------*\
+  TABLET - LARGE SCREENS
+\*------------------------------------*/
+
+
+
 @media (min-width: 800px) {
-    /*header and navigation*/
-	#topMenu {
-		grid-template-columns: 33% 33% 33%;
-		grid-template-rows: auto auto auto;
-		margin-left: 30px;
-	}
-    /*SBIT homepage*/
+    
+    /*&SBIT-GENERAL*/
+
 	.page-title h1 {
 		font-size: 1.3em;
 	}
-	.previous-page {
+	
+	.prev-page {
 		font-size: 1.3em;
 		margin-left: 20px;
 	}
+	
+	/*switch to 4 column layout*/
 	.grid-container {
 		display: grid;
 		grid-template-columns: 5% 20% 70% 5%;
 		margin: 0 auto;
 		max-width: 1200px;
 	}
-	.bodyMenu {
+
+
+	/*&body nav*/
+
+	/*change body nav to full display next to content  - no longer toggles*/
+	.body-nav {
 		background-color: #ffffff00;
 		border: none;
 		box-shadow: none;
 		grid-column: 2;
 		grid-row: 2;
-		height: fit-content;
-		margin-left: 0px;
+		margin: 25px 0px;
+		padding-left: 0px;
 		position: sticky;
 		top: 60px;
+		width: 100%;
+	}
+	
+	.body-nav a,
+	.body-nav li:last-child {
+		background-color: var(--reynoldsred);
+		display: flex;
+		justify-content: center;
+		margin-bottom: 25px;
+		padding: 8px;
+		width: 100%;
+	}
+
+	.body-nav a:hover,
+	.body-nav li:hover {
+		background-color: var(--darkred);
+		color: white;
 		transition: .2s;
-		width: 100%;
-		z-index: 2;
 	}
-	.bodyMenu ul {
-		border: 0px;
-		box-shadow: none;
-		font-size: 1em;
-		height: fit-content;
-		line-height: 2em;
-		margin-left: 0;
-		margin-top: 25px;
-		padding-bottom: 0px;
-		padding-left: 0px;
-		width: 100%;
-	}
-	.bodyMenu .arrow {
+
+	/*remove arrow that activates toggle on smaller screens*/
+	.body-nav .arrow {
 		display: none;
 	}
-	.bodyMenu li {
-		width: 100%;
-	}
-	.bodyMenu a {
-		align-items: center;
-		background-color: var(--reynoldsred);
-		color: white;
-		display: flex;
-		justify-content: center;
-		list-style: none;
-		margin-bottom: 25px;
-		padding: 8px;
-	}
-	.bodyMenu a:hover {
-		color: white;
-	}
-	.bodyMenu ul li:last-child {
-		align-items: center;
-		background-color: var(--reynoldsred);
-		color: white;
-		display: flex;
-		justify-content: center;
-		list-style: none;
-		margin-bottom: 25px;
-		padding: 8px;
-	}
-	.bodyMenu ul li:hover, .bodyMenu a:hover {
-		background-color: var(--darkred);
-		transition: .2s;
-	}
+
+
+	/*&carousel*/
+
+	/*extend carousel across new grid*/
 	#sbit-carousel {
 		grid-column: 1 / span 4;
 	}
-	#sbit-carousel .slide {
-		height: 320px;
-	}
+
+	
+	/*&content*/
+
 	.content {
 		grid-column: 3;
 		margin-top: 20px;
 	}
+
+
+
+	/*&SBIT-HOMEPAGE*/
+
+
+	/*&programs*/
+
 	#programs {
 		grid-template-columns: 33% 33% 33%;
 		margin: 0 auto;
 		margin-bottom: 50px;
 		max-width: 600px;
 	}
+
 	#programs button {
 		height: 150px;
 		width: 150px;
 	}
-	#sbit-carousel .slide {
-		height: 250px;
-	}
+
 }
-/*desktop*/
+
+
+
+/*------------------------------------*\
+  DESKTOP
+\*------------------------------------*/
+
+
+
 @media (min-width: 1025px) {
-    /*header & navigation*/
+    
+	/*!HEADER*/
+
+	/*adjust grid sizing*/
 	header {
-		align-items: center;
-		background-color: var(--reynoldsred);
-		color: white;
-		display: grid;
 		grid-template-columns: 200px 1fr;
-		grid-template-rows: 120px;
 	}
+
+	/*resize logo*/
 	.logo {
 		box-sizing: content-box;
-		grid-column: 1;
-		grid-row: 1;
-		padding: 15px 20px;
-		width: 180px;
+		width: 200px;
 	}
+
+	/*remove hamburger icon*/
 	#hamburger {
 		display: none;
 	}
-	#megaNav {
-		align-self: start;
+
+	/*reposition container and replace flexbox with grid*/
+	#nav-container {
 		display: grid;
 		grid-column: 2;
 		grid-row: 1;
 		height: 100%;
 		max-height: fit-content;
 	}
+
+	/*display line between top and main nav*/
 	#header-line {
 		align-self: start;
 		display: block;
@@ -563,26 +887,65 @@ footer {
 		margin-top: 10px;
 		opacity: 1;
 	}
-	#topMenu {
-		align-self: start;
+
+
+	/*!top nav*/
+
+	/*change positioning*/
+	#top-nav {
 		display: block;
-		grid-column: 1;
-		grid-row: 1;
-		margin: 0;
 		padding: 10px 15px 0 0;
 		text-align: right;
 	}
-	#topMenu .topLevel {
-		background-color: var(--reynoldsred);
-        border: 1px solid var(--reynoldsred);
-		display: inline-block;
-		padding: 4px;
-		width: fit-content;
+	
+	/*display as one row*/
+	#top-nav ul {
+		display: inline;
 	}
-	#topMenu .dropdown {
+
+	/*add vertical lines between nav items*/
+	#top-nav ul:not(:last-child):after {
+		content: "|";
+		padding-left: 3px;
+		padding-right: 3px;
+	}
+
+	#top-nav a,
+	#top-nav li {		
+		color: white;
+		cursor: pointer;
+		font-size: 1.1vw;
+		text-decoration: none;
+	}
+
+	/*remove 'search' next to search icon*/
+	#top-nav .search::before {
+		content: '';
+	}
+
+	#top-nav .top-level {
+		display: inline-block;
+		padding: 0px;
+	}
+
+	#top-nav .dropdown {
 		display: none;
 	}
-	#topMenu .topLevel:hover .dropdown {
+
+	#top-nav .dropdown a,
+	#top-nav .dropdown li {
+		color: black;
+        font-size: .95em;
+        padding: 5px;
+	}
+
+	#top-nav .dropdown a:hover {
+        color: var(--reynoldsred);
+        transition: .2s;
+    }
+
+	/*change styling and display dropdown on hover*/
+	#top-nav .top-level:hover .dropdown {
 		background-color: white;
 		display: block;
         margin-left: -5px;
@@ -592,78 +955,54 @@ footer {
 		text-align: left;
         margin-top: 5px;
 	}
-	#topMenu .dropdown a {
-		color: black;
-        font-size: .9em;
-	}
-    #topMenu .dropdown a:hover {
-        color: var(--reynoldsred);
-        transition: .2s;
-    }
-    #topMenu .dropdown li {
-        padding: 5px;
-    }
-	#topMenu ul:not(:last-child):after {
-		content: "|";
-	}
-	#topMenu a, #topMenu span {
-		font-size: 1.1vw;
-	}
-	#topMenu a {
-		color: white;
-		text-decoration: none;
-	}
-	#topMenu li {
-		cursor: pointer;
-	}
-	#topMenu ul {
-		display: inline;
-	}
-	#topMenu li.topLevel span::after {
+
+	/*remove '+' next to items with dropdowns*/
+	#top-nav li.top-level span::after {
 		content: "";
-		margin-left: 05px;
+		margin-left: 0px;
 	}
-	#topMenu .menuToggle .topLevel span::after {
+
+	#top-nav .nav-toggle .top-level span::after {
 		content: '';
 	}
-	#mainMenu {
+
+
+	/*!main nav*/
+
+	#main-nav {
 		background-color: #ffffff00;
-		display: block;
-		grid-column: 1;
-		grid-row: 3;
 		padding: 0px;
 		text-align: right;
 		margin-right: 10px;
-	}	
-    #mainMenu ul {
+	}
+
+    #main-nav ul {
 		display: inline;
 	}
-	#mainMenu li {
+
+	#main-nav li {
 		color: white;
-		cursor: pointer;
 		display: inline;
-		list-style: none;
+		font-size: 1.3vw;
 		padding: 15px 5px;
 	}
-	#mainMenu .dropdown {
-        display: none;
+
+	/*remove '+' symbol after menu items*/
+	#main-nav .top-level span::after {
+		content: '';
+		margin-left: 0px;
 	}
-    #mainMenu .dropdown li {
-        display: list-item;
-        padding: 5px;
+	
+	#main-nav .nav-toggle .top-level span::after {
+		content: '';
 	}
-    #mainMenu .dropdown a {
-        font-size: 1em;
-    }
-    #mainMenu .dropdown a:hover {
-        color: var(--reynoldsred);
-        transition: .2s;
-    }
-    #mainMenu .topLevel:hover .dropdown {
-		background-color: white;
+	
+	/*change dropdown to display in columns (mega menu) and hide until hovered*/
+	#main-nav .dropdown {
+        background-color: white;
         box-shadow: 0px 300px 0px 300px #0000005b;
         column-count: 3;
-		display: block;
+		display: none;
         left: 0;
 		max-height: fit-content;
         margin-top: 6px;
@@ -672,20 +1011,42 @@ footer {
 		text-align: left;
         width: 100%;
 	}
-	#mainMenu .topLevel span {
-		font-size: 1.3vw;
+
+	/*position dropdown items as lists within columns*/
+    #main-nav .dropdown li {
+        display: list-item;
+		font-size: 1.6em;
+        padding: 0px;
+		margin: 0px;
 	}
-	#mainMenu .topLevel span::after {
-		content: '';
-		margin-left: 0px;
+
+    #main-nav .dropdown a:hover {
+        color: var(--reynoldsred);
+        transition: .2s;
+    }
+
+	/*display dropdown on hover*/
+    #main-nav .top-level:hover .dropdown {
+		display: block;
 	}
-    #mainMenu .menuToggle .topLevel span::after {
-		content: '';
-	}
-    /*SBIT homepage*/
+
+
+    /*!SBIT-GENERAL*/
+
+	/*!carousel*/
+
+	/*increase carousel size*/
 	#sbit-carousel .slide {
 		height: 320px;
 	}
+
+
+	/*!SBIT-HOMEPAGE*/
+
+
+	/*!programs*/
+
+	/*increase button size*/
 	#programs button {
 		height: 170px;
 		width: 170px;
