@@ -256,9 +256,6 @@ header {
 }
 
 /*dropdown opens on drop-container click*/
-#top-nav .nav-toggle .dropdown {
-	max-height: fit-content;
-}
 
 
 /*main nav*/
@@ -911,7 +908,7 @@ footer {
 	}
 
 	#top-nav a,
-	#top-nav li {		
+	#top-nav li {
 		color: white;
 		cursor: pointer;
 		font-size: 1.1vw;
@@ -925,11 +922,18 @@ footer {
 
 	#top-nav .top-level {
 		display: inline-block;
-		padding: 0px;
+		padding: 0 0 5px 0;
 	}
 
 	#top-nav .dropdown {
+		background-color: white;
 		display: none;
+        margin-left: -5px;
+		max-height: fit-content;
+        padding: 5px 20px 5px 10px;
+		position: absolute;
+		text-align: left;
+        margin-top: 5px;
 	}
 
 	#top-nav .dropdown a,
@@ -944,16 +948,9 @@ footer {
         transition: .2s;
     }
 
-	/*change styling and display dropdown on hover*/
+	/*display dropdown on hover*/
 	#top-nav .top-level:hover .dropdown {
-		background-color: white;
 		display: block;
-        margin-left: -5px;
-		max-height: fit-content;
-        padding: 5px 20px 5px 10px;
-		position: absolute;
-		text-align: left;
-        margin-top: 5px;
 	}
 
 	/*remove '+' next to items with dropdowns*/
