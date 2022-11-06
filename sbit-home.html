@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--custom CSS-->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <!--Adobe fonts - Roboto-->
+    <link rel="stylesheet" href="https://use.typekit.net/frz4ami.css">
+
+    <!--custom JavaScript-->
+    <script src="scripts/scripts.js" defer></script>
+
+    <title>School of Business and Industrial Trades</title>
+</head>
+<body>
+    <header>
+        <!--logo links back to Reynolds home page-->
+        <a href="/"><img class="logo" src="images/reynolds-50-logo.png" alt="Home"></a>
+        <!--hamburger appears on mobile/tablet screens and opens mega nav on click-->
+        <span id="hamburger" aria-label="Hamburger Menu" onclick="openHamburger()">&#9776;</span>
+        <!--mega nav contains a top menu and main menu-->
+        <div id="nav-container">
+            <!--top menu shows at top of screen on desktop and underneath the main menu on mobile/tablet-->
+            <nav id="top-nav">
+                <ul class="drop-container">
+                    <li class="top-level"><a href="#">Apply Now!</a></li>
+                </ul>
+                <ul class="drop-container">
+                    <li class="top-level"><a href="#">MyReynolds</a></li>
+                </ul>
+                <ul class="drop-container">
+                    <li class="top-level"><span>Faculty and Staff</span>
+                        <ul class="dropdown">
+                            <li><a href="#">Calendars</a></li>
+                            <li><a href="#">Center for Excellence in Teaching & Learning</a></li>
+                            <li><a href="#">Faculty Reward & Recognition</a></li>
+                            <li><a href="#">Office of Human Resources</a></li>
+                            <li><a href="#">Organizational Charts</a></li>
+                            <li><a href="#">Outlook Email Access</a></li>
+                            <li><a href="#">Reynolds Intranet</a></li>
+                            <li><a href="#">Staff Directory</a></li>
+                            <li><a href="#">VCCS</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="drop-container">
+                    <li class="top-level"><span>Workforce Services</span>
+                        <ul class="dropdown">
+                            <li><a href="#">Career Planning</a></li>
+                            <li><a href="#">Community College Workforce Alliance</a></li>
+                            <li><a href="#">Facilty Rental</a></li>
+                            <li><a href="#">VA Wizard</a></li>
+                            <li><a href="#">Worforce Services Home</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="drop-container">
+                    <li class="top-level"><span>ReynoldsALERT</span>
+                        <ul class="dropdown">
+                            <li><a href="#">Department of Police</a></li>
+                            <li><a href="#">Emergency Response Guide</a></li>
+                            <li><a href="#">Reynolds Alert</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="drop-container">
+                    <li class="top-level"><a href="#">COVID</a></li>
+                </ul>
+                <ul class="drop-container">
+                    <li class="top-level"><a href="#">Contact Us</a></li>
+                </ul>
+                <ul class="drop-container">
+                    <li class="top-level search"><a href="#"><img src="images/search-icon-white.svg"></a></li>
+                </ul>
+            </nav>
+            <hr id="header-line">
+            <!--main sitewide navigation with dropdowns-->
+            <nav id="main-nav">
+                <ul class="drop-container">
+                    <li class="top-level"><span>Who We Are</span>
+                        <ul class="dropdown">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Campus Locations</a></li>
+                            <li><a href="#">College Leadership</a></li>
+                            <li><a href="#">College Policies</a></li>
+                            <li><a href="#">Consumer Information</a></li>
+                            <li><a href="#">Equity Throught Action</a></li>
+                            <li><a href="#">Jobs at Reynolds</a></li>
+                            <li><a href="#">The Kitchens at Reynolds</a></li>
+                            <li><a href="#">Media Center</a></li>
+                            <li><a href="#">Mission, Vision, & Values</a></li>
+                            <li><a href="#">2021-24 Strategic Direction</a></li>
+                            <li><a href="#">Organizational Chart</a></li>
+                            <li><a href="#">Quality Enhancement Plan</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="drop-container">
+                    <li class="top-level"><span>Get Started</span>
+                        <ul class="dropdown">
+                            <li><a href="#">6 Easy Steps</a></li>
+                            <li><a href="#">Academic Calendars</a></li>
+                            <li><a href="#">Admissions & Campus Tours</a></li>
+                            <li><a href="#">Apply</a></li>
+                            <li><a href="#">College Catalog</a></li>
+                            <li><a href="#">English as a Second Language (ESL)</a></li>
+                            <li><a href="#">First-Gen Resources</a></li>
+                            <li><a href="#">Future Student</a></li>
+                            <li><a href="#">Majors by Career</a></li>
+                            <li><a href="#">Majors A-Z</a></li>
+                            <li><a href="#">Reynolds Online</a></li>
+                            <li><a href="#">Specialty Programs</a></li>
+                            <li><a href="#">Transfer Students</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="drop-container">
+                    <li class="top-level"><span>Register for Classes</span>
+                        <ul class="dropdown">
+                            <li><a href="#">Registration Guide</a></li>
+                            <li><a href="#">Advising</a></li>
+                            <li><a href="#">Class Schedules</a></li>
+                            <li><a href="#">Course Descriptions</a></li>
+                            <li><a href="#">Low & No Cost Textbooks</a></li>
+                            <li><a href="#">MyReynolds</a></li>
+                            <li><a href="#">Registration Dates</a></li>
+                            <li><a href="#">Service Hours</a></li>
+                            <li><a href="#">Steps to Get Started</a></li>
+                            <li><a href="#">Technology Support</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="drop-container">
+                    <li class="top-level"><span>Pay for College</span>
+                        <ul class="dropdown">
+                            <li><a href="#">Business Office</a></li>
+                            <li><a href="#">Cost Calculator</a></li>
+                            <li><a href="#">G3 Tuition Assistance</a></li>
+                            <li><a href="#">Grants</a></li>
+                            <li><a href="#">Financial Aid Central</a></li>
+                            <li><a href="#">Low & No Cost Textbooks</a></li>
+                            <li><a href="#">Military Tuition Assistance</a></li>
+                            <li><a href="#">Pay Now (QuikPay)</a></li>
+                            <li><a href="#">Payment Due Dates</a></li>
+                            <li><a href="#">Scholarships</a></li>
+                            <li><a href="#">Tuition & Fees</a></li>
+                            <li><a href="#">Workshops</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="drop-container">
+                    <li class="top-level"><span>Student Services</span>
+                        <ul class="dropdown">
+                            <li><a href="#">All Services</a></li>
+                            <li><a href="#">Accommodations</a></li>
+                            <li><a href="#">Advising</a></li>
+                            <li><a href="#">Bookstore</a></li>
+                            <li><a href="#">Career Services</a></li>
+                            <li><a href="#">English as a Second Language (ESL)</a></li>
+                            <li><a href="#">Enrollment Management & Student Success</a></li>
+                            <li><a href="#">Library Services</a></li>
+                            <li><a href="#">Math Central+</a></li>
+                            <li><a href="#">New Student Orientation</a></li>
+                            <li><a href="#">PAVE</a></li>
+                            <li><a href="#">ReynoldsID</a></li>
+                            <li><a href="#">Student Support Services</a></li>
+                            <li><a href="#">Testing Center</a></li>
+                            <li><a href="#">The Writing Studio</a></li>
+                            <li><a href="#">TimelyCare</a></li>
+                            <li><a href="#">Title IX</a></li>
+                            <li><a href="#">Transfer Services</a></li>
+                            <li><a href="#">Transcripts</a></li>
+                            <li><a href="#">Tutoring</a></li>
+                            <li><a href="#">Veterans</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="drop-container">
+                    <li class="top-level"><span>Campus Life</span>
+                        <ul class="dropdown">
+                            <li><a href="#">Campus Newsletters</a></li>
+                            <li><a href="#">Campus Safety</a></li>
+                            <li><a href="#">Campuses & Sites</a></li>
+                            <li><a href="#">COVID-19 Response</a></li>
+                            <li><a href="#">Meet our Students</a></li>
+                            <li><a href="#">Office of Student Life</a></li>
+                            <li><a href="#">Parking/Shuttle</a></li>
+                            <li><a href="#">Schedule a Tour</a></li>
+                            <li><a href="#">Student Ambassadors</a></li>
+                            <li><a href="#">Where to Eat</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="drop-container">
+                    <li class="top-level"><span>Support Reynolds</span>
+                        <ul class="dropdown">
+                            <li><a href="#">Alumni</a></li>
+                            <li><a href="#">Educational Foundation</a></li>
+                            <li><a href="#">Give Now</a></li>
+                            <li><a href="#">Ways to Give</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="page-title">
+            <a href="#" class="prev-page">&#11148;</a>
+            <h1>School of Business and Industrial Trades</h1>
+        </div>
+        <div class="grid-container">
+            <!--body nav contains SBIT-specific links-->
+            <nav class="body-nav">
+                <ul>
+                    <li><a href="sbit-industry-partners.html">Industry Partners</a></li>
+                    <li><a href="sbit-faculty-and-staff.html">Faculty & Staff</a></li>
+                    <li><a href="sbit-student-supports.html">Student Supports</a></li>
+                    <li onclick="contactSBIT()"><span>Contact SBIT</span></li>
+                </ul>
+                <span class="body-nav arrow" onclick="openBodyMenu()">&#x203A;</span>
+            </nav>
+            <!--clicking "contact SBIT" in the body menu brings up box on same page with contact info-->
+            <div id="sbit-contact">
+                <span onclick="contactSBIT()" class="x-out">✕</span>
+                <h3>School of Business and Industrial&nbsp;Trades</h3>
+                <span>Phone: (555) 555-5555</span>
+                <br />
+                <span>E-mail: example@reynolds.edu</span>
+            </div>
+            <!--carousel implements Bootstrap and can have multiple added slides (currently uses two placeholders)-->
+            <div id="sbit-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/slide-1.jpg" class="slide" alt="...">
+                    <div class="carousel-caption">
+                      <h5>First slide label</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slide-2.jpg" class="slide" alt="...">
+                    <div class="carousel-caption">
+                      <h5>Second slide label</h5>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#sbit-carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#sbit-carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="content">
+                <ul class="breadcrumbs">
+                    <li><a href="#">Reynolds</a></li>
+                    <li><a href="#">Get Started</a></li>
+                    <li><a href="#">Majors by School</a></li>
+                    <li>School of Business and Industrial Trades</li>
+                </ul>
+                <h2>School of Business and Industrial Trades</h2>
+                <p>The School of Business and Industrial Trades is home to an eclectic array of programs designed to prepare students for high demand careers in a variety of industries and offer educational pathways to a four-year college or university. We desire to support students through completion and post-graduation success as they gain specific occupational and technical work-based learning skills for immediate employment.</p>
+                <p>We provide day, evening and online classes in the programs shown below. Most of our certificates and degrees represent guided pathways of learning. Career studies certificates are the foundation of the pathways, and they provide for immediate employability in as soon as one semester. Students may elect to continue and earn certificates and degrees to further advance their career prospects. </p>
+                <h2>Programs of Study</h2>
+                <!--programs appear in two or three columns and link to each SBIT-specific program-->
+                <div id="programs">
+                    <a href="sbit-accounting.html"><button class="sbit-program"><div class="program-title">Accounting</div></button></a>
+                    <a href="sbit-business.html"><button class="sbit-program"><div class="program-title">Business</div></button></a>
+                    <a href="sbit-management.html"><button class="sbit-program"><div class="program-title">Management</div></button></a>
+                    <a href="sbit-culinary-and-hospitality.html"><button class="sbit-program"><div class="program-title">Culinary & Hospitality</div></button></a>
+                    <a href="sbit-paralegal-studies.html"><button class="sbit-program"><div class="program-title">Paralegal Studies</div></button></a>
+                    <a href="sbit-criminal-justice.html"><button class="sbit-program"><div class="program-title">Criminal Justice</div></button></a>
+                    <a href="sbit-automotive.html"><button class="sbit-program"><div class="program-title">Automotive</div></button></a>
+                    <a href="sbit-welding.html"><button class="sbit-program"><div class="program-title">Welding</div></button></a>
+                    <a href="sbit-diesel.html"><button class="sbit-program"><div class="program-title">Diesel</div></button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <!--links to Bootstrap JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
