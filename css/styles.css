@@ -85,6 +85,7 @@ DESKTOP -------------------------------------------------------------------
 !SBIT-HOMEPAGE ------ 
 	!programs -------
 
+FOOTER ------------- site-wide footer
 */
 
 
@@ -142,6 +143,9 @@ body {
     --tan: #ddd6ad;
     --lighttan: #f1efde;
     /*note that grays go from lighter to darker in order of number (odd numbers 3-11)*/
+
+	/* Created mainly to change all margins at once on the category pages. Also works on footer. */
+	--set-01: 5%;
 }
 
 
@@ -593,11 +597,102 @@ header {
 
 
 /*FOOTER*/
-
 footer {
 	background-color: var(--darkred);
-	height: 500px;
 	width: 100%;
+}
+#footer-address-bar {
+    display: block;
+    position: relative;
+    height: 100%;
+    background-color:rgb(164, 32, 54);
+    padding: 0px var(--set-01) 0px var(--set-01);
+}
+#footer-copyright-bar {
+    display: block;
+    position: relative;
+    height: 100%;
+    background-color:#353535;
+    padding: 0px var(--set-01) 1px var(--set-01);
+}
+#footer-reynolds-logo {
+    display: block;
+    position: relative;
+    max-width: 1200px;
+    padding: 50px 0px 25px 0px;
+    margin: 0px auto 0px auto;
+}
+#footer-reynolds-logo img {
+    display: block;
+    position: relative;
+    width: 234px;
+    left: -30px;
+}
+.footer-locations {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0px 0px 0px;
+}
+.footer-address {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+}
+.address-head {
+    font-weight: 900;
+    margin: 0px 0px 0px 0px;
+}
+.map-directions {
+    display: block;
+    position: relative;
+    background-color: #781728;
+    border-radius: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+    padding: 1px 6px 0px 6px;
+    margin: 10px 0px 30px 0px;
+}
+.map-directions:hover {
+    background-color: #000000;
+}
+#footer-social-logo-group {
+    display: block;
+    position: relative;
+    width: fit-content;
+    padding: 25px 0px 15px 0px;
+    margin: 0px auto 0px auto;
+}
+.reynolds-social-logos {
+    display: inline-block;
+    position: relative;
+    width: 28px;
+    margin: 0px 2px 0px 2px;
+}
+#footer-copyright-01 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+#footer-copyright-02 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0px 0px 5px 0px;
 }
 
 
@@ -1047,5 +1142,30 @@ footer {
 	#programs button {
 		height: 170px;
 		width: 170px;
+	}
+
+	/*FOOTER*/
+	#footer-reynolds-logo img {
+		left: -30px;
+	}
+	.footer-locations {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		max-width: 1200px;
+		padding: 20px 0px 0px 0px;
+		margin: 0px auto 0px auto;
+	}
+	#footer-address-bar {
+		display: block;
+		position: relative;
+		height: 360px;
+		background-color:rgb(164, 32, 54);
+	}
+	#footer-copyright-01 {
+		line-height: 40px;
+	}
+	#footer-copyright-02 {
+		font-size: 16px;
 	}
 }
