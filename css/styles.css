@@ -11,7 +11,7 @@ site under Reynolds Community College
 GENERAL -------------------------------------------------------------------
 
 reset defaults ----- change default settings site-wide
-colors ------------- global variables for colors defined in brand guide
+variables ---------- global variables - mainly used for colors from brand guide
 
 
 MOBILE/DEFAULT VIEW -------------------------------------------------------
@@ -24,11 +24,17 @@ SBIT-GENERAL ------- elements that appear on all SBIT-specific pages
 	body nav ------- SBIT-specific navigation
 	SBIT contact --- SBIT contact info module
 	carousel ------- bootstrap carousel styling
+	main image ----- static image on pages without a carousel
 	content -------- main page content/text
 	breadcrumbs ---- breadcrumb links to previous pages
 
 SBIT-HOMEPAGE ------ elements specific to SBIT's homepage
 	programs ------- list of programs under SBIT
+
+SBIT-SUPPORTS ------ elements specific to SBIT student supports
+	support link --- button that links to site-wide student supports page
+
+SBIT-FACULITY ------ elements specific to SBIT faculty & staff page
 
 FOOTER ------------- site-wide footer
 
@@ -36,7 +42,6 @@ FOOTER ------------- site-wide footer
 MOBILE - SMALL SCREENS ----------------------------------------------------
 
 #SBIT-GENERAL ------ 
-	#content ------- 
 
 #SBIT-HOMEPAGE ------ 
 	#programs ------- 
@@ -45,7 +50,8 @@ MOBILE - SMALL SCREENS ----------------------------------------------------
 TABLET - MINI SCREENS ----------------------------------------------------- 
 
 $SBIT-GENERAL ------- 
-	$carousel ------- 
+	$carousel -------
+	$main image ----- 
 
 $SBIT-HOMEPAGE ------ 
 	$programs ------- 
@@ -67,6 +73,7 @@ TABLET - LARGE SCREENS ----------------------------------------------------
 &SBIT-GENERAL ------- 
 	&body nav -------
 	&carousel -------
+	&main image -----
 	&content --------
 
 &SBIT-HOMEPAGE ------
@@ -81,11 +88,20 @@ DESKTOP -------------------------------------------------------------------
 
 !SBIT-GENERAL ------- 
 	!carousel -------
+	!main image ----- 
 
 !SBIT-HOMEPAGE ------ 
 	!programs -------
 
-FOOTER ------------- site-wide footer
+!FOOTER -------------
+
+
+DESKTOP - LARGE -----------------------------------------------------------
+
++HEADER ------------- 
+	+top nav --------
+	+main nav -------
+
 */
 
 
@@ -113,36 +129,35 @@ body {
 }
 
 
-/*colors*/
+/*variables*/
 
 :root {
-    /*primary*/
-    --reynoldsred: #a31f36;
-    --gray3: #d8d7d6;
-    --gray7: #979899;
-    /*secondary*/
-    --tumeric: #9b8430;
-    --emerald: #00943b;
-    --ocean: #0062a1;
-    --raspberry: #b21f8c;
-    --asparagus: #77993d;
-    --gray5: #b1b1b1;
-    --gray9: #75767a;
-    --gray11: #53555a;
-    /*accent - light*/
-    --lightred: #edc6cd;
-    --lighttumeric: #fbd671;
-    --lightocean: #96d9e9;
-    --lightasparagus: #cade80;
-    /*accent - dark*/
-    --darkred: #78232e;
-    --darktumeric: #624e25;
-    --darkocean: #173963;
-    --darkasparagus: #536122;
-    /*other - not listed in brand guide but used on current site*/
-    --tan: #ddd6ad;
-    --lighttan: #f1efde;
-    /*note that grays go from lighter to darker in order of number (odd numbers 3-11)*/
+	/*primary*/
+	--reynoldsred: #a31f36;
+	--gray3: #d8d7d6;
+	--gray7: #979899;
+	/*secondary*/
+	--tumeric: #9b8430;
+	--emerald: #00943b;
+	--ocean: #0062a1;
+	--raspberry: #b21f8c;
+	--asparagus: #77993d;
+	--gray5: #b1b1b1;
+	--gray9: #75767a;
+	--gray11: #53555a;
+	/*accent - light*/
+	--lightred: #edc6cd;
+	--lighttumeric: #fbd671;
+	--lightocean: #96d9e9;
+	--lightasparagus: #cade80;
+	/*accent - dark*/
+	--darkred: #78232e;
+	--darktumeric: #624e25;
+	--darkocean: #173963;
+	--darkasparagus: #536122;
+	/*other - not listed in brand guide but used on current site*/
+	--tan: #ddd6ad;
+	--lighttan: #f1efde;/*note that grays go from lighter to darker in order of number (odd numbers 3-11)*/
 
 	/* Created mainly to change all margins at once on the category pages. Also works on footer. */
 	--set-01: 5%;
@@ -327,6 +342,11 @@ header {
 }
 
 /*back arrow displays next to title*/
+.prev-page:before {
+	content: "↩";
+}
+
+/*style back arrow*/
 .prev-page {
 	color: black;
 	line-height: 50px;
@@ -420,8 +440,9 @@ header {
 	background-color: white;
     border: 2px solid var(--reynoldsred);
 	bottom: 0;
-	box-shadow: 200px 200px 0px 800px #00000095;
+	box-shadow: 200px 200px 0px 3000px #00000095;
     display: none;
+	font-weight: 700;
 	height: fit-content;
 	left: 0;
 	margin: auto;
@@ -429,16 +450,28 @@ header {
 	padding: 20px;
 	position: fixed;
 	right: 0;
+	text-align: center;
 	top: 0;
 	width: fit-content;
 	z-index: 2;
 }
+
 #sbit-contact h3 {
 	font-size: 1.1em;
 	font-weight: 600;
 	margin-bottom: 20px;
 	margin-top: 25px;
-	text-align: center;
+}
+
+#sbit-contact a {
+	color: var(--reynoldsred);
+	font-weight: 400;
+	text-decoration: none;
+}
+
+#sbit-contact a:hover {
+	color: var(--darkred);
+	transition: .2s;
 }
 
 /*display contact info when 'Contact SBIT' is clicked*/
@@ -456,7 +489,7 @@ header {
 	-webkit-text-stroke: 1px black;
 }
 
-#sbitContact .xOut:hover {
+#sbit-contact .x-out:hover {
 	-webkit-text-stroke: 2px black;
 }
 
@@ -503,6 +536,22 @@ header {
 }
 
 
+/*main image*/
+
+/*replaces carousel on pages with one static image*/
+#sbit-main-image {
+	grid-column: 1 / span 3;
+	grid-row: 1;
+}
+
+/*match sizing to carousel*/
+#sbit-main-image img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+
 /*content*/
 
 /*main page content located under carousel/to right of body-nav*/
@@ -510,12 +559,11 @@ header {
 	grid-column: 2;
 	grid-row: 2;
 	justify-self: end;
-	margin-left: 20px;
-	margin-top: 5px;
+	margin: 5px 15px 0 15px;
 }
 
 .content p {
-	text-align: justify;
+	text-align: left;
 }
 
 .content h2 {
@@ -596,23 +644,92 @@ header {
 
 
 
+/*SBIT-SUPPORTS*/
+
+/*support link*/
+
+/*link to general student supports landing page*/
+.support-services-button {
+	background-color: var(--reynoldsred);
+	border: none;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	margin-top: 40px;
+	padding: 12px 25px;
+	width: fit-content;
+}
+
+/*link styling*/
+.support-services-button a {
+	color: white;
+	text-decoration: none;
+}
+
+/*change on hover*/
+.support-services-button:hover {
+	background-color: var(--darkred);
+	transition: .2s;
+}
+
+
+
+/*SBIT-FACULTY*/
+
+/*position faculty/staff images*/
+.faculty-image {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width: 200px;
+}
+
+.faculty-name {
+	text-align: center;
+}
+
+.faculty-title-contact {
+	text-align: center !important; /*override default paragraph alignment*/
+}
+
+.faculty-title-contact a {
+	color: var(--reynoldsred);
+	text-decoration: none;
+}
+
+.faculty-title-contact a:hover {
+	color: var(--darkred);
+	transition: .2s;
+}
+
+.faculty-blurb {
+	border: 1px solid var(--reynoldsred);
+	margin: 10px 10px 30px 10px !important;
+	padding: 20px 30px;
+}
+
+
+
 /*FOOTER*/
+
 footer {
 	background-color: var(--darkred);
+	font-family: 'Source Sans Pro', sans-serif;
 	width: 100%;
 }
 #footer-address-bar {
     display: block;
     position: relative;
     height: 100%;
-    background-color:rgb(164, 32, 54);
+    background-color: var(--reynoldsred);
     padding: 0px var(--set-01) 0px var(--set-01);
 }
 #footer-copyright-bar {
     display: block;
     position: relative;
     height: 100%;
-    background-color:#353535;
+    background-color: #353535;
     padding: 0px var(--set-01) 1px var(--set-01);
 }
 #footer-reynolds-logo {
@@ -635,7 +752,6 @@ footer {
     padding: 20px 0px 0px 0px;
 }
 .footer-address {
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 25px;
@@ -649,9 +765,9 @@ footer {
 .map-directions {
     display: block;
     position: relative;
-    background-color: #781728;
+    background-color: var(--darkred);
+	border: 2px solid var(--darkred);
     border-radius: 5px;
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 25px;
@@ -676,7 +792,6 @@ footer {
     margin: 0px 2px 0px 2px;
 }
 #footer-copyright-01 {
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
     font-weight: 900;
     line-height: 25px;
@@ -686,7 +801,6 @@ footer {
     margin: 0px 0px 0px 0px;
 }
 #footer-copyright-02 {
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 25px;
@@ -710,14 +824,6 @@ footer {
 	/*remove back arrow next to title on screens where it's too crowded*/
 	.prev-page {
 		display: none;
-	}
-
-	
-	/*#content*/
-
-	/*bring content closer to body nav*/
-	.content {
-		margin-left: 15px;
 	}
 
 
@@ -755,8 +861,16 @@ footer {
 		height: 250px;
 	}
 	
+
+	/*$main image*/
+
+	/*match sizing to carousel*/
+	#sbit-main-image img {
+		height: 250px;
+	}
 	
-	
+
+
 	/*$SBIT-HOMEPAGE*/
 
 	
@@ -776,7 +890,6 @@ footer {
 		height: 25vw;
 		width: 25vw;
 	}
-
 }
 
 
@@ -904,12 +1017,25 @@ footer {
 		grid-column: 1 / span 4;
 	}
 
+
+	/*&main image*/
+
+	/*extend image across new grid*/
+	#sbit-main-image {
+		grid-column: 1 / span 4;
+	}
+
+	/*adjust image positioning*/
+	#sbit-main-image img {
+		object-position: 0px -130px;
+	}
 	
+
 	/*&content*/
 
 	.content {
 		grid-column: 3;
-		margin-top: 20px;
+		margin: 20px 30px 0px 30px;
 	}
 
 
@@ -930,7 +1056,6 @@ footer {
 		height: 150px;
 		width: 150px;
 	}
-
 }
 
 
@@ -1006,7 +1131,7 @@ footer {
 	#top-nav li {
 		color: white;
 		cursor: pointer;
-		font-size: 1.1vw;
+		font-size: 1.2vw;
 		text-decoration: none;
 	}
 
@@ -1034,7 +1159,7 @@ footer {
 	#top-nav .dropdown a,
 	#top-nav .dropdown li {
 		color: black;
-        font-size: .95em;
+        font-size: 14px;
         padding: 5px;
 	}
 
@@ -1075,7 +1200,7 @@ footer {
 	#main-nav li {
 		color: white;
 		display: inline;
-		font-size: 1.3vw;
+		font-size: 1.4vw;
 		padding: 15px 5px;
 	}
 
@@ -1092,13 +1217,14 @@ footer {
 	/*change dropdown to display in columns (mega menu) and hide until hovered*/
 	#main-nav .dropdown {
         background-color: white;
-        box-shadow: 0px 300px 0px 300px #0000005b;
+        box-shadow: 0px 3000px 0px 3000px #0000005b;
         column-count: 3;
+		column-width: 240px;
 		display: none;
         left: 0;
 		max-height: fit-content;
         margin-top: 6px;
-        padding: 15px 30px 15px 30px;
+        padding: 15px 0px 15px 250px;
 		position: absolute;
 		text-align: left;
         width: 100%;
@@ -1107,7 +1233,7 @@ footer {
 	/*position dropdown items as lists within columns*/
     #main-nav .dropdown li {
         display: list-item;
-		font-size: 1.6em;
+		font-size: 16pt;
         padding: 0px;
 		margin: 0px;
 	}
@@ -1131,6 +1257,15 @@ footer {
 	#sbit-carousel .slide {
 		height: 320px;
 	}
+	
+	
+	/*!main image*/
+
+	/*increase main image size*/
+	#sbit-main-image img {
+		height: 320px;
+	}
+
 
 
 	/*!SBIT-HOMEPAGE*/
@@ -1145,27 +1280,48 @@ footer {
 	}
 
 	/*FOOTER*/
-	#footer-reynolds-logo img {
-		left: -30px;
-	}
+
 	.footer-locations {
-		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
 		max-width: 1200px;
-		padding: 20px 0px 0px 0px;
 		margin: 0px auto 0px auto;
 	}
 	#footer-address-bar {
-		display: block;
-		position: relative;
 		height: 360px;
-		background-color:rgb(164, 32, 54);
 	}
 	#footer-copyright-01 {
 		line-height: 40px;
 	}
 	#footer-copyright-02 {
 		font-size: 16px;
+	}
+}
+
+
+
+/*------------------------------------*\
+  DESKTOP - LARGE
+\*------------------------------------*/
+
+
+
+@media (min-width: 1400px) {
+
+	/*+HEADER*/
+
+	/*+top nav*/
+
+	/*max font size*/
+	#top-nav a,
+	#top-nav li {
+		font-size: 12pt;
+	}
+
+
+	/*+main nav*/
+
+	/*max font size*/
+	#main-nav li {
+		font-size: 15.5pt;
 	}
 }
