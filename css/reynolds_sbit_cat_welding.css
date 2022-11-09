@@ -551,7 +551,13 @@ footer {
 /*added by Joelle- required fixes until we merge css*/
 .content {
     grid-row: 1 !important;
-    margin-top: -2px !important; 
+    margin: 0 !important;
+}
+.content h3 {
+    margin: 0 !important;
+}
+.content h2 {
+    margin: 0 !important;
 }
 .body-nav {
     grid-row: 1 !important;
