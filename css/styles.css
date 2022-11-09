@@ -563,7 +563,7 @@ header {
 }
 
 .content p {
-	text-align: justify;
+	text-align: left;
 }
 
 .content h2 {
