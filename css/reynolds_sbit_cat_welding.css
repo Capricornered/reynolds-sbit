@@ -188,6 +188,7 @@ ul.breadcrumb-trail {
     padding: 15px var(--set-02) 20px var(--set-02);
     border-radius: 0px 0px 0px 0px;
     height: 55px;
+    z-index: 1;
 }
 .accordion-button:not(.collapsed)::after {
     filter: brightness(0%);
@@ -290,7 +291,7 @@ ul.breadcrumb-trail {
 .kerning-01 {
     letter-spacing: -.03em;
 }
-h3 {
+.accordion-body h3 {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -541,4 +542,24 @@ footer {
 #footer-copyright-02 {
     font-size: 16px;
 }
+}
+
+
+
+
+
+/*added by Joelle- required fixes until we merge css*/
+.content {
+    grid-row: 1 !important;
+    margin-top: -2px !important; 
+}
+.body-nav {
+    grid-row: 1 !important;
+}
+.page-title {
+    background-color: #505050 !important;
+    color: white !important;
+}
+.prev-page {
+    color: white !important;
 }

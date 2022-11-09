@@ -10,32 +10,247 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!--Adobe fonts - Roboto-->
+    <link rel="stylesheet" href="https://use.typekit.net/frz4ami.css">
 
     <!-- Bootstrap CSS Link-->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
 
     <!-- Main CSS Styling Link-->
     <link rel="stylesheet" type="text/css" href="css/reynolds_sbit_cat_welding.css" />
+    <!--Additional CSS linked by Joelle for elements added to header/navs-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    
+    <!--custom JavaScript-->
+    <script src="scripts/scripts.js" defer></script>
 
-    <title>Reynolds Test 03</title>
+    <title>School of Business and Industrial Trades | Welding</title>
 </head>
 
 <body>
-    <nav>
-        <div id="main_nav_01">
-          <div><img id="reynolds_logo" src="images/reynolds-logo-reverse-50.svg" alt="Reynolds 50 Year Logo" /></div>
-        </div>
-    </nav>
+  <!--header with top and main navs added by Joelle-->
+  <header>
+    <!--logo links back to Reynolds home page-->
+    <a href="/"><img class="logo" src="images/reynolds-50-logo.png" alt="Home"></a>
+    <!--hamburger appears on mobile/tablet screens and opens mega nav on click-->
+    <span id="hamburger" aria-label="Hamburger Menu" onclick="openHamburger()">&#9776;</span>
+    <!--mega nav contains a top menu and main menu-->
+    <div id="nav-container">
+        <!--top menu shows at top of screen on desktop and underneath the main menu on mobile/tablet-->
+        <nav id="top-nav">
+            <ul class="drop-container">
+                <li class="top-level"><a href="#">Apply Now!</a></li>
+            </ul>
+            <ul class="drop-container">
+                <li class="top-level"><a href="#">MyReynolds</a></li>
+            </ul>
+            <ul class="drop-container">
+                <li class="top-level"><span>Faculty and Staff</span>
+                    <ul class="dropdown">
+                        <li><a href="#">Calendars</a></li>
+                        <li><a href="#">Center for Excellence in Teaching & Learning</a></li>
+                        <li><a href="#">Faculty Reward & Recognition</a></li>
+                        <li><a href="#">Office of Human Resources</a></li>
+                        <li><a href="#">Organizational Charts</a></li>
+                        <li><a href="#">Outlook Email Access</a></li>
+                        <li><a href="#">Reynolds Intranet</a></li>
+                        <li><a href="#">Staff Directory</a></li>
+                        <li><a href="#">VCCS</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="drop-container">
+                <li class="top-level"><span>Workforce Services</span>
+                    <ul class="dropdown">
+                        <li><a href="#">Career Planning</a></li>
+                        <li><a href="#">Community College Workforce Alliance</a></li>
+                        <li><a href="#">Facilty Rental</a></li>
+                        <li><a href="#">VA Wizard</a></li>
+                        <li><a href="#">Worforce Services Home</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="drop-container">
+                <li class="top-level"><span>ReynoldsALERT</span>
+                    <ul class="dropdown">
+                        <li><a href="#">Department of Police</a></li>
+                        <li><a href="#">Emergency Response Guide</a></li>
+                        <li><a href="#">Reynolds Alert</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="drop-container">
+                <li class="top-level"><a href="#">COVID</a></li>
+            </ul>
+            <ul class="drop-container">
+                <li class="top-level"><a href="#">Contact Us</a></li>
+            </ul>
+            <ul class="drop-container">
+                <li class="top-level search"><a href="#"><img src="images/search-icon-white.svg"></a></li>
+            </ul>
+        </nav>
+        <hr id="header-line">
+        <!--main sitewide navigation with dropdowns-->
+        <nav id="main-nav">
+            <ul class="drop-container">
+                <li class="top-level"><span>Who We Are</span>
+                    <ul class="dropdown">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Campus Locations</a></li>
+                        <li><a href="#">College Leadership</a></li>
+                        <li><a href="#">College Policies</a></li>
+                        <li><a href="#">Consumer Information</a></li>
+                        <li><a href="#">Equity Throught Action</a></li>
+                        <li><a href="#">Jobs at Reynolds</a></li>
+                        <li><a href="#">The Kitchens at Reynolds</a></li>
+                        <li><a href="#">Media Center</a></li>
+                        <li><a href="#">Mission, Vision, & Values</a></li>
+                        <li><a href="#">2021-24 Strategic Direction</a></li>
+                        <li><a href="#">Organizational Chart</a></li>
+                        <li><a href="#">Quality Enhancement Plan</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="drop-container">
+                <li class="top-level"><span>Get Started</span>
+                    <ul class="dropdown">
+                        <li><a href="#">6 Easy Steps</a></li>
+                        <li><a href="#">Academic Calendars</a></li>
+                        <li><a href="#">Admissions & Campus Tours</a></li>
+                        <li><a href="#">Apply</a></li>
+                        <li><a href="#">College Catalog</a></li>
+                        <li><a href="#">English as a Second Language (ESL)</a></li>
+                        <li><a href="#">First-Gen Resources</a></li>
+                        <li><a href="#">Future Student</a></li>
+                        <li><a href="#">Majors by Career</a></li>
+                        <li><a href="#">Majors A-Z</a></li>
+                        <li><a href="#">Reynolds Online</a></li>
+                        <li><a href="#">Specialty Programs</a></li>
+                        <li><a href="#">Transfer Students</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="drop-container">
+                <li class="top-level"><span>Register for Classes</span>
+                    <ul class="dropdown">
+                        <li><a href="#">Registration Guide</a></li>
+                        <li><a href="#">Advising</a></li>
+                        <li><a href="#">Class Schedules</a></li>
+                        <li><a href="#">Course Descriptions</a></li>
+                        <li><a href="#">Low & No Cost Textbooks</a></li>
+                        <li><a href="#">MyReynolds</a></li>
+                        <li><a href="#">Registration Dates</a></li>
+                        <li><a href="#">Service Hours</a></li>
+                        <li><a href="#">Steps to Get Started</a></li>
+                        <li><a href="#">Technology Support</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="drop-container">
+                <li class="top-level"><span>Pay for College</span>
+                    <ul class="dropdown">
+                        <li><a href="#">Business Office</a></li>
+                        <li><a href="#">Cost Calculator</a></li>
+                        <li><a href="#">G3 Tuition Assistance</a></li>
+                        <li><a href="#">Grants</a></li>
+                        <li><a href="#">Financial Aid Central</a></li>
+                        <li><a href="#">Low & No Cost Textbooks</a></li>
+                        <li><a href="#">Military Tuition Assistance</a></li>
+                        <li><a href="#">Pay Now (QuikPay)</a></li>
+                        <li><a href="#">Payment Due Dates</a></li>
+                        <li><a href="#">Scholarships</a></li>
+                        <li><a href="#">Tuition & Fees</a></li>
+                        <li><a href="#">Workshops</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="drop-container">
+                <li class="top-level"><span>Student Services</span>
+                    <ul class="dropdown">
+                        <li><a href="#">All Services</a></li>
+                        <li><a href="#">Accommodations</a></li>
+                        <li><a href="#">Advising</a></li>
+                        <li><a href="#">Bookstore</a></li>
+                        <li><a href="#">Career Services</a></li>
+                        <li><a href="#">English as a Second Language (ESL)</a></li>
+                        <li><a href="#">Enrollment Management & Student Success</a></li>
+                        <li><a href="#">Library Services</a></li>
+                        <li><a href="#">Math Central+</a></li>
+                        <li><a href="#">New Student Orientation</a></li>
+                        <li><a href="#">PAVE</a></li>
+                        <li><a href="#">ReynoldsID</a></li>
+                        <li><a href="#">Student Support Services</a></li>
+                        <li><a href="#">Testing Center</a></li>
+                        <li><a href="#">The Writing Studio</a></li>
+                        <li><a href="#">TimelyCare</a></li>
+                        <li><a href="#">Title IX</a></li>
+                        <li><a href="#">Transfer Services</a></li>
+                        <li><a href="#">Transcripts</a></li>
+                        <li><a href="#">Tutoring</a></li>
+                        <li><a href="#">Veterans</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="drop-container">
+                <li class="top-level"><span>Campus Life</span>
+                    <ul class="dropdown">
+                        <li><a href="#">Campus Newsletters</a></li>
+                        <li><a href="#">Campus Safety</a></li>
+                        <li><a href="#">Campuses & Sites</a></li>
+                        <li><a href="#">COVID-19 Response</a></li>
+                        <li><a href="#">Meet our Students</a></li>
+                        <li><a href="#">Office of Student Life</a></li>
+                        <li><a href="#">Parking/Shuttle</a></li>
+                        <li><a href="#">Schedule a Tour</a></li>
+                        <li><a href="#">Student Ambassadors</a></li>
+                        <li><a href="#">Where to Eat</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="drop-container">
+                <li class="top-level"><span>Support Reynolds</span>
+                    <ul class="dropdown">
+                        <li><a href="#">Alumni</a></li>
+                        <li><a href="#">Educational Foundation</a></li>
+                        <li><a href="#">Give Now</a></li>
+                        <li><a href="#">Ways to Give</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-        <div id="major_head_bar">
-          <div class="back"><p>&#60; back</p></div>
-          <p>Welding CSC</p>
-        </div>
+<!--Title area replaced by Joelle-->
+<div class="page-title">
+  <a href="#" class="prev-page"></a>
+  <h1>Welding</h1>
+</div>
 
   <main id="main-category-container">
-        <div id="main_head_image_01"></div>
-        <div id="desktop-nav-placeholder"></div>
-    <div id="main-category-content">
+    <div id="main_head_image_01"></div>
+        <!--grid container added by Joelle - required to make body nav work for the time being-->
+        <div class="grid-container">
+          <!--body nav added by Joelle-->
+          <nav class="body-nav">
+            <ul>
+              <li><a href="sbit-industry-partners.html">Industry Partners</a></li>
+              <li><a href="sbit-faculty-and-staff.html">Faculty & Staff</a></li>
+              <li><a href="sbit-student-supports.html">Student Supports</a></li>
+              <li onclick="contactSBIT()"><span>Contact SBIT</span></li>
+            </ul>
+            <span class="body-nav arrow" onclick="openBodyMenu()">&#x203A;</span>
+          </nav>
+          <!--clicking "contact SBIT" in the body menu brings up box on same page with contact info-->
+          <div id="sbit-contact">
+            <span onclick="contactSBIT()" class="x-out">✕</span>
+            <h3>School of Business and Industrial&nbsp;Trades</h3>
+            <span>Phone: <a href="tel:+18045235301">(804) 523-5301</a></span>
+            <br />
+            <span>E-mail: <a href="mailto:sbit@reynolds.edu">sbit@reynolds.edu</a></span>
+          </div>
+      <!--changed to Joelle's content css align with body nav-->
+       <div class="content">
         <ul class="breadcrumb-trail">
           <li><a href="#">Reynolds</a></li>
           <li><a href="#">Get Started</a></li>
@@ -45,9 +260,7 @@
         </ul>
 
         <section class="categories-section">
-          <header>
             <h1>Welding</h1>
-          </header>
           <p>Enim dolor dignissim feugiat ipsum eros consequatvel ut eum, vero commodo qui odio esse nulla aliquip nibh laoreet at, autem quis delenit facilisis ad enim at. Quis feugait facilisis illum dignissim delenit, quis veniam duis nulla hendrerit. Facilisis duis et luptatum minim autem luptatum facilisis ut, odio diam accumsan nisl te facilisis. Elit nisl exerci minim blandit aliquam amet, et qui eros diam. Quis qui wisi nostrud vel minim vulputate illum odio eum. Enim feugiat consequat, et esse quis lobortis autem accumsan, aliquip suscipit commodo?</p>
 
           <p>Ut quis te iusto? Vulputate enim lobortis, nostrud feugait et enim ullamcorper wisi nulla in molestie exerci molestie odio velit suscipit. Delenit ex consequat suscipit veniam vel. Dignissim, nostrud nulla iusto praesent dolore augue minim, hendrerit enim at facilisis blandit elit ad iusto, praesent dignissim facilisi, delenit te. Illum lobortis praesent luptatum ullamcorper dignissim praesent sciurus lobortis nulla. Exerci feugiat vel in eum in diam. Vulputate aliquip nulla ut duis augue, sit lorem in.</p>
