@@ -58,14 +58,14 @@ MOBILE - SMALL SCREENS ----------------------------------------------------
 TABLET - MINI SCREENS ----------------------------------------------------- 
 
 $SBIT-GENERAL ----------- 
-	$carousel -----------
-	$main image ---------
+	$carousel ----------- 
+	$main image --------- 
 
 $SBIT-HOMEPAGE ---------- 
 	$programs ----------- 
 
-$SBIT-PROGRAMS ----------
-	$videos/images ------
+$SBIT-PROGRAMS ---------- 
+	$videos/images ------ 
 
 
 TABLET - SMALL SCREENS ----------------------------------------------------
@@ -80,6 +80,7 @@ TABLET - SMALL SCREENS ----------------------------------------------------
 
 %SBIT-PROGRAMS ----------
 	%videos/images ------
+	%custom accordion --- 
 
 
 TABLET - LARGE SCREENS ----------------------------------------------------
@@ -1405,6 +1406,21 @@ footer {
 		margin: 20px 0 30px 0;
 		max-height: 450px;
 		width: 100%;
+	}
+
+
+	/*%custom accordion*/
+
+	.course-container {
+		display: grid;
+		grid-template-columns: 85px 50% auto;
+		grid-template-rows: 100%;
+		padding: 0px 0px 0px 0px;
+		margin: 0px 0px 0px 0px;
+	}
+
+	.accordion__button::after {
+		margin: -31px 0px 0px 0px;
 	}
 
 }
