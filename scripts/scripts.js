@@ -14,13 +14,21 @@ function openHamburger() {
 
 
 //open dropdown when menu item is clicked (for screens using hamburger menu)
-let dropContainer = document.getElementsByClassName('drop-container');
+let topLevel = document.querySelectorAll(".top-level");
 
-for (let i = 0; i<dropContainer.length; i++) {
-  dropContainer[i].addEventListener('click', function dropdown() {
-    this.classList.toggle('nav-toggle');
-  });
-}
+topLevel.forEach(function(top) {
+	top.addEventListener("click", function() {
+		if (top.classList.contains("nav-toggle")) {
+			top.classList.remove("nav-toggle");
+		} else {
+			let openDrop = document.querySelectorAll(".nav-toggle");
+			openDrop.forEach(function(openDrop) {
+				openDrop.classList.remove("nav-toggle");
+			});
+			top.classList.add("nav-toggle");
+		}
+	});
+});
 
 
 //toggle the side nav when the arrow is clicked

@@ -70,9 +70,6 @@ $SBIT-PROGRAMS ----------
 
 TABLET - SMALL SCREENS ----------------------------------------------------
 
-%HEADER ----------------- 
-	%top nav ------------ 
-	
 %SBIT-GENERAL ----------- 
 
 %SBIT-HOMEPAGE ---------- 
@@ -138,14 +135,18 @@ DESKTOP - LARGE -----------------------------------------------------------
 	border: 0;
 }
 
-ul {
-	margin: 0;
-	padding: 0;
+html {
+	scroll-behavior: smooth;
 }
 
 body {
 	font-family: roboto;
 	overflow-x: hidden;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -247,12 +248,8 @@ header {
 
 /*top nav*/
 
-/*appears under main-nav on mobile/tablet and displays links in columns*/
+/*appears under main-nav on mobile/tablet*/
 #top-nav {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto auto auto;
 	margin-left: 20px;
     padding: 10px 10px;
     text-align: left;
@@ -284,7 +281,7 @@ header {
 }
 
 /*'+' displays as '-' when dropdown is open*/
-#top-nav .nav-toggle .top-level span::after {
+#top-nav .top-level.nav-toggle span::after {
 	content: '-';
 }
 
@@ -293,10 +290,14 @@ header {
 	display: block;
 	max-height: 0;
 	overflow: hidden;
+	padding-left: 20px;
 }
 
-/*dropdown opens on drop-container click*/
-
+/*dropdown opens on top-level click*/
+#top-nav .nav-toggle .dropdown {
+	max-height: fit-content;
+	padding-top: 15px;
+}
 
 /*main nav*/
 
@@ -314,6 +315,11 @@ header {
 	padding: 5px 20px;
 }
 
+#main-nav a {
+	color: black;
+	text-decoration: none;
+}
+
 /*display '+' next to nav items that contain dropdown*/
 #main-nav .top-level span::after {
 	content: '+';
@@ -321,7 +327,7 @@ header {
 }
 
 /*'+' displays as '-' when dropdown is open*/
-#main-nav .nav-toggle .top-level span::after {
+#main-nav .top-level.nav-toggle span::after {
 	content: '-';
 }
 
@@ -332,10 +338,9 @@ header {
 	max-height: 0;
 	overflow: hidden;
 	text-decoration: none;
-	transition: .3s;
 }
 
-/*dropdown opens on drop-container click*/
+/*dropdown opens on top-level click*/
 #main-nav .nav-toggle .dropdown {
 	max-height: fit-content;
 }
@@ -1226,20 +1231,6 @@ footer {
 
 
 @media (min-width: 730px) {
-    
-	/*%HEADER*/
-
-
-
-	/*%top nav*/
-
-	/*increase column count*/
-	#top-nav {
-		grid-template-columns: 33% 33% 33%;
-		grid-template-rows: auto auto auto;
-	}
-
-
 
     /*%SBIT-GENERAL*/
 
@@ -1477,21 +1468,19 @@ footer {
 
 	/*change positioning*/
 	#top-nav {
-		display: block;
 		padding: 10px 15px 0 0;
 		text-align: right;
 	}
-	
-	/*display as one row*/
+
 	#top-nav ul {
-		display: inline;
+		font-size: 0; /*removes whitespace around list items*/
 	}
 
 	/*add vertical lines between nav items*/
-	#top-nav ul:not(:last-child):after {
+	#top-nav li.top-level:not(:last-child):after {
 		content: "|";
-		padding-left: 3px;
-		padding-right: 3px;
+		padding-left: 8px;
+		padding-right: 8px;
 	}
 
 	#top-nav a,
@@ -1534,7 +1523,7 @@ footer {
         color: var(--reynoldsred);
         transition: .2s;
     }
-
+	
 	/*display dropdown on hover*/
 	#top-nav .top-level:hover .dropdown {
 		display: block;
@@ -1543,11 +1532,15 @@ footer {
 	/*remove '+' next to items with dropdowns*/
 	#top-nav li.top-level span::after {
 		content: "";
-		margin-left: 0px;
+		margin-left: -3px;
 	}
 
-	#top-nav .nav-toggle .top-level span::after {
+	#top-nav .top-level.nav-toggle span::after {
 		content: '';
+	}
+
+	#top-nav .nav-toggle .dropdown {
+		padding-top: 5px;
 	}
 
 
@@ -1571,13 +1564,18 @@ footer {
 		padding: 15px 5px;
 	}
 
+	#main-nav a {
+		color: white;
+		pointer-events: none;
+	}
+
 	/*remove '+' symbol after menu items*/
 	#main-nav .top-level span::after {
 		content: '';
 		margin-left: 0px;
 	}
 	
-	#main-nav .nav-toggle .top-level span::after {
+	#main-nav .top-level.nav-toggle span::after {
 		content: '';
 	}
 	
