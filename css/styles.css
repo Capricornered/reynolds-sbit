@@ -1566,7 +1566,11 @@ footer {
 
 	#main-nav a {
 		color: white;
-		pointer-events: none;
+		pointer-events: none; /*prevent snapping to top if main link is clicked on desktop*/
+	}
+
+	#main-nav .dropdown a {
+		pointer-events: auto; /*allow links to work within dropdowns*/
 	}
 
 	/*remove '+' symbol after menu items*/
