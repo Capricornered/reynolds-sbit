@@ -10,97 +10,112 @@ site under Reynolds Community College
 /*
 GENERAL -------------------------------------------------------------------
 
-reset defaults ----- change default settings site-wide
-variables ---------- global variables - mainly used for colors from brand guide
+reset defaults --------- change default settings site-wide
+variables -------------- global variables - mainly used for colors from brand guide
 
 
 MOBILE/DEFAULT VIEW -------------------------------------------------------
 
-HEADER ------------- site-wide header containing two navs
-	top nav -------- contains site-wide secondary menu items and search
-	main nav ------- contains site-wide main menu items
+HEADER ------------------ site-wide header containing two navs
+	top nav ------------- contains site-wide secondary menu items and search
+	main nav ------------ contains site-wide main menu items
 
-SBIT-GENERAL ------- elements that appear on all SBIT-specific pages
-	body nav ------- SBIT-specific navigation
-	SBIT contact --- SBIT contact info module
-	carousel ------- bootstrap carousel styling
-	main image ----- static image on pages without a carousel
-	content -------- main page content/text
-	breadcrumbs ---- breadcrumb links to previous pages
+SBIT-GENERAL ------------ elements that appear on all SBIT-specific pages
+	body nav ------------ SBIT-specific navigation
+	SBIT contact -------- SBIT contact info module
+	carousel ------------ bootstrap carousel styling
+	main image ---------- static image on pages without a carousel
+	content ------------- main page content/text
+	breadcrumbs --------- breadcrumb links to previous pages
+	link button --------- styling for basic buttons with links used on multiple pages
 
-SBIT-HOMEPAGE ------ elements specific to SBIT's homepage
-	programs ------- list of programs under SBIT
+SBIT-HOMEPAGE ----------- elements specific to SBIT's homepage
+	programs ------------ list of programs under SBIT
 
-SBIT-SUPPORTS ------ elements specific to SBIT student supports
-	support link --- button that links to site-wide student supports page
+SBIT-FACULTY ------------ elements specific to SBIT faculty & staff page
 
-SBIT-FACULITY ------ elements specific to SBIT faculty & staff page
+SBIT-PROGRAMS ----------- elements related to the various SBIT program pages
+	page titles --------- varying colors for different program page titles
+	videos/images ------- videos & images within program pages
+	bootstrap accordion-- bootstrap accordion to display majors 
+	custom accordion ---- accordion within majors to display course info
+	roadmap ------------- linked course roadmap
 
-FOOTER ------------- site-wide footer
+FOOTER ------------------ site-wide footer
 
 
 MOBILE - SMALL SCREENS ----------------------------------------------------
 
-#SBIT-GENERAL ------ 
+#SBIT-GENERAL ----------- 
 
-#SBIT-HOMEPAGE ------ 
-	#programs ------- 
+#SBIT-HOMEPAGE ----------
+	#programs -----------
+
+#SBIT-PROGRAMS ----------
+	#bootstrap accordion-
 
 
 TABLET - MINI SCREENS ----------------------------------------------------- 
 
-$SBIT-GENERAL ------- 
-	$carousel -------
-	$main image ----- 
+$SBIT-GENERAL ----------- 
+	$carousel ----------- 
+	$main image --------- 
 
-$SBIT-HOMEPAGE ------ 
-	$programs ------- 
+$SBIT-HOMEPAGE ---------- 
+	$programs ----------- 
+
+$SBIT-PROGRAMS ---------- 
+	$videos/images ------ 
 
 
 TABLET - SMALL SCREENS ----------------------------------------------------
 
-%HEADER ------------- 
-	%top nav -------- 
-	
-%SBIT-GENERAL ------- 
+%SBIT-GENERAL ----------- 
 
-%SBIT-HOMEPAGE ------ 
-	%programs ------- 
+%SBIT-HOMEPAGE ---------- 
+	%programs ----------- 
+
+%SBIT-PROGRAMS ----------
+	%videos/images ------
+	%custom accordion --- 
 
 
 TABLET - LARGE SCREENS ----------------------------------------------------
 
-&SBIT-GENERAL ------- 
-	&body nav -------
-	&carousel -------
-	&main image -----
-	&content --------
+&SBIT-GENERAL ----------- 
+	&body nav -----------
+	&carousel -----------
+	&main image ---------
+	&content ------------
 
-&SBIT-HOMEPAGE ------
-	&programs -------
+&SBIT-HOMEPAGE ----------
+	&programs -----------
+	
+&SBIT-PROGRAMS ----------
+	&videos/images ------
 
 
 DESKTOP -------------------------------------------------------------------
 
-!HEADER ------------- 
-	!top nav --------
-	!main nav -------
+!HEADER ----------------- 
+	!top nav ------------
+	!main nav -----------
 
-!SBIT-GENERAL ------- 
-	!carousel -------
-	!main image ----- 
+!SBIT-GENERAL ----------- 
+	!carousel -----------
+	!main image --------- 
 
-!SBIT-HOMEPAGE ------ 
-	!programs -------
+!SBIT-HOMEPAGE ---------- 
+	!programs -----------
 
-!FOOTER -------------
+!FOOTER -----------------
 
 
 DESKTOP - LARGE -----------------------------------------------------------
 
-+HEADER ------------- 
-	+top nav --------
-	+main nav -------
++HEADER ----------------- 
+	+top nav ------------
+	+main nav -----------
 
 */
 
@@ -117,15 +132,21 @@ DESKTOP - LARGE -----------------------------------------------------------
 * {
 	margin: 0;
 	padding: 0;
+	border: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: roboto;
+	overflow-x: hidden;
 }
 
 ul {
 	margin: 0;
 	padding: 0;
-}
-
-body {
-	font-family: roboto;
 }
 
 
@@ -177,6 +198,7 @@ body {
 header {
 	align-items: center;
 	background-color: var(--reynoldsred);
+	border-bottom: 2px solid var(--darkred);
 	color: white;
 	display: grid;
 	grid-template-columns: 50% 50%;
@@ -226,12 +248,8 @@ header {
 
 /*top nav*/
 
-/*appears under main-nav on mobile/tablet and displays links in columns*/
+/*appears under main-nav on mobile/tablet*/
 #top-nav {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto auto auto;
 	margin-left: 20px;
     padding: 10px 10px;
     text-align: left;
@@ -263,7 +281,7 @@ header {
 }
 
 /*'+' displays as '-' when dropdown is open*/
-#top-nav .nav-toggle .top-level span::after {
+#top-nav .top-level.nav-toggle span::after {
 	content: '-';
 }
 
@@ -272,10 +290,14 @@ header {
 	display: block;
 	max-height: 0;
 	overflow: hidden;
+	padding-left: 20px;
 }
 
-/*dropdown opens on drop-container click*/
-
+/*dropdown opens on top-level click*/
+#top-nav .nav-toggle .dropdown {
+	max-height: fit-content;
+	padding-top: 15px;
+}
 
 /*main nav*/
 
@@ -293,6 +315,11 @@ header {
 	padding: 5px 20px;
 }
 
+#main-nav a {
+	color: black;
+	text-decoration: none;
+}
+
 /*display '+' next to nav items that contain dropdown*/
 #main-nav .top-level span::after {
 	content: '+';
@@ -300,7 +327,7 @@ header {
 }
 
 /*'+' displays as '-' when dropdown is open*/
-#main-nav .nav-toggle .top-level span::after {
+#main-nav .top-level.nav-toggle span::after {
 	content: '-';
 }
 
@@ -311,10 +338,9 @@ header {
 	max-height: 0;
 	overflow: hidden;
 	text-decoration: none;
-	transition: .3s;
 }
 
-/*dropdown opens on drop-container click*/
+/*dropdown opens on top-level click*/
 #main-nav .nav-toggle .dropdown {
 	max-height: fit-content;
 }
@@ -559,16 +585,18 @@ header {
 	grid-column: 2;
 	grid-row: 2;
 	justify-self: end;
-	margin: 5px 15px 0 15px;
+	margin: 15px 15px 0 15px;
 }
 
 .content p {
+    line-height: 28px;
 	text-align: left;
 }
 
 .content h2 {
-	font-size: 17pt;
-	margin: 25px 0px;
+	font-size: 18pt;
+	font-weight: 700;
+	margin: 35px 0px 15px 0px;
 }
 
 
@@ -576,7 +604,7 @@ header {
 
 .breadcrumbs li {
 	display: inline-block; /*keep each list item's text on one line*/
-	font-size: 10pt;
+	font-size: 11pt;
 	list-style: none;
 }
 
@@ -595,6 +623,34 @@ header {
 .breadcrumbs :not(:last-child):after {
 	content: ">";
 	padding: 5px;
+}
+
+
+/*link button*/
+
+/*button that links to various other site pages*/
+.link-button {
+	background-color: var(--reynoldsred);
+	border: none;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	margin-top: 40px;
+	width: fit-content;
+}
+
+/*link styling*/
+.link-button a {
+	color: white;
+	display: block;
+	text-decoration: none;
+	padding: 12px 25px;
+}
+
+/*change on hover*/
+.link-button:hover {
+	background-color: var(--darkred);
+	transition: .2s;
 }
 
 
@@ -644,37 +700,8 @@ header {
 
 
 
-/*SBIT-SUPPORTS*/
-
-/*support link*/
-
-/*link to general student supports landing page*/
-.support-services-button {
-	background-color: var(--reynoldsred);
-	border: none;
-	display: block;
-	margin: 0 auto;
-	margin-bottom: 60px;
-	margin-top: 40px;
-	padding: 12px 25px;
-	width: fit-content;
-}
-
-/*link styling*/
-.support-services-button a {
-	color: white;
-	text-decoration: none;
-}
-
-/*change on hover*/
-.support-services-button:hover {
-	background-color: var(--darkred);
-	transition: .2s;
-}
-
-
-
 /*SBIT-FACULTY*/
+
 
 /*position faculty/staff images*/
 .faculty-image {
@@ -711,13 +738,273 @@ header {
 
 
 
+/*SBIT-PROGRAMS*/
+
+
+/*page titles*/
+
+/*additional page-title styling for each program group - different colors for each*/
+.emerald {
+	background-color: var(--emerald);
+	color: white;
+}
+
+.raspberry {
+	background-color: var(--raspberry);
+	color: white;
+}
+
+.ocean {
+	background-color: var(--ocean);
+	color: white;
+}
+
+.gray {
+	background-color: var(--gray11);
+	color: white;
+}
+
+.emerald a:hover,
+.raspberry a:hover,
+.ocean a:hover,
+.gray a:hover {
+	color: black;
+}
+
+
+/*vidoes/images*/
+
+/*program page videos*/
+.section-video {
+    margin: 20px 0px 30px 0px;
+    width: 100%;
+}
+
+/*program page images*/
+.story-image {
+	height: 250px;
+	margin: 20px -12% 30px -12%;
+	object-fit: cover;
+	width: 124%;
+}
+
+
+/*read more*/
+
+#more {
+    display: none;
+}
+
+#more-content {
+    display: none;
+}
+
+#read-more-button {
+    background-color: #ffffff;
+	display: block;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+	margin: 10px 0px 30px auto;
+}
+
+#read-more-button:hover {
+    text-decoration: underline;
+}
+
+
+/*bootstrap accordion*/
+
+.accordion {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.accordion-button, 
+.accordion-button:not(.collapsed) {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    color:#000000;
+    background-color:rgba(242, 242, 242, 1);
+    border-radius: 0px 0px 0px 0px;
+    height: 55px;
+    z-index: 1 !important;
+}
+
+.accordion h2 {
+	margin: 0;
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0%);
+}
+
+.accordion-button:focus {
+    box-shadow: inherit;
+}
+
+.accordion-item {
+    border: none;
+}
+
+.accordion-body {
+	padding: 20px 0px 0px 0px;
+	border: none;
+}
+
+.purpose-and-other {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0px 20px;
+}
+
+
+/*custom accordion*/
+
+.course-number {
+    display: block;
+    position: relative;
+    font-weight: 700;
+    margin: 0px 0px 0px 0px;
+}
+
+.course-name {
+    display: block;
+    position: relative;
+    font-weight: 400;
+    margin: 0px 0px 0px 0px;
+}
+
+.course-credits {
+    display: block;
+    position: relative;
+    font-weight: 400;
+    margin: 0px 0px 0px 0px;
+}
+
+.accordion__button {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    background: #ffffff;
+    color: #000000;
+    text-align: left;
+	line-height: 30px;
+    transition: background 0.2s;
+}
+
+.accordion__button:hover { 
+    background: rgb(245, 245, 245);
+}
+
+.accordion__button::after {
+    content: '\25be';
+    color: rgb(220, 220, 220);
+    float: right;
+    transform: scale(1.5);
+    margin: -62px 0px 0px 0px;
+}
+
+.accordion__button--active + .accordion__content {
+    display: block;
+}
+
+.accordion__button--active {
+    background: rgb(235, 235, 235);
+    /* margin: 50px 0px 0px 0px; */
+    /* border-top: 1px solid rgb(200, 200, 200);
+    border-bottom: 1px solid rgb(200, 200, 200); */
+}
+
+.accordion__button--active .course-name {
+    font-weight: 700;
+    background: rgb(235, 235, 235);
+}
+
+.accordion__button--active:hover {
+    background: rgb(235, 235, 235);
+}
+
+.accordion__button--active::after {
+    content: '\25b4';
+    color: rgb(0, 0, 0);
+}
+
+.accordion__content {
+    font-size: 16px;
+    /* overflow: hidden;
+    max-height: 0px;
+    transition: max-height 0.2s; */
+
+    padding: 10px 20px;
+    /* margin: 0px 0px 50px 0px; */
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background: rgb(245, 245, 245);
+    /* For accordion without transition */
+    display: none;
+    overflow: auto;
+}
+
+.total-credit-hours {
+	display: block;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+
+.kerning-01 {
+    letter-spacing: -.03em;
+}
+
+.accordion-body h3 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    color:#000000;
+    padding: 20px 0px 0px 0px;
+    margin-top: 22px;
+    border-radius: 0px 0px 0px 0px;
+}
+
+.course-order {
+    margin-bottom: 15px;
+}
+
+
+/*roadmap*/
+
+/*roadmap link*/
+.roadmap {
+	color: var(--reynoldsred);
+	display: block;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+	transition: .2s;
+    margin: 20px 0px 40px 0px;
+	width: fit-content;
+}
+
+.roadmap:hover {
+	color: var(--darkred);
+    text-decoration: underline;
+}
+
+
+
 /*FOOTER*/
+
 
 footer {
 	background-color: var(--darkred);
-	font-family: 'Source Sans Pro', sans-serif;
 	width: 100%;
 }
+
 #footer-address-bar {
     display: block;
     position: relative;
@@ -725,6 +1012,20 @@ footer {
     background-color: var(--reynoldsred);
     padding: 0px var(--set-01) 0px var(--set-01);
 }
+
+.footer-address {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+}
+
+.address-head {
+    font-weight: 900;
+    margin: 0px 0px 0px 0px;
+}
+
 #footer-copyright-bar {
     display: block;
     position: relative;
@@ -732,6 +1033,7 @@ footer {
     background-color: #353535;
     padding: 0px var(--set-01) 1px var(--set-01);
 }
+
 #footer-reynolds-logo {
     display: block;
     position: relative;
@@ -739,29 +1041,21 @@ footer {
     padding: 50px 0px 25px 0px;
     margin: 0px auto 0px auto;
 }
+
 #footer-reynolds-logo img {
     display: block;
     position: relative;
     width: 234px;
     left: -30px;
 }
+
 .footer-locations {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px 0px 0px 0px;
 }
-.footer-address {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 25px;
-    color: rgb(255, 255, 255);
-    width: fit-content;
-}
-.address-head {
-    font-weight: 900;
-    margin: 0px 0px 0px 0px;
-}
+
 .map-directions {
     display: block;
     position: relative;
@@ -775,9 +1069,11 @@ footer {
     padding: 1px 6px 0px 6px;
     margin: 10px 0px 30px 0px;
 }
+
 .map-directions:hover {
     background-color: #000000;
 }
+
 #footer-social-logo-group {
     display: block;
     position: relative;
@@ -785,12 +1081,14 @@ footer {
     padding: 25px 0px 15px 0px;
     margin: 0px auto 0px auto;
 }
+
 .reynolds-social-logos {
     display: inline-block;
     position: relative;
     width: 28px;
     margin: 0px 2px 0px 2px;
 }
+
 #footer-copyright-01 {
     font-size: 18px;
     font-weight: 900;
@@ -800,6 +1098,7 @@ footer {
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
 }
+
 #footer-copyright-02 {
     font-size: 14px;
     font-weight: 400;
@@ -807,6 +1106,11 @@ footer {
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 0px 0px 5px 0px;
+}
+
+#footer-copyright-02 a {
+	color: white;
+	text-decoration: none;
 }
 
 
@@ -821,6 +1125,7 @@ footer {
     
 	/*#SBIT-GENERAL*/
 	
+
 	/*remove back arrow next to title on screens where it's too crowded*/
 	.prev-page {
 		display: none;
@@ -837,6 +1142,19 @@ footer {
 	#programs {
 		gap: 20px 0px;
 		max-width: 280px;
+	}
+
+
+
+	/*#SBIT-PROGRAMS*/
+
+
+	/*#bootstrap accordion*/
+
+	/*avoid text wrapping*/
+	.accordion-button, 
+	.accordion-button:not(.collapsed) {
+		font-size: 17px;
 	}
 
 }
@@ -890,6 +1208,18 @@ footer {
 		height: 25vw;
 		width: 25vw;
 	}
+
+	
+	
+	/*$SBIT-PROGRAMS*/
+
+
+	/*$videos/images*/
+
+	.story-image {
+		height: 275px;
+	}
+
 }
 
 
@@ -901,20 +1231,6 @@ footer {
 
 
 @media (min-width: 730px) {
-    
-	/*%HEADER*/
-
-
-
-	/*%top nav*/
-
-	/*increase column count*/
-	#top-nav {
-		grid-template-columns: 33% 33% 33%;
-		grid-template-rows: auto auto auto;
-	}
-
-
 
     /*%SBIT-GENERAL*/
 
@@ -939,6 +1255,18 @@ footer {
 		height: 20vw;
 		width: 20vw;
 	}
+
+	
+
+	/*%SBIT-PROGRAMS*/
+
+
+	/*%videos/images*/
+
+	.story-image {
+		height: 325px;
+	}
+
 }
 
 
@@ -1035,7 +1363,7 @@ footer {
 
 	.content {
 		grid-column: 3;
-		margin: 20px 30px 0px 30px;
+		margin: 20px 0px 0px 40px;
 	}
 
 
@@ -1056,6 +1384,36 @@ footer {
 		height: 150px;
 		width: 150px;
 	}
+
+
+
+	/*%SBIT-PROGRAMS*/
+
+
+	/*%videos/images*/
+
+	.story-image {
+		height: 30vw;
+		margin: 20px 0 30px 0;
+		max-height: 450px;
+		width: 100%;
+	}
+
+
+	/*%custom accordion*/
+
+	.course-container {
+		display: grid;
+		grid-template-columns: 85px 50% auto;
+		grid-template-rows: 100%;
+		padding: 0px 0px 0px 0px;
+		margin: 0px 0px 0px 0px;
+	}
+
+	.accordion__button::after {
+		margin: -31px 0px 0px 0px;
+	}
+
 }
 
 
@@ -1110,21 +1468,19 @@ footer {
 
 	/*change positioning*/
 	#top-nav {
-		display: block;
 		padding: 10px 15px 0 0;
 		text-align: right;
 	}
-	
-	/*display as one row*/
+
 	#top-nav ul {
-		display: inline;
+		font-size: 0; /*removes whitespace around list items*/
 	}
 
 	/*add vertical lines between nav items*/
-	#top-nav ul:not(:last-child):after {
+	#top-nav li.top-level:not(:last-child):after {
 		content: "|";
-		padding-left: 3px;
-		padding-right: 3px;
+		padding-left: 8px;
+		padding-right: 8px;
 	}
 
 	#top-nav a,
@@ -1167,7 +1523,7 @@ footer {
         color: var(--reynoldsred);
         transition: .2s;
     }
-
+	
 	/*display dropdown on hover*/
 	#top-nav .top-level:hover .dropdown {
 		display: block;
@@ -1176,11 +1532,15 @@ footer {
 	/*remove '+' next to items with dropdowns*/
 	#top-nav li.top-level span::after {
 		content: "";
-		margin-left: 0px;
+		margin-left: -3px;
 	}
 
-	#top-nav .nav-toggle .top-level span::after {
+	#top-nav .top-level.nav-toggle span::after {
 		content: '';
+	}
+
+	#top-nav .nav-toggle .dropdown {
+		padding-top: 5px;
 	}
 
 
@@ -1204,13 +1564,18 @@ footer {
 		padding: 15px 5px;
 	}
 
+	#main-nav a {
+		color: white;
+		pointer-events: none;
+	}
+
 	/*remove '+' symbol after menu items*/
 	#main-nav .top-level span::after {
 		content: '';
 		margin-left: 0px;
 	}
 	
-	#main-nav .nav-toggle .top-level span::after {
+	#main-nav .top-level.nav-toggle span::after {
 		content: '';
 	}
 	
@@ -1223,7 +1588,7 @@ footer {
 		display: none;
         left: 0;
 		max-height: fit-content;
-        margin-top: 6px;
+        margin-top: 7px;
         padding: 15px 0px 15px 250px;
 		position: absolute;
 		text-align: left;
@@ -1279,7 +1644,7 @@ footer {
 		width: 170px;
 	}
 
-	/*FOOTER*/
+	/*!FOOTER*/
 
 	.footer-locations {
 		flex-direction: row;

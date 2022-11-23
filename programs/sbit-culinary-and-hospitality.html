@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Adobe fonts - Roboto-->
+    <link rel="stylesheet" href="https://use.typekit.net/frz4ami.css">
+
+    <!-- Bootstrap CSS Link-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
+    
+    <!--Custom CSS Link-->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    
+    <!-- Custom JS Links-->   
+    <script src="../scripts/scripts.js" defer></script>
+    <script src="../scripts/program-scripts.js" defer></script>
+
+    <title>School of Business and Industrial Trades | Culinary & Hospitality</title>
+</head>
+
+<body>
+    <header>
+        <!--logo links back to Reynolds home page-->
+        <a href="/"><img class="logo" src="../images/reynolds-50-logo.png" alt="Home"></a>
+        <!--hamburger appears on mobile/tablet screens and opens mega nav on click-->
+        <span id="hamburger" aria-label="Hamburger Menu" onclick="openHamburger()">&#9776;</span>
+        <!--mega nav contains a top menu and main menu-->
+        <div id="nav-container">
+            <!--top menu shows at top of screen on desktop and underneath the main menu on mobile/tablet-->
+            <nav id="top-nav">
+                <ul>
+                    <li class="top-level"><a href="#">Apply Now!</a></li>
+                    <li class="top-level"><a href="#">MyReynolds</a></li>
+                    <li class="top-level"><span>Faculty and Staff</span>
+                        <ul class="dropdown">
+                            <li><a href="#">Calendars</a></li>
+                            <li><a href="#">Center for Excellence in Teaching & Learning</a></li>
+                            <li><a href="#">Faculty Reward & Recognition</a></li>
+                            <li><a href="#">Office of Human Resources</a></li>
+                            <li><a href="#">Organizational Charts</a></li>
+                            <li><a href="#">Outlook Email Access</a></li>
+                            <li><a href="#">Reynolds Intranet</a></li>
+                            <li><a href="#">Staff Directory</a></li>
+                            <li><a href="#">VCCS</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-level"><span>Workforce Services</span>
+                        <ul class="dropdown">
+                            <li><a href="#">Career Planning</a></li>
+                            <li><a href="#">Community College Workforce Alliance</a></li>
+                            <li><a href="#">Facilty Rental</a></li>
+                            <li><a href="#">VA Wizard</a></li>
+                            <li><a href="#">Worforce Services Home</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-level"><span>ReynoldsALERT</span>
+                        <ul class="dropdown">
+                            <li><a href="#">Department of Police</a></li>
+                            <li><a href="#">Emergency Response Guide</a></li>
+                            <li><a href="#">Reynolds Alert</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-level"><a href="#">COVID</a></li>
+                    <li class="top-level"><a href="#">Contact Us</a></li>
+                    <li class="top-level search"><a href="#"><img src="images/search-icon-white.svg" alt="Search icon"></a></li>
+                </ul>
+            </nav>
+            <hr id="header-line">
+            <!--main sitewide navigation with dropdowns-->
+            <nav id="main-nav">
+                <!--each top-level item snaps to top of page to make navigation more clear with long amounts of list items-->
+                <a name="snap"></a>
+                <ul>
+                    <li class="top-level"><span><a href="#snap">Who We Are</a></span>
+                        <ul class="dropdown">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Campus Locations</a></li>
+                            <li><a href="#">College Leadership</a></li>
+                            <li><a href="#">College Policies</a></li>
+                            <li><a href="#">Consumer Information</a></li>
+                            <li><a href="#">Equity Throught Action</a></li>
+                            <li><a href="#">Jobs at Reynolds</a></li>
+                            <li><a href="#">The Kitchens at Reynolds</a></li>
+                            <li><a href="#">Media Center</a></li>
+                            <li><a href="#">Mission, Vision, & Values</a></li>
+                            <li><a href="#">2021-24 Strategic Direction</a></li>
+                            <li><a href="#">Organizational Chart</a></li>
+                            <li><a href="#">Quality Enhancement Plan</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-level"><span><a href="#snap">Get Started</a></span>
+                        <ul class="dropdown">
+                            <li><a href="#">6 Easy Steps</a></li>
+                            <li><a href="#">Academic Calendars</a></li>
+                            <li><a href="#">Admissions & Campus Tours</a></li>
+                            <li><a href="#">Apply</a></li>
+                            <li><a href="#">College Catalog</a></li>
+                            <li><a href="#">English as a Second Language (ESL)</a></li>
+                            <li><a href="#">First-Gen Resources</a></li>
+                            <li><a href="#">Future Student</a></li>
+                            <li><a href="#">Majors by Career</a></li>
+                            <li><a href="#">Majors A-Z</a></li>
+                            <li><a href="#">Reynolds Online</a></li>
+                            <li><a href="#">Specialty Programs</a></li>
+                            <li><a href="#">Transfer Students</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-level"><span><a href="#snap">Register for Classes</a></span>
+                        <ul class="dropdown">
+                            <li><a href="#">Registration Guide</a></li>
+                            <li><a href="#">Advising</a></li>
+                            <li><a href="#">Class Schedules</a></li>
+                            <li><a href="#">Course Descriptions</a></li>
+                            <li><a href="#">Low & No Cost Textbooks</a></li>
+                            <li><a href="#">MyReynolds</a></li>
+                            <li><a href="#">Registration Dates</a></li>
+                            <li><a href="#">Service Hours</a></li>
+                            <li><a href="#">Steps to Get Started</a></li>
+                            <li><a href="#">Technology Support</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-level"><span><a href="#snap">Pay for College</a></span>
+                        <ul class="dropdown">
+                            <li><a href="#">Business Office</a></li>
+                            <li><a href="#">Cost Calculator</a></li>
+                            <li><a href="#">G3 Tuition Assistance</a></li>
+                            <li><a href="#">Grants</a></li>
+                            <li><a href="#">Financial Aid Central</a></li>
+                            <li><a href="#">Low & No Cost Textbooks</a></li>
+                            <li><a href="#">Military Tuition Assistance</a></li>
+                            <li><a href="#">Pay Now (QuikPay)</a></li>
+                            <li><a href="#">Payment Due Dates</a></li>
+                            <li><a href="#">Scholarships</a></li>
+                            <li><a href="#">Tuition & Fees</a></li>
+                            <li><a href="#">Workshops</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-level"><span><a href="#snap">Student Services</a></span>
+                        <ul class="dropdown">
+                            <li><a href="#">All Services</a></li>
+                            <li><a href="#">Accommodations</a></li>
+                            <li><a href="#">Advising</a></li>
+                            <li><a href="#">Bookstore</a></li>
+                            <li><a href="#">Career Services</a></li>
+                            <li><a href="#">English as a Second Language (ESL)</a></li>
+                            <li><a href="#">Enrollment Management & Student Success</a></li>
+                            <li><a href="#">Library Services</a></li>
+                            <li><a href="#">Math Central+</a></li>
+                            <li><a href="#">New Student Orientation</a></li>
+                            <li><a href="#">PAVE</a></li>
+                            <li><a href="#">ReynoldsID</a></li>
+                            <li><a href="#">Student Support Services</a></li>
+                            <li><a href="#">Testing Center</a></li>
+                            <li><a href="#">The Writing Studio</a></li>
+                            <li><a href="#">TimelyCare</a></li>
+                            <li><a href="#">Title IX</a></li>
+                            <li><a href="#">Transfer Services</a></li>
+                            <li><a href="#">Transcripts</a></li>
+                            <li><a href="#">Tutoring</a></li>
+                            <li><a href="#">Veterans</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-level"><span><a href="#snap">Campus Life</a></span>
+                        <ul class="dropdown">
+                            <li><a href="#">Campus Newsletters</a></li>
+                            <li><a href="#">Campus Safety</a></li>
+                            <li><a href="#">Campuses & Sites</a></li>
+                            <li><a href="#">COVID-19 Response</a></li>
+                            <li><a href="#">Meet our Students</a></li>
+                            <li><a href="#">Office of Student Life</a></li>
+                            <li><a href="#">Parking/Shuttle</a></li>
+                            <li><a href="#">Schedule a Tour</a></li>
+                            <li><a href="#">Student Ambassadors</a></li>
+                            <li><a href="#">Where to Eat</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-level"><span><a href="#snap">Support Reynolds</a></span>
+                        <ul class="dropdown">
+                            <li><a href="#">Alumni</a></li>
+                            <li><a href="#">Educational Foundation</a></li>
+                            <li><a href="#">Give Now</a></li>
+                            <li><a href="#">Ways to Give</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!--heading color based on program grouping/button color on SBIT homepage-->
+        <div class="page-title raspberry">
+            <a href="../sbit-home.html" class="prev-page raspberry"></a>
+            <h1>Culinary & Hospitality</h1>
+        </div>
+
+        <div class="grid-container">
+
+        <nav class="body-nav">
+            <ul>
+            <li><a href="../sbit-industry-partners.html">Industry Partners</a></li>
+            <li><a href="../sbit-faculty-and-staff.html">Faculty & Staff</a></li>
+            <li><a href="../sbit-student-supports.html">Student Supports</a></li>
+            <li onclick="contactSBIT()"><span>Contact SBIT</span></li>
+            </ul>
+            <span class="body-nav arrow" onclick="openBodyMenu()">&#x203A;</span>
+        </nav>
+
+        <!--clicking "contact SBIT" in the body menu brings up box on same page with contact info-->
+        <div id="sbit-contact">
+            <span onclick="contactSBIT()" class="x-out">✕</span>
+            <h3>School of Business and Industrial&nbsp;Trades</h3>
+            <span>Phone: <a href="tel:+18045235301">(804) 523-5301</a></span>
+            <br />
+            <span>E-mail: <a href="mailto:sbit@reynolds.edu">sbit@reynolds.edu</a></span>
+        </div>
+
+        <div id="sbit-main-image">
+            <img src="../images/culinary-placeholder.jpg" alt="A person ladling puree into empty pumpkins.">
+        </div>
+
+        <section class="content">
+
+            <ul class="breadcrumbs">
+            <li><a href="#">Reynolds</a></li>
+            <li><a href="#">Get Started</a></li>
+            <li><a href="#">Majors By School</a></li>
+            <li><a href="../sbit-home.html">School of Business and Industrial Trades</a></li>
+            <li>Culinary & Hospitality</li>
+            </ul>
+
+            <h2>Culinary & Hospitality</h2>
+
+            <p>Enim dolor dignissim feugiat ipsum eros consequatvel ut eum, vero commodo qui odio esse nulla aliquip nibh laoreet at, autem quis delenit facilisis ad enim at. Quis feugait facilisis illum dignissim delenit, quis veniam duis nulla hendrerit. Facilisis duis et luptatum minim autem luptatum facilisis ut, odio diam accumsan nisl te facilisis. Elit nisl exerci minim blandit aliquam amet, et qui eros diam. Quis qui wisi nostrud vel minim vulputate illum odio eum. Enim feugiat consequat, et esse quis lobortis autem accumsan, aliquip suscipit commodo?</p>
+            <p>Ut quis te iusto? Vulputate enim lobortis, nostrud feugait et enim ullamcorper wisi nulla in molestie exerci molestie odio velit suscipit. Delenit ex consequat suscipit veniam vel. Dignissim, nostrud nulla iusto praesent dolore augue minim, hendrerit enim at facilisis blandit elit ad iusto, praesent dignissim facilisi, delenit te. Illum lobortis praesent luptatum ullamcorper dignissim praesent sciurus lobortis nulla. Exerci feugiat vel in eum in diam. Vulputate aliquip nulla ut duis augue, sit lorem in.</p>
+            
+            <video class="section-video" controls="controls">
+            <source src="../media/culinary-sample-video.mp4" type="video/mp4" />
+            </video>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>In quis autem vel dolor ex augue quis iusto lorem commodo nostrud crisare? Commodo nisl duis, minim facilisi. Ut erat, nulla euismod dignissim minim ea feugait ullamcorper veniam. Consequat ad nisl vero luptatum dolor praesent dolor eros enim. Augue duis, magna duis eum feugiat wisi at ut iusto eum illum wisi in commodo feugait.</p>
+            
+            <img class="story-image" src="../images/culinary-story-1.jpg" alt="A person spooning filling onto a tortilla."/>
+            
+            <p>Minim dolore autem vel ex enim delenit minim, eros odio aliquip blandit lobortis at ut qui minim ut suscipit wisi velit at illum. Dolore augue ad magna lobortis vulputate elit, in vel tation. Feugiat esse crisare eros accumsan blandit dolore consequat in, te in augue veniam. Ut et illum consequatvel ut, in feugait aliquip iriuredolor illum ea quis tation, iriuredolor nisl eum eros te dolore at molestie, amet vero, lobortis ad, autem delenit?</p>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
+            </p>
+            
+            <div id="more-content">
+            <img class="story-image" src="../images/culinary-story-2.jpg" alt="A person spooning something from a pot onto plates with various food items."/>
+            <p>Adipiscing delenit luptatum consequat commodo tation lobortis dignissim qui lobortis esse, molestie duis feugait feugiat esse dolore wisi. Eum enim commodo iriure molestie nonummy ullamcorper iusto. Hendrerit vulputate eum hendrerit, te ullamcorper et feugait dignissim?</p>
+            </div>
+
+            <button id="read-more-button">Read More</button>
+
+            <h2>Majors</h2>
+
+            <!-- START — BOOTSTRAP ACCORDION -->
+            <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+
+                <!-- BOOTSTRAP ACCORDION ITEM 1 -->
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                        Program Name
+                    </button>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <div class="purpose-and-other">
+                                <p>PURPOSE: Purpose text.</p>
+                                <p>OCCUPATIONAL OBJECTIVES: Objectives text.</p>
+                                <p>ADMISSION REQUIREMENTS: Admission text.</p>
+
+                                <h3>Curriculum</h3>
+
+                                <p class="course-order">Courses should be taken in the order listed.</p>
+                            </div>
+
+                            <!-- Custom Accordion Item 1 Within Bootstrap Accordion Item 1 -->
+                            <button type="button" class="accordion__button">
+                                <div class="course-container">
+                                    <span class="course-number">ABC 123</span>
+                                    <span class="course-name">Course Name</span>
+                                    <span class="course-credits">Credit Hours: X</span>
+                                </div>
+                            </button>
+
+                            <div class="accordion__content">
+                                <p>
+                                    Course info blurb.
+                                    <br/>
+                                    <br/>
+                                    Lecture Hours: Lecture X hours per week.
+                                    <br/>
+                                    Semester(s) Offered: Semesters
+                                </p>
+                            </div>
+
+                            <!-- Custom Accordion Item 2 Within Bootstrap Accordion Item 1 -->
+                            <button type="button" class="accordion__button">
+                                <div class="course-container">
+                                    <span class="course-number">ABC 123</span>
+                                    <span class="course-name">Course Name</span>
+                                    <span class="course-credits">Credit Hours: X</span>
+                                </div>
+                            </button>
+
+                            <div class="accordion__content">
+                                <p>
+                                    Course info blurb.
+                                    <br/>
+                                    <br/>
+                                    Lecture Hours: Lecture X hours per week.
+                                    <br/>
+                                    Semester(s) Offered: Semesters
+                                </p>
+                            </div>
+
+                            <!-- Custom Accordion Item 3 Within Bootstrap Accordion Item 1 -->
+                            <button type="button" class="accordion__button">
+                                <div class="course-container">
+                                    <span class="course-number">ABC 123</span>
+                                    <span class="course-name">Course Name</span>
+                                    <span class="course-credits">Credit Hours: X</span>
+                                </div>
+                            </button>
+
+                            <div class="accordion__content">
+                                <p>
+                                    Course info blurb.
+                                    <br/>
+                                    <br/>
+                                    Lecture Hours: Lecture X hours per week.
+                                    <br/>
+                                    Semester(s) Offered: Semesters
+                                </p>
+                            </div>
+
+                            <span class="total-credit-hours">Total: X Credit Hours</span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BOOTSTRAP ACCORDION ITEM 2 -->
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        Program Name
+                    </button>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <div class="purpose-and-other">
+                                <p>PURPOSE: Purpose text.</p>
+                                <p>OCCUPATIONAL OBJECTIVES: Objectives text.</p>
+                                <p>ADMISSION REQUIREMENTS: Admission text.</p>
+
+                                <h3>Curriculum</h3>
+
+                                <p class="course-order">Courses should be taken in the order listed.</p>
+                            </div>
+
+                            <!-- Custom Accordion Item 1 Within Bootstrap Accordion Item 2 -->
+                            <button type="button" class="accordion__button">
+                                <div class="course-container">
+                                    <span class="course-number">ABC 123</span>
+                                    <span class="course-name">Course Name</span>
+                                    <span class="course-credits">Credit Hours: X</span>
+                                </div>
+                            </button>
+
+                            <div class="accordion__content">
+                                <p>
+                                    Course info blurb.
+                                    <br/>
+                                    <br/>
+                                    Lecture Hours: Lecture X hours per week.
+                                    <br/>
+                                    Semester(s) Offered: Semesters
+                                </p>
+                            </div>
+
+                            <!-- Custom Accordion Item 2 Within Bootstrap Accordion Item 2 -->
+                            <button type="button" class="accordion__button">
+                                <div class="course-container">
+                                    <span class="course-number">ABC 123</span>
+                                    <span class="course-name">Course Name</span>
+                                    <span class="course-credits">Credit Hours: X</span>
+                                </div>
+                            </button>
+
+                            <div class="accordion__content">
+                                <p>
+                                    Course info blurb.
+                                    <br/>
+                                    <br/>
+                                    Lecture Hours: Lecture X hours per week.
+                                    <br/>
+                                    Semester(s) Offered: Semesters
+                                </p>
+                            </div>
+
+                            <!-- Custom Accordion Item 3 Within Bootstrap Accordion Item 2 -->
+                            <button type="button" class="accordion__button">
+                                <div class="course-container">
+                                    <span class="course-number">ABC 123</span>
+                                    <span class="course-name">Course Name</span>
+                                    <span class="course-credits">Credit Hours: X</span>
+                                </div>
+                            </button>
+
+                            <div class="accordion__content">
+                                <p>
+                                    Course info blurb.
+                                    <br/>
+                                    <br/>
+                                    Lecture Hours: Lecture X hours per week.
+                                    <br/>
+                                    Semester(s) Offered: Semesters
+                                </p>
+                            </div>
+
+                            <span class="total-credit-hours">Total: X Credit Hours</span>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <a class="roadmap" href="#">View Roadmap</a>
+            
+            <button class="link-button"><a href="../sbit-home.html">Back to SBIT Home</a></button>
+
+        </section>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-address-bar">
+            <div id="footer-reynolds-logo"><img src="../images/reynolds-logo-reverse-50.svg" alt="Reynolds' 50 Year Logo" width="200px" /></div>
+            <div class="footer-locations">
+                <address class="footer-address">
+                    <p class="address-head">Parham Road Campus</p>
+                    1651 East Parham Road
+                    <br>
+                    Richmond, Virginia
+                    <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
+                </address>
+                <address class="footer-address">
+                    <p class="address-head">Downtown Campus</p>
+                    700 East Jackson Street
+                    <br>
+                    Richmond, Virginia
+                    <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
+                </address>
+                <address class="footer-address">
+                    <p class="address-head">Goochland Campus</p>
+                    1851 Dickinson Road
+                    <br>
+                    Goochland, Virginia
+                    <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
+                </address>
+                <address class="footer-address">
+                    <p class="address-head">The Kitchens at Reynolds</p>
+                    2500 Nine Mile Road
+                    <br>
+                    Richmond, Virginia
+                    <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
+                </address>
+            </div>
+        </div>
+
+        <div id="footer-copyright-bar">
+            <div id="footer-social-logo-group">
+                <a href="https://twitter.com/ReynoldsCollege"><img class="reynolds-social-logos" src="../images/reynolds-social-twitter.png" alt="Twitter logo" /></a>
+                <a href="https://www.facebook.com/ReynoldsCommunityCollege/"><img class="reynolds-social-logos" src="../images/reynolds-social-facebook.png" alt="Facebook Logo" /></a>
+                <a href="https://www.youtube.com/jsargeantreynolds"><img class="reynolds-social-logos" src="../images/reynolds-social-youtube.png" alt="YouTube Logo" /></a>
+                <a href="https://www.instagram.com/reynoldscommunitycollege/"><img class="reynolds-social-logos" src="../images/reynolds-social-instagram.png" alt="Instagram logo"/></a>
+                <a href="https://www.linkedin.com/school/j-sargeant-reynolds-community-college/"><img class="reynolds-social-logos" src="../images/reynolds-social-linkedin.png" alt="LinkedIn logo" /></a>
+                <a href="https://www.flickr.com/photos/83397803@N04/sets/"><img class="reynolds-social-logos" src="../images/reynolds-social-flicker.png" alt="Flickr logo" /></a>
+            </div>
+            <p id="footer-copyright-01">©2022 J. Sargeant Reynolds Community College</p>
+            <p id="footer-copyright-02">
+                PO BOX 85622 Richmond, Virginia, USA 23285-5622 | (804) 371-3000 | 
+                <a href="#">VA Relay 711</a>
+                <br/>
+                <a href="#">Privacy Statement</a> | 
+                <a href="#">Website Disclaimer</a> | 
+                <a href="#">Contact Us</a> | 
+                <a href="#">Nondiscrimination</a> | 
+                <a href="#">A-Z Site Map</a> | 
+                <a href="#">Application Development by VA Inc.</a> | 
+                <a href="#">Reynolds Annual Security Report</a> | 
+                <a href="#">eVa</a> | 
+                <a href="#">FOIA</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Link-->    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
