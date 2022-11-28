@@ -10,6 +10,10 @@ function openHamburger() {
       } else {
         hamburger.innerHTML = "✕";
       }
+      let anyOpenDrop = document.querySelectorAll(".nav-toggle");
+			anyOpenDrop.forEach(function(anyOpenDrop) {
+				anyOpenDrop.classList.remove("nav-toggle");
+			});
 }
 
 

@@ -29,11 +29,13 @@
 <body>
   <!--header with top and main navs added by Joelle-->
   <header>
-    <!--logo links back to Reynolds home page-->
-    <a href="/"><img class="logo" src="../images/reynolds-50-logo.png" alt="Home"></a>
-    <!--hamburger appears on mobile/tablet screens and opens mega nav on click-->
-    <span id="hamburger" aria-label="Hamburger Menu" onclick="openHamburger()">&#9776;</span>
-    <!--mega nav contains a top menu and main menu-->
+    <div class="header-cover">
+      <!--logo links back to Reynolds home page-->
+      <a href="/"><img class="logo" src="../images/reynolds-50-logo.png" alt="Home"></a>
+      <!--hamburger appears on mobile/tablet screens and opens mega nav on click-->
+      <span id="hamburger" aria-label="Hamburger Menu" onclick="openHamburger()">&#9776;</span>
+  </div>
+  <!--mega nav contains a top menu and main menu-->
     <div id="nav-container">
         <!--top menu shows at top of screen on desktop and underneath the main menu on mobile/tablet-->
         <nav id="top-nav">
@@ -71,7 +73,7 @@
                 </li>
                 <li class="top-level"><a href="#">COVID</a></li>
                 <li class="top-level"><a href="#">Contact Us</a></li>
-                <li class="top-level search"><a href="#"><img src="images/search-icon-white.svg" alt="Search icon"></a></li>
+                <li class="top-level search"><a href="#"><img src="../images/search-icon-white.svg" alt="Search icon"></a></li>
             </ul>
         </nav>
         <hr id="header-line">
@@ -204,15 +206,14 @@
 
     <div class="grid-container">
 
-      <nav class="body-nav">
+      <nav class="body-nav less">
         <ul>
-          <li><a href="../sbit-industry-partners.html">Industry Partners</a></li>
-          <li><a href="../sbit-faculty-and-staff.html">Faculty & Staff</a></li>
-          <li><a href="../sbit-student-supports.html">Student Supports</a></li>
-          <li onclick="contactSBIT()"><span>Contact SBIT</span></li>
+        <li><a href="sbit-welding/career-outlook.html">Career Outlook</a></li>
+        <li><a href="sbit-welding/faculty-and-staff.html">Faculty & Staff</a></li>
+        <li onclick="contactSBIT()"><span>Contact SBIT</span></li>
         </ul>
         <span class="body-nav arrow" onclick="openBodyMenu()">&#x203A;</span>
-      </nav>
+    </nav>
 
       <!--clicking "contact SBIT" in the body menu brings up box on same page with contact info-->
       <div id="sbit-contact">

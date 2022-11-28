@@ -130,9 +130,9 @@ DESKTOP - LARGE -----------------------------------------------------------
 /*reset defaults*/
 
 * {
+	border: 0;
 	margin: 0;
 	padding: 0;
-	border: 0;
 }
 
 html {
@@ -149,6 +149,9 @@ ul {
 	padding: 0;
 }
 
+sup {
+	font-weight: 700;
+}
 
 /*variables*/
 
@@ -207,20 +210,26 @@ header {
     z-index: 5;
 }
 
+.header-cover {
+	background-color: var(--reynoldsred);
+	position: absolute;
+	width: 100%;
+	margin: 0 !important;
+	padding: 0 !important;
+	top: 0;
+	height: 120px;
+}
+
 .logo {
-	grid-column: 1;
-	grid-row: 1;
-	padding: 15px 20px;
+	padding: 22px 20px;
 	width: 230px;
 }
 
 /*appears on mobile and tablet views + opens nav-container when clicked*/
 #hamburger {
 	cursor: pointer;
+	float: right;
 	font-size: 50px;
-	grid-column: 2;
-	grid-row: 1;
-	justify-self: end;
 	margin-right: 20px;
 	padding: 20px;
 }
@@ -231,13 +240,15 @@ header {
 	flex-direction: column-reverse;
 	grid-column: 1 / span 2;
 	grid-row: 2;
-	max-height: 0px;
 	overflow: hidden;
+	transition: .5s;
+	margin-top: -170%;
+	z-index: -1;
 }
 
 /*container expands to display navs on hamburger click*/
 .nav-container-toggle {
-	max-height: fit-content !important;
+	margin-top: 0 !important;
 }
 
 /*line displays between navs on desktop screens*/
@@ -458,6 +469,11 @@ header {
 	transition: .2s;
 }
 
+/*for body navs with 3 links instead of 4*/
+.less .arrow {
+	top: 22%;
+}
+
 
 /*SBIT contact*/
 
@@ -588,15 +604,42 @@ header {
 	margin: 15px 15px 0 15px;
 }
 
+.content h2 {
+	font-size: 18pt;
+	font-weight: 700;
+	margin: 35px 0px 15px 0px;
+}
+
+.content h3 {
+	font-size: 15pt;
+	font-weight: 700;
+	margin: 25px 0px 15px 0px;
+}
+
 .content p {
     line-height: 28px;
 	text-align: left;
 }
 
-.content h2 {
-	font-size: 18pt;
-	font-weight: 700;
-	margin: 35px 0px 15px 0px;
+.content p a {
+	color: var(--darkred);
+	text-decoration: underline #00000000;
+	text-underline-offset: 2.5px;
+}
+
+.content p a:hover {
+	text-decoration: underline var(--darkred);
+	transition: .2s;
+}
+
+.content .gray-bg {
+	background-color: var(--gray3);
+	padding: 20px;
+}
+
+.content .gray-bg .stats {
+	display: inline-block;
+	margin-bottom: 10px;
 }
 
 
@@ -853,6 +896,14 @@ header {
 	border: none;
 }
 
+.accordion-body hr {
+	margin-top: 0px;
+}
+
+.accordion-body ul {
+	padding-left: 30px;
+}
+
 .purpose-and-other {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -953,7 +1004,7 @@ header {
 .total-credit-hours {
 	display: block;
     font-weight: 700;
-    padding: 10px 20px;
+    padding: 10px 20px 20px 20px;
 }
 
 .kerning-01 {
@@ -975,6 +1026,12 @@ header {
     margin-bottom: 15px;
 }
 
+.option {
+	display: block;
+	font-weight: 700;
+	padding: 10px 20px;
+}
+
 
 /*roadmap*/
 
@@ -986,7 +1043,7 @@ header {
     font-size: 16px;
     text-decoration: none;
 	transition: .2s;
-    margin: 20px 0px 40px 0px;
+    margin: 20px 0px;
 	width: fit-content;
 }
 
@@ -1424,13 +1481,18 @@ footer {
 
 
 
-@media (min-width: 1025px) {
+@media (min-width: 1085px) {
     
 	/*!HEADER*/
 
 	/*adjust grid sizing*/
 	header {
 		grid-template-columns: 200px 1fr;
+	}
+
+	.header-cover {
+		background-color: transparent;
+		pointer-events: none;
 	}
 
 	/*resize logo*/
@@ -1444,12 +1506,13 @@ footer {
 		display: none;
 	}
 
-	/*reposition container and replace flexbox with grid*/
+	/*reposition container*/
 	#nav-container {
 		display: grid;
 		grid-column: 2;
 		grid-row: 1;
 		height: 100%;
+		margin-top: 0;
 		max-height: fit-content;
 	}
 
@@ -1478,6 +1541,7 @@ footer {
 
 	/*add vertical lines between nav items*/
 	#top-nav li.top-level:not(:last-child):after {
+		color: white;
 		content: "|";
 		padding-left: 8px;
 		padding-right: 8px;
@@ -1489,6 +1553,12 @@ footer {
 		cursor: pointer;
 		font-size: 1.2vw;
 		text-decoration: none;
+		transition: .2s;
+	}
+
+	#top-nav a:hover,
+	#top-nav li:hover {
+		color: #ffffffc1;
 	}
 
 	/*remove 'search' next to search icon*/
@@ -1561,12 +1631,31 @@ footer {
 		color: white;
 		display: inline;
 		font-size: 1.4vw;
-		padding: 15px 5px;
+		padding: 5px 0 15px 4px;
+	}
+
+	/*add white space on last list item (other list items have default white space)*/
+	#main-nav li:last-of-type {
+		padding-right: 4px;
 	}
 
 	#main-nav a {
 		color: white;
+		padding: 0 5px;
+	}
+
+	#main-nav a:active {
 		pointer-events: none; /*prevent snapping to top if main link is clicked on desktop*/
+	}
+
+	#main-nav li:hover {
+		background-color: white;
+		border: 0;
+		border-radius: 10px 10px 0 0;
+	}
+
+	#main-nav li:hover span a {
+		color: black;
 	}
 
 	#main-nav .dropdown a {

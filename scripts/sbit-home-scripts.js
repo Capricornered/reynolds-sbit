@@ -19,18 +19,18 @@ document.getElementsByClassName("sbit-program")[i].style.backgroundImage = "url(
 
 //apply different border/background color styling for grouped program buttons
 for (let i = 0; i < 3; i++) {
-    document.getElementsByClassName("sbit-program")[i].style.border = "3px solid var(--emerald)";
+    document.getElementsByClassName("sbit-program")[i].style.border = "4px solid var(--emerald)";
     document.getElementsByClassName("program-title")[i].style.backgroundColor = "var(--emerald)";
 }
 for (let i = 3; i < 4; i++) {
-    document.getElementsByClassName("sbit-program")[i].style.border = "3px solid var(--raspberry)";
+    document.getElementsByClassName("sbit-program")[i].style.border = "4px solid var(--raspberry)";
     document.getElementsByClassName("program-title")[i].style.backgroundColor = "var(--raspberry)";
 }
 for (let i = 4; i < 6; i++) {
-    document.getElementsByClassName("sbit-program")[i].style.border = "3px solid var(--ocean)";
+    document.getElementsByClassName("sbit-program")[i].style.border = "4px solid var(--ocean)";
     document.getElementsByClassName("program-title")[i].style.backgroundColor = "var(--ocean)";
 }
 for (let i = 6; i < 9; i++) {
-    document.getElementsByClassName("sbit-program")[i].style.border = "3px solid var(--gray11)";
+    document.getElementsByClassName("sbit-program")[i].style.border = "4px solid var(--gray11)";
     document.getElementsByClassName("program-title")[i].style.backgroundColor = "var(--gray11)";
 }
