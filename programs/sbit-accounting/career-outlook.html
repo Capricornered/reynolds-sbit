@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!--custom CSS-->
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    
     <!--Adobe fonts - Roboto-->
     <link rel="stylesheet" href="https://use.typekit.net/frz4ami.css">
-    <!-- Google Fonts — Source Sans Pro -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
 
-    <!--custom JavaScript-->
-    <script src="scripts/scripts.js" defer></script>
+    <!-- Bootstrap CSS Link-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
+    
+    <!--Custom CSS Link-->
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+    
+    <!-- Custom JS Links-->   
+    <script src="../../scripts/scripts.js" defer></script>
+    <script src="../../scripts/program-scripts.js" defer></script>
 
-    <title>School of Business and Industrial Trades</title>
+    <title>School of Business and Industrial Trades | Accounting</title>
 </head>
+
 <body>
     <header>
         <div class="header-cover">
             <!--logo links back to Reynolds home page-->
-            <a href="/"><img class="logo" src="images/reynolds-50-logo.png" alt="Home"></a>
+            <a href="/"><img class="logo" src="../../images/reynolds-50-logo.png" alt="Home"></a>
             <!--hamburger appears on mobile/tablet screens and opens mega nav on click-->
             <span id="hamburger" aria-label="Hamburger Menu" onclick="openHamburger()">&#9776;</span>
         </div>
@@ -67,7 +67,7 @@
                     </li>
                     <li class="top-level"><a href="#">COVID</a></li>
                     <li class="top-level"><a href="#">Contact Us</a></li>
-                    <li class="top-level search"><a href="#"><img src="images/search-icon-white.svg" alt="Search icon"></a></li>
+                    <li class="top-level search"><a href="#"><img src="../../images/search-icon-white.svg" alt="Search icon"></a></li>
                 </ul>
             </nav>
             <hr id="header-line">
@@ -191,97 +191,170 @@
             </nav>
         </div>
     </header>
+
     <main>
-        <div class="page-title">
-            <a href="#" class="prev-page"></a>
-            <h1>School of Business and Industrial Trades</h1>
+        <!--heading color based on program grouping/button color on SBIT homepage-->
+        <div class="page-title emerald">
+            <a href="../sbit-accounting.html" class="prev-page emerald"></a>
+            <h1>Accounting</h1>
         </div>
+
         <div class="grid-container">
-            <!--body nav contains SBIT-specific links-->
-            <nav class="body-nav">
-                <ul>
-                    <li><a href="sbit-home.html">SBIT Home</a></li>
-                    <li><a href="sbit-faculty-and-staff.html">Faculty & Staff</a></li>
-                    <li><a href="sbit-student-supports.html">Student Supports</a></li>
-                    <li onclick="contactSBIT()"><span>Contact SBIT</span></li>
-                </ul>
-                <span class="body-nav arrow" onclick="openBodyMenu()">&#x203A;</span>
-            </nav>
-            <!--clicking "contact SBIT" in the body menu brings up box on same page with contact info-->
-            <div id="sbit-contact">
-                <span onclick="contactSBIT()" class="x-out">✕</span>
-                <h3>School of Business and Industrial&nbsp;Trades</h3>
-                <span>Phone: <a href="tel:+18045235301">(804) 523-5301</a></span>
-                <br />
-                <span>E-mail: <a href="mailto:sbit@reynolds.edu">sbit@reynolds.edu</a></span>
+
+        <nav class="body-nav less">
+            <ul>
+            <li><a href="../sbit-accounting.html">Accounting Home</a></li>
+            <li><a href="faculty-and-staff.html">Faculty & Staff</a></li>
+            <li onclick="contactSBIT()"><span>Contact SBIT</span></li>
+            </ul>
+            <span class="body-nav arrow" onclick="openBodyMenu()">&#x203A;</span>
+        </nav>
+
+        <!--clicking "contact SBIT" in the body menu brings up box on same page with contact info-->
+        <div id="sbit-contact">
+            <span onclick="contactSBIT()" class="x-out">✕</span>
+            <h3>School of Business and Industrial&nbsp;Trades</h3>
+            <span>Phone: <a href="tel:+18045235301">(804) 523-5301</a></span>
+            <br />
+            <span>E-mail: <a href="mailto:sbit@reynolds.edu">sbit@reynolds.edu</a></span>
+        </div>
+
+        <div id="sbit-main-image">
+            <img src="../../images/accounting-placeholder.jpg" alt="Two people sitting at a table with a calculator, filling out a form.">
+        </div>
+
+        <section class="content">
+
+            <ul class="breadcrumbs">
+            <li><a href="#">Reynolds</a></li>
+            <li><a href="#">Get Started</a></li>
+            <li><a href="#">Majors By School</a></li>
+            <li><a href="../../sbit-home.html">School of Business and Industrial Trades</a></li>
+            <li><a href="../sbit-accounting.html">Accounting</a></li>
+            <li>Career Outlook</li>
+            </ul>
+
+            <h2>Career Outlook</h2>
+            
+            <h3>Accountants and Auditors*</h3>
+            <div class="gray-bg">
+                <p><strong>Common Job Titles<sup>1</sup>:</strong> Accountant; Accounting Manager; Accounting Officer; Accounting Supervisor; Assurance Manager; Assurance Senior; Audit Manager; Audit Partner; Auditor; Auditor-in-Charge; Business Analyst; Certified Public Accountant (CPA); Cost Accountant; Financial Auditor; General Accountant; Internal Audit Director; Internal Auditor; Project Accountant; Revenue Tax Specialist; Staff Accountant</p>
+                <hr/>
+                <span class="stats"><strong>Labor Market Statistics (Richmond, MSA)</strong></span>
+                <br/>
+                <span><strong>Projected Employment (2029):</strong> 7,695</span>
+                <br/>
+                <span><strong>Current Wage Range (Entry - Experienced):</strong> $50,500 - $94,400</span>
             </div>
-            <!--carousel implements Bootstrap and can have multiple added slides (currently uses two placeholders)-->
-            <div id="sbit-main-image">
-                <img src="images/banner-placeholder-3.jpg" alt="Two people in business suits shaking hands.">
+
+            <h3>Bookkeeping, Accounting, and Auditing Clerks*</h3>
+            <div class="gray-bg">
+                <p><strong>Common Job Titles<sup>1</sup>:</strong> Account Clerk; Accounting Assistant; Accounting Associate; Accounting Clerk; Accounting Specialist; Accounting Technician; Accounts Payable Clerk; Accounts Payable Specialist; Accounts Payables Clerk; Accounts Receivable Clerk</p>
+                <hr/>
+                <span class="stats"><strong>Labor Market Statistics (Richmond, MSA)</strong></span>
+                <br/>
+                <span><strong>Projected Employment (2029):</strong> 7,691</span>
+                <br/>
+                <span><strong>Current Wage Range (Entry - Experienced):</strong> $29,200 - $48,700</span>
             </div>
-            <div class="content">
-                <ul class="breadcrumbs">
-                    <li><a href="#">Reynolds</a></li>
-                    <li><a href="#">Get Started</a></li>
-                    <li><a href="#">Majors by School</a></li>
-                    <li><a href="sbit-home.html">School of Business and Industrial Trades</a></li>
-                    <li>Industry Partners</li>
-                </ul>
-                <h2>Industry Partners</h2>
-                <p>Industry partners information will go here. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, temporibus beatae dignissimos quibusdam tempore placeat voluptatibus eius nobis, voluptas, impedit perferendis explicabo id quasi? Quaerat sapiente fugiat quasi deserunt. Perferendis!</p>
+
+            <h3>Payroll and Timekeeping Clerks</h3>
+            <div class="gray-bg">
+                <p><strong>Common Job Titles<sup>1</sup>:</strong> Accounting Technician; Human Resources Assistant (HR Assistant); Payroll Administrator; Payroll Assistant; Payroll Clerk; Payroll Coordinator; Payroll Manager; Payroll Representative; Payroll Specialist; Payroll Technician</p>
+                <hr/>
+                <span class="stats"><strong>Labor Market Statistics (Richmond, MSA)</strong></span>
+                <br/>
+                <span><strong>Projected Employment (2029):</strong> 627</span>
+                <br/>
+                <span><strong>Current Wage Range (Entry - Experienced):</strong> $33,200 - $51,400</span>
             </div>
+
+            <h3>Tax Preparers</h3>
+            <div class="gray-bg">
+                <p><strong>Common Job Titles<sup>1</sup>:</strong> Certified Income Tax Preparer (CTP); Corporate Tax Preparer; Enrolled Agent; Income Tax Preparer; Master Tax Advisor; Tax Advisor; Tax Associate; Tax Consultant; Tax Preparer; Tax Specialist</p>
+                <hr/>
+                <span class="stats"><strong>Labor Market Statistics (Richmond, MSA)</strong></span>
+                <br/>
+                <span><strong>Projected Employment (2029):</strong> 389</span>
+                <br/>
+                <span><strong>Current Wage Range (Entry - Experienced):</strong> $17,900 - $37,200</span>
+            </div>
+
+            <br/>
+
+            <p><strong>*</strong> Bright Outlook occupations are expected to have rapid growth over the next 10-years (employment increase of 10% or more in the Richmond, MSA over the period of 2019-2029) or are expected to have a high demand (projected to have 750 or more job openings in the Richmond, MSA over the period of 2019-2029).</p>
+            <p><sup><strong>1</strong></sup> This program may prepare you for one or more of the listed jobs; however, graduates may not be qualified for all of the jobs listed in this section.</p>
+            <br/>
+
+            
+
+        </section>
         </div>
     </main>
+
     <footer>
         <div id="footer-address-bar">
-            <div id="footer-reynolds-logo"><img src="images/reynolds-logo-reverse-50.svg" alt="Reynolds' 50 Year Logo" width="200px" /></div>
+            <div id="footer-reynolds-logo"><img src="../../images/reynolds-logo-reverse-50.svg" alt="Reynolds' 50 Year Logo" width="200px" /></div>
             <div class="footer-locations">
-              <address class="footer-address">
-                <p class="address-head">Parham Road Campus</p>
-                1651 East Parham Road
-                <br>
-                Richmond, Virginia
-                <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
-              </address>
-              <address class="footer-address">
-                <p class="address-head">Downtown Campus</p>
-                700 East Jackson Street
-                <br>
-                Richmond, Virginia
-                <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
-              </address>
-              <address class="footer-address">
-                <p class="address-head">Goochland Campus</p>
-                1851 Dickinson Road
-                <br>
-                Goochland, Virginia
-                <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
-              </address>
-              <address class="footer-address">
-                <p class="address-head">The Kitchens at Reynolds</p>
-                2500 Nine Mile Road
-                <br>
-                Richmond, Virginia
-                <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
-              </address>
+                <address class="footer-address">
+                    <p class="address-head">Parham Road Campus</p>
+                    1651 East Parham Road
+                    <br>
+                    Richmond, Virginia
+                    <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
+                </address>
+                <address class="footer-address">
+                    <p class="address-head">Downtown Campus</p>
+                    700 East Jackson Street
+                    <br>
+                    Richmond, Virginia
+                    <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
+                </address>
+                <address class="footer-address">
+                    <p class="address-head">Goochland Campus</p>
+                    1851 Dickinson Road
+                    <br>
+                    Goochland, Virginia
+                    <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
+                </address>
+                <address class="footer-address">
+                    <p class="address-head">The Kitchens at Reynolds</p>
+                    2500 Nine Mile Road
+                    <br>
+                    Richmond, Virginia
+                    <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
+                </address>
             </div>
-          </div>
-          <div id="footer-copyright-bar">
+        </div>
+
+        <div id="footer-copyright-bar">
             <div id="footer-social-logo-group">
-                <a href="https://twitter.com/ReynoldsCollege"><img class="reynolds-social-logos" src="images/reynolds-social-twitter.png" alt="Twitter logo" /></a>
-                <a href="https://www.facebook.com/ReynoldsCommunityCollege/"><img class="reynolds-social-logos" src="images/reynolds-social-facebook.png" alt="Facebook Logo" /></a>
-                <a href="https://www.youtube.com/jsargeantreynolds"><img class="reynolds-social-logos" src="images/reynolds-social-youtube.png" alt="YouTube Logo" /></a>
-                <a href="https://www.instagram.com/reynoldscommunitycollege/"><img class="reynolds-social-logos" src="images/reynolds-social-instagram.png" alt="Instagram logo"/></a>
-                <a href="https://www.linkedin.com/school/j-sargeant-reynolds-community-college/"><img class="reynolds-social-logos" src="images/reynolds-social-linkedin.png" alt="LinkedIn logo" /></a>
-                <a href="https://www.flickr.com/photos/83397803@N04/sets/"><img class="reynolds-social-logos" src="images/reynolds-social-flicker.png" alt="Flickr logo" /></a>
+                <a href="https://twitter.com/ReynoldsCollege"><img class="reynolds-social-logos" src="../../images/reynolds-social-twitter.png" alt="Twitter logo" /></a>
+                <a href="https://www.facebook.com/ReynoldsCommunityCollege/"><img class="reynolds-social-logos" src="../../images/reynolds-social-facebook.png" alt="Facebook Logo" /></a>
+                <a href="https://www.youtube.com/jsargeantreynolds"><img class="reynolds-social-logos" src="../../images/reynolds-social-youtube.png" alt="YouTube Logo" /></a>
+                <a href="https://www.instagram.com/reynoldscommunitycollege/"><img class="reynolds-social-logos" src="../../images/reynolds-social-instagram.png" alt="Instagram logo"/></a>
+                <a href="https://www.linkedin.com/school/j-sargeant-reynolds-community-college/"><img class="reynolds-social-logos" src="../../images/reynolds-social-linkedin.png" alt="LinkedIn logo" /></a>
+                <a href="https://www.flickr.com/photos/83397803@N04/sets/"><img class="reynolds-social-logos" src="../../images/reynolds-social-flicker.png" alt="Flickr logo" /></a>
             </div>
             <p id="footer-copyright-01">©2022 J. Sargeant Reynolds Community College</p>
-            <p id="footer-copyright-02">PO BOX 85622 Richmond, Virginia, USA 23285-5622 | (804) 371-3000 | VA Relay 711
-              <br/>
-            Privacy Statement | Website Disclaimer | Contact Us | Nondiscrimination | A-Z Site Map | Application Development by VA Inc. | Reynolds Annual Security Report | eVa | FOIA</p>
-          </div>
+            <p id="footer-copyright-02">
+                PO BOX 85622 Richmond, Virginia, USA 23285-5622 | (804) 371-3000 | 
+                <a href="#">VA Relay 711</a>
+                <br/>
+                <a href="#">Privacy Statement</a> | 
+                <a href="#">Website Disclaimer</a> | 
+                <a href="#">Contact Us</a> | 
+                <a href="#">Nondiscrimination</a> | 
+                <a href="#">A-Z Site Map</a> | 
+                <a href="#">Application Development by VA Inc.</a> | 
+                <a href="#">Reynolds Annual Security Report</a> | 
+                <a href="#">eVa</a> | 
+                <a href="#">FOIA</a>
+            </p>
+        </div>
     </footer>
-    <!--links to Bootstrap JavaScript-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS Link-->    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

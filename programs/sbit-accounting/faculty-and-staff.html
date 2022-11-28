@@ -8,16 +8,16 @@
     <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!--custom CSS-->
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="../../css/styles.css" rel="stylesheet" type="text/css">
     <!--Adobe fonts - Roboto-->
     <link rel="stylesheet" href="https://use.typekit.net/frz4ami.css">
     <!-- Google Fonts — Source Sans Pro -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
-
+    
     <!--custom JavaScript-->
-    <script src="scripts/scripts.js" defer></script>
+    <script src="../../scripts/scripts.js" defer></script>
 
     <title>School of Business and Industrial Trades</title>
 </head>
@@ -25,7 +25,7 @@
     <header>
         <div class="header-cover">
             <!--logo links back to Reynolds home page-->
-            <a href="/"><img class="logo" src="images/reynolds-50-logo.png" alt="Home"></a>
+            <a href="/"><img class="logo" src="../../images/reynolds-50-logo.png" alt="Home"></a>
             <!--hamburger appears on mobile/tablet screens and opens mega nav on click-->
             <span id="hamburger" aria-label="Hamburger Menu" onclick="openHamburger()">&#9776;</span>
         </div>
@@ -67,7 +67,7 @@
                     </li>
                     <li class="top-level"><a href="#">COVID</a></li>
                     <li class="top-level"><a href="#">Contact Us</a></li>
-                    <li class="top-level search"><a href="#"><img src="images/search-icon-white.svg" alt="Search icon"></a></li>
+                    <li class="top-level search"><a href="#"><img src="../../images/search-icon-white.svg" alt="Search icon"></a></li>
                 </ul>
             </nav>
             <hr id="header-line">
@@ -192,17 +192,16 @@
         </div>
     </header>
     <main>
-        <div class="page-title">
-            <a href="#" class="prev-page"></a>
-            <h1>School of Business and Industrial Trades</h1>
+        <div class="page-title emerald">
+            <a href="../sbit-accounting.html" class="prev-page emerald"></a>
+            <h1>Accounting</h1>
         </div>
         <div class="grid-container">
             <!--body nav contains SBIT-specific links-->
-            <nav class="body-nav">
+            <nav class="body-nav less">
                 <ul>
-                    <li><a href="sbit-home.html">SBIT Home</a></li>
-                    <li><a href="sbit-faculty-and-staff.html">Faculty & Staff</a></li>
-                    <li><a href="sbit-student-supports.html">Student Supports</a></li>
+                    <li><a href="../sbit-accounting.html">Accounting Home</a></li>
+                    <li><a href="career-outlook.html">Career Outlook</a></li>
                     <li onclick="contactSBIT()"><span>Contact SBIT</span></li>
                 </ul>
                 <span class="body-nav arrow" onclick="openBodyMenu()">&#x203A;</span>
@@ -217,24 +216,121 @@
             </div>
             <!--carousel implements Bootstrap and can have multiple added slides (currently uses two placeholders)-->
             <div id="sbit-main-image">
-                <img src="images/banner-placeholder-3.jpg" alt="Two people in business suits shaking hands.">
+                <img src="../../images/accounting-placeholder.jpg" alt="A professor showing two students a paper, standing at a podium.">
             </div>
             <div class="content">
+
                 <ul class="breadcrumbs">
                     <li><a href="#">Reynolds</a></li>
                     <li><a href="#">Get Started</a></li>
-                    <li><a href="#">Majors by School</a></li>
-                    <li><a href="sbit-home.html">School of Business and Industrial Trades</a></li>
-                    <li>Industry Partners</li>
+                    <li><a href="#">Majors By School</a></li>
+                    <li><a href="../../sbit-home.html">School of Business and Industrial Trades</a></li>
+                    <li><a href="../sbit-accounting.html">Accounting</a></li>
+                    <li>Faculty & Staff</li>
                 </ul>
-                <h2>Industry Partners</h2>
-                <p>Industry partners information will go here. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, temporibus beatae dignissimos quibusdam tempore placeat voluptatibus eius nobis, voluptas, impedit perferendis explicabo id quasi? Quaerat sapiente fugiat quasi deserunt. Perferendis!</p>
+
+                <h2>Faculty and Staff</h2>
+                 
+                <img class="faculty-image" src="../../images/faculty-placeholder.svg" alt="Faculty placeholder"/>
+                    
+                <h3 class="faculty-name">Glenna Bryant</h3>
+                
+                <p class="faculty-title-contact">
+                    <em><strong>Associate Professor, Program Head</strong></em>
+                    <br/>
+                    <a href="mailto:gbryant@reynolds.edu">gbryant@reynolds.edu</a>
+                </p>
+                <p class="faculty-blurb">Glenna Bryant holds a M.S. in Finance from VCU and a M.S. in Accounting from Liberty University. Professor Bryant specializes in Intermediate Accounting, Computerized and Principles. Prior to teaching, Ms. Bryant worked in the Finance & Accounting industry for 25 years and joined Reynolds in 2001.</p>
+            
+                <img class="faculty-image" src="../../images/faculty-placeholder.svg" alt="Faculty placeholder"/>
+                
+                <h3 class="faculty-name">Sheila Betz, CPA</h3>
+                
+                <p class="faculty-title-contact">
+                    <em><strong>Associate Professor, Program Head</strong></em>
+                    <br/>
+                    <a href="mailto:sbetz@reynolds.edu">sbetz@reynolds.edu</a>
+                </p>
+                <p class="faculty-blurb">Sheila Betz holds a M.S. in Accounting from Indiana University and is a Certified Public Accountant (CPA). Professor Betz has been at Reynolds since January 2013 and specializes in Cost/Managerial Accounting and Principles courses. Prior to teaching, Professor Betz worked at Texas Instruments as a Financial Analyst and Robert Half International as a Recruiting Manager for the Accounting Industry. Professor Betz is passionate about helping students learn and appreciate the role accounting plays in businesses, the government and society.</p>
+                
+                <img class="faculty-image" src="../../images/faculty-placeholder.svg" alt="Faculty placeholder"/>
+                
+                <h3 class="faculty-name">Steve Boslet, CFE</h3>
+                
+                <p class="faculty-title-contact">
+                    <a href="mailto:sboslet@reynolds.edu">sboslet@reynolds.edu</a>
+                </p>
+                <p class="faculty-blurb">Steven Boslet holds an MBA in Accounting from Saint Leo University and is a Certified Fraud Examiner (CFE). Professor Boslet brings incredible experience to his classes as the Chief, Internal Audit with the Army Corps of Engineers, FBI and an Audit Manager for the Naval Audit Service. He specializes in Audit and Fraud Examination courses.</p>
+                
+                <img class="faculty-image" src="../../images/faculty-placeholder.svg" alt="Faculty placeholder"/>
+                
+                <h3 class="faculty-name">Raymond Christopher , CPA</h3>
+                
+                <p class="faculty-title-contact">
+                    <a href="mailto:Rchristopher@reynolds.edu">Rchristopher@reynolds.edu</a>
+                </p>
+                <p class="faculty-blurb">Ray Christopher holds a M.S. in Accounting from VCU and has held high-level accounting positions in various industries including public accounting, publishing , energy and manufacturing. From 2008 until retirement, Professor Christopher was CFO for Cherry, Bekaert & Holland. Professor Christopher teaches Principles I & II and Intermediate Accounting. He is known to bring his outside work experience into the classroom and specializes in advance accounting topics.</p>
+
+                <img class="faculty-image" src="../../images/faculty-placeholder.svg" alt="Faculty placeholder"/>
+                
+                <h3 class="faculty-name">Alan Foster</h3>
+                
+                <p class="faculty-title-contact">
+                    <a href="mailto:afoster@reynolds.edu">afoster@reynolds.edu</a>
+                </p>
+                <p class="faculty-blurb">Alan Foster holds an MBA in Accounting and has been an adjunct at Reynolds for 40 years. Professor Foster worked for Sun Trust Bank and served as Vice President in the Information Technology group. Professor Foster has experiences in Foreign and Domestic Collections, Coordinator for Mergers, Cost & Personnel Analysis, Application development management and operations. Professor Foster primarily teaches Accounting Principles I and II.</p>
+
+                <img class="faculty-image" src="../../images/faculty-placeholder.svg" alt="Faculty placeholder"/>
+                
+                <h3 class="faculty-name">Anissa Foster</h3>
+                
+                <p class="faculty-title-contact">
+                    <a href="mailto:APFoster@reynolds.edu">APFoster@reynolds.edu</a>
+                </p>
+                <p class="faculty-blurb">Anissa Foster holds an MBA and is the Assistant Comptroller for Virginia Union University. Prior to working at VUU, Anissa worked at Goodwill Industries of Central Virginia as a Senior Accountant. Professor Foster brings a level of passion to the classroom that is appreciated by the students. Professor Foster primarily teaches Accounting Principles I and II.</p>
+
+                <img class="faculty-image" src="../../images/faculty-placeholder.svg" alt="Faculty placeholder"/>
+                
+                <h3 class="faculty-name">Andrew Foster, CPA</h3>
+                
+                <p class="faculty-title-contact">
+                    <a href="mailto:AGFoster@reynolds.edu">AGFoster@reynolds.edu</a>
+                </p>
+                <p class="faculty-blurb">Andrew Foster holds an MBA in Finance from Wake Forest University and completed his undergraduate at Virginia Tech with degrees in Accounting and Finance. Andrew began his career in public accounting and was an Audit Manager at Goodman & Company (merged to form Dixon Hughes Goodman) before attending Wake Forest. Professor Foster has been at Altria since 2006 and has a variety of roles providing financial support to Altria's Sales and Brand organizations. Andrew has been an instructor at Reynolds Community College since 2008 specializing in Principles of Accounting and Financial Statement Analysis. Professor Foster's work experience brings an extra level of depth to the classroom that helps students bridge the gap between accounting theory and real world application.</p>
+
+                <img class="faculty-image" src="../../images/faculty-placeholder.svg" alt="Faculty placeholder"/>
+                
+                <h3 class="faculty-name">Michael Kapral, CPA</h3>
+                
+                <p class="faculty-title-contact">
+                    <a href="mailto:MKapral@reynolds.edu">MKapral@reynolds.edu</a>
+                </p>
+                <p class="faculty-blurb">Michael Kapral holds a M.S. from Georgetown University and is a Certified Business Continuity Professional and a Certified Public Accountant. He has work experience with Ernst & Young, Federal Reserve of Richmond and state agencies. Professor Kapral specializes in teaching Principles of Accounting I and II and Essentials of Accounting. When not teaching, Professor Kapral is on the Advisory Board for the Richmond United Way Chapter, the Treasurer of St. Mark's Church and assisted in New Orleans's rebuilding efforts for five years. Professor Kapral is known for his smiling and friendly personality. </p>
+
+                <img class="faculty-image" src="../../images/faculty-placeholder.svg" alt="Faculty placeholder"/>
+                
+                <h3 class="faculty-name">Rich Matthews, CPA</h3>
+                
+                <p class="faculty-title-contact">
+                    <a href="mailto:WMatthews@reynolds.edu">WMatthews@reynolds.edu</a>
+                </p>
+                <p class="faculty-blurb">Rich Matthews holds a M.S. In Taxation from VCU and is a Certified Public Accountant (CPA). Professor Matthews is a Managing Member of W. Richard Matthews. Professor Matthews teaches Small Business Taxes (ACC 134).</p>
+               
+                <img class="faculty-image" src="../../images/faculty-placeholder.svg" alt="Faculty placeholder"/>
+                
+                <h3 class="faculty-name">Dale Smith, CPA</h3>
+                
+                <p class="faculty-title-contact">
+                    <a href="mailto:DSmith@reynolds.edu">DSmith@reynolds.edu</a>
+                </p>
+                <p class="faculty-blurb">Dale Smith is a graduate of James Madison University and is a Certified Public Accountant. He has had an active career in accounting beginning with Ernst & Young and becoming Senior Manager at Cherry Bakaert, LLP. For 15 years, Professor Smith climbed the ladder at Capital One and was Vice President/Controller of the Finance Shared Services where he oversaw 135 associates. When not teaching, Professor Smith is a Board Member for ASK Childhood Cancer Foundation and has sat on the Finance Committee for Habitat for Humanity. Professor Smith teaches Essentials of Accounting and Federal Income Tax.</p>
+            
             </div>
         </div>
     </main>
     <footer>
         <div id="footer-address-bar">
-            <div id="footer-reynolds-logo"><img src="images/reynolds-logo-reverse-50.svg" alt="Reynolds' 50 Year Logo" width="200px" /></div>
+            <div id="footer-reynolds-logo"><img src="../../images/reynolds-logo-reverse-50.svg" alt="Reynolds' 50 Year Logo" width="200px" /></div>
             <div class="footer-locations">
               <address class="footer-address">
                 <p class="address-head">Parham Road Campus</p>
@@ -268,12 +364,12 @@
           </div>
           <div id="footer-copyright-bar">
             <div id="footer-social-logo-group">
-                <a href="https://twitter.com/ReynoldsCollege"><img class="reynolds-social-logos" src="images/reynolds-social-twitter.png" alt="Twitter logo" /></a>
-                <a href="https://www.facebook.com/ReynoldsCommunityCollege/"><img class="reynolds-social-logos" src="images/reynolds-social-facebook.png" alt="Facebook Logo" /></a>
-                <a href="https://www.youtube.com/jsargeantreynolds"><img class="reynolds-social-logos" src="images/reynolds-social-youtube.png" alt="YouTube Logo" /></a>
-                <a href="https://www.instagram.com/reynoldscommunitycollege/"><img class="reynolds-social-logos" src="images/reynolds-social-instagram.png" alt="Instagram logo"/></a>
-                <a href="https://www.linkedin.com/school/j-sargeant-reynolds-community-college/"><img class="reynolds-social-logos" src="images/reynolds-social-linkedin.png" alt="LinkedIn logo" /></a>
-                <a href="https://www.flickr.com/photos/83397803@N04/sets/"><img class="reynolds-social-logos" src="images/reynolds-social-flicker.png" alt="Flickr logo" /></a>
+                <a href="https://twitter.com/ReynoldsCollege"><img class="reynolds-social-logos" src="../../images/reynolds-social-twitter.png" alt="Twitter logo" /></a>
+                <a href="https://www.facebook.com/ReynoldsCommunityCollege/"><img class="reynolds-social-logos" src="../../images/reynolds-social-facebook.png" alt="Facebook Logo" /></a>
+                <a href="https://www.youtube.com/jsargeantreynolds"><img class="reynolds-social-logos" src="../../images/reynolds-social-youtube.png" alt="YouTube Logo" /></a>
+                <a href="https://www.instagram.com/reynoldscommunitycollege/"><img class="reynolds-social-logos" src="../../images/reynolds-social-instagram.png" alt="Instagram logo"/></a>
+                <a href="https://www.linkedin.com/school/j-sargeant-reynolds-community-college/"><img class="reynolds-social-logos" src="../../images/reynolds-social-linkedin.png" alt="LinkedIn logo" /></a>
+                <a href="https://www.flickr.com/photos/83397803@N04/sets/"><img class="reynolds-social-logos" src="../../images/reynolds-social-flicker.png" alt="Flickr logo" /></a>
             </div>
             <p id="footer-copyright-01">©2022 J. Sargeant Reynolds Community College</p>
             <p id="footer-copyright-02">PO BOX 85622 Richmond, Virginia, USA 23285-5622 | (804) 371-3000 | VA Relay 711
