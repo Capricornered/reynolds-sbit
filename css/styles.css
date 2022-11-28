@@ -46,6 +46,8 @@ FOOTER ------------------ site-wide footer
 
 MOBILE - SMALL SCREENS ----------------------------------------------------
 
+#HEADER -----------------
+
 #SBIT-GENERAL ----------- 
 
 #SBIT-HOMEPAGE ----------
@@ -242,7 +244,7 @@ header {
 	grid-row: 2;
 	overflow: hidden;
 	transition: .5s;
-	margin-top: -170%;
+	margin-top: -750px;
 	z-index: -1;
 }
 
@@ -1180,6 +1182,19 @@ footer {
 
 @media (max-width: 350px) {
     
+	/*#HEADER*/
+
+	.logo {
+		padding: 22px 0 22px 20px;
+		width: 210px;
+	}
+
+	#hamburger {
+		padding: 20px 0px;
+	}
+
+
+	
 	/*#SBIT-GENERAL*/
 	
 
