@@ -37,8 +37,6 @@ SBIT-FACULTY ------------ elements specific to SBIT faculty & staff page
 SBIT-PROGRAMS ----------- elements related to the various SBIT program pages
 	page titles --------- varying colors for different program page titles
 	videos/images ------- videos & images within program pages
-	read more ----------- read more button displays further content
-	career stats -------- career statistics 
 	bootstrap accordion-- bootstrap accordion to display majors 
 	custom accordion ---- accordion within majors to display course info
 	roadmap ------------- linked course roadmap
@@ -71,8 +69,6 @@ $SBIT-HOMEPAGE ----------
 $SBIT-PROGRAMS ---------- 
 	$videos/images ------ 
 
-$FOOTER ----------------- 
-
 
 TABLET - SMALL SCREENS ----------------------------------------------------
 
@@ -84,8 +80,6 @@ TABLET - SMALL SCREENS ----------------------------------------------------
 %SBIT-PROGRAMS ----------
 	%videos/images ------
 	%custom accordion --- 
-
-%FOOTER ----------------- 
 
 
 TABLET - LARGE SCREENS ----------------------------------------------------
@@ -823,6 +817,19 @@ header {
 }
 
 
+/* Career Outlook Heading */
+.career_outlook_main_heading {
+	font-size: 24px;
+	font-weight: 700;
+	padding: 0px;
+	margin: 25px 0px 0px 0px;
+}
+.content .career_outlook_heading {
+    font-size: 22px;
+    color: #808080;
+	margin: 9px 0px 9px 0px;
+}
+
 /*vidoes/images*/
 
 /*program page videos*/
@@ -862,14 +869,12 @@ header {
     text-decoration: underline;
 }
 
-
-/*career stats*/
-
+/* —————— CAREER STATISTICS —————— */
 .career-statistics {
     display: block;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     padding: 25px 20px 7px 20px;
     margin: 30px 0px 30px 0px;
     font-size: 20px;
@@ -879,21 +884,20 @@ header {
     background-color: rgb(235, 235, 235);
     border-radius: 15px;
 }
-
+.career-statistics p {
+    text-align: center;
+}
 .career-statistics p span {
     font-weight: 700;
     color:#000000;
 }
-
-.source {
+.career-statistics .source {
     font-size: 12px;
     line-height: 20px;
 }
-
 .break {
     display: none;
 }
-
 
 /*bootstrap accordion*/
 
@@ -911,7 +915,7 @@ header {
     color:#000000;
     background-color:rgba(242, 242, 242, 1);
     border-radius: 0px 0px 0px 0px;
-    height: fit-content;
+    height: 55px;
     z-index: 1 !important;
 }
 
@@ -1031,6 +1035,7 @@ header {
     /* overflow: hidden;
     max-height: 0px;
     transition: max-height 0.2s; */
+
     padding: 10px 20px;
     /* margin: 0px 0px 50px 0px; */
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -1064,13 +1069,11 @@ header {
 .course-order {
     margin-bottom: 15px;
 }
-
 .course-order span a {
     font-weight: 700;
     color: #000000;
     text-decoration: none;
 }
-
 .course-order span a:hover {
     font-weight: 700;
     color: #000000;
@@ -1103,26 +1106,24 @@ header {
     text-decoration: underline;
 }
 
-/*download roadmaps button*/
+
+/* DOWNLOAD ROADMAPS BUTTON */
 .btn {
     background-color: rgb(164, 32, 54);
     border: none;
     border-radius: 0px;
     margin: 15px 0px -2px 0px;
 }
-
 .btn:hover  {
     background-color: rgb(106, 21, 35);
     border: none;
 }
-
 .btn:active, .btn-secondary:active, .dropdown-toggle:active,
 .btn:focus, .btn-secondary:focus, .dropdown-toggle:focus {
     background-color: rgb(106, 21, 35);
     border: none;
     outline: none;
 }
-
 .dropdown-menu {
     border-radius: 0px;
     background-color: rgb(245, 245, 245);
@@ -1132,30 +1133,91 @@ header {
     padding-top: 0px;
     padding-bottom: 0px;
 }
-
 .dropdown-menu li a {
     line-height: 24px;
     white-space: normal;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
 .dropdown-menu li a:hover {
     background-color: rgb(225, 225, 225);
 }
-
 .dropdown-menu li a:active {
     background-color: #808080;
 }
-
 .dropdown-menu li:active {
     background-color: rgb(106, 21, 35);
 }
 
 
+/* MAIN HEADER IMAGES */
+#sbit-main-image .main_head_image_01 {
+    display: block;
+    position: relative;
+    max-width: 1200px;
+    height: 225px;
+    background-size: cover;
+    margin: 0px auto 0px auto;
+}
+.main_head_image_01_welding {
+    background-image: url("../images/benjamin-wedemeyer-bzzSg8hTKKY-unsplash.jpg");
+    background-position: 50% 60%;
+}
+.main_head_image_01_automotive {
+    background-image: url("../images/kato-blackmore-qcF-19BvViE-unsplash.jpg");
+    background-position: 50% 40%;
+}
+.main_head_image_01_paralegal {
+    background-image: url("../images/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg");
+    background-position: 50% 40%;
+}
+.main_head_image_01_diesel {
+    background-image: url("../images/pexels-kelly-4320464.jpg");
+    background-position: 50% 40%;
+}
+.main_head_image_01_admin_justice {
+    background-image: url("../images/pexels-joshua-santos-4581213.jpg");
+    background-position: 50% 40%;
+}
+.main_head_image_01_admin_justice_outlook {
+    background-image: url("../images/pexels-joshua-santos-4581211.jpg");
+    background-position: 50% 40%;
+}
+.main_head_image_01_automotive_outlook {
+    background-image: url("../images/tim-mossholder-OwBRQ0bykX8-unsplash.jpg");
+    background-position: 50% 45%;
+}
+.main_head_image_01_diesel_outlook {
+    background-image: url("../images/pexels-pixabay-279949.jpg");
+    background-position: 50% 45%;
+}
+.main_head_image_01_welding_outlook {
+    background-image: url("../images/christopher-burns-Wiu3w-99tNg-unsplash.jpg");
+    background-position: 50% 80%;
+}
+.main_head_image_01_culinary_outlook {
+    background-image: url("../images/pexels-alex-green-5692293.jpg");
+    background-position: 50% 80%;
+}
+.main_head_image_01_paralegal_outlook {
+    background-image: url("../images/pexels-sora-shimazaki-5673492.jpg");
+    background-position: 50% 80%;
+}
+.main_head_image_01_business_outlook {
+    background-image: url("../images/pexels-michaa-ludwiczak-1239162.jpg");
+    background-position: 50% 63%;
+}
+.main_head_image_01_management_outlook {
+    background-image: url("../images/pexels-kampus-production-8190804.jpg");
+    background-position: 50% 35%;
+}
+.main_head_image_01_accounting_outlook {
+    background-image: url("../images/pexels-tima-miroshnichenko-6694543.jpg");
+    background-position: 50% 50%;
+}
 
-/*FOOTER*/
 
+/* —————— FOOTER —————— */
 footer {
     position: relative;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -1163,18 +1225,15 @@ footer {
     font-size: 16px;
     color: #ffffff;
 }
-
 .footer-addresses-band {
     background-color: rgb(164, 32, 54);
     padding: 0px 5% 50px 5%;
 }
-
 .footer-copyright-band {
     background-color: rgb(106, 21, 35);
     width: 100%;
     padding: 0px 5% 10px 5%;
 }
-
 #footer-social-logo-group {
     display: block;
     position: relative;
@@ -1182,14 +1241,12 @@ footer {
     padding: 25px 0px 10px 0px;
     margin: 0px auto 0px auto;
 }
-
 .reynolds-social-logos {
     display: inline-block;
     position: relative;
     width: 28px;
     margin: 0px 5px 0px 5px;
 }
-
 #footer-copyright-01 {
     font-size: 14px;
     font-weight: 700;
@@ -1198,26 +1255,30 @@ footer {
     margin: 0px 0px 0px 0px;
     color: rgba(255, 255, 255, 1);
 }
-
 #footer-copyright-02 {
     font-size: 14px;
     text-align: center;
     line-height: 24px;
     color: rgba(255, 255, 255, 1);
 }
-
+#footer-copyright-02 a {
+    color: rgba(255, 255, 255, 1);
+	text-decoration: none;
+}
+#footer-copyright-02 a:hover {
+    color: rgba(255, 255, 255, 1);
+	text-decoration: underline;
+}
 .footer-address {
     line-height: 10px;
     text-align: center;
     width: fit-content;
     margin: 0px auto 0px auto;
 }
-
 .address-head {
     font-size: 18px;
     font-weight: 700;
 }
-
 .map-directions {
     display: block;
     position: relative;
@@ -1231,11 +1292,9 @@ footer {
     padding: 1px 6px 0px 6px;
     margin: 10px auto 30px auto;
 }
-
 .map-directions:hover {
     background-color: #000000;
 }
-
 .footer-locations {
     position: relative;
     display: grid;
@@ -1245,7 +1304,6 @@ footer {
     top: 25px;
     margin: 0px auto 0px auto;
 }
-
 #footer-reynolds-logo img {
     display: block;
     position: relative;
@@ -1279,6 +1337,7 @@ footer {
 
 	
 	/*#SBIT-GENERAL*/
+	
 
 	/*remove back arrow next to title on screens where it's too crowded*/
 	.prev-page {
@@ -1288,6 +1347,7 @@ footer {
 
 
 	/*#SBIT-HOMEPAGE*/
+
 
 	/*#programs*/
 
@@ -1301,8 +1361,10 @@ footer {
 
 	/*#SBIT-PROGRAMS*/
 
+
 	/*#bootstrap accordion*/
 
+	/*avoid text wrapping*/
 	.accordion-button, 
 	.accordion-button:not(.collapsed) {
 		font-size: 17px;
@@ -1322,6 +1384,7 @@ footer {
     
 	/*$SBIT-GENERAL*/
 
+	
 	/*$carousel*/
 
 	/*change carousel height*/
@@ -1341,6 +1404,7 @@ footer {
 
 	/*$SBIT-HOMEPAGE*/
 
+	
 	/*$programs*/
 
 	/*change spacing between program buttons and increase column count*/
@@ -1362,39 +1426,36 @@ footer {
 	
 	/*$SBIT-PROGRAMS*/
 
+
 	/*$videos/images*/
 
 	.story-image {
 		height: 275px;
 	}
 
-
-
-	/*$FOOTER*/
-
-	#footer-reynolds-logo img {
-		left: 0%;
-	}
-
-	.footer-locations {
-		display: grid;
-		gap: 15px;
-		grid-template-columns: repeat(2, 1fr);
-		justify-items: center;
-		margin: 0px auto 0px auto;
-	}
-
-	.footer-address {
-		text-align: left;
-		margin: 0px 0px 0px 0px;
-		width: 250px;
-	}
-
-	.map-directions {
-		margin: 10px 0px 30px 0px;
-	}	  
 }
 
+@media screen and (min-width:550px){
+/* FOOTER */
+#footer-reynolds-logo img {
+    left: 0%;
+}
+.footer-locations {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    left: 5%;
+    /* max-width: 1200px; */
+    margin: 0px auto 0px auto;
+    }
+.footer-address {
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+}
+.map-directions {
+    margin: 10px 0px 30px 0px;
+}	  
+}
 
 
 /*------------------------------------*\
@@ -1422,6 +1483,7 @@ footer {
 
 	/*%SBIT-HOMEPAGE*/
 
+
 	/*%programs*/
 	#programs button {
 		height: 20vw;
@@ -1432,6 +1494,7 @@ footer {
 
 	/*%SBIT-PROGRAMS*/
 
+
 	/*%videos/images*/
 
 	.story-image {
@@ -1439,6 +1502,82 @@ footer {
 	}
 
 }
+
+@media screen and (min-width:768px) { 
+/* FOOTER */
+.footer-locations {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    left: 5%;
+    /* width: fit-content; */
+    max-width: 1200px;
+    margin: 0px auto 0px auto;
+    /* outline: 1px solid lime; */
+}
+.footer-address:nth-child(4) {
+    text-align: left;
+    grid-column-start: 2;
+    /* margin: 0px auto 0px auto; */
+} 
+
+/* Header and Navigation Content */
+#main_nav_01 {
+    height: 118px;
+}
+#reynolds_logo {
+    height: 80px;
+    margin: 18px 0px 0px 25px;
+}    
+#sbit-main-image .main_head_image_01 {
+    height: 320px;
+}
+.main_head_image_01_automotive {
+    background-position: 50% 40%;
+}
+.main_head_image_01_welding {
+    background-position: 50% 65%;
+}
+.main_head_image_01_paralegal {
+    background-position: 50% 30%;
+}
+.main_head_image_01_diesel {
+    background-position: 50% 70%;
+}
+.main_head_image_01_admin_justice {
+    background-position: 50% 35%;
+}
+.main_head_image_01_admin_justice_outlook {
+    background-position: 50% 35%;
+}
+.main_head_image_01_automotive_outlook {
+    background-position: 50% 45%;
+}
+.main_head_image_01_diesel_outlook {
+    background-position: 50% 55%;
+}
+.main_head_image_01_welding_outlook {
+    background-position: 50% 85%;
+}
+.main_head_image_01_culinary_outlook {
+    background-position: 50% 70%;
+}
+.main_head_image_01_paralegal_outlook {
+    background-position: 50% 55%;
+}
+.main_head_image_01_business_outlook {
+    background-position: 50% 63%;
+}
+.main_head_image_01_management_outlook {
+    background-position: 50% 35%;
+}
+.main_head_image_01_accounting_outlook {
+    background-position: 50% 50%;
+}
+
+
+}
+
 
 
 
@@ -1585,26 +1724,6 @@ footer {
 		margin: -31px 0px 0px 0px;
 	}
 
-
-
-	/*%FOOTER*/
-
-	.footer-locations {
-		display: grid;
-		gap: 25px;
-		grid-template-columns: repeat(3, 1fr);
-		margin: 0px auto 0px auto;
-		width: 90%;
-	}
-
-	.footer-address {
-		width: fit-content;
-	}
-
-	.footer-address:nth-child(4) {
-		text-align: left;
-		grid-column-start: 2;
-	} 	
 }
 
 
@@ -1615,8 +1734,26 @@ footer {
 
 
 
+@media screen and (min-width:1025px) {
+/* —————— FOOTER —————— */
+.footer-locations {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 25px; */
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-columns: minmax(0, 200px) minmax(0, 200px) minmax(0, 200px) minmax(0, 225px); */
+    left: 0%;
+    max-width: 1200px;
+    margin: 0px auto 0px auto;
+}
+footer {
+    display: inline-block;
+    width: 100%;
+}	
+}
 
-@media (min-width: 1025px) {
+
+@media (min-width: 1085px) {
     
 	/*!HEADER*/
 
@@ -1874,31 +2011,17 @@ footer {
 
 	/*!FOOTER*/
 
-	footer {
-		display: inline-block;
-		width: 100%;
-	}	
-
 	.footer-locations {
-		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
-		/* gap: 25px; */
-		/* grid-template-columns: repeat(4, 1fr); */
-		/* grid-template-columns: minmax(0, 200px) minmax(0, 200px) minmax(0, 200px) minmax(0, 225px); */
-		left: 0%;
 		max-width: 1200px;
 		margin: 0px auto 0px auto;
 	}
-
 	#footer-address-bar {
 		height: 360px;
 	}
-
 	#footer-copyright-01 {
 		line-height: 40px;
 	}
-
 	#footer-copyright-02 {
 		font-size: 16px;
 	}

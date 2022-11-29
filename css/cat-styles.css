@@ -66,9 +66,6 @@
 #major_head_bar .back a:hover {
     text-decoration: underline;
 }
-
-/* ———————————————————— CATEGORY PAGES CSS ———————————————————— */
-/* ———————————————————————————————————————————————————————————— */
 #main-category-container {
     max-width: 1200px;
     margin: 0px auto 0px auto;
@@ -266,6 +263,9 @@ ul.breadcrumb-trail li a:hover {
 .source {
     font-size: 12px;
     line-height: 20px;
+}
+.break {
+    display: none;
 }
 
 /* —————— BOOTSTRAP ACCORDION —————— */
@@ -503,7 +503,7 @@ footer {
 #more-content {
     display: none;
 }
-#Read-More-Button {
+#read-more-button {
     display: block;
     position: relative;
     background-color: #ffffff;
@@ -512,7 +512,7 @@ footer {
     float: right;
     z-index: 1;
 }
-#Read-More-Button:hover {
+#read-more-button:hover {
     text-decoration: underline;
 }
 .story-image-02 {
@@ -584,9 +584,7 @@ footer {
 .accordion__button::after {
     margin: -25px 0px 0px 0px;
 }
-.break {
-    display: none;
-}
+
 
 /* FOOTER */
 #footer-reynolds-logo img {
