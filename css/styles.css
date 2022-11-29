@@ -965,6 +965,10 @@ header {
     color:#000000;
 }
 
+.career-statistics p {
+    text-align: center;
+}
+
 .career_outlook_main_heading {
 	padding-top: 20px;
 }
