@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Adobe fonts - Roboto-->
+    <link rel="stylesheet" href="https://use.typekit.net/frz4ami.css">
+
+    <!-- Bootstrap CSS Link-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
+    
+    <!--Custom CSS Link-->
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+    
+    <!-- Custom JS Links-->   
+    <script src="../../scripts/scripts.js" defer></script>
+    <script src="../../scripts/program-scripts.js" defer></script>
+
+    <title>School of Business and Industrial Trades | Criminal Justice</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-cover">
+            <!--logo links back to Reynolds home page-->
+            <a href="/"><img class="logo" src="../../images/reynolds-50-logo.png" alt="Home"></a>
+            <!--hamburger appears on mobile/tablet screens and opens mega nav on click-->
+            <span id="hamburger" aria-label="Hamburger Menu" onclick="openHamburger()">&#9776;</span>
+        </div>
+        <!--mega nav contains a top menu and main menu-->
+        <div id="nav-container">
+            <!--top menu shows at top of screen on desktop and underneath the main menu on mobile/tablet-->
+            <nav id="top-nav">
+                <ul>
+                    <li class="top-level"><a href="#">Apply Now!</a></li>
+                    <li class="top-level"><a href="#">MyReynolds</a></li>
+                    <li class="top-level"><span>Faculty and Staff</span>
+                        <ul class="dropdown">
+                            <li><a href="#">Calendars</a></li>
+                            <li><a href="#">Center for Excellence in Teaching & Learning</a></li>
+                            <li><a href="#">Faculty Reward & Recognition</a></li>
+                            <li><a href="#">Office of Human Resources</a></li>
+                            <li><a href="#">Organizational Charts</a></li>
+                            <li><a href="#">Outlook Email Access</a></li>
+                            <li><a href="#">Reynolds Intranet</a></li>
+                            <li><a href="#">Staff Directory</a></li>
+                            <li><a href="#">VCCS</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-level"><span>Workforce Services</span>
+                        <ul class="dropdown">
+                            <li><a href="#">Career Planning</a></li>
+                            <li><a href="#">Community College Workforce Alliance</a></li>
+                            <li><a href="#">Facilty Rental</a></li>
+                            <li><a href="#">VA Wizard</a></li>
+                            <li><a href="#">Worforce Services Home</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-level"><span>ReynoldsALERT</span>
+                        <ul class="dropdown">
+                            <li><a href="#">Department of Police</a></li>
+                            <li><a href="#">Emergency Response Guide</a></li>
+                            <li><a href="#">Reynolds Alert</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-level"><a href="#">COVID</a></li>
+                    <li class="top-level"><a href="#">Contact Us</a></li>
+                    <li class="top-level search"><a href="#"><img src="../../images/search-icon-white.svg" alt="Search icon"></a></li>
+                </ul>
+            </nav>
+            <hr id="header-line">
+            <!--main sitewide navigation with dropdowns-->
+            <nav id="main-nav">
+                <!--each top-level item snaps to top of page to make navigation more clear with long amounts of list items-->
+                <a name="snap"></a>
+                <ul>
+                    <li class="top-level"><span><a href="#snap">Who We Are</a></span>
+                        <ul class="dropdown">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Campus Locations</a></li>
+                            <li><a href="#">College Leadership</a></li>
+                            <li><a href="#">College Policies</a></li>
+                            <li><a href="#">Consumer Information</a></li>
+                            <li><a href="#">Equity Throught Action</a></li>
+                            <li><a href="#">Jobs at Reynolds</a></li>
+                            <li><a href="#">The Kitchens at Reynolds</a></li>
+                            <li><a href="#">Media Center</a></li>
+                            <li><a href="#">Mission, Vision, & Values</a></li>
+                            <li><a href="#">2021-24 Strategic Direction</a></li>
+                            <li><a href="#">Organizational Chart</a></li>
+                            <li><a href="#">Quality Enhancement Plan</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-level"><span><a href="#snap">Get Started</a></span>
+                        <ul class="dropdown">
+                            <li><a href="#">6 Easy Steps</a></li>
+                            <li><a href="#">Academic Calendars</a></li>
+                            <li><a href="#">Admissions & Campus Tours</a></li>
+                            <li><a href="#">Apply</a></li>
+                            <li><a href="#">College Catalog</a></li>
+                            <li><a href="#">English as a Second Language (ESL)</a></li>
+                            <li><a href="#">First-Gen Resources</a></li>
+                            <li><a href="#">Future Student</a></li>
+                            <li><a href="#">Majors by Career</a></li>
+                            <li><a href="#">Majors A-Z</a></li>
+                            <li><a href="#">Reynolds Online</a></li>
+                            <li><a href="#">Specialty Programs</a></li>
+                            <li><a href="#">Transfer Students</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-level"><span><a href="#snap">Register for Classes</a></span>
+                        <ul class="dropdown">
+                            <li><a href="#">Registration Guide</a></li>
+                            <li><a href="#">Advising</a></li>
+                            <li><a href="#">Class Schedules</a></li>
+                            <li><a href="#">Course Descriptions</a></li>
+                            <li><a href="#">Low & No Cost Textbooks</a></li>
+                            <li><a href="#">MyReynolds</a></li>
+                            <li><a href="#">Registration Dates</a></li>
+                            <li><a href="#">Service Hours</a></li>
+                            <li><a href="#">Steps to Get Started</a></li>
+                            <li><a href="#">Technology Support</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-level"><span><a href="#snap">Pay for College</a></span>
+                        <ul class="dropdown">
+                            <li><a href="#">Business Office</a></li>
+                            <li><a href="#">Cost Calculator</a></li>
+                            <li><a href="#">G3 Tuition Assistance</a></li>
+                            <li><a href="#">Grants</a></li>
+                            <li><a href="#">Financial Aid Central</a></li>
+                            <li><a href="#">Low & No Cost Textbooks</a></li>
+                            <li><a href="#">Military Tuition Assistance</a></li>
+                            <li><a href="#">Pay Now (QuikPay)</a></li>
+                            <li><a href="#">Payment Due Dates</a></li>
+                            <li><a href="#">Scholarships</a></li>
+                            <li><a href="#">Tuition & Fees</a></li>
+                            <li><a href="#">Workshops</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-level"><span><a href="#snap">Student Services</a></span>
+                        <ul class="dropdown">
+                            <li><a href="#">All Services</a></li>
+                            <li><a href="#">Accommodations</a></li>
+                            <li><a href="#">Advising</a></li>
+                            <li><a href="#">Bookstore</a></li>
+                            <li><a href="#">Career Services</a></li>
+                            <li><a href="#">English as a Second Language (ESL)</a></li>
+                            <li><a href="#">Enrollment Management & Student Success</a></li>
+                            <li><a href="#">Library Services</a></li>
+                            <li><a href="#">Math Central+</a></li>
+                            <li><a href="#">New Student Orientation</a></li>
+                            <li><a href="#">PAVE</a></li>
+                            <li><a href="#">ReynoldsID</a></li>
+                            <li><a href="#">Student Support Services</a></li>
+                            <li><a href="#">Testing Center</a></li>
+                            <li><a href="#">The Writing Studio</a></li>
+                            <li><a href="#">TimelyCare</a></li>
+                            <li><a href="#">Title IX</a></li>
+                            <li><a href="#">Transfer Services</a></li>
+                            <li><a href="#">Transcripts</a></li>
+                            <li><a href="#">Tutoring</a></li>
+                            <li><a href="#">Veterans</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-level"><span><a href="#snap">Campus Life</a></span>
+                        <ul class="dropdown">
+                            <li><a href="#">Campus Newsletters</a></li>
+                            <li><a href="#">Campus Safety</a></li>
+                            <li><a href="#">Campuses & Sites</a></li>
+                            <li><a href="#">COVID-19 Response</a></li>
+                            <li><a href="#">Meet our Students</a></li>
+                            <li><a href="#">Office of Student Life</a></li>
+                            <li><a href="#">Parking/Shuttle</a></li>
+                            <li><a href="#">Schedule a Tour</a></li>
+                            <li><a href="#">Student Ambassadors</a></li>
+                            <li><a href="#">Where to Eat</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-level"><span><a href="#snap">Support Reynolds</a></span>
+                        <ul class="dropdown">
+                            <li><a href="#">Alumni</a></li>
+                            <li><a href="#">Educational Foundation</a></li>
+                            <li><a href="#">Give Now</a></li>
+                            <li><a href="#">Ways to Give</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!--heading color based on program grouping/button color on SBIT homepage-->
+        <div class="page-title ocean">
+            <a href="../sbit-criminal-justice.html" class="prev-page ocean"></a>
+            <h1>Criminal Justice</h1>
+        </div>
+
+        <div class="grid-container">
+
+        <nav class="body-nav less">
+            <ul>
+            <li><a href="../sbit-criminal-justice.html">Criminal Justice Home</a></li>
+            <li><a href="faculty-and-staff.html">Faculty & Staff</a></li>
+            <li onclick="contactSBIT()"><span>Contact SBIT</span></li>
+            </ul>
+            <span class="body-nav arrow" onclick="openBodyMenu()">&#x203A;</span>
+        </nav>
+
+        <!--clicking "contact SBIT" in the body menu brings up box on same page with contact info-->
+        <div id="sbit-contact">
+            <span onclick="contactSBIT()" class="x-out">✕</span>
+            <h3>School of Business and Industrial&nbsp;Trades</h3>
+            <span>Phone: <a href="tel:+18045235301">(804) 523-5301</a></span>
+            <br />
+            <span>E-mail: <a href="mailto:sbit@reynolds.edu">sbit@reynolds.edu</a></span>
+        </div>
+
+        <div id="sbit-main-image">
+            <img src="../../images/criminal-justice-placeholder.jpg" alt="ALTTEXT">
+        </div>
+
+        <section class="content">
+
+            <ul class="breadcrumbs">
+            <li><a href="#">Reynolds</a></li>
+            <li><a href="#">Get Started</a></li>
+            <li><a href="#">Majors By School</a></li>
+            <li><a href="../../sbit-home.html">School of Business and Industrial Trades</a></li>
+            <li><a href="../sbit-criminal-justice.html">Criminal Justice</a></li>
+            <li>Career Outlook</li>
+            </ul>
+
+            <h2>Career Outlook</h2>
+            
+            <h3>Secondary Header</h3>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem enim porro delectus accusamus iste quo, rem cumque harum molestias dolore sapiente quibusdam possimus eum quasi omnis? Voluptatum esse laboriosam impedit?</p>
+
+        </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-addresses-band">
+        <div id="footer-reynolds-logo"><img src="../../images/reynolds-logo-reverse-50.svg" alt="Reynolds' 50 Year Logo" width="200px" /></div>
+        
+        <div class="footer-locations">
+        
+            <address class="footer-address">
+            <p class="address-head">Parham Road Campus</p>
+            <p>1651 East Parham Road</p>
+            <p>Richmond, Virginia</p>
+            <p>(804) 523-5177</p>
+            <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
+            </address>
+      
+            <address class="footer-address">
+            <p class="address-head">Downtown Campus</p>
+            <p>700 East Jackson Street</p>
+            <p>Richmond, Virginia</p>
+            <p>(804) 523-5301</p>
+            <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
+            </address>
+      
+            <address class="footer-address">
+            <p class="address-head">Goochland Campus</p>
+            <p>1851 Dickinson Road</p>
+            <p>Goochland, Virginia</p>
+            <p>(804) 523-5432</p>
+            <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
+            </address>
+      
+            <address class="footer-address">
+            <p class="address-head">The Kitchens at Reynolds</p>
+            <p>2500 Nine Mile Road</p>
+            <p>Richmond, Virginia</p>
+            <p>(804) 371-3000</p>
+            <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
+            </address>
+      
+      </div>
+      
+        </div>
+        <div class="footer-copyright-band">
+            <div id="footer-social-logo-group">
+              <a href="https://twitter.com/ReynoldsCollege"><img class="reynolds-social-logos" src="../../images/social-logos-300px-twitter-b&w.png" alt="Twitter logo" /></a>
+              <a href="https://www.facebook.com/ReynoldsCommunityCollege/"><img class="reynolds-social-logos" src="../../images/social-logos-300px-facebook-b&w.png" alt="Facebook Logo" /></a>
+              <a href="https://www.youtube.com/jsargeantreynolds"><img class="reynolds-social-logos" src="../../images/social-logos-300px-youtube-b&w.png" alt="YouTube Logo" /></a>
+              <a href="https://www.instagram.com/reynoldscommunitycollege/"><img class="reynolds-social-logos" src="../../images/social-logos-300px-instagram-b&w.png" alt="Instagram logo" /></a>
+              <a href="https://www.linkedin.com/school/j-sargeant-reynolds-community-college/"><img class="reynolds-social-logos" src="../../images/social-logos-300px-linkedin-b&w.png" alt="LinkedIn logo" /></a>
+              <a href="https://www.flickr.com/photos/83397803@N04/sets/"><img class="reynolds-social-logos" src="../../images/social-logos-300px-flicker-b&w.png" alt="Flickr logo" /></a>
+            </div>
+            <p id="footer-copyright-01">©2022 J. Sargeant Reynolds Community College</p>
+            <p id="footer-copyright-02">
+                PO BOX 85622 Richmond, Virginia, USA 23285-5622 | (804) 371-3000 | 
+                <a href="#">VA Relay 711</a>
+                <br/>
+                <a href="#">Privacy Statement</a> | 
+                <a href="#">Website Disclaimer</a> | 
+                <a href="#">Contact Us</a> | 
+                <a href="#">Nondiscrimination</a> | 
+                <a href="#">A-Z Site Map</a> | 
+                <a href="#">Application Development by VA Inc.</a> | 
+                <a href="#">Reynolds Annual Security Report</a> | 
+                <a href="#">eVa</a> | 
+                <a href="#">FOIA</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Link-->    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
