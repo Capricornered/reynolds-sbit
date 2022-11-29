@@ -1820,6 +1820,7 @@ footer {
 		height: 100%;
 		margin-top: 0;
 		max-height: fit-content;
+		z-index: 6 !important;
 	}
 
 	/*display line between top and main nav*/
