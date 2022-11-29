@@ -982,6 +982,19 @@ header {
     display: none;
 }
 
+.career_outlook_main_heading {
+	font-size: 24px;
+	font-weight: 700;
+	padding: 0px;
+	margin: 25px 0px 0px 0px;
+}
+
+.content .career_outlook_heading {
+    font-size: 22px;
+    color: #808080;
+	margin: 9px 0px 9px 0px;
+}
+
 
 /*bootstrap accordion*/
 
