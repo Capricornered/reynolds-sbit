@@ -1,0 +1,757 @@
+/* CSS For Category Pages */
+/* CSS Resets */
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+:root {
+    --set-01: 5%; 	/* Created mainly to change all margins at once on the category pages. Also works on footer. */
+    --set-02: 20px;
+}
+#main_nav_01 {
+    position: relative;
+    width: 100%;
+    height: 95px;
+    background-color:rgb(164, 32, 54);
+}
+#reynolds_logo {
+    display: inline-block;
+    position: relative;
+    height: 75px;
+    margin: 11px 0px 0px 2%;
+}
+#major_head_bar {
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+.cool_gray_11 {
+    background-color:#53555a;
+}
+.ocean_blue {
+    background-color:#0062a1;
+}
+.emerald {
+    background-color:#00943b;
+}
+.raspberry {
+    background-color:#b21f8c;
+}
+#major_head_bar p {
+    position: relative;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    top: 8px;
+}
+#major_head_bar .back {
+    position: absolute;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    width: calc(fit-content + var(--set-01));
+    float: left;
+    text-align: left;
+    top: 9px;
+    padding-left: var(--set-01);
+}
+#major_head_bar .back a {
+    color: #ffffff;
+    text-decoration: none;
+}
+#major_head_bar .back a:hover {
+    text-decoration: underline;
+}
+
+/* ———————————————————— CATEGORY PAGES CSS ———————————————————— */
+/* ———————————————————————————————————————————————————————————— */
+#main-category-container {
+    max-width: 1200px;
+    margin: 0px auto 0px auto;
+}
+#desktop-nav-placeholder {
+    display: none;
+}
+
+
+/* Breadcrumb Trail */
+ul.breadcrumb-trail {
+    padding: 15px var(--set-01) 0px var(--set-01);
+    list-style: none;
+    /* background-color: #eee; */
+}
+ul.breadcrumb-trail li {
+    display: inline;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+ul.breadcrumb-trail li+li:before {
+    padding: 8px;
+    color: #000000;
+    content: "\003E";
+}
+ul.breadcrumb-trail li a {
+    color: #000000;
+    text-decoration: none;
+}
+ul.breadcrumb-trail li a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* —————— MAIN EDITORIAL SECTION —————— */
+.categories-section {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0px var(--set-01) 0px var(--set-01);
+}
+.categories-section h1 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 30px;
+}
+.career_outlook_heading {
+    font-size: 22px;
+    color: #808080;
+}
+.section-video {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: 30px 0px 30px 0px;
+}
+.purpose-and-other {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0px var(--set-02) 0px var(--set-02);
+}
+
+/* MAIN HEADER IMAGES */
+.main_head_image_01 {
+    display: block;
+    position: relative;
+    max-width: 1200px;
+    height: 225px;
+    background-size: cover;
+    margin: 0px auto 0px auto;
+}
+.main_head_image_01_welding {
+    background-image: url("../images/benjamin-wedemeyer-bzzSg8hTKKY-unsplash.jpg");
+    background-position: 50% 60%;
+}
+.main_head_image_01_automotive {
+    background-image: url("../images/kato-blackmore-qcF-19BvViE-unsplash.jpg");
+    background-position: 50% 40%;
+}
+.main_head_image_01_paralegal {
+    background-image: url("../images/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg");
+    background-position: 50% 40%;
+}
+.main_head_image_01_diesel {
+    background-image: url("../images/pexels-kelly-4320464.jpg");
+    background-position: 50% 40%;
+}
+.main_head_image_01_admin_justice {
+    background-image: url("../images/pexels-joshua-santos-4581213.jpg");
+    background-position: 50% 40%;
+}
+.main_head_image_01_admin_justice_outlook {
+    background-image: url("../images/pexels-joshua-santos-4581211.jpg");
+    background-position: 50% 40%;
+}
+.main_head_image_01_automotive_outlook {
+    background-image: url("../images/tim-mossholder-OwBRQ0bykX8-unsplash.jpg");
+    background-position: 50% 45%;
+}
+.main_head_image_01_diesel_outlook {
+    background-image: url("../images/pexels-pixabay-279949.jpg");
+    background-position: 50% 45%;
+}
+.main_head_image_01_welding_outlook {
+    background-image: url("../images/christopher-burns-Wiu3w-99tNg-unsplash.jpg");
+    background-position: 50% 80%;
+}
+.main_head_image_01_culinary_outlook {
+    background-image: url("../images/pexels-alex-green-5692293.jpg");
+    background-position: 50% 80%;
+}
+.main_head_image_01_paralegal_outlook {
+    background-image: url("../images/pexels-sora-shimazaki-5673492.jpg");
+    background-position: 50% 80%;
+}
+.main_head_image_01_business_outlook {
+    background-image: url("../images/pexels-michaa-ludwiczak-1239162.jpg");
+    background-position: 50% 63%;
+}
+.main_head_image_01_management_outlook {
+    background-image: url("../images/pexels-kampus-production-8190804.jpg");
+    background-position: 50% 35%;
+}
+.main_head_image_01_accounting_outlook {
+    background-image: url("../images/pexels-tima-miroshnichenko-6694543.jpg");
+    background-position: 50% 50%;
+}
+.story-image {
+    margin: 30px 0px 30px 0px;
+}
+.majors-heading {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px;
+    padding: 50px var(--set-01) 5px var(--set-01);
+}
+.ending-content {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    display: block;
+    position: relative;
+    padding: 35px var(--set-01) 35px var(--set-01);
+}
+.view-roadmap {
+    font-weight: 700;
+    margin: 20px 0px 40px 0px;
+}
+.view-roadmap a {
+    color: #000000;
+    text-decoration: none;
+}
+.view-roadmap a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+.back-to-programs {
+    font-weight: 700;
+    margin-top: 40px;
+}
+.back-to-programs a {
+    color: #000000;
+    text-decoration: none;
+}
+.back-to-programs a:hover {
+    text-decoration: underline;
+}
+
+/* —————— CAREER STATISTICS —————— */
+.career-statistics {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 25px 20px 7px 20px;
+    margin: 30px 0px 30px 0px;
+    font-size: 20px;
+    line-height: 28px;
+    /* color:rgb(128, 128, 128); */
+    text-align: center;
+    background-color: rgb(235, 235, 235);
+    border-radius: 15px;
+}
+.career-statistics p span {
+    font-weight: 700;
+    color:#000000;
+}
+.source {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+/* —————— BOOTSTRAP ACCORDION —————— */
+.accordion {
+    display: block;
+    position: relative;
+    max-width: 1200px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0px var(--set-01) 0px var(--set-01);
+    margin: 0px auto 0px auto;
+}
+.accordion-header {
+    border-radius: 0px 0px 0px 0px;
+    border: none;
+}
+.accordion-button, .accordion-button:not(.collapsed) {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    color:#000000;
+    background-color:rgba(242, 242, 242, 1);
+    padding: 15px var(--set-02) 20px var(--set-02);
+    border-radius: 0px 0px 0px 0px;
+    /* height: 55px; */
+}
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0%);
+}
+.accordion-button:focus {
+    box-shadow: inherit;
+}
+.accordion-item {
+    border: none;
+}
+.accordion-body {
+    padding: 20px 0px 20px 0px;
+    border: none;
+}
+
+/* —————— CUSTOM ACCORDION —————— */
+.course-number {
+    font-weight: 700;
+    margin: 0px 0px 0px 0px;
+}
+.course-name {
+    margin: 0px 0px 0px 0px;
+}
+.course-credits {
+    margin: 0px 0px 0px 0px;
+}
+.accordion__button {
+    display: block;
+    width: 100%;
+    padding: 15px var(--set-02) 15px var(--set-02);
+    border: none;
+    cursor: pointer;
+    background: #ffffff;
+    color: #000000;
+    text-align: left;
+    transition: background 0.2s;
+}
+.accordion__button:hover { 
+    background: rgb(245, 245, 245);
+}
+.accordion__button::after {
+    content: '\25be';
+    color: rgb(220, 220, 220);
+    float: right;
+    transform: scale(1.5);
+    margin: -50px 0px 0px 0px;
+}
+.accordion__button--active + .accordion__content {
+    display: block;
+}
+.accordion__button--active {
+    background: rgb(235, 235, 235);
+    /* margin: 50px 0px 0px 0px; */
+    /* border-top: 1px solid rgb(200, 200, 200);
+    border-bottom: 1px solid rgb(200, 200, 200); */
+}
+.accordion__button--active .course-name {
+    font-weight: 700;
+    background: rgb(235, 235, 235);
+}
+.accordion__button--active:hover {
+    background: rgb(235, 235, 235);
+}
+.accordion__button--active::after {
+    content: '\25b4';
+    color: #000000;
+}
+.accordion__content {
+    /* overflow: hidden;
+    max-height: 0px;
+    transition: max-height 0.2s; */
+    padding: 10px var(--set-02) 10px var(--set-02);
+    /* margin: 0px 0px 50px 0px; */
+    background: rgb(245, 245, 245);
+    /* For accordion without transition */
+    display: none;
+    overflow: auto;
+}
+.total-credit-hours {
+    font-weight: 700;
+    padding: 20px var(--set-02) 20px var(--set-02);
+}
+.total-credit-hours-last {
+    font-weight: 700;
+    padding: 20px var(--set-02) 0px var(--set-02);
+    margin: 0px 0px -37px 0px;
+}
+.kerning-01 {
+    letter-spacing: -.03em;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    padding: 20px 0px 0px 0px;
+    margin-top: 22px;
+    border-radius: 0px 0px 0px 0px;
+}
+.course-order {
+    margin-bottom: 15px;
+}
+.course-order span a {
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+}
+.course-order span a:hover {
+    font-weight: 700;
+    color: #000000;
+    text-decoration:underline;
+}
+.or {
+    padding: 20px var(--set-02) 0px var(--set-02);
+    /* text-align: center; */
+}
+
+/* —————— FOOTER —————— */
+footer {
+    position: relative;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+}
+.footer-addresses-band {
+    background-color: rgb(164, 32, 54);
+    padding: 0px 5% 50px 5%;
+}
+.footer-copyright-band {
+    background-color: rgb(106, 21, 35);
+    width: 100%;
+    padding: 0px 5% 10px 5%;
+}
+#footer-social-logo-group {
+    display: block;
+    position: relative;
+    width: fit-content;
+    padding: 25px 0px 10px 0px;
+    margin: 0px auto 0px auto;
+}
+.reynolds-social-logos {
+    display: inline-block;
+    position: relative;
+    width: 28px;
+    margin: 0px 5px 0px 5px;
+}
+#footer-copyright-01 {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0px 0px 3px 0px;
+    margin: 0px 0px 0px 0px;
+    color: rgba(255, 255, 255, 1);
+}
+#footer-copyright-02 {
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+}
+.footer-address {
+    line-height: 10px;
+    text-align: center;
+    width: fit-content;
+    margin: 0px auto 0px auto;
+}
+.address-head {
+    font-size: 18px;
+    font-weight: 700;
+}
+.map-directions {
+    display: block;
+    position: relative;
+    background-color: #781728;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+    padding: 1px 6px 0px 6px;
+    margin: 10px auto 30px auto;
+}
+.map-directions:hover {
+    background-color: #000000;
+}
+.footer-locations {
+    position: relative;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(1, 1fr);
+    /* max-width: 1200px; */
+    top: 25px;
+    margin: 0px auto 0px auto;
+}
+#footer-reynolds-logo img {
+    display: block;
+    position: relative;
+    left: -2%;
+    width: 250px;
+    padding: 35px 0px 25px 0px;
+    margin: 0px auto 0px auto;
+}
+
+/* Read More Text Button */
+#more {
+    display: none;
+}
+#more-content {
+    display: none;
+}
+#Read-More-Button {
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    float: right;
+    z-index: 1;
+}
+#Read-More-Button:hover {
+    text-decoration: underline;
+}
+.story-image-02 {
+    margin: 25px 0px 30px 0px;
+}
+
+/* DOWNLOAD ROADMAPS BUTTON */
+.btn {
+    background-color: rgb(164, 32, 54);
+    border: none;
+    border-radius: 0px;
+    margin: 15px 0px -2px 0px;
+}
+.btn:hover  {
+    background-color: rgb(106, 21, 35);
+    border: none;
+}
+.btn:active, .btn-secondary:active, .dropdown-toggle:active,
+.btn:focus, .btn-secondary:focus, .dropdown-toggle:focus {
+    background-color: rgb(106, 21, 35);
+    border: none;
+    outline: none;
+}
+.dropdown-menu {
+    border-radius: 0px;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    box-shadow: 15px 15px 15px rgba(0,0,0,.2);
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.dropdown-menu li a {
+    line-height: 24px;
+    white-space: normal;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.dropdown-menu li a:hover {
+    background-color: rgb(225, 225, 225);
+}
+.dropdown-menu li a:active {
+    background-color: #808080;
+}
+.dropdown-menu li:active {
+    background-color: rgb(106, 21, 35);
+}
+
+
+
+@media screen and (min-width:550px){  
+
+/* —————— CUSTOM ACCORDION —————— */
+.course-container {
+    display: grid;
+    grid-template-columns: 85px 50% auto;
+    grid-template-rows: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.course-name {
+    float: left;
+}
+.course-credits {
+    grid-column-start: 5;
+    margin: 0px 30px 0px 0px;
+    text-align: right;
+}
+.accordion__button::after {
+    margin: -25px 0px 0px 0px;
+}
+.break {
+    display: none;
+}
+
+/* FOOTER */
+#footer-reynolds-logo img {
+    left: 0%;
+}
+.footer-locations {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    left: 5%;
+    /* max-width: 1200px; */
+    margin: 0px auto 0px auto;
+    }
+.footer-address {
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+}
+.map-directions {
+    margin: 10px 0px 30px 0px;
+}
+}
+
+
+
+@media screen and (min-width:768px) { 
+
+/* Header and Navigation Content */
+#main_nav_01 {
+    height: 118px;
+}
+#reynolds_logo {
+    height: 80px;
+    margin: 18px 0px 0px 25px;
+}    
+.main_head_image_01 {
+    height: 320px;
+}
+.main_head_image_01_automotive {
+    background-position: 50% 40%;
+}
+.main_head_image_01_welding {
+    background-position: 50% 65%;
+}
+.main_head_image_01_paralegal {
+    background-position: 50% 30%;
+}
+.main_head_image_01_diesel {
+    background-position: 50% 70%;
+}
+.main_head_image_01_admin_justice {
+    background-position: 50% 35%;
+}
+.main_head_image_01_admin_justice_outlook {
+    background-position: 50% 35%;
+}
+.main_head_image_01_automotive_outlook {
+    background-position: 50% 45%;
+}
+.main_head_image_01_diesel_outlook {
+    background-position: 50% 55%;
+}
+.main_head_image_01_welding_outlook {
+    background-position: 50% 85%;
+}
+.main_head_image_01_culinary_outlook {
+    background-position: 50% 70%;
+}
+.main_head_image_01_paralegal_outlook {
+    background-position: 50% 55%;
+}
+.main_head_image_01_business_outlook {
+    background-position: 50% 63%;
+}
+.main_head_image_01_management_outlook {
+    background-position: 50% 35%;
+}
+.main_head_image_01_accounting_outlook {
+    background-position: 50% 50%;
+}
+#major_head_bar {
+    height: 45px;
+}
+#major_head_bar p {
+    font-size: 24px;
+    top: 6px;
+}
+#major_head_bar .back {
+    font-size: 16px;
+    top: 11px;
+}
+
+/* Breadcrumb Trail and Main Heading */
+ul.breadcrumb-trail li {
+    font-size: 14px;
+    line-height: 26px;
+}
+.categories-section header h1 {
+    font-size: 32px;
+    margin-top: 30px;
+}
+.career_outlook_heading {
+    font-size: 28px;
+    color: #808080;
+}
+
+/* FOOTER */
+.footer-locations {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    left: 5%;
+    /* width: fit-content; */
+    max-width: 1200px;
+    margin: 0px auto 0px auto;
+    /* outline: 1px solid lime; */
+}
+.footer-address:nth-child(4) {
+    text-align: left;
+    grid-column-start: 2;
+    /* margin: 0px auto 0px auto; */
+} 
+}
+
+
+
+@media screen and (min-width:1025px) {
+/* Main Containers for Nav and Content */
+#main-category-container {
+    height: 100%;
+}
+#desktop-nav-placeholder {
+    display: inline-block;
+    position: absolute;
+    width: 300px;
+    height: 360px;
+    background-color:rgb(164, 32, 54);
+    border-radius: 0px 0px 25px 25px;
+}
+#main-category-content {
+    display: block;
+    position:relative;
+    top: 0px;
+    width: calc(100% - 300px);
+    height: 100%;
+    float: right;
+}
+
+/* Inline Story Image */
+.story-image {
+    margin: 30px var(--set-01) 30px var(--set-01);
+}
+
+/* —————— FOOTER —————— */
+.footer-locations {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 25px; */
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-columns: minmax(0, 200px) minmax(0, 200px) minmax(0, 200px) minmax(0, 225px); */
+    left: 0%;
+    max-width: 1200px;
+    margin: 0px auto 0px auto;
+}
+footer {
+    display: inline-block;
+    width: 100%;
+}
+}

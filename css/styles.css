@@ -856,6 +856,32 @@ header {
     text-decoration: underline;
 }
 
+/* —————— CAREER STATISTICS —————— */
+.career-statistics {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 25px 20px 7px 20px;
+    margin: 30px 0px 30px 0px;
+    font-size: 20px;
+    line-height: 28px;
+    /* color:rgb(128, 128, 128); */
+    text-align: center;
+    background-color: rgb(235, 235, 235);
+    border-radius: 15px;
+}
+.career-statistics p span {
+    font-weight: 700;
+    color:#000000;
+}
+.source {
+    font-size: 12px;
+    line-height: 20px;
+}
+.break {
+    display: none;
+}
 
 /*bootstrap accordion*/
 
@@ -1027,6 +1053,16 @@ header {
 .course-order {
     margin-bottom: 15px;
 }
+.course-order span a {
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+}
+.course-order span a:hover {
+    font-weight: 700;
+    color: #000000;
+    text-decoration:underline;
+}
 
 .option {
 	display: block;
@@ -1055,121 +1091,135 @@ header {
 }
 
 
+/* DOWNLOAD ROADMAPS BUTTON */
+.btn {
+    background-color: rgb(164, 32, 54);
+    border: none;
+    border-radius: 0px;
+    margin: 15px 0px -2px 0px;
+}
+.btn:hover  {
+    background-color: rgb(106, 21, 35);
+    border: none;
+}
+.btn:active, .btn-secondary:active, .dropdown-toggle:active,
+.btn:focus, .btn-secondary:focus, .dropdown-toggle:focus {
+    background-color: rgb(106, 21, 35);
+    border: none;
+    outline: none;
+}
+.dropdown-menu {
+    border-radius: 0px;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    box-shadow: 15px 15px 15px rgba(0,0,0,.2);
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.dropdown-menu li a {
+    line-height: 24px;
+    white-space: normal;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.dropdown-menu li a:hover {
+    background-color: rgb(225, 225, 225);
+}
+.dropdown-menu li a:active {
+    background-color: #808080;
+}
+.dropdown-menu li:active {
+    background-color: rgb(106, 21, 35);
+}
 
-/*FOOTER*/
 
-
+/* —————— FOOTER —————— */
 footer {
-	background-color: var(--darkred);
-	width: 100%;
-}
-
-#footer-address-bar {
-    display: block;
     position: relative;
-    height: 100%;
-    background-color: var(--reynoldsred);
-    padding: 0px var(--set-01) 0px var(--set-01);
-}
-
-.footer-address {
-    font-size: 20px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 400;
-    line-height: 30px;
-    color: rgb(255, 255, 255);
-    width: fit-content;
+    font-size: 16px;
+    color: #ffffff;
 }
-
-.address-head {
-    font-weight: 900;
-    margin: 0px 0px 0px 0px;
+.footer-addresses-band {
+    background-color: rgb(164, 32, 54);
+    padding: 0px 5% 50px 5%;
 }
-
-#footer-copyright-bar {
-    display: block;
-    position: relative;
-    height: 100%;
-    background-color: #353535;
-    padding: 0px var(--set-01) 1px var(--set-01);
+.footer-copyright-band {
+    background-color: rgb(106, 21, 35);
+    width: 100%;
+    padding: 0px 5% 10px 5%;
 }
-
-#footer-reynolds-logo {
-    display: block;
-    position: relative;
-    max-width: 1200px;
-    padding: 50px 0px 25px 0px;
-    margin: 0px auto 0px auto;
-}
-
-#footer-reynolds-logo img {
-    display: block;
-    position: relative;
-    width: 234px;
-    left: -30px;
-}
-
-.footer-locations {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px 0px 0px 0px;
-}
-
-.map-directions {
-    display: block;
-    position: relative;
-    background-color: var(--darkred);
-	border: 2px solid var(--darkred);
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 25px;
-    color: rgb(255, 255, 255);
-    padding: 1px 6px 0px 6px;
-    margin: 10px 0px 30px 0px;
-}
-
-.map-directions:hover {
-    background-color: #000000;
-}
-
 #footer-social-logo-group {
     display: block;
     position: relative;
     width: fit-content;
-    padding: 25px 0px 15px 0px;
+    padding: 25px 0px 10px 0px;
     margin: 0px auto 0px auto;
 }
-
 .reynolds-social-logos {
     display: inline-block;
     position: relative;
     width: 28px;
-    margin: 0px 2px 0px 2px;
+    margin: 0px 5px 0px 5px;
 }
-
 #footer-copyright-01 {
-    font-size: 18px;
-    font-weight: 900;
-    line-height: 25px;
-    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 700;
     text-align: center;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 0px 3px 0px;
     margin: 0px 0px 0px 0px;
+    color: rgba(255, 255, 255, 1);
 }
-
 #footer-copyright-02 {
     font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+}
+.footer-address {
+    line-height: 10px;
+    text-align: center;
+    width: fit-content;
+    margin: 0px auto 0px auto;
+}
+.address-head {
+    font-size: 18px;
+    font-weight: 700;
+}
+.map-directions {
+    display: block;
+    position: relative;
+    background-color: #781728;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 12px;
     font-weight: 400;
     line-height: 25px;
     color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 0px 0px 5px 0px;
+    padding: 1px 6px 0px 6px;
+    margin: 10px auto 30px auto;
 }
-
-#footer-copyright-02 a {
-	color: white;
-	text-decoration: none;
+.map-directions:hover {
+    background-color: #000000;
+}
+.footer-locations {
+    position: relative;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(1, 1fr);
+    /* max-width: 1200px; */
+    top: 25px;
+    margin: 0px auto 0px auto;
+}
+#footer-reynolds-logo img {
+    display: block;
+    position: relative;
+    left: -2%;
+    width: 250px;
+    padding: 35px 0px 25px 0px;
+    margin: 0px auto 0px auto;
 }
 
 
@@ -1294,6 +1344,27 @@ footer {
 
 }
 
+@media screen and (min-width:550px){
+/* FOOTER */
+#footer-reynolds-logo img {
+    left: 0%;
+}
+.footer-locations {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    left: 5%;
+    /* max-width: 1200px; */
+    margin: 0px auto 0px auto;
+    }
+.footer-address {
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+}
+.map-directions {
+    margin: 10px 0px 30px 0px;
+}	  
+}
 
 
 /*------------------------------------*\
@@ -1341,7 +1412,24 @@ footer {
 
 }
 
-
+@media screen and (min-width:768px) { 
+/* FOOTER */
+.footer-locations {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    left: 5%;
+    /* width: fit-content; */
+    max-width: 1200px;
+    margin: 0px auto 0px auto;
+    /* outline: 1px solid lime; */
+}
+.footer-address:nth-child(4) {
+    text-align: left;
+    grid-column-start: 2;
+    /* margin: 0px auto 0px auto; */
+} 	
+}
 
 /*------------------------------------*\
   TABLET - LARGE SCREENS
@@ -1494,6 +1582,25 @@ footer {
   DESKTOP
 \*------------------------------------*/
 
+
+
+@media screen and (min-width:1025px) {
+/* —————— FOOTER —————— */
+.footer-locations {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 25px; */
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-columns: minmax(0, 200px) minmax(0, 200px) minmax(0, 200px) minmax(0, 225px); */
+    left: 0%;
+    max-width: 1200px;
+    margin: 0px auto 0px auto;
+}
+footer {
+    display: inline-block;
+    width: 100%;
+}	
+}
 
 
 @media (min-width: 1085px) {
