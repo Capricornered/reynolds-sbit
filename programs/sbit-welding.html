@@ -208,20 +208,31 @@
 
       <nav class="body-nav less">
         <ul>
-        <li><a href="sbit-welding/career-outlook.html">Career Outlook</a></li>
-        <li><a href="sbit-welding/faculty-and-staff.html">Faculty & Staff</a></li>
-        <li onclick="contactSBIT()"><span>Contact SBIT</span></li>
+          <li><a href="sbit-welding/career-outlook.html">Career Outlook</a></li>
+          <li><a href="sbit-welding/faculty-and-staff.html">Faculty & Staff</a></li>
+          <li onclick="contactSBIT()"><span>More Information</span></li>
         </ul>
         <span class="body-nav arrow" onclick="openBodyMenu()">&#x203A;</span>
-    </nav>
-
-      <!--clicking "contact SBIT" in the body menu brings up box on same page with contact info-->
+      </nav>
+      <!--clicking "more information" in the body menu brings up box on same page with contact info-->
       <div id="sbit-contact">
         <span onclick="contactSBIT()" class="x-out">✕</span>
         <h3>School of Business and Industrial&nbsp;Trades</h3>
         <span>Phone: <a href="tel:+18045235301">(804) 523-5301</a></span>
         <br />
         <span>E-mail: <a href="mailto:sbit@reynolds.edu">sbit@reynolds.edu</a></span>
+        <br />
+        <p class="more-info">Fill out your contact information below and receive a digital pamphlet with more information on the School of Business and Industrial Trades!</p>
+        <form id="contact-form">              
+          <input type="text" name="username" id="username" placeholder="Name" />
+          <br />
+          <input type="email" name="email" id="email" placeholder="Email Address" required />
+          <br />
+          <br />
+          <div class="inputc">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
       </div>
 
       <div id="sbit-main-image">
@@ -244,7 +255,7 @@
         <p>Ut quis te iusto? Vulputate enim lobortis, nostrud feugait et enim ullamcorper wisi nulla in molestie exerci molestie odio velit suscipit. Delenit ex consequat suscipit veniam vel. Dignissim, nostrud nulla iusto praesent dolore augue minim, hendrerit enim at facilisis blandit elit ad iusto, praesent dignissim facilisi, delenit te. Illum lobortis praesent luptatum ullamcorper dignissim praesent sciurus lobortis nulla. Exerci feugiat vel in eum in diam. Vulputate aliquip nulla ut duis augue, sit lorem in.</p>
         
         <video class="section-video" controls="controls">
-          <source src="../media/welding-sample-video.mp4" type="video/mp4" />
+          <source src="../media/3232776252.mp4" type="video/mp4" />
         </video>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -269,322 +280,324 @@
         <!-- START — BOOTSTRAP ALWAYS OPEN ACCORDION EXAMPLE -->
         <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
 
-            <!-- BOOTSTRAP ACCORDION ITEM 1 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                <button class="accordion-button collapsed" type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseOne">
-                  Welding CSC
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
-                aria-labelledby="panelsStayOpen-headingOne">
-                <div class="accordion-body">
-                  <div class="purpose-and-other">
-                    <p>PURPOSE: Employment opportunities exist for individuals proficient in advanced welding techniques. This program is designed for students with no previous experience in welding, as well as for individuals currently employed in the welding field who wish to upgrade their skills. Individuals entering the Welding Career Studies Certificate (CSC) should consider this program as a means of developing or advancing their job skills over a one-year period of time and as a means of acquiring the skills necessary to test for the various levels of welding certification.</p>
-
-                    <p>OCCUPATIONAL OBJECTIVES: Opportunities for graduates include construction welder, fabrication welder, and welding supply salesperson.</p>
-
-                    <p>ADMISSION REQUIREMENTS: General college curricular admission</p>
-
-                    <h3>Curriculum</h3>
-
-                    <p class="course-order">Courses should be taken in the order listed.</p>
-                  </div>
-
-                  <!-- Custom Accordion Item 1 Within Bootstrap Accordion Item 1 -->
-                  <button type="button" class="accordion__button">
-                    <div class="course-container">
-                      <p class="course-number">SAF 130</p>
-                      <p class="course-name">Industrial Safety - OSHA-10</p>
-                      <p class="course-credits">Credit Hours: 1</p>
-                    </div>
-                  </button>
-
-                  <div class="accordion__content">
-                    <p>Presents an introduction to occupational health and safety and its application in the workplace. Emphasizes safety standards and the Occupational Safety and Health Act (OSHA), its rules and regulations (OSHA 10).</p>
-
-                    <p>Lecture Hours: Lecture 1 hour per week.
-                    <br/>
-                      Semester(s) Offered: Fall Spring</p>
-                  </div>
-
-                  <!-- Custom Accordion Item 2 Within Bootstrap Accordion Item 1 -->
-                  <button type="button" class="accordion__button">
-                    <div class="course-container">
-                      <p class="course-number">WEL 120</p>
-                      <p class="course-name">Introduction to Welding</p>
-                      <p class="course-credits">Credit Hours: 2</p>
-                  </div>
-                  </button>
-
-                  <div class="accordion__content">
-                    <p>Introduces history of welding processes. Covers types of equipment and assembly of units. Stresses welding procedures such as fusion, non-fusion, and cutting oxyacetylene. Introduces arc welding and plasma arc cutting. Emphasizes procedures in the use of tools and equipment.</p>
-
-                    <p>Lecture Hours: Lecture 1 hour.
-                    <br/>
-                       Recitation and Laboratory Hours: Laboratory 3 hours.
-                    <br/>
-                       Semester(s) Offered: Fall Spring Summer</p>
-                  </div>
-
-                  <!-- Custom Accordion Item 3 Within Bootstrap Accordion Item 1 -->
-                  <button type="button" class="accordion__button">
-                    <div class="course-container">
-                      <p class="course-number">WEL 155</p>
-                      <p class="course-name">Ornamental Welding</p>
-                      <p class="course-credits">Credit Hours: 2</p>
-                    </div>
-                  </button>
-
-                  <div class="accordion__content">
-                    <p>Introduces students to basic equipment, safety, and processes useful in the fabrication of welded ornamental objects.</p>
-
-                    <p>Lecture Hours: Lecture 1 hour.
-                      <br/>
-                         Recitation and Laboratory Hours: Laboratory 3 hours.
-                      <br/>
-                         Semester(s) Offered: Fall Spring</p>
-                  </div>
-
-                  <!-- Custom Accordion Item 4 Within Bootstrap Accordion Item 1 -->
-                  <button type="button" class="accordion__button">
-                    <div class="course-container">
-                      <p class="course-number">WEL 160</p>
-                      <p class="course-name">Gas Metal Arc Welding (MIG and FCAW)</p>
-                      <p class="course-credits">Credit Hours: 3</p>
-                    </div>
-                  </button>
-
-                  <div class="accordion__content">
-                    <p>Introduces semi-automatic welding processes with emphasis on practical application. Includes the study of filler wires, fluxes, and gases. Introduces practical operations in the use of gas metal arc welding and equipment. Studies equipment operation setup, safety, and practice of semi-automatic welding processes.</p>
-
-                    <p>Lecture Hours: Lecture 2 hour.
-                      <br/>
-                         Recitation and Laboratory Hours: Laboratory 3 hours.
-                      <br/>
-                         Semester(s) Offered: Fall Spring</p>
-                  </div>
-
-                  <!-- Custom Accordion Item 5 Within Bootstrap Accordion Item 1 -->
-                  <button type="button" class="accordion__button">
-                    <div class="course-container">
-                      <p class="course-number">WEL 150</p>
-                      <p class="course-name">Welding Drawing and Interpretation</p>
-                      <p class="course-credits">Credit Hours: 2</p>
-                    </div>
-                  </button>
-                  
-                  <div class="accordion__content">
-                    <p>Teaches fundamentals required for successful drafting as applied to the welding industry. Includes blueprint reading, geometric principles of drafting and freehand sketching, basic principles of orthographic projection, preparation of drawings, and interpretation of symbols.</p>
-
-                    <p>Lecture Hours: Lecture 2 hours.
-                      <br/>
-                         Semester(s) Offered: Fall Spring</p>
-                  </div>
-
-                  <!-- Custom Accordion Item 6 Within Bootstrap Accordion Item 1 -->
-                  <button type="button" class="accordion__button">
-                    <div class="course-container">
-                      <p class="course-number">WEL 164</p>
-                      <p class="course-name">Gas Tungsten Arc Welding (GTAW), Tungsten Inert Gas (TIG)</p>
-                      <p class="course-credits">Credit Hours: 3</p>
-                    </div>
-                  </button>
-
-                  <div class="accordion__content">
-                    <p>Introduces practical operations in the use of tungsten arc welding and equipment. Studies equipment operation setup, safety, and practice of Gas Tungsten Arc Welding (GTAW), Tungsten Inert Gas (TIG).</p>
-
-                    <p>Lecture Hours: Lecture 2 hours.
-                      <br/>
-                         Recitation and Laboratory Hours: Laboratory 3 hours.
-                      <br/>
-                         Semester(s) Offered: Fall Spring</p>
-                  </div>
-
-                  <!-- Custom Accordion Item 7 Within Bootstrap Accordion Item 1 -->
-                  <button type="button" class="accordion__button">
-                    <div class="course-container">
-                      <p class="course-number">WEL 124</p>
-                      <p class="course-name" class="kerning-01">Shielded Metal Arc Welding (Advanced)</p>
-                      <p class="course-credits">Credit Hours: 3</p>
-                    </div>
-                  </button>
-
-                  <div class="accordion__content">
-                    <p>Continues instruction on operation of AC and DC power sources, welding polarities, heats and electrodes for use in joining various metal alloys by the arc welding process. Deals with running beads, butt, and fillet welds in all positions. Emphasizes safety procedures.</p>
-
-                    <p>Lecture Hours: Lecture 2 hours.
-                      <br/>
-                        Recitation and Laboratory Hours: Laboratory 3 hours.
-                      <br/>
-                        Semester(s) Offered: Fall Spring
-                      <br/>
-                        Prerequisites: WEL 120 or instructor’s approval.</p>
-                  </div>
-
-                  <div class="total-credit-hours">Total: 16 Credit Hours</div>
-
-                </div>
-              </div>
-            </div>
-
-            <!-- BOOTSTRAP ACCORDION ITEM 2 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                <button class="accordion-button collapsed" type="button"
+          <!-- BOOTSTRAP ACCORDION ITEM 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button collapsed" type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseTwo"
+                data-bs-target="#panelsStayOpen-collapseOne"
                 aria-expanded="false"
-                aria-controls="panelsStayOpen-collapseTwo">
-                   Advanced Welding CSC
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                aria-labelledby="panelsStayOpen-headingTwo">
-                <div class="accordion-body">
+                aria-controls="panelsStayOpen-collapseOne">
+                Welding CSC
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
                 <div class="purpose-and-other">
-                  <p>PURPOSE: The program offers a career pathway that enables learners to continue their studies for advanced skills. Those who complete this certificate will be well prepared to fill the gap in industrial manufacturing between the welder/fitter-welder and the welding shop supervisor by being better prepared in structural and maintenance welding. Structural and pipe welders join and assemble components as part of the construction of buildings, vessels, structures, and stand-alone pipelines. They use a variety of welding processes and equipment, in a wide range of industrial and commercial environments.</p>
+                  <p>PURPOSE: Employment opportunities exist for individuals proficient in advanced welding techniques. This program is designed for students with no previous experience in welding, as well as for individuals currently employed in the welding field who wish to upgrade their skills. Individuals entering the Welding Career Studies Certificate (CSC) should consider this program as a means of developing or advancing their job skills over a one-year period of time and as a means of acquiring the skills necessary to test for the various levels of welding certification.</p>
 
-                  <p>OCCUPATIONAL OBJECTIVES: Opportunities for graduates include shop supervisor, weld inspector, onsite welder, fitter/welder, pipe welder, and advanced structural welder.</p>
+                  <p>OCCUPATIONAL OBJECTIVES: Opportunities for graduates include construction welder, fabrication welder, and welding supply salesperson.</p>
 
                   <p>ADMISSION REQUIREMENTS: General college curricular admission</p>
 
-                  <p>PROGRAM NOTES: Students should possess the competencies obtained by completion of WEL 120 - Introduction to Welding, WEL 160 - Gas Metal Arc Welding (MIG and FCAW), and WEL 164 - Gas Tungsten Arc Welding (GTAW), Tungsten Inert Gas (TIG), or may petition for program head approval to enroll in the program.</p>
-
                   <h3>Curriculum</h3>
 
-                  <p class="course-order">Courses should be taken in the order listed.</p>
+                  <p class="course-order">Courses should be taken in the order listed. To help with course planning, download curriculum planning <span><a href="roadmaps/welding-csc.docx">Roadmap</a></span>.</p>
                 </div>
 
-                  <!-- Custom Accordion Item 1 Within Bootstrap Accordion Item 2 -->
-                  <button type="button" class="accordion__button">
-                    <div class="course-container">
-                      <p class="course-number">HLT 106</p>
-                      <p class="course-name">First Aid and Safety</p>
-                      <p class="course-credits">Credit Hours: 2</p>
+                <!-- Custom Accordion Item 1 Within Bootstrap Accordion Item 1 -->
+                <button type="button" class="accordion__button">
+                  <div class="course-container">
+                    <p class="course-number">SAF 130</p>
+                    <p class="course-name">Industrial Safety - OSHA-10</p>
+                    <p class="course-credits">Credit Hours: 1</p>
                   </div>
-                  </button>
+                </button>
 
-                  <div class="accordion__content">
-                    <p>Focuses on the principles and techniques of safety and first aid.</p>
+                <div class="accordion__content">
+                  <p>Presents an introduction to occupational health and safety and its application in the workplace. Emphasizes safety standards and the Occupational Safety and Health Act (OSHA), its rules and regulations (OSHA 10).</p>
 
-                    <p>Lecture Hours: Lecture 2 hours per week.
-                    <br/>
-                      Semester(s) Offered: Fall Spring Summer</p>
-                  </div>
-
-                  <!-- Custom Accordion Item 2 Within Bootstrap Accordion Item 2 -->
-                  <button type="button" class="accordion__button">
-                    <div class="course-container">
-                      <p class="course-number">MTH 111</p>
-                      <p class="course-name">Basic Technical Mathematics</p>
-                      <p class="course-credits">Credit Hours: 3</p>
-                    </div>
-                  </button>
-
-                  <div class="accordion__content">
-                    <p>Provides a foundation in mathematics with emphasis in arithmetic, unit conversion, basic algebra, geometry and trigonometry. </p>
-
-                    <p>Lecture Hours: Lecture 3 hours per week.
-                    <br/>
-                      Semester(s) Offered: Fall Spring Summer
-                    <br/>
-                    Prerequisites: Competency in Introductory Algebra MDE 10 as demonstrated through placement or by satisfactorily completing MDE 10.</p>
-                  </div>
-
-                  <!-- Custom Accordion Item 3 Within Bootstrap Accordion Item 2 -->
-                  <button type="button" class="accordion__button">
-                    <div class="course-container">
-                      <p class="course-number">WEL 153</p>
-                      <p class="course-name">Layout and Fitting for Welders</p>
-                      <p class="course-credits">Credit Hours: 3</p>
-                    </div>
-                  </button>
-
-                  <div class="accordion__content">
-                    <p>Covers the application of formulas and calculations to the proper layout and fitting of metals in welding projects. Emphasizes the use of jigs, fixtures, and hand tools in metal fabrication and assembly along with fabrication and safety procedures for hands-on and workplace projects.</p>
-
-                    <p>Lecture Hours: Lecture 2 hours.
-                    <br/>
-                      Recitation and Laboratory Hours: Laboratory 3 hours.</p>
-                  </div>
-
-                  <!-- Custom Accordion Item 4 Within Bootstrap Accordion Item 2 -->
-                  <button type="button" class="accordion__button">
-                    <div class="course-container">
-                      <p class="course-number">WEL 141</p>
-                      <p class="course-name">Welder Qualification Tests I</p>
-                      <p class="course-credits">Credit Hours: 3</p>
-                    </div>
-                  </button>
-        
-                  <div class="accordion__content">
-                    <p>Studies techniques and practices of testing welded joints through destructive and nondestructive testing.</p>
-
-                    <p>Lecture Hours: Lecture 2.
-                    <br/>
-                        Recitation and Laboratory Hours: Laboratory 3 hours.
-                    <br/>
-                        Semester(s) Offered: Fall Spring</p>
-                  </div>
-
-                  <!-- Custom Accordion Item 5 Within Bootstrap Accordion Item 2 -->
-                  <button type="button" class="accordion__button">
-                    <div class="course-container">
-                      <p class="course-number">WEL 145</p>
-                      <p class="course-name">Welding Metallurgy</p>
-                      <p class="course-credits">Credit Hours: 3</p>
-                    </div>
-                  </button>
-    
-                  <div class="accordion__content">
-                    <p>Studies steel classifications, heat-treatment procedures, and properties of ferrous and non-ferrous metals. Discusses techniques and practices of testing welded joints and destructive/nondestructive, visual magnetic, and fluorescent testing.</p>
-
-                    <p>Lecture Hours: Lecture 3 hours per week.
-                    <br/>
-                        Recitation and Laboratory Hours: Laboratory 1 hour per week.
-                    <br/>
-                        Semester(s) Offered: Fall Spring</p>
-                  </div>
-
-                  <!-- Custom Accordion Item 6 Within Bootstrap Accordion Item 2 -->
-                  <button type="button" class="accordion__button">
-                    <div class="course-container">
-                      <p class="course-number">WEL 126</p>
-                      <p class="course-name">Pipe Welding I</p>
-                      <p class="course-credits">Credit Hours: 3</p>
-                    </div>
-                  </button>
-      
-                  <div class="accordion__content">
-                    <p>Teaches metal arc welding processes, including the welding of pressure piping in the horizontal, vertical, and horizontal-fixed positions in accordance with Section IX of the ASME Code.</p>
-
-                    <p>Lecture Hours: Lecture 2 hours.
-                    <br/>
-                        Recitation and Laboratory Hours: Laboratory 3 hours.
-                    <br/>
-                      Semester(s) Offered: Fall Spring</p>
-                  </div>
-
-                  <div class="total-credit-hours">Total: 17 Credit Hours</div>
-
+                  <p>Lecture Hours: Lecture 1 hour per week.
+                  <br/>
+                    Semester(s) Offered: Fall Spring</p>
                 </div>
+
+                <!-- Custom Accordion Item 2 Within Bootstrap Accordion Item 1 -->
+                <button type="button" class="accordion__button">
+                  <div class="course-container">
+                    <p class="course-number">WEL 120</p>
+                    <p class="course-name">Introduction to Welding</p>
+                    <p class="course-credits">Credit Hours: 2</p>
+                </div>
+                </button>
+
+                <div class="accordion__content">
+                  <p>Introduces history of welding processes. Covers types of equipment and assembly of units. Stresses welding procedures such as fusion, non-fusion, and cutting oxyacetylene. Introduces arc welding and plasma arc cutting. Emphasizes procedures in the use of tools and equipment.</p>
+
+                  <p>Lecture Hours: Lecture 1 hour.
+                  <br/>
+                     Recitation and Laboratory Hours: Laboratory 3 hours.
+                  <br/>
+                     Semester(s) Offered: Fall Spring Summer</p>
+                </div>
+
+                <!-- Custom Accordion Item 3 Within Bootstrap Accordion Item 1 -->
+                <button type="button" class="accordion__button">
+                  <div class="course-container">
+                    <p class="course-number">WEL 155</p>
+                    <p class="course-name">Ornamental Welding</p>
+                    <p class="course-credits">Credit Hours: 2</p>
+                  </div>
+                </button>
+
+                <div class="accordion__content">
+                  <p>Introduces students to basic equipment, safety, and processes useful in the fabrication of welded ornamental objects.</p>
+
+                  <p>Lecture Hours: Lecture 1 hour.
+                    <br/>
+                       Recitation and Laboratory Hours: Laboratory 3 hours.
+                    <br/>
+                       Semester(s) Offered: Fall Spring</p>
+                </div>
+
+                <!-- Custom Accordion Item 4 Within Bootstrap Accordion Item 1 -->
+                <button type="button" class="accordion__button">
+                  <div class="course-container">
+                    <p class="course-number">WEL 160</p>
+                    <p class="course-name">Gas Metal Arc Welding (MIG and FCAW)</p>
+                    <p class="course-credits">Credit Hours: 3</p>
+                  </div>
+                </button>
+
+                <div class="accordion__content">
+                  <p>Introduces semi-automatic welding processes with emphasis on practical application. Includes the study of filler wires, fluxes, and gases. Introduces practical operations in the use of gas metal arc welding and equipment. Studies equipment operation setup, safety, and practice of semi-automatic welding processes.</p>
+
+                  <p>Lecture Hours: Lecture 2 hour.
+                    <br/>
+                       Recitation and Laboratory Hours: Laboratory 3 hours.
+                    <br/>
+                       Semester(s) Offered: Fall Spring</p>
+                </div>
+
+                <!-- Custom Accordion Item 5 Within Bootstrap Accordion Item 1 -->
+                <button type="button" class="accordion__button">
+                  <div class="course-container">
+                    <p class="course-number">WEL 150</p>
+                    <p class="course-name">Welding Drawing and Interpretation</p>
+                    <p class="course-credits">Credit Hours: 2</p>
+                  </div>
+                </button>
+                
+                <div class="accordion__content">
+                  <p>Teaches fundamentals required for successful drafting as applied to the welding industry. Includes blueprint reading, geometric principles of drafting and freehand sketching, basic principles of orthographic projection, preparation of drawings, and interpretation of symbols.</p>
+
+                  <p>Lecture Hours: Lecture 2 hours.
+                    <br/>
+                       Semester(s) Offered: Fall Spring</p>
+                </div>
+
+                <!-- Custom Accordion Item 6 Within Bootstrap Accordion Item 1 -->
+                <button type="button" class="accordion__button">
+                  <div class="course-container">
+                    <p class="course-number">WEL 164</p>
+                    <p class="course-name">Gas Tungsten Arc Welding (GTAW), Tungsten Inert Gas (TIG)</p>
+                    <p class="course-credits">Credit Hours: 3</p>
+                  </div>
+                </button>
+
+                <div class="accordion__content">
+                  <p>Introduces practical operations in the use of tungsten arc welding and equipment. Studies equipment operation setup, safety, and practice of Gas Tungsten Arc Welding (GTAW), Tungsten Inert Gas (TIG).</p>
+
+                  <p>Lecture Hours: Lecture 2 hours.
+                    <br/>
+                       Recitation and Laboratory Hours: Laboratory 3 hours.
+                    <br/>
+                       Semester(s) Offered: Fall Spring</p>
+                </div>
+
+                <!-- Custom Accordion Item 7 Within Bootstrap Accordion Item 1 -->
+                <button type="button" class="accordion__button">
+                  <div class="course-container">
+                    <p class="course-number">WEL 124</p>
+                    <p class="course-name" class="kerning-01">Shielded Metal Arc Welding (Advanced)</p>
+                    <p class="course-credits">Credit Hours: 3</p>
+                  </div>
+                </button>
+
+                <div class="accordion__content">
+                  <p>Continues instruction on operation of AC and DC power sources, welding polarities, heats and electrodes for use in joining various metal alloys by the arc welding process. Deals with running beads, butt, and fillet welds in all positions. Emphasizes safety procedures.</p>
+
+                  <p>Lecture Hours: Lecture 2 hours.
+                    <br/>
+                      Recitation and Laboratory Hours: Laboratory 3 hours.
+                    <br/>
+                      Semester(s) Offered: Fall Spring
+                    <br/>
+                      Prerequisites: WEL 120 or instructor’s approval.</p>
+                </div>
+
+                <div class="total-credit-hours">Total: 16 Credit Hours</div>
+
               </div>
             </div>
-        </div>
-        <!-- END — BOOTSTRAP ALWAYS OPEN ACCORDION EXAMPLE -->
+          </div>
+
+          <!-- BOOTSTRAP ACCORDION ITEM 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo">
+                 Advanced Welding CSC
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+              <div class="purpose-and-other">
+                <p>PURPOSE: The program offers a career pathway that enables learners to continue their studies for advanced skills. Those who complete this certificate will be well prepared to fill the gap in industrial manufacturing between the welder/fitter-welder and the welding shop supervisor by being better prepared in structural and maintenance welding. Structural and pipe welders join and assemble components as part of the construction of buildings, vessels, structures, and stand-alone pipelines. They use a variety of welding processes and equipment, in a wide range of industrial and commercial environments.</p>
+
+                <p>OCCUPATIONAL OBJECTIVES: Opportunities for graduates include shop supervisor, weld inspector, onsite welder, fitter/welder, pipe welder, and advanced structural welder.</p>
+
+                <p>ADMISSION REQUIREMENTS: General college curricular admission</p>
+
+                <p>PROGRAM NOTES: Students should possess the competencies obtained by completion of WEL 120 - Introduction to Welding, WEL 160 - Gas Metal Arc Welding (MIG and FCAW), and WEL 164 - Gas Tungsten Arc Welding (GTAW), Tungsten Inert Gas (TIG), or may petition for program head approval to enroll in the program.</p>
+
+                <h3>Curriculum</h3>
+
+                <p class="course-order">Courses should be taken in the order listed. To help with course planning, download curriculum planning <span><a href="roadmaps/welding-advanced-csc.docx">Roadmap</a></span>.</p>
+              </div>
+
+
+
+                <!-- Custom Accordion Item 1 Within Bootstrap Accordion Item 2 -->
+                <button type="button" class="accordion__button">
+                  <div class="course-container">
+                    <p class="course-number">HLT 106</p>
+                    <p class="course-name">First Aid and Safety</p>
+                    <p class="course-credits">Credit Hours: 2</p>
+                </div>
+                </button>
+
+                <div class="accordion__content">
+                  <p>Focuses on the principles and techniques of safety and first aid.</p>
+
+                  <p>Lecture Hours: Lecture 2 hours per week.
+                  <br/>
+                    Semester(s) Offered: Fall Spring Summer</p>
+                </div>
+
+                <!-- Custom Accordion Item 2 Within Bootstrap Accordion Item 2 -->
+                <button type="button" class="accordion__button">
+                  <div class="course-container">
+                    <p class="course-number">MTH 111</p>
+                    <p class="course-name">Basic Technical Mathematics</p>
+                    <p class="course-credits">Credit Hours: 3</p>
+                  </div>
+                </button>
+
+                <div class="accordion__content">
+                  <p>Provides a foundation in mathematics with emphasis in arithmetic, unit conversion, basic algebra, geometry and trigonometry. </p>
+
+                  <p>Lecture Hours: Lecture 3 hours per week.
+                  <br/>
+                    Semester(s) Offered: Fall Spring Summer
+                  <br/>
+                  Prerequisites: Competency in Introductory Algebra MDE 10 as demonstrated through placement or by satisfactorily completing MDE 10.</p>
+                </div>
+
+                <!-- Custom Accordion Item 3 Within Bootstrap Accordion Item 2 -->
+                <button type="button" class="accordion__button">
+                  <div class="course-container">
+                    <p class="course-number">WEL 153</p>
+                    <p class="course-name">Layout and Fitting for Welders</p>
+                    <p class="course-credits">Credit Hours: 3</p>
+                  </div>
+                </button>
+
+                <div class="accordion__content">
+                  <p>Covers the application of formulas and calculations to the proper layout and fitting of metals in welding projects. Emphasizes the use of jigs, fixtures, and hand tools in metal fabrication and assembly along with fabrication and safety procedures for hands-on and workplace projects.</p>
+
+                  <p>Lecture Hours: Lecture 2 hours.
+                  <br/>
+                    Recitation and Laboratory Hours: Laboratory 3 hours.</p>
+                </div>
+
+                <!-- Custom Accordion Item 4 Within Bootstrap Accordion Item 2 -->
+                <button type="button" class="accordion__button">
+                  <div class="course-container">
+                    <p class="course-number">WEL 141</p>
+                    <p class="course-name">Welder Qualification Tests I</p>
+                    <p class="course-credits">Credit Hours: 3</p>
+                  </div>
+                </button>
+      
+                <div class="accordion__content">
+                  <p>Studies techniques and practices of testing welded joints through destructive and nondestructive testing.</p>
+
+                  <p>Lecture Hours: Lecture 2.
+                  <br/>
+                      Recitation and Laboratory Hours: Laboratory 3 hours.
+                  <br/>
+                      Semester(s) Offered: Fall Spring</p>
+                </div>
+
+                <!-- Custom Accordion Item 5 Within Bootstrap Accordion Item 2 -->
+                <button type="button" class="accordion__button">
+                  <div class="course-container">
+                    <p class="course-number">WEL 145</p>
+                    <p class="course-name">Welding Metallurgy</p>
+                    <p class="course-credits">Credit Hours: 3</p>
+                  </div>
+                </button>
+  
+                <div class="accordion__content">
+                  <p>Studies steel classifications, heat-treatment procedures, and properties of ferrous and non-ferrous metals. Discusses techniques and practices of testing welded joints and destructive/nondestructive, visual magnetic, and fluorescent testing.</p>
+
+                  <p>Lecture Hours: Lecture 3 hours per week.
+                  <br/>
+                      Recitation and Laboratory Hours: Laboratory 1 hour per week.
+                  <br/>
+                      Semester(s) Offered: Fall Spring</p>
+                </div>
+
+                <!-- Custom Accordion Item 6 Within Bootstrap Accordion Item 2 -->
+                <button type="button" class="accordion__button">
+                  <div class="course-container">
+                    <p class="course-number">WEL 126</p>
+                    <p class="course-name">Pipe Welding I</p>
+                    <p class="course-credits">Credit Hours: 3</p>
+                  </div>
+                </button>
+    
+                <div class="accordion__content">
+                  <p>Teaches metal arc welding processes, including the welding of pressure piping in the horizontal, vertical, and horizontal-fixed positions in accordance with Section IX of the ASME Code.</p>
+
+                  <p>Lecture Hours: Lecture 2 hours.
+                  <br/>
+                      Recitation and Laboratory Hours: Laboratory 3 hours.
+                  <br/>
+                    Semester(s) Offered: Fall Spring</p>
+                </div>
+
+                <div class="total-credit-hours-last">Total: 17 Credit Hours</div>
+
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- END — BOOTSTRAP ALWAYS OPEN ACCORDION EXAMPLE -->
 
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
             Download Curriculum Roadmaps
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Major Name</a></li>
-            <li><a class="dropdown-item" href="#">Major Name</a></li>
+            <li><a class="dropdown-item" href="roadmaps/welding-csc.docx">Welding CSC</a></li>
+            <li><a class="dropdown-item" href="roadmaps/welding-advanced-csc.docx">Advanced Welding CSC</a></li>
           </ul>
       </div>
         

@@ -202,20 +202,32 @@
                 <ul>
                     <li><a href="../sbit-culinary-and-hospitality.html">Culinary Home</a></li>
                     <li><a href="career-outlook.html">Career Outlook</a></li>
-                    <li onclick="contactSBIT()"><span>Contact SBIT</span></li>
+                    <li onclick="contactSBIT()"><span>More Information</span></li>
                 </ul>
                 <span class="body-nav arrow" onclick="openBodyMenu()">&#x203A;</span>
             </nav>
-            <!--clicking "contact SBIT" in the body menu brings up box on same page with contact info-->
+            <!--clicking "more information" in the body menu brings up box on same page with contact info-->
             <div id="sbit-contact">
                 <span onclick="contactSBIT()" class="x-out">✕</span>
                 <h3>School of Business and Industrial&nbsp;Trades</h3>
                 <span>Phone: <a href="tel:+18045235301">(804) 523-5301</a></span>
                 <br />
                 <span>E-mail: <a href="mailto:sbit@reynolds.edu">sbit@reynolds.edu</a></span>
-            </div>
-            <!--carousel implements Bootstrap and can have multiple added slides (currently uses two placeholders)-->
-            <div id="sbit-main-image">
+                <br />
+                <p class="more-info">Fill out your contact information below and receive a digital pamphlet with more information on the School of Business and Industrial Trades!</p>
+                <form id="contact-form">              
+                    <input type="text" name="username" id="username" placeholder="Name" />
+                    <br />
+                    <input type="email" name="email" id="email" placeholder="Email Address" required />
+                    <br />
+                    <br />
+                    <div class="inputc">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+             </div>
+             
+             <div id="sbit-main-image">
                 <img src="../../images/culinary-placeholder.jpg" alt="ALTTEXT">
             </div>
             <div class="content">

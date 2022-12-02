@@ -201,211 +201,358 @@
 
         <div class="grid-container">
 
-        <nav class="body-nav less">
-            <ul>
-            <li><a href="sbit-diesel/career-outlook.html">Career Outlook</a></li>
-            <li><a href="sbit-diesel/faculty-and-staff.html">Faculty & Staff</a></li>
-            <li onclick="contactSBIT()"><span>Contact SBIT</span></li>
-            </ul>
-            <span class="body-nav arrow" onclick="openBodyMenu()">&#x203A;</span>
-        </nav>
+          <nav class="body-nav less">
+              <ul>
+                <li><a href="sbit-diesel/career-outlook.html">Career Outlook</a></li>
+                <li><a href="sbit-diesel/faculty-and-staff.html">Faculty & Staff</a></li>
+                <li onclick="contactSBIT()"><span>More Information</span></li>
+              </ul>
+              <span class="body-nav arrow" onclick="openBodyMenu()">&#x203A;</span>
+          </nav>
+          <!--clicking "more information" in the body menu brings up box on same page with contact info-->
+          <div id="sbit-contact">
+              <span onclick="contactSBIT()" class="x-out">✕</span>
+              <h3>School of Business and Industrial&nbsp;Trades</h3>
+              <span>Phone: <a href="tel:+18045235301">(804) 523-5301</a></span>
+              <br />
+              <span>E-mail: <a href="mailto:sbit@reynolds.edu">sbit@reynolds.edu</a></span>
+              <br />
+              <p class="more-info">Fill out your contact information below and receive a digital pamphlet with more information on the School of Business and Industrial Trades!</p>
+              <form id="contact-form">              
+                  <input type="text" name="username" id="username" placeholder="Name" />
+                  <br />
+                  <input type="email" name="email" id="email" placeholder="Email Address" required />
+                  <br />
+                  <br />
+                  <div class="inputc">
+                      <button type="submit">Submit</button>
+                  </div>
+              </form>
+          </div>
 
-        <!--clicking "contact SBIT" in the body menu brings up box on same page with contact info-->
-        <div id="sbit-contact">
-            <span onclick="contactSBIT()" class="x-out">✕</span>
-            <h3>School of Business and Industrial&nbsp;Trades</h3>
-            <span>Phone: <a href="tel:+18045235301">(804) 523-5301</a></span>
-            <br />
-            <span>E-mail: <a href="mailto:sbit@reynolds.edu">sbit@reynolds.edu</a></span>
-        </div>
+          <div id="sbit-main-image">
+              <img src="../images/diesel-placeholder.jpg" alt="ALTTEXT">
+          </div>
 
-        <div id="sbit-main-image">
-            <img src="../images/diesel-placeholder.jpg" alt="ALTTEXT">
-        </div>
+          <section class="content">
 
-        <section class="content">
+              <ul class="breadcrumbs">
+              <li><a href="#">Reynolds</a></li>
+              <li><a href="#">Get Started</a></li>
+              <li><a href="#">Majors By School</a></li>
+              <li><a href="../sbit-home.html">School of Business and Industrial Trades</a></li>
+              <li>Diesel</li>
+              </ul>
 
-            <ul class="breadcrumbs">
-            <li><a href="#">Reynolds</a></li>
-            <li><a href="#">Get Started</a></li>
-            <li><a href="#">Majors By School</a></li>
-            <li><a href="../sbit-home.html">School of Business and Industrial Trades</a></li>
-            <li>Diesel</li>
-            </ul>
+              <h2>Diesel</h2>
 
-            <h2>Diesel</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A perspiciatis distinctio nostrum, alias, aut laudantium vel nobis sapiente asperiores accusantium iste quod, vitae consectetur hic tenetur illo facilis repellat delectus.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempore ullam quo quos magnam quibusdam esse ex illum maxime, delectus assumenda atque distinctio, necessitatibus earum nostrum qui, eos veniam dolore!</p>
+              
+              <video class="section-video" controls="controls">
+              <source src="../media/pexels-ron-lach-7564879-mod.mp4" type="video/mp4" />
+              </video>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A perspiciatis distinctio nostrum, alias, aut laudantium vel nobis sapiente asperiores accusantium iste quod, vitae consectetur hic tenetur illo facilis repellat delectus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempore ullam quo quos magnam quibusdam esse ex illum maxime, delectus assumenda atque distinctio, necessitatibus earum nostrum qui, eos veniam dolore!</p>
-            
-            <video class="section-video" controls="controls">
-            <source src="../media/diesel-sample-video.mp4" type="video/mp4" />
-            </video>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>In quis autem vel dolor ex augue quis iusto lorem commodo nostrud crisare? Commodo nisl duis, minim facilisi. Ut erat, nulla euismod dignissim minim ea feugait ullamcorper veniam. Consequat ad nisl vero luptatum dolor praesent dolor eros enim. Augue duis, magna duis eum feugiat wisi at ut iusto eum illum wisi in commodo feugait.</p>
+              
+              <img class="story-image" src="../images/diesel-story-1.jpg" alt="ALTTEXT"/>
+              
+              <p>Minim dolore autem vel ex enim delenit minim, eros odio aliquip blandit lobortis at ut qui minim ut suscipit wisi velit at illum. Dolore augue ad magna lobortis vulputate elit, in vel tation. Feugiat esse crisare eros accumsan blandit dolore consequat in, te in augue veniam. Ut et illum consequatvel ut, in feugait aliquip iriuredolor illum ea quis tation, iriuredolor nisl eum eros te dolore at molestie, amet vero, lobortis ad, autem delenit?</p>
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
+              </p>
+              
+              <div id="more-content">
+              <img class="story-image" src="../images/diesel-story-2.jpg" alt="ALTTEXT"/>
+              <p>Adipiscing delenit luptatum consequat commodo tation lobortis dignissim qui lobortis esse, molestie duis feugait feugiat esse dolore wisi. Eum enim commodo iriure molestie nonummy ullamcorper iusto. Hendrerit vulputate eum hendrerit, te ullamcorper et feugait dignissim?</p>
+              </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>In quis autem vel dolor ex augue quis iusto lorem commodo nostrud crisare? Commodo nisl duis, minim facilisi. Ut erat, nulla euismod dignissim minim ea feugait ullamcorper veniam. Consequat ad nisl vero luptatum dolor praesent dolor eros enim. Augue duis, magna duis eum feugiat wisi at ut iusto eum illum wisi in commodo feugait.</p>
-            
-            <img class="story-image" src="../images/diesel-story-1.jpg" alt="ALTTEXT"/>
-            
-            <p>Minim dolore autem vel ex enim delenit minim, eros odio aliquip blandit lobortis at ut qui minim ut suscipit wisi velit at illum. Dolore augue ad magna lobortis vulputate elit, in vel tation. Feugiat esse crisare eros accumsan blandit dolore consequat in, te in augue veniam. Ut et illum consequatvel ut, in feugait aliquip iriuredolor illum ea quis tation, iriuredolor nisl eum eros te dolore at molestie, amet vero, lobortis ad, autem delenit?</p>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
-            </p>
-            
-            <div id="more-content">
-            <img class="story-image" src="../images/diesel-story-2.jpg" alt="ALTTEXT"/>
-            <p>Adipiscing delenit luptatum consequat commodo tation lobortis dignissim qui lobortis esse, molestie duis feugait feugiat esse dolore wisi. Eum enim commodo iriure molestie nonummy ullamcorper iusto. Hendrerit vulputate eum hendrerit, te ullamcorper et feugait dignissim?</p>
-            </div>
+              <button id="read-more-button">Read More</button>
 
-            <button id="read-more-button">Read More</button>
+              <h2>Majors</h2>
 
-            <h2>Majors</h2>
+              <!-- START — BOOTSTRAP ALWAYS OPEN ACCORDION EXAMPLE -->
+          <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
 
-            <!-- START — BOOTSTRAP ACCORDION -->
-            <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+              <!-- BOOTSTRAP ACCORDION ITEM 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    Diesel Mechanics Technology C
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body">
+                    <div class="purpose-and-other">
+                        <p>PURPOSE: The Diesel Mechanics Technology curriculum is designed to introduce the fundamentals of diesel equipment repair and provide instruction in hydraulic systems, welding, diesel engine overhaul and tune-up, electrical circuits, power train maintenance, and fuel injection. The Diesel Mechanics Technology program will give graduates a practical background in basic diesel equipment technology principles. The curriculum provides practical training and the option of on-the-job experience through cooperative education. The demand for trained diesel mechanic personnel and technicians is increasing.</p>
+      
+                        <p>OCCUPATIONAL OBJECTIVES: The Diesel Mechanics Technology curriculum prepares graduates for employment in any of the following occupations: Diesel Equipment Repair, Diesel Truck Repair, Supervisor, Shop Foreman, Heavy Duty Repair, Purchasing Agent, Salesperson, Power Train Repair, Fuel Injection Repair, Diesel Engine Repair, and Automotive Diesel Repair.</p>
+      
+                        <p>ADMISSION REQUIREMENTS: General college curricular admission</p>
+      
+                        <p>PROGRAM NOTES: Students are strongly encouraged to meet with the program head either before registering for their first semester or early in their first semester of study. Students will be required to furnish clear lens safety glasses, leather work footwear, and proper clothing for working in the lab.</p>
+      
+                        <p>COMPUTER COMPETENCY REQUIREMENT: Students in this program will meet the college’s computer competency requirement by successfully completing ITE 152. Students can also meet this requirement by passing the college’s computer competency exam, administered in the testing centers on each campus, in which case they will receive college credit for ITE 152. Students not passing the computer competency exam may retake the exam only once.</p>
 
-                <!-- BOOTSTRAP ACCORDION ITEM 1 -->
-                <div class="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                        Major Name
-                    </button>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-                        <div class="accordion-body">
-                            <div class="purpose-and-other">
-                                <p><strong>PURPOSE:</strong> Purpose text.</p>
-                                <p><strong>OCCUPATIONAL OBJECTIVES:</strong> Objective text.</p>
-                                <p><strong>ADMISSION REQUIREMENTS:</strong> General college curricular admission</p>
-                                
-                                <h3>Curriculum</h3>
+                      <h3>Curriculum</h3>
 
-                                <p class="course-order">Courses should be taken in the order listed.</p>
-                            </div>
-
-                            <!-- Custom Accordion Item 1 Within Bootstrap Accordion Item 1 -->
-                            <button type="button" class="accordion__button">
-                                <div class="course-container">
-                                    <span class="course-number">NUM</span>
-                                    <span class="course-name">Name</span>
-                                    <span class="course-credits">Credit Hours: X</span>
-                                </div>
-                            </button>
-
-                            <div class="accordion__content">
-                                <p>
-                                    Information.
-                                    <br/>
-                                    <br/>
-                                    <strong>Lecture Hours:</strong> Lecture X hours per week.
-                                    <br/>
-                                    <strong>Semester(s) Offered:</strong> Semesters
-                                </p>
-                            </div>
-
-                            <span class="total-credit-hours">Total: X Credit Hours</span>
-
-                        </div>
+                      <p class="course-order">Courses should be taken in the order listed. To help with course planning, download curriculum planning <span><a href="roadmaps/diesel-mechanics-technology-certificate.docx">Roadmap</a></span>.</p>
                     </div>
-                </div>
 
-                <!-- BOOTSTRAP ACCORDION ITEM 2 -->
-                <div class="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                        Major Name
+                    <!-- Custom Accordion Item 1 Within Bootstrap Accordion Item 1 -->
+                    <button type="button" class="accordion__button">
+                      <div class="course-container">
+                        <p class="course-number">DSL 143</p>
+                        <p class="course-name">Diesel Truck Electrical Systems</p>
+                        <p class="course-credits">Credit Hours: 4</p>
+                      </div>
                     </button>
-                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                        <div class="accordion-body">
-                            <div class="purpose-and-other">
-                                <p><strong>PURPOSE:</strong> Purpose text.</p>
-                                <p><strong>OCCUPATIONAL OBJECTIVES:</strong> Objective text.</p>
-                                <p><strong>ADMISSION REQUIREMENTS:</strong> General college curricular admission</p>
-                                
-                                <h3>Curriculum</h3>
 
-                                <p class="course-order">Courses should be taken in the order listed.</p>
-                            </div>
+                    <div class="accordion__content">
+                      <p>Studies the theory and operation of various truck and tractor electrical systems. Covers preheating, starting, generating (charging), multiplexing, and lighting systems. Uses modern test equipment for measurement, adjustment, and troubleshooting electrical and electronic systems.
+                      </p>
 
-                            <!-- Custom Accordion Item 1 Within Bootstrap Accordion Item 2 -->
-                            <button type="button" class="accordion__button">
-                                <div class="course-container">
-                                    <span class="course-number">NUM</span>
-                                    <span class="course-name">Name</span>
-                                    <span class="course-credits">Credit Hours: X</span>
-                                </div>
-                            </button>
-
-                            <div class="accordion__content">
-                                <p>
-                                    Information.
-                                    <br/>
-                                    <br/>
-                                    <strong>Lecture Hours:</strong> Lecture X hours per week.
-                                    <br/>
-                                    <strong>Semester(s) Offered:</strong> Semesters
-                                </p>
-                            </div>
-
-                            <span class="total-credit-hours">Total: X Credit Hours</span>
-
-                        </div>
+                      <p>Lecture Hours: Lecture 2 hours.
+                      <br/>
+                      Recitation and Laboratory Hours: Laboratory 4 hours.
+                      <br/>
+                      Semester(s) Offered: Fall Only</p>
                     </div>
-                </div>
 
-                <!-- BOOTSTRAP ACCORDION ITEM 1 -->
-                <div class="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                        Extra Extra Long Major Name Test
+                    <!-- Custom Accordion Item 2 Within Bootstrap Accordion Item 1 -->
+                    <button type="button" class="accordion__button">
+                      <div class="course-container">
+                        <p class="course-number">DSL 152</p>
+                        <p class="course-name">Diesel Power Trains, Chassis, and Suspension</p>
+                        <p class="course-credits">Credit Hours: 4</p>
+                      </div>
                     </button>
-                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                        <div class="accordion-body">
-                            <div class="purpose-and-other">
-                                <p><strong>PURPOSE:</strong> Purpose text.</p>
-                                <p><strong>OCCUPATIONAL OBJECTIVES:</strong> Objective text.</p>
-                                <p><strong>ADMISSION REQUIREMENTS:</strong> General college curricular admission</p>
-                                
-                                <h3>Curriculum</h3>
 
-                                <p class="course-order">Courses should be taken in the order listed.</p>
-                            </div>
+                    <div class="accordion__content">
+                      <p>Studies the chassis, suspension, steering, and brake systems found on medium- and heavy-duty diesel trucks. Covers construction features, operating principles, and service procedures for such power train components as clutches, multi-speed transmissions, propeller shafts, and rear axles. Teaches operations of modern equipment to correct and adjust abnormalities.</p>
 
-                            <!-- Custom Accordion Item 1 Within Bootstrap Accordion Item 3 -->
-                            <button type="button" class="accordion__button">
-                                <div class="course-container">
-                                    <span class="course-number">NUM</span>
-                                    <span class="course-name">Name</span>
-                                    <span class="course-credits">Credit Hours: X</span>
-                                </div>
-                            </button>
-
-                            <div class="accordion__content">
-                                <p>
-                                    Information.
-                                    <br/>
-                                    <br/>
-                                    <strong>Lecture Hours:</strong> Lecture X hours per week.
-                                    <br/>
-                                    <strong>Semester(s) Offered:</strong> Semesters
-                                </p>
-                            </div>
-
-                            <span class="total-credit-hours">Total: X Credit Hours</span>
-
-                        </div>
+                      <p>Lecture Hours: Lecture 2 hours.
+                        <br/>
+                        Recitation and Laboratory Hours: Laboratory 4 hours.
+                        <br/>
+                        Semester(s) Offered: Fall Only</p>
                     </div>
-                </div>
 
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                      Download Curriculum Roadmaps
+                    <!-- Custom Accordion Item 3 Within Bootstrap Accordion Item 1 -->
+                    <button type="button" class="accordion__button">
+                      <div class="course-container">
+                        <p class="course-number">SDV 100</p>
+                        <p class="course-name">College Success Skills</p>
+                        <p class="course-credits">Credit Hours: 1</p>
+                      </div>
                     </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Major Name</a></li>
-                      <li><a class="dropdown-item" href="#">Major Name</a></li>
-                    </ul>
-                </div>
-            
-            <button class="link-button"><a href="../sbit-home.html">Back to SBIT Home</a></button>
 
-        </section>
+                    <div class="accordion__content">
+                      <p>Assists students in transition to college. Provides overviews of college policies, procedures, and curricular offerings. Encourages contacts with other students and staff. Assists students toward college success through information regarding effective study habits, career and academic planning, and other college resources available to students. Strongly recommended for beginning students. Required for graduation.</p>
+
+                      <p>Lecture Hours: Lecture 1 hour per week.
+                      <br/>
+                          Semester(s) Offered: Fall Spring Summer</p>
+                    </div>
+
+                    <!-- Custom Accordion Item 4 Within Bootstrap Accordion Item 1 -->
+                    <button type="button" class="accordion__button">
+                      <div class="course-container">
+                        <p class="course-number">DSL 150</p>
+                        <p class="course-name">Mobile Hydraulics and Pneumatics</p>
+                        <p class="course-credits">Credit Hours: 3</p>
+                      </div>
+                    </button>
+
+                    <div class="accordion__content">
+                      <p>Introduces the theory, operation, and maintenance of hydraulic/pneumatic systems and devices used in mobile applications. Emphasizes the properties of fluid, fluid flow, fluid states, and the application of Bernoulli’s equation.
+                      </p>
+
+                      <p>Lecture Hours: Lecture 2 hours.
+                      <br/>
+                      Recitation and Laboratory Hours: Laboratory 2 hours.
+                      <br/>
+                      Semester(s) Offered: Fall Only</p>
+                    </div>
+
+                    <!-- Custom Accordion Item 5 Within Bootstrap Accordion Item 1 -->
+                    <button type="button" class="accordion__button">
+                      <div class="course-container">
+                        <p class="course-number">ENG 111</p>
+                        <p class="course-name">College Composition I</p>
+                        <p class="course-credits">Credit Hours: 3</p>
+                      </div>
+                    </button>
+
+                    <div class="accordion__content">
+                      <p>Introduces and prepares students to the critical processes and fundamentals of writing in academic and professional contexts. Teaches the use of print and digital technologies to promote inquiry. Requires the production of a variety of academic texts, totaling at least 4500 words (15 pages typed) of polished writing. This course requires proficiency in using word processing and learning management software. This is a Passport Transfer course.</p>
+
+                      <p>Lecture Hours: Lecture 3 hours.
+                        <br/>
+                        Semester(s) Offered: Fall Spring Summer
+                        <br/>
+                        Prerequisites: Placement recommendation for ENG 111 or placement recommendation for co-requisites ENG 111 and EDE 11.</p>
+                    </div>
+
+                    <!-- Custom Accordion Item 6 Within Bootstrap Accordion Item 1 -->
+                    <button type="button" class="accordion__button">
+                      <div class="course-container">
+                        <p class="course-number">DSL 176</p>
+                        <p class="course-name">Transportation Air Conditioning</p>
+                        <p class="course-credits">Credit Hours: 2</p>
+                      </div>
+                    </button>
+
+                    <div class="accordion__content">
+                      <p>Studies fundamentals of transportation air conditioning. Includes repair, service, and troubleshooting of the refrigeration systems used in road vehicles and heavy equipment.</p>
+
+                      <p>Lecture Hours: Lecture 1 hour.
+                      <br/>
+                      Recitation and Laboratory Hours: Laboratory 2 hours.
+                      <br/>
+                      Semester(s) Offered: Fall Spring</p>
+                    </div>
+
+                    <!-- Custom Accordion Item 7 Within Bootstrap Accordion Item 1 -->
+                    <button type="button" class="accordion__button">
+                      <div class="course-container">
+                        <p class="course-number">WEL 155</p>
+                        <p class="course-name">Ornamental Welding</p>
+                        <p class="course-credits">Credit Hours: 2</p>
+                      </div>
+                    </button>
+
+                    <div class="accordion__content">
+                      <p>Introduces students to basic equipment, safety, and processes useful in the fabrication of welded ornamental objects.
+                      </p>
+
+                      <p>Lecture Hours: Lecture 1 hour.
+                      <br/>
+                      Recitation and Laboratory Hours: Laboratory 3 hours.
+                      <br/>
+                      Semester(s) Offered: Fall Spring</p>
+                    </div>
+
+                    <!-- Custom Accordion Item 8 Within Bootstrap Accordion Item 1 -->
+                    <button type="button" class="accordion__button">
+                      <div class="course-container">
+                        <p class="course-number">ITE 152</p>
+                        <p class="course-name">Introduction to Digital Literacy</p>
+                        <p class="course-credits">Credit Hours: 3</p>
+                      </div>
+                    </button>
+
+                    <div class="accordion__content">
+                      <p>Develops understanding of digital literacy. Introduces basic computer concepts in hardware, software, cyber, cloud, database, and operating systems. Includes hands-on experience developing word processing, spreadsheet and presentation documents.  Evaluates the reliability of sources. Covers creating a simple web page. Examines topics such as social, legal, and ethical issues.</p>
+
+                      <p>Lecture Hours: Lecture 3 hours.
+                        <br/>
+                        Semester(s) Offered: Fall Spring Summer</p>
+                    </div>
+
+                    <!-- Custom Accordion Item 9 Within Bootstrap Accordion Item 1 -->
+                    <button type="button" class="accordion__button">
+                      <div class="course-container">
+                        <p class="course-number">DSL 126</p>
+                        <p class="course-name">Diesel Engine Reconditioning</p>
+                        <p class="course-credits">Credit Hours: 6</p>
+                      </div>
+                    </button>
+
+                    <div class="accordion__content">
+                      <p>Provides basic knowledge of the construction, design, and application of selected modern diesel engines and their components. Covers induction and exhaust systems, cooling and lubricating systems, and fuel injection and governing systems. Provides opportunity to disassemble, inspect, recondition, reassemble, and test selected engines.</p>
+
+                      <p>Lecture Hours: Lecture 3 hours.
+                      <br/>
+                      Recitation and Laboratory Hours: Laboratory 6 hours.
+                      <br/>
+                      Semester(s) Offered: Spring Only</p>
+                    </div>
+
+                    <!-- Custom Accordion Item 10 Within Bootstrap Accordion Item 1 -->
+                    <button type="button" class="accordion__button">
+                      <div class="course-container">
+                        <p class="course-number">DSL 131</p>
+                        <p class="course-name">Diesel Fuel Systems and Tune-Up</p>
+                        <p class="course-credits">Credit Hours: 4</p>
+                      </div>
+                    </button>
+
+                    <div class="accordion__content">
+                      <p>Teaches maintenance, adjustment, testing, and general repair of the typical fuel injection components used on non-automotive diesel engines. Includes engine and fuel system tune-up procedures and troubleshooting using current diagnostic equipment.
+                      </p>
+
+                      <p>Lecture Hours: Lecture 2 hours.
+                      <br/>
+                      Recitation and Laboratory Hours: Laboratory 4 hours.
+                      <br>
+                      Semester(s) Offered: Spring Only</p>
+                    </div>
+
+                    <!-- Custom Accordion Item 11 Within Bootstrap Accordion Item 1 -->
+                    <button type="button" class="accordion__button">
+                      <div class="course-container">
+                        <p class="course-number">DSL 160</p>
+                        <p class="course-name">Air Brake Systems</p>
+                        <p class="course-credits">Credit Hours: 3</p>
+                      </div>
+                    </button>
+
+                    <div class="accordion__content">
+                      <p>Studies the basic operational theory of pneumatic and air brake systems as used in heavy-duty and public transportation vehicles. Covers various air control valves, test system components, and advanced air system schematics. Teaches proper service and preventative maintenance of system.</p>
+
+                      <p>Lecture Hours: Lecture 2 hours.
+                        <br/>
+                        Recitation and Laboratory Hours: Laboratory 2 hours.
+                        <br>
+                        Semester(s) Offered: Spring Only</p>
+                    </div>
+
+                    <!-- Custom Accordion Item 12 Within Bootstrap Accordion Item 1 -->
+                    <button type="button" class="accordion__button">
+                      <div class="course-container">
+                        <p class="course-number">DSL 197</p>
+                        <p class="course-name">Cooperative Education in Diesel Mechanics Technology</p>
+                        <p class="course-credits">Credit Hours: 3</p>
+                      </div>
+                    </button>
+
+                    <div class="accordion__content">
+                      <p>Supervises on-the-job training for pay in approved business, industrial, and service firms, coordinated by the college’s cooperative education office. Is applicable to all occupational-technical curricula at the discretion of the college.</p>
+
+                      <p>Recitation and Laboratory Hours: Laboratory 15 hours per week.
+                      <br/>
+                      Semester(s) Offered: Fall Spring</p>
+                    </div>
+                    
+                    <div class="total-credit-hours-last">Total: 38 Credit Hours</div>
+
+                  </div>
+                </div>
+              </div>
+
+          
+          </div>
+          <!-- END — BOOTSTRAP ALWAYS OPEN ACCORDION EXAMPLE -->
+
+                  <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                        Download Curriculum Roadmaps
+                      </button>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="roadmaps/diesel-mechanics-technology-certificate.docx">Diesel Mechanics Technology C</a></li>
+                      </ul>
+                  </div>
+              
+              <button class="link-button"><a href="../sbit-home.html">Back to SBIT Home</a></button>
+
+          </section>
         </div>
     </main>
 

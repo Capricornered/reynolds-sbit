@@ -22,7 +22,7 @@ HEADER ------------------ site-wide header containing two navs
 
 SBIT-GENERAL ------------ elements that appear on all SBIT-specific pages
 	body nav ------------ SBIT-specific navigation
-	SBIT contact -------- SBIT contact info module
+	more info -------- SBIT more info module
 	carousel ------------ bootstrap carousel styling
 	main image ---------- static image on pages without a carousel
 	content ------------- main page content/text
@@ -426,6 +426,7 @@ header {
 	padding-bottom: 10px;
 	padding-left: 25px;
 	position: sticky;
+	text-align: center;
 	top: 60px;
 	transition: .2s;
 	width: 300px;
@@ -483,7 +484,7 @@ header {
 }
 
 
-/*SBIT contact*/
+/*more info*/
 
 /*SBIT-specific contact info contained in module that shows on click*/
 #sbit-contact {
@@ -503,7 +504,7 @@ header {
 	text-align: center;
 	top: 0;
 	width: fit-content;
-	z-index: 2;
+	z-index: 5;
 }
 
 #sbit-contact h3 {
@@ -524,7 +525,37 @@ header {
 	transition: .2s;
 }
 
-/*display contact info when 'Contact SBIT' is clicked*/
+.more-info {
+	font-weight: 400;
+	margin-top: 5px;
+	padding: 20px 20px 0px 20px;
+	text-align: left !important;
+	max-width: 450px;
+}
+
+#sbit-contact input[type=text],
+#sbit-contact input[type=email] {
+	border: 1px solid var(--gray3);
+	margin: 5px;
+	padding: 5px;
+	width: 90%;
+}
+
+#sbit-contact button[type=submit] {
+	background-color: var(--reynoldsred);
+	color: white;
+	float: right;
+	margin-right: 5%;
+	padding: 5px 20px;
+	transition: .2s;
+
+}
+
+#sbit-contact button[type=submit]:hover {
+	background-color: var(--darkred);
+}
+
+/*display contact info when 'more information' is clicked*/
 .contact-toggle {
 	display: block !important;
 }
@@ -599,6 +630,86 @@ header {
 	width: 100%;
 	height: 200px;
 	object-fit: cover;
+}
+
+/*for images on career outlook pages*/
+#sbit-main-image .main_head_image_01 {
+    display: block;
+    position: relative;
+    max-width: 1200px;
+    height: 225px;
+    background-size: cover;
+    margin: 0px auto 0px auto;
+}
+
+.main_head_image_01_welding {
+    background-image: url("../images/benjamin-wedemeyer-bzzSg8hTKKY-unsplash.jpg");
+    background-position: 50% 60%;
+}
+
+.main_head_image_01_automotive {
+    background-image: url("../images/kato-blackmore-qcF-19BvViE-unsplash.jpg");
+    background-position: 50% 40%;
+}
+
+.main_head_image_01_paralegal {
+    background-image: url("../images/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg");
+    background-position: 50% 40%;
+}
+
+.main_head_image_01_diesel {
+    background-image: url("../images/pexels-kelly-4320464.jpg");
+    background-position: 50% 40%;
+}
+
+.main_head_image_01_admin_justice {
+    background-image: url("../images/pexels-joshua-santos-4581213.jpg");
+    background-position: 50% 40%;
+}
+
+.main_head_image_01_admin_justice_outlook {
+    background-image: url("../images/pexels-joshua-santos-4581211.jpg");
+    background-position: 50% 40%;
+}
+
+.main_head_image_01_automotive_outlook {
+    background-image: url("../images/tim-mossholder-OwBRQ0bykX8-unsplash.jpg");
+    background-position: 50% 45%;
+}
+
+.main_head_image_01_diesel_outlook {
+    background-image: url("../images/pexels-pixabay-279949.jpg");
+    background-position: 50% 45%;
+}
+
+.main_head_image_01_welding_outlook {
+    background-image: url("../images/christopher-burns-Wiu3w-99tNg-unsplash.jpg");
+    background-position: 50% 80%;
+}
+
+.main_head_image_01_culinary_outlook {
+    background-image: url("../images/pexels-alex-green-5692293.jpg");
+    background-position: 50% 80%;
+}
+
+.main_head_image_01_paralegal_outlook {
+    background-image: url("../images/pexels-sora-shimazaki-5673492.jpg");
+    background-position: 50% 80%;
+}
+
+.main_head_image_01_business_outlook {
+    background-image: url("../images/pexels-michaal-ludwiczak-1239162.jpg");
+    background-position: 50% 63%;
+}
+
+.main_head_image_01_management_outlook {
+    background-image: url("../images/pexels-kampus-production-8190804.jpg");
+    background-position: 50% 35%;
+}
+
+.main_head_image_01_accounting_outlook {
+    background-image: url("../images/pexels-tima-miroshnichenko-6694543.jpg");
+    background-position: 50% 50%;
 }
 
 
@@ -869,7 +980,7 @@ header {
     display: block;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     padding: 25px 20px 7px 20px;
     margin: 30px 0px 30px 0px;
     font-size: 20px;
@@ -885,6 +996,14 @@ header {
     color:#000000;
 }
 
+.career-statistics p {
+    text-align: center;
+}
+
+.career_outlook_main_heading {
+	padding-top: 20px;
+}
+
 .source {
     font-size: 12px;
     line-height: 20px;
@@ -892,6 +1011,19 @@ header {
 
 .break {
     display: none;
+}
+
+.career_outlook_main_heading {
+	font-size: 24px;
+	font-weight: 700;
+	padding: 0px;
+	margin: 25px 0px 0px 0px;
+}
+
+.content .career_outlook_heading {
+    font-size: 22px;
+    color: #808080;
+	margin: 9px 0px 9px 0px;
 }
 
 
@@ -1204,6 +1336,16 @@ footer {
     text-align: center;
     line-height: 24px;
     color: rgba(255, 255, 255, 1);
+}
+
+#footer-copyright-02 a {
+    color: rgba(255, 255, 255, 1);
+	text-decoration: none;
+}
+
+#footer-copyright-02 a:hover {
+    color: rgba(255, 255, 255, 1);
+	text-decoration: underline;
 }
 
 .footer-address {
@@ -1528,6 +1670,66 @@ footer {
 	#sbit-main-image img {
 		object-position: 0px -130px;
 	}
+
+	#sbit-main-image .main_head_image_01 {
+		height: 320px;
+	}
+
+	.main_head_image_01_automotive {
+		background-position: 50% 40%;
+	}
+
+	.main_head_image_01_welding {
+		background-position: 50% 65%;
+	}
+
+	.main_head_image_01_paralegal {
+		background-position: 50% 30%;
+	}
+
+	.main_head_image_01_diesel {
+		background-position: 50% 70%;
+	}
+	
+	.main_head_image_01_admin_justice {
+		background-position: 50% 35%;
+	}
+	
+	.main_head_image_01_admin_justice_outlook {
+		background-position: 50% 35%;
+	}
+	
+	.main_head_image_01_automotive_outlook {
+		background-position: 50% 45%;
+	}
+	
+	.main_head_image_01_diesel_outlook {
+		background-position: 50% 55%;
+	}
+	
+	.main_head_image_01_welding_outlook {
+		background-position: 50% 85%;
+	}
+
+	.main_head_image_01_culinary_outlook {
+		background-position: 50% 70%;
+	}
+
+	.main_head_image_01_paralegal_outlook {
+		background-position: 50% 55%;
+	}
+
+	.main_head_image_01_business_outlook {
+		background-position: 50% 63%;
+	}
+
+	.main_head_image_01_management_outlook {
+		background-position: 50% 35%;
+	}
+
+	.main_head_image_01_accounting_outlook {
+		background-position: 50% 50%;
+	}
 	
 
 	/*&content*/
@@ -1649,6 +1851,7 @@ footer {
 		height: 100%;
 		margin-top: 0;
 		max-height: fit-content;
+		z-index: 6 !important;
 	}
 
 	/*display line between top and main nav*/
