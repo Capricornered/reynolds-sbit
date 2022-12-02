@@ -22,7 +22,7 @@ HEADER ------------------ site-wide header containing two navs
 
 SBIT-GENERAL ------------ elements that appear on all SBIT-specific pages
 	body nav ------------ SBIT-specific navigation
-	SBIT contact -------- SBIT contact info module
+	more info -------- SBIT more info module
 	carousel ------------ bootstrap carousel styling
 	main image ---------- static image on pages without a carousel
 	content ------------- main page content/text
@@ -426,6 +426,7 @@ header {
 	padding-bottom: 10px;
 	padding-left: 25px;
 	position: sticky;
+	text-align: center;
 	top: 60px;
 	transition: .2s;
 	width: 300px;
@@ -483,7 +484,7 @@ header {
 }
 
 
-/*SBIT contact*/
+/*more info*/
 
 /*SBIT-specific contact info contained in module that shows on click*/
 #sbit-contact {
@@ -503,7 +504,7 @@ header {
 	text-align: center;
 	top: 0;
 	width: fit-content;
-	z-index: 2;
+	z-index: 5;
 }
 
 #sbit-contact h3 {
@@ -524,7 +525,37 @@ header {
 	transition: .2s;
 }
 
-/*display contact info when 'Contact SBIT' is clicked*/
+.more-info {
+	font-weight: 400;
+	margin-top: 5px;
+	padding: 20px 20px 0px 20px;
+	text-align: left !important;
+	max-width: 450px;
+}
+
+#sbit-contact input[type=text],
+#sbit-contact input[type=email] {
+	border: 1px solid var(--gray3);
+	margin: 5px;
+	padding: 5px;
+	width: 90%;
+}
+
+#sbit-contact button[type=submit] {
+	background-color: var(--reynoldsred);
+	color: white;
+	float: right;
+	margin-right: 5%;
+	padding: 5px 20px;
+	transition: .2s;
+
+}
+
+#sbit-contact button[type=submit]:hover {
+	background-color: var(--darkred);
+}
+
+/*display contact info when 'more information' is clicked*/
 .contact-toggle {
 	display: block !important;
 }
