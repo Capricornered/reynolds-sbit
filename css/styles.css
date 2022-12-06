@@ -1064,7 +1064,7 @@ header {
 }
 
 .accordion-body {
-	padding: 20px 0px 0px 0px;
+	padding: 20px 0px 20px 0px;
 	border: none;
 }
 
@@ -1106,6 +1106,7 @@ header {
     position: relative;
     font-weight: 400;
     margin: 0px 0px 0px 0px;
+	text-align: right;
 }
 
 .accordion__button {
@@ -1154,7 +1155,7 @@ header {
 }
 
 .accordion__button--active::after {
-    content: '\25b4';
+    content: '\25be';
     color: rgb(0, 0, 0);
 }
 
@@ -1175,7 +1176,12 @@ header {
 .total-credit-hours {
 	display: block;
     font-weight: 700;
-    padding: 10px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+}
+.total-credit-hours-last {
+    font-weight: 700;
+    padding: 20px 20px 20px 20px;
+    margin: 0px 0px -40px 0px;
 }
 
 .kerning-01 {
@@ -1209,6 +1215,10 @@ header {
     text-decoration:underline;
 }
 
+.or {
+    padding: 20px 0px 0px 20px;
+}
+
 .option {
 	display: block;
 	font-weight: 700;
@@ -1240,7 +1250,7 @@ header {
     background-color: rgb(164, 32, 54);
     border: none;
     border-radius: 0px;
-    margin: 15px 0px -2px 0px;
+    margin: 40px 0px -2px 0px;
 }
 
 .btn:hover  {
@@ -1511,7 +1521,6 @@ footer {
 	}
 
 
-
 	/*$FOOTER*/
 
 	#footer-reynolds-logo img {
@@ -1522,14 +1531,15 @@ footer {
 		display: grid;
 		gap: 15px;
 		grid-template-columns: repeat(2, 1fr);
-		justify-items: center;
+		left: 2%;
+		/* justify-items: center; */
 		margin: 0px auto 0px auto;
 	}
 
 	.footer-address {
 		text-align: left;
 		margin: 0px 0px 0px 0px;
-		width: 250px;
+		/* width: 250px; */
 	}
 
 	.map-directions {
@@ -1537,7 +1547,31 @@ footer {
 	}	  
 }
 
+@media (min-width: 550px) {
+/*Custom Accordion*/
+.course-container {
+	display: grid;
+	grid-template-columns: 85px 50% auto;
+	grid-template-rows: 100%;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
 
+.course-credits {
+	grid-column-start: 5;
+	margin: 0px 30px 0px 0px;
+	text-align: right !important;
+}
+
+.accordion__button::after {
+	margin: -31px 0px 0px 0px;
+}
+
+	/*FOOTER SHIFT TO THE LEFT*/
+.footer-locations {
+	left: 5%;
+}
+}
 
 /*------------------------------------*\
   TABLET - SMALL SCREENS
@@ -1775,7 +1809,7 @@ footer {
 
 	/*%custom accordion*/
 
-	.course-container {
+	/*.course-container {
 		display: grid;
 		grid-template-columns: 85px 50% auto;
 		grid-template-rows: 100%;
@@ -1783,9 +1817,15 @@ footer {
 		margin: 0px 0px 0px 0px;
 	}
 
+	.course-credits {
+		grid-column-start: 5;
+		margin: 0px 30px 0px 0px;
+		text-align: right;
+	}
+
 	.accordion__button::after {
 		margin: -31px 0px 0px 0px;
-	}
+	} */
 
 
 
@@ -1793,10 +1833,11 @@ footer {
 
 	.footer-locations {
 		display: grid;
-		gap: 25px;
+		gap: 50px;
 		grid-template-columns: repeat(3, 1fr);
+		left: 4%;
+		max-width: 1200px;
 		margin: 0px auto 0px auto;
-		width: 90%;
 	}
 
 	.footer-address {
