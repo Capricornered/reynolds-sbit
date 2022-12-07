@@ -1004,13 +1004,13 @@ header {
 	padding-top: 20px;
 }
 
-.source {
+.career-statistics .source {
     font-size: 12px;
     line-height: 20px;
 }
 
 .break {
-    display: none;
+    display: block;
 }
 
 .career_outlook_main_heading {
@@ -1084,6 +1084,10 @@ header {
     padding: 0px 20px;
 }
 
+.purpose-and-other span {
+    font-weight: 700;
+}
+
 
 /*custom accordion*/
 
@@ -1106,7 +1110,7 @@ header {
     position: relative;
     font-weight: 400;
     margin: 0px 0px 0px 0px;
-	text-align: right;
+	text-align: left;
 }
 
 .accordion__button {
@@ -1570,6 +1574,10 @@ footer {
 	/*FOOTER SHIFT TO THE LEFT*/
 .footer-locations {
 	left: 5%;
+}
+
+.break {
+    display: none;
 }
 }
 
