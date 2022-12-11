@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://use.typekit.net/frz4ami.css">
 
     <!-- Bootstrap CSS Link-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     
     <!--Custom CSS Link-->
-    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
     
     <!-- Custom JS Links-->   
     <script src="../scripts/scripts.js" defer></script>
@@ -27,7 +27,7 @@
             <!--logo links back to Reynolds home page-->
             <a href="/"><img class="logo" src="../images/reynolds-50-logo.png" alt="Home"></a>
             <!--hamburger appears on mobile/tablet screens and opens mega nav on click-->
-            <span id="hamburger" aria-label="Hamburger Menu" onclick="openHamburger()">&#9776;</span>
+            <span id="hamburger" onclick="openHamburger()">&#9776;</span>
         </div>
         <!--mega nav contains a top menu and main menu-->
         <div id="nav-container">
@@ -74,7 +74,7 @@
             <!--main sitewide navigation with dropdowns-->
             <nav id="main-nav">
                 <!--each top-level item snaps to top of page to make navigation more clear with long amounts of list items-->
-                <a name="snap"></a>
+                <a id="snap"></a>
                 <ul>
                     <li class="top-level"><span><a href="#snap">Who We Are</a></span>
                         <ul class="dropdown">
@@ -191,7 +191,6 @@
             </nav>
         </div>
     </header>
-
     <main>
         <!--heading color based on program grouping/button color on SBIT homepage-->
         <div class="page-title emerald">
@@ -214,25 +213,25 @@
                 <span onclick="contactSBIT()" class="x-out">✕</span>
                 <h3>School of Business and Industrial&nbsp;Trades</h3>
                 <span>Phone: <a href="tel:+18045235301">(804) 523-5301</a></span>
-                <br />
+                <br>
                 <span>E-mail: <a href="mailto:sbit@reynolds.edu">sbit@reynolds.edu</a></span>
-                <br />
+                <br>
                 <p class="more-info">Fill out your contact information below and receive a digital pamphlet with more information on the School of Business and Industrial Trades!</p>
                 <form id="contact-form">              
-                    <input type="text" name="username" id="username" placeholder="Name" />
-                    <br />
-                    <input type="email" name="email" id="email" placeholder="Email Address" required />
-                    <br />
-                    <br />
+                    <input type="text" name="username" id="username" placeholder="Name">
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="Email Address" required>
+                    <br>
+                    <br>
                     <div class="inputc">
                         <button type="submit">Submit</button>
                     </div>
                 </form>
             </div>
 
-            <div id="sbit-main-image">
+            <figure id="sbit-main-image">
                 <img src="../images/accounting-placeholder.jpg" alt="Two people sitting at a table with a calculator, filling out a form.">
-            </div>
+            </figure>
 
             <section class="content">
 
@@ -250,13 +249,13 @@
                 <p>Professors with real-life experience teach you the fundamentals of accounting, financial statement analysis, management/cost accounting, taxation, auditing, fraud examination and computerized accounting. Dedicated instruction is a cornerstone of the program; your accounting classes will offer small face-to-face classes and video lectures for online classes.</p>
                 
                 <video class="section-video" controls="controls">
-                <source src="../media/accounting-sample-video.mp4" type="video/mp4" />
+                <source src="../media/accounting-sample-video.mp4" type="video/mp4">
                 </video>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p>In quis autem vel dolor ex augue quis iusto lorem commodo nostrud crisare? Commodo nisl duis, minim facilisi. Ut erat, nulla euismod dignissim minim ea feugait ullamcorper veniam. Consequat ad nisl vero luptatum dolor praesent dolor eros enim. Augue duis, magna duis eum feugiat wisi at ut iusto eum illum wisi in commodo feugait.</p>
                 
-                <img class="story-image" src="../images/accounting-story-1.jpg" alt="A man writing at a desk with cash and a laptop."/>
+                <img class="story-image" src="../images/accounting-story-1.jpg" alt="A man writing at a desk with cash and a laptop.">
                 
                 <p>Minim dolore autem vel ex enim delenit minim, eros odio aliquip blandit lobortis at ut qui minim ut suscipit wisi velit at illum. Dolore augue ad magna lobortis vulputate elit, in vel tation. Feugiat esse crisare eros accumsan blandit dolore consequat in, te in augue veniam. Ut et illum consequatvel ut, in feugait aliquip iriuredolor illum ea quis tation, iriuredolor nisl eum eros te dolore at molestie, amet vero, lobortis ad, autem delenit?</p>
                 <p>
@@ -264,7 +263,7 @@
                 </p>
                 
                 <div id="more-content">
-                <img class="story-image" src="../images/accounting-story-2.jpg" alt="A calculator sitting on top of cash next to an empty notebook."/>
+                <img class="story-image" src="../images/accounting-story-2.jpg" alt="A calculator sitting on top of cash next to an empty notebook.">
                 <p>Adipiscing delenit luptatum consequat commodo tation lobortis dignissim qui lobortis esse, molestie duis feugait feugiat esse dolore wisi. Eum enim commodo iriure molestie nonummy ullamcorper iusto. Hendrerit vulputate eum hendrerit, te ullamcorper et feugait dignissim?</p>
                 </div>
 
@@ -288,8 +287,8 @@
                                     <p><strong>ADMISSION REQUIREMENTS:</strong> General college curricular admission</p>
                                     <p>
                                         <strong>TRANSFER INFORMATION:</strong> Four-year college and university transfer opportunities for AAS degrees, if existing, are usually very specific in nature. A transfer opportunity in Accounting at Mary Baldwin University - Online Program permits students to transfer 84 credit hours from Reynolds’ Accounting Associate of Applied Science program. Students interested in this transfer opportunity or transferring, in general, should consult their faculty advisor upon program entry for further guidance. Please <a href="https://www.reynolds.edu/get_started/gta/agreements/Mary_baldwin.pdf">view this PDF</a>.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         The purpose of the associate of applied science (AAS) degree curriculum is to prepare students for immediate employment upon graduation.
                                     </p>
                                     <p><strong>COMPUTER COMPETENCY REQUIREMENT:</strong> Students in this program will meet the college’s computer competency requirement by successfully completing ITE 152. Students can also meet this requirement by successfully passing the college’s computer competency exam, administered in the testing centers on each campus, in which case they will receive college credit for ITE 152. Students not passing the computer competency exam may retake the exam only once.</p>
@@ -311,12 +310,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Introduces accounting principles with respect to financial reporting. Demonstrates how decision-makers use accounting information for reporting purposes. Focuses on the preparation of accounting information and its use in the operation of organizations, as well as methods of analysis and interpretation of accounting information.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> Placement in ENG 111 or placement in co-requisites ENG 111 and EDE 11 and competency in Introductory Algebra MDE 10 as demonstrated through placement or by satisfactorily completing MDE 10.
                                     </p>
                                 </div>
@@ -333,12 +332,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Introduces and prepares students to the critical processes and fundamentals of writing in academic and professional contexts. Teaches the use of print and digital technologies to promote inquiry. Requires the production of a variety of academic texts, totaling at least 4500 words (15 pages typed) of polished writing. This course requires proficiency in using word processing and learning management software. This is a Passport Transfer course.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> Placement recommendation for ENG 111 or placement recommendation for co-requisites ENG 111 and EDE 11.
                                     </p>
                                 </div>
@@ -355,10 +354,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Develops understanding of digital literacy. Introduces basic computer concepts in hardware, software, cyber, cloud, database, and operating systems. Includes hands-on experience developing word processing, spreadsheet and presentation documents.  Evaluates the reliability of sources. Covers creating a simple web page. Examines topics such as social, legal, and ethical issues.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
                                     </p>
                                 </div>
@@ -375,12 +374,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Presents topics in proportional reasoning, modeling, financial literacy, and validity studies (logic and set theory). Focuses on the process of taking a real-world situation, identifying the mathematical foundation needed to address the problem, solving the problem, and applying what is learned to the original situation. 
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> Completion of MDE 10 followed by co-enrollment in MDE 54 with MTH 154 or placement in MTH 154 or placement in co-requisites MTH 154 and MDE 54.
                                     </p>
                                 </div>
@@ -397,10 +396,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Assists students in transition to college. Provides overviews of college policies, procedures, and curricular offerings. Encourages contacts with other students and staff. Assists students toward college success through information regarding effective study habits, career and academic planning, and other college resources available to students. Strongly recommended for beginning students. Required for graduation.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 1 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
                                     </p>
                                 </div>
@@ -417,10 +416,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Applies theory and principles of public address with emphasis on preparation and delivery.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
                                     </p>
                                 </div>
@@ -439,10 +438,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Examines the elements affecting speech communication at the individual, small group, and public communication levels with emphasis on practice of communication at each level.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
                                     </p>
                                 </div>
@@ -459,10 +458,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Covers the use of spreadsheet software to create spreadsheets with formatted cells and cell ranges, control pages, multiple sheets, charts, and macros. Topics include type and edit text in a cell, enter data on multiple worksheets, work with formulas and functions, create charts, PivotTables, and styles, insert headers and footers, and filter data. Covers MOS Excel objectives.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
                                     </p>
                                 </div>
@@ -479,12 +478,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Introduces the computer in solving accounting problems. Focuses on operation of computers. Presents the accounting cycle and financial statement preparation in a computerized system and other applications for financial and managerial accounting. Introduces the QuickBooks accounting software program.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> ACC 117 or ACC 211, or equivalent, or school approval.
                                     </p>
                                 </div>
@@ -501,12 +500,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Introduces accounting principles with respect to cost and managerial accounting. Focuses on the application of accounting information with respect to product costing, as well as its use within the organization to provide direction and to judge performance.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> ACC 211 or equivalent or school approval.
                                     </p>
                                 </div>
@@ -523,10 +522,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Presents the fundamental macroeconomic concepts, theories, and issues including the study of scarcity and opportunity cost, supply and demand, national economic growth, inflation, recession, unemployment, fiscal and monetary policies, and international trade. Develops an appreciation of how these economic concepts apply to consumer, business, and government decisions, and their effect on the overall economy. This is a Passport Transfer course.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
                                     </p>
                                 </div>
@@ -558,12 +557,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Covers accounting principles and theory, including a review of the accounting cycle and accounting for current assets, current liabilities, and investments. Also addresses wholesaler transactions and inventory, fixed assets, natural resources, and intangible assets. Introduces various accounting approaches and demonstrates the effect of these approaches on the financial statement users.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Only
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> ACC 211 with a grade of “B” or higher.
                                     </p>
                                 </div>
@@ -580,12 +579,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Studies cost accounting methods and reporting as applied to job order, process, and standard cost accounting systems. Includes cost control, responsibility accounting, capital budgeting, and pricing decisions.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Only
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> ACC 212 with a grade of “C” or higher.
                                     </p>
                                 </div>
@@ -602,12 +601,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Provides a systematic study of representative ethical systems.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> Placement in ENG 111 or placement in co-requisites ENG 111 and EDE 11.
                                     </p>
                                 </div>
@@ -624,12 +623,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Introduces the student to Relational Database and Relational Database theory. Includes planning, defining, and using a database; table design, linking, and normalization; and types of databases, database description, and definition. Additional topics cover the use of Entity Relationship (ER) modeling in detail through many real-life examples and practical business problems and solutions. After several iterations, the ER model captures the data requirements and business rules and forms a sound basis for the initial design of a relational database. The introduction to SQL allows for the implementation of a database design using SQL.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 4 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> ITE 152 or school approval.
                                     </p>
                                 </div>
@@ -661,12 +660,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Continues accounting principles and theory with emphasis on accounting for fixed assets, intangibles, corporate capital structure, long-term liabilities, and investments. Consists of an extensive examination of topics for specified balance sheet accounts beyond the scope of a principles course. Focuses on the complex areas of balance sheet and income statement reporting for the corporate entity.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Spring Only
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> ACC 211 with a grade of “B” or higher.
                                     </p>
                                 </div>
@@ -683,10 +682,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Presents techniques of investigating, interpreting, and appraising accounting records and assertions. Studies internal control design and evaluation, evidence-gathering techniques, and other topics. Develops an understanding and appreciation of the philosophy of the audit process and its practice. Focuses on issues relevant to an external auditing professional, such as audit risk analysis, planning of audit engagements, internal controls, and substantive testing. Presents the preparation of audit working papers supporting an examination of the financial records and internal control procedures of an enterprise. Covers the report and opinion of the auditor to management, stockholders, and considers the ethical and legal responsibilities of the auditor.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Spring Only
                                     </p>
                                 </div>
@@ -718,19 +717,19 @@
                                 <div class="accordion__content">
                                     <p>
                                         Presents the study of federal taxation as it relates to individuals and related entities. Includes tax planning, compliance, and reporting. Covers gross income, deductions, and credits. Includes tax compliance and reporting. Emphasizes personal tax burden minimization and preparation of personal tax returns.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Only
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> ACC 211 or equivalent.
                                     </p>
                                 </div>
 
                                 <span class="total-credit-hours">Total: 60 Credit Hours</span>
 
-                                <hr/>
+                                <hr>
 
                                 <div class="purpose-and-other">
                                     <p><sup>1</sup> Students that completed Career Studies Certificates: Bookkeeping, Payroll and Taxation and Accounting Support Functions have fulfilled this elective. Students that have not completed any career studies certificates and plan to transfer to Mary Baldwin should consider ACC 217, ACC 219, ACC 240, HIS 121.</p>
@@ -753,28 +752,29 @@
                                     <p><strong>PURPOSE:</strong> This program will provide students with the accounting courses needed to meet the requirements of the Virginia Board of Accountancy to sit for the Certified Public Accountancy (CPA) examination.</p>
                                     <p><strong>OCCUPATIONAL OBJECTIVES:</strong> These accounting courses may also meet accounting requirements of various government and private sector positions.</p>
                                     <p><strong>ADMISSION REQUIREMENTS:</strong> General college curricular admission</p>
-                                    <p>
+                                    <div>
                                         <strong>PROGRAM NOTES:</strong> Students entering this program must have successfully completed Principles of Accounting I and II (ACC 211-ACC 212)*. Since the CPA exam is computer-based, students should be proficient with computers, including the ability to work with Windows, Word, and Excel. Students should speak with their Accounting faculty advisor prior to enrolling in courses. To meet the educational requirements to sit for the Virginia CPA exam, candidate must obtain the following from one or more accredited institutions:
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <ul>
                                             <li>At least 120 semester hours of college courses;</li>
                                             <li>Baccalaureate or higher degree; and</li>
                                             <li>Accounting concentration or equivalent</li>
                                         </ul>
-                                        <br/>
+                                        <br>
                                         Virginia Board of Accountancy (VBOA) requires the following:
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <ul>
                                             <li>A minimum of 24 semester hours of accounting courses, to include courses in auditing, financial accounting, management accounting, and taxation; and</li>
                                             <li>A minimum of 24 semester hours of business courses. As many as six hours of accounting courses (not included in the 24 hours of accounting courses) may be considered for the business course requirement.</li>
                                         </ul>
-                                        <br/>
+                                        <br>
                                         Although they are in addition to the CSC, if needed, students can complete the 24 business credit hours required by the Virginia Board of Accountancy (VBOA). Please see your faculty advisor for recommended courses.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <em>*Principles of Accounting courses (ACC 211-ACC 212) or introductory accounting courses cannot be considered in determining whether a person has obtained the minimum of 48 semester hours or equivalent required for an accounting concentration.</em>
-                                    </p>
+                                    </div>
 
                                     <h3>Curriculum</h3>
 
@@ -793,12 +793,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Covers accounting principles and theory, including a review of the accounting cycle and accounting for current assets, current liabilities, and investments. Also addresses wholesaler transactions and inventory, fixed assets, natural resources, and intangible assets. Introduces various accounting approaches and demonstrates the effect of these approaches on the financial statement users.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Only
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> ACC 211 with a grade of “B” or higher.
                                     </p>
                                 </div>
@@ -815,12 +815,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Studies cost accounting methods and reporting as applied to job order, process, and standard cost accounting systems. Includes cost control, responsibility accounting, capital budgeting, and pricing decisions.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Only
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> ACC 212 with a grade of “C” or higher.
                                     </p>
                                 </div>
@@ -837,12 +837,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Presents the study of federal taxation as it relates to individuals and related entities. Includes tax planning, compliance, and reporting. Covers gross income, deductions, and credits. Includes tax compliance and reporting. Emphasizes personal tax burden minimization and preparation of personal tax returns.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Only
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> ACC 211 or equivalent.
                                     </p>
                                 </div>
@@ -859,10 +859,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Presents techniques of investigating, interpreting, and appraising accounting records and assertions. Studies internal control design and evaluation, evidence-gathering techniques, and other topics. Develops an understanding and appreciation of the philosophy of the audit process and its practice. Focuses on issues relevant to an external auditing professional, such as audit risk analysis, planning of audit engagements, internal controls, and substantive testing. Presents the preparation of audit working papers supporting an examination of the financial records and internal control procedures of an enterprise. Covers the report and opinion of the auditor to management, stockholders, and considers the ethical and legal responsibilities of the auditor.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Spring Only
                                     </p>
                                 </div>
@@ -879,12 +879,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Continues accounting principles and theory with emphasis on accounting for fixed assets, intangibles, corporate capital structure, long-term liabilities, and investments. Consists of an extensive examination of topics for specified balance sheet accounts beyond the scope of a principles course. Focuses on the complex areas of balance sheet and income statement reporting for the corporate entity.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Spring Only
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> ACC 211 with a grade of “B” or higher.
                                     </p>
                                 </div>
@@ -943,12 +943,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Covers reading and understanding financial statements, internal control requirements for safeguarding assets, and accounting procedures necessary to complete the entire accounting cycle, including journals, ledgers, and financial statements.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> Placement in ENG 111 or placement in co-requisites ENG 111 and EDE 11 and competency in Introductory Algebra MDE 10 as demonstrated through placement or by satisfactorily completing MDE 10.
                                     </p>
                                 </div>
@@ -965,10 +965,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Develops understanding of digital literacy. Introduces basic computer concepts in hardware, software, cyber, cloud, database, and operating systems. Includes hands-on experience developing word processing, spreadsheet and presentation documents.  Evaluates the reliability of sources. Covers creating a simple web page. Examines topics such as social, legal, and ethical issues.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
                                     </p>
                                 </div>
@@ -985,10 +985,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Assists students in transition to college. Provides overviews of college policies, procedures, and curricular offerings. Encourages contacts with other students and staff. Assists students toward college success through information regarding effective study habits, career and academic planning, and other college resources available to students. Strongly recommended for beginning students. Required for graduation.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 1 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
                                     </p>
                                 </div>
@@ -1005,12 +1005,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Introduces accounting principles with respect to financial reporting. Demonstrates how decision-makers use accounting information for reporting purposes. Focuses on the preparation of accounting information and its use in the operation of organizations, as well as methods of analysis and interpretation of accounting information.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> Placement in ENG 111 or placement in co-requisites ENG 111 and EDE 11 and competency in Introductory Algebra MDE 10 as demonstrated through placement or by satisfactorily completing MDE 10.
                                     </p>
                                 </div>
@@ -1027,10 +1027,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Covers the use of spreadsheet software to create spreadsheets with formatted cells and cell ranges, control pages, multiple sheets, charts, and macros. Topics include type and edit text in a cell, enter data on multiple worksheets, work with formulas and functions, create charts, PivotTables, and styles, insert headers and footers, and filter data. Covers MOS Excel objectives.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
                                     </p>
                                 </div>
@@ -1047,10 +1047,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Applies theory and principles of public address with emphasis on preparation and delivery.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
                                     </p>
                                 </div>
@@ -1069,10 +1069,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Examines the elements affecting speech communication at the individual, small group, and public communication levels with emphasis on practice of communication at each level.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
                                     </p>
                                 </div>
@@ -1089,12 +1089,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Introduces the computer in solving accounting problems. Focuses on operation of computers. Presents the accounting cycle and financial statement preparation in a computerized system and other applications for financial and managerial accounting. Introduces the QuickBooks accounting software program.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> ACC 117 or ACC 211, or equivalent, or school approval.
                                     </p>
                                 </div>
@@ -1111,10 +1111,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Identify the roles, responsibilities and comprehensive accounting functions associated with retail, service, and manufacturing operations. Focuses on transactional accounting in inventory, accounts receivable, accounts payable and cash in addition to internal controls over assets.  Lecture 2 hours per week.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 2 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> ACC 117
                                     </p>
                                 </div>
@@ -1136,10 +1136,10 @@
                                     <p><strong>PURPOSE:</strong> The rapid expansion of business and industry in Virginia has created a large, steady demand for qualified personnel to assist in the preparation and interpretation of accounting and financial information.  The Bookkeeping Career Studies Certificate is designed for persons who are seeking their first, full-time employment in the accounting field immediately upon completion of the curriculum.  In addition, the program is designed for persons presently employed in accounting who desire to increase their knowledge and update their skills.</p>
                                     <p>
                                         <strong>OCCUPATIONAL OBJECTIVES:</strong> The Bookkeeping Career Studies Certificate prepares graduates for employment as bookkeepers handling all major accounting functions including, but not limited to: journal entries, month-end close, preparation of financial statements, fixed asset accounting, payroll, inventory, accounts receivable/billing, and accounts payable.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         After completion of the Bookkeeping Career Studies Certificate, students are eligible to sit for the following industry certification exams:
-                                        <br/>
+                                        <br>
                                         <ul>
                                             <li>Accreditation Council for Accountancy and Taxation, Accredited Tax Preparer (ATP)</li>
                                             <li>American Payroll Association, Fundamental Payroll Certification (FPC)</li>
@@ -1168,12 +1168,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Covers reading and understanding financial statements, internal control requirements for safeguarding assets, and accounting procedures necessary to complete the entire accounting cycle, including journals, ledgers, and financial statements.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> Placement in ENG 111 or placement in co-requisites ENG 111 and EDE 11 and competency in Introductory Algebra MDE 10 as demonstrated through placement or by satisfactorily completing MDE 10.
                                     </p>
                                 </div>
@@ -1190,10 +1190,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Develops understanding of digital literacy. Introduces basic computer concepts in hardware, software, cyber, cloud, database, and operating systems. Includes hands-on experience developing word processing, spreadsheet and presentation documents.  Evaluates the reliability of sources. Covers creating a simple web page. Examines topics such as social, legal, and ethical issues.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
                                     </p>
                                 </div>
@@ -1210,10 +1210,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Assists students in transition to college. Provides overviews of college policies, procedures, and curricular offerings. Encourages contacts with other students and staff. Assists students toward college success through information regarding effective study habits, career and academic planning, and other college resources available to students. Strongly recommended for beginning students. Required for graduation.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 1 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
                                     </p>
                                 </div>
@@ -1230,12 +1230,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Introduces accounting principles with respect to financial reporting. Demonstrates how decision-makers use accounting information for reporting purposes. Focuses on the preparation of accounting information and its use in the operation of organizations, as well as methods of analysis and interpretation of accounting information.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> Placement in ENG 111 or placement in co-requisites ENG 111 and EDE 11 and competency in Introductory Algebra MDE 10 as demonstrated through placement or by satisfactorily completing MDE 10.
                                     </p>
                                 </div>
@@ -1252,10 +1252,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Covers the use of spreadsheet software to create spreadsheets with formatted cells and cell ranges, control pages, multiple sheets, charts, and macros. Topics include type and edit text in a cell, enter data on multiple worksheets, work with formulas and functions, create charts, PivotTables, and styles, insert headers and footers, and filter data. Covers MOS Excel objectives.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
                                     </p>
                                 </div>
@@ -1272,10 +1272,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Applies theory and principles of public address with emphasis on preparation and delivery.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
                                     </p>
                                 </div>
@@ -1294,10 +1294,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Examines the elements affecting speech communication at the individual, small group, and public communication levels with emphasis on practice of communication at each level.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
                                     </p>
                                 </div>
@@ -1314,12 +1314,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Introduces the computer in solving accounting problems. Focuses on operation of computers. Presents the accounting cycle and financial statement preparation in a computerized system and other applications for financial and managerial accounting. Introduces the QuickBooks accounting software program.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> ACC 117 or ACC 211, or equivalent, or school approval.
                                     </p>
                                 </div>
@@ -1336,10 +1336,11 @@
                                 <div class="accordion__content">
                                     <p>
                                         Identify the roles, responsibilities and comprehensive accounting functions associated with retail, service, and manufacturing operations. Focuses on transactional accounting in inventory, accounts receivable, accounts payable and cash in addition to internal controls over assets.  Lecture 2 hours per week.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 2 hours per week.
-                                        <br/>Prerequisites:</strong> ACC 117
+                                        <br>
+                                        <strong>Prerequisites:</strong> ACC 117
                                     </p>
                                 </div>
 
@@ -1355,8 +1356,8 @@
                                 <div class="accordion__content">
                                     <p>
                                         Introduces taxes most frequently encountered in business. Includes payroll sales property and income tax. Studies the fundamentals of income tax preparation of business taxes for small businesses organized as proprietorships, partnerships, limited liability companies and S-corporations. Includes income tax preparation related to business assets; business of the home; employment taxes; withholding and estimated taxes; Schedules C SE and1040; self-employed retirement plans; tip reporting and allocation rules etc. Also includes discussion and practice in recording of payroll for a small business.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
                                     </p>
                                 </div>
@@ -1373,12 +1374,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Introduces accounting principles with respect to cost and managerial accounting. Focuses on the application of accounting information with respect to product costing, as well as its use within the organization to provide direction and to judge performance.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> ACC 211 or equivalent or school approval.
                                     </p>
                                 </div>
@@ -1395,12 +1396,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Provides students an opportunity to integrate skills learned in prior accounting courses and apply those skills to the real-world practice of accounting through a business simulation project. Prepares students to complete the  Certified Bookkeeper examination given by the American Institute of Public Bookkeepers (AIPB) utilizing a review course prepared by the AIPB.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 2 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> ACC 117, ACC 134, ACC 211 - with a grade of C or better, and ACC 216 with a grade of C or better
-                                        <br/>
+                                        <br>
                                         <strong>Corequisites:</strong> ACC 134
                                     </p>
                                 </div>
@@ -1428,7 +1429,7 @@
 
                                     <h3>Curriculum</h3>
 
-                                    <p class="course-order">Courses should be taken in the order listed. To help with course planning, download curriculum planning <span><a href="roadmaps/payroll-and -taxation-csc.docx">Roadmap</a></span>.</p>
+                                    <p class="course-order">Courses should be taken in the order listed. To help with course planning, download curriculum planning <span><a href="roadmaps/payroll-and-taxation-csc.docx">Roadmap</a></span>.</p>
                                 </div>
 
                                 <!-- Custom Accordion Item 1 Within Bootstrap Accordion Item 5 -->
@@ -1443,12 +1444,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Covers reading and understanding financial statements, internal control requirements for safeguarding assets, and accounting procedures necessary to complete the entire accounting cycle, including journals, ledgers, and financial statements.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> Placement in ENG 111 or placement in co-requisites ENG 111 and EDE 11 and competency in Introductory Algebra MDE 10 as demonstrated through placement or by satisfactorily completing MDE 10.
                                     </p>
                                 </div>
@@ -1465,10 +1466,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Develops understanding of digital literacy. Introduces basic computer concepts in hardware, software, cyber, cloud, database, and operating systems. Includes hands-on experience developing word processing, spreadsheet and presentation documents.  Evaluates the reliability of sources. Covers creating a simple web page. Examines topics such as social, legal, and ethical issues.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
                                     </p>
                                 </div>
@@ -1485,10 +1486,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Assists students in transition to college. Provides overviews of college policies, procedures, and curricular offerings. Encourages contacts with other students and staff. Assists students toward college success through information regarding effective study habits, career and academic planning, and other college resources available to students. Strongly recommended for beginning students. Required for graduation.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 1 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
                                     </p>
                                 </div>
@@ -1505,12 +1506,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Introduces accounting principles with respect to financial reporting. Demonstrates how decision-makers use accounting information for reporting purposes. Focuses on the preparation of accounting information and its use in the operation of organizations, as well as methods of analysis and interpretation of accounting information.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> Placement in ENG 111 or placement in co-requisites ENG 111 and EDE 11 and competency in Introductory Algebra MDE 10 as demonstrated through placement or by satisfactorily completing MDE 10.
                                     </p>
                                 </div>
@@ -1527,10 +1528,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Covers the use of spreadsheet software to create spreadsheets with formatted cells and cell ranges, control pages, multiple sheets, charts, and macros. Topics include type and edit text in a cell, enter data on multiple worksheets, work with formulas and functions, create charts, PivotTables, and styles, insert headers and footers, and filter data. Covers MOS Excel objectives.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
                                     </p>
                                 </div>
@@ -1547,10 +1548,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Applies theory and principles of public address with emphasis on preparation and delivery.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
                                     </p>
                                 </div>
@@ -1569,10 +1570,10 @@
                                 <div class="accordion__content">
                                     <p>
                                         Examines the elements affecting speech communication at the individual, small group, and public communication levels with emphasis on practice of communication at each level.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Spring Summer
                                     </p>
                                 </div>
@@ -1589,8 +1590,8 @@
                                 <div class="accordion__content">
                                     <p>
                                         Introduces taxes most frequently encountered in business. Includes payroll sales property and income tax. Studies the fundamentals of income tax preparation of business taxes for small businesses organized as proprietorships, partnerships, limited liability companies and S-corporations. Includes income tax preparation related to business assets; business of the home; employment taxes; withholding and estimated taxes; Schedules C SE and1040; self-employed retirement plans; tip reporting and allocation rules etc. Also includes discussion and practice in recording of payroll for a small business.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
                                     </p>
                                 </div>
@@ -1607,12 +1608,12 @@
                                 <div class="accordion__content">
                                     <p>
                                         Presents the study of federal taxation as it relates to individuals and related entities. Includes tax planning, compliance, and reporting. Covers gross income, deductions, and credits. Includes tax compliance and reporting. Emphasizes personal tax burden minimization and preparation of personal tax returns.
-                                        <br/>
-                                        <br/>
+                                        <br>
+                                        <br>
                                         <strong>Lecture Hours:</strong> Lecture 3 hours per week.
-                                        <br/>
+                                        <br>
                                         <strong>Semester(s) Offered:</strong> Fall Only
-                                        <br/>
+                                        <br>
                                         <strong>Prerequisites:</strong> ACC 211 or equivalent.
                                     </p>
                                 </div>
@@ -1634,11 +1635,11 @@
                     <li><a class="dropdown-item" href="roadmaps/accounting-csc.docx">Accounting CSC</a></li>
                     <li><a class="dropdown-item" href="roadmaps/accounting-support-functions-csc.docx">Accounting Support Functions CSC</a></li>
                     <li><a class="dropdown-item" href="roadmaps/bookkeeping-csc.docx">Bookkeeping CSC</a></li>
-                    <li><a class="dropdown-item" href="roadmaps/payroll-and -taxation-csc.docx">Payroll and Taxation CSC</a></li>
+                    <li><a class="dropdown-item" href="roadmaps/payroll-and-taxation-csc.docx">Payroll and Taxation CSC</a></li>
                     </ul>
                 </div>
                 
-                <button class="link-button"><a href="../sbit-home.html">Back to SBIT Home</a></button>
+                <a class="link-button" href="../sbit-home.html">Back to SBIT Home</a>
 
             </section>
         </div>
@@ -1646,59 +1647,62 @@
 
     <footer>
         <div class="footer-addresses-band">
-        <div id="footer-reynolds-logo"><img src="../images/reynolds-logo-reverse-50.svg" alt="Reynolds' 50 Year Logo" width="200" /></div>
+
+            <div id="footer-reynolds-logo">
+                <img src="../images/reynolds-logo-reverse-50.svg" alt="Reynolds' 50 Year Logo" width="200">
+            </div>
         
-        <div class="footer-locations">
+            <div class="footer-locations">
+            
+                <address class="footer-address">
+                <p class="address-head">Parham Road Campus</p>
+                <p>1651 East Parham Road</p>
+                <p>Richmond, Virginia</p>
+                <p>(804) 523-5177</p>
+                <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
+                </address>
         
-            <address class="footer-address">
-            <p class="address-head">Parham Road Campus</p>
-            <p>1651 East Parham Road</p>
-            <p>Richmond, Virginia</p>
-            <p>(804) 523-5177</p>
-            <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
-            </address>
-      
-            <address class="footer-address">
-            <p class="address-head">Downtown Campus</p>
-            <p>700 East Jackson Street</p>
-            <p>Richmond, Virginia</p>
-            <p>(804) 523-5301</p>
-            <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
-            </address>
-      
-            <address class="footer-address">
-            <p class="address-head">Goochland Campus</p>
-            <p>1851 Dickinson Road</p>
-            <p>Goochland, Virginia</p>
-            <p>(804) 523-5432</p>
-            <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
-            </address>
-      
-            <address class="footer-address">
-            <p class="address-head">The Kitchens at Reynolds</p>
-            <p>2500 Nine Mile Road</p>
-            <p>Richmond, Virginia</p>
-            <p>(804) 371-3000</p>
-            <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
-            </address>
-      
-      </div>
+                <address class="footer-address">
+                <p class="address-head">Downtown Campus</p>
+                <p>700 East Jackson Street</p>
+                <p>Richmond, Virginia</p>
+                <p>(804) 523-5301</p>
+                <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
+                </address>
+        
+                <address class="footer-address">
+                <p class="address-head">Goochland Campus</p>
+                <p>1851 Dickinson Road</p>
+                <p>Goochland, Virginia</p>
+                <p>(804) 523-5432</p>
+                <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
+                </address>
+        
+                <address class="footer-address">
+                <p class="address-head">The Kitchens at Reynolds</p>
+                <p>2500 Nine Mile Road</p>
+                <p>Richmond, Virginia</p>
+                <p>(804) 371-3000</p>
+                <button class="map-directions" type="button">MAP/DIRECTIONS &nbsp;></button>
+                </address>
+        
+            </div>
       
         </div>
         <div class="footer-copyright-band">
             <div id="footer-social-logo-group">
-              <a href="https://twitter.com/ReynoldsCollege"><img class="reynolds-social-logos" src="../images/social-logos-300px-twitter-b&w.png" alt="Twitter logo" /></a>
-              <a href="https://www.facebook.com/ReynoldsCommunityCollege/"><img class="reynolds-social-logos" src="../images/social-logos-300px-facebook-b&w.png" alt="Facebook Logo" /></a>
-              <a href="https://www.youtube.com/jsargeantreynolds"><img class="reynolds-social-logos" src="../images/social-logos-300px-youtube-b&w.png" alt="YouTube Logo" /></a>
-              <a href="https://www.instagram.com/reynoldscommunitycollege/"><img class="reynolds-social-logos" src="../images/social-logos-300px-instagram-b&w.png" alt="Instagram logo" /></a>
-              <a href="https://www.linkedin.com/school/j-sargeant-reynolds-community-college/"><img class="reynolds-social-logos" src="../images/social-logos-300px-linkedin-b&w.png" alt="LinkedIn logo" /></a>
-              <a href="https://www.flickr.com/photos/83397803@N04/sets/"><img class="reynolds-social-logos" src="../images/social-logos-300px-flicker-b&w.png" alt="Flickr logo" /></a>
+                <a href="https://twitter.com/ReynoldsCollege"><img class="reynolds-social-logos" src="../images/social-logos-300px-twitter-b&w.png" alt="Twitter logo"></a>
+                <a href="https://www.facebook.com/ReynoldsCommunityCollege/"><img class="reynolds-social-logos" src="../images/social-logos-300px-facebook-b&w.png" alt="Facebook Logo"></a>
+                <a href="https://www.youtube.com/jsargeantreynolds"><img class="reynolds-social-logos" src="../images/social-logos-300px-youtube-b&w.png" alt="YouTube Logo"></a>
+                <a href="https://www.instagram.com/reynoldscommunitycollege/"><img class="reynolds-social-logos" src="../images/social-logos-300px-instagram-b&w.png" alt="Instagram logo"></a>
+                <a href="https://www.linkedin.com/school/j-sargeant-reynolds-community-college/"><img class="reynolds-social-logos" src="../images/social-logos-300px-linkedin-b&w.png" alt="LinkedIn logo"></a>
+                <a href="https://www.flickr.com/photos/83397803@N04/sets/"><img class="reynolds-social-logos" src="../images/social-logos-300px-flicker-b&w.png" alt="Flickr logo"></a>
             </div>
             <p id="footer-copyright-01">©2022 J. Sargeant Reynolds Community College</p>
             <p id="footer-copyright-02">
                 PO BOX 85622 Richmond, Virginia, USA 23285-5622 | (804) 371-3000 | 
                 <a href="#">VA Relay 711</a>
-                <br/>
+                <br>
                 <a href="#">Privacy Statement</a> | 
                 <a href="#">Website Disclaimer</a> | 
                 <a href="#">Contact Us</a> | 

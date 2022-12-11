@@ -22,7 +22,7 @@ HEADER ------------------ site-wide header containing two navs
 
 SBIT-GENERAL ------------ elements that appear on all SBIT-specific pages
 	body nav ------------ SBIT-specific navigation
-	more info -------- SBIT more info module
+	more info ----------- SBIT more info module
 	carousel ------------ bootstrap carousel styling
 	main image ---------- static image on pages without a carousel
 	content ------------- main page content/text
@@ -74,7 +74,15 @@ $SBIT-PROGRAMS ----------
 $FOOTER ----------------- 
 
 
-TABLET - SMALL SCREENS ----------------------------------------------------
+TABLET - SMALL SCREENS --------------------------------------------------
+
+=SBIT-PROGRAMS ----------
+	=custom accordion ---
+
+=FOOTER -----------------
+
+
+TABLET - MED SCREENS ----------------------------------------------------
 
 %SBIT-GENERAL ----------- 
 
@@ -83,7 +91,6 @@ TABLET - SMALL SCREENS ----------------------------------------------------
 
 %SBIT-PROGRAMS ----------
 	%videos/images ------
-	%custom accordion --- 
 
 %FOOTER ----------------- 
 
@@ -793,25 +800,20 @@ header {
 /*button that links to various other site pages*/
 .link-button {
 	background-color: var(--reynoldsred);
-	border: none;
+	color: white;
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 60px;
 	margin-top: 40px;
-	width: fit-content;
-}
-
-/*link styling*/
-.link-button a {
-	color: white;
-	display: block;
-	text-decoration: none;
 	padding: 12px 25px;
+	text-decoration: none;
+	width: fit-content;
 }
 
 /*change on hover*/
 .link-button:hover {
 	background-color: var(--darkred);
+	color: white;
 	transition: .2s;
 }
 
@@ -833,22 +835,24 @@ header {
 	place-items: center;
 }
 
-#programs button {
+/*links to javascript array with differing background images on each item*/
+.sbit-program {
+	align-items: center;
+	background-size: cover;
+	color: white;
+	display: flex;
 	height: 30vw;
 	min-height: 120px;
 	min-width: 120px;
+	text-align: center;
+	text-decoration: none;
 	width: 30vw;
-}
-
-/*links to javascript array with differing background images on each item*/
-.sbit-program {
-	background-size: cover;
-	color: white;
 }
 
 .sbit-program:hover {
 	background-blend-mode: multiply;
 	background-color: var(--gray11);
+	color: white;
 	transition: .2s;
 }
 
@@ -858,6 +862,7 @@ header {
 	height: 60px;
 	justify-content: center;
 	opacity: .9;
+	width: 100%;
 }
 
 
@@ -1509,7 +1514,7 @@ footer {
 	}
 
 	/*change program button size*/
-	#programs button {
+	.sbit-program {
 		height: 25vw;
 		width: 25vw;
 	}
@@ -1551,38 +1556,54 @@ footer {
 	}	  
 }
 
-@media (min-width: 550px) {
-/*Custom Accordion*/
-.course-container {
-	display: grid;
-	grid-template-columns: 85px 50% auto;
-	grid-template-rows: 100%;
-	padding: 0px 0px 0px 0px;
-	margin: 0px 0px 0px 0px;
-}
 
-.course-credits {
-	grid-column-start: 5;
-	margin: 0px 30px 0px 0px;
-	text-align: right !important;
-}
-
-.accordion__button::after {
-	margin: -31px 0px 0px 0px;
-}
-
-	/*FOOTER SHIFT TO THE LEFT*/
-.footer-locations {
-	left: 5%;
-}
-
-.break {
-    display: none;
-}
-}
 
 /*------------------------------------*\
   TABLET - SMALL SCREENS
+\*------------------------------------*/
+
+
+
+@media (min-width: 550px) {
+
+	/*=SBIT-PROGRAMS*/
+
+	/*=custom accordion*/
+
+	.course-container {
+		display: grid;
+		grid-template-columns: 85px 50% auto;
+		grid-template-rows: 100%;
+		padding: 0px 0px 0px 0px;
+		margin: 0px 0px 0px 0px;
+	}
+
+	.course-credits {
+		grid-column-start: 5;
+		margin: 0px 30px 0px 0px;
+		text-align: right !important;
+	}
+
+	.accordion__button::after {
+		margin: -31px 0px 0px 0px;
+	}
+
+	/*=FOOTER*/
+
+	/*footer shift to the left*/
+	.footer-locations {
+		left: 5%;
+	}
+
+	.break {
+		display: none;
+	}
+}
+
+
+
+/*------------------------------------*\
+  TABLET - MED SCREENS
 \*------------------------------------*/
 
 
@@ -1607,7 +1628,7 @@ footer {
 	/*%SBIT-HOMEPAGE*/
 
 	/*%programs*/
-	#programs button {
+	.sbit-program {
 		height: 20vw;
 		width: 20vw;
 	}
@@ -1795,7 +1816,7 @@ footer {
 		max-width: 600px;
 	}
 
-	#programs button {
+	.sbit-program {
 		height: 150px;
 		width: 150px;
 	}
@@ -1803,7 +1824,6 @@ footer {
 
 
 	/*%SBIT-PROGRAMS*/
-
 
 	/*%videos/images*/
 
@@ -1813,27 +1833,6 @@ footer {
 		max-height: 450px;
 		width: 100%;
 	}
-
-
-	/*%custom accordion*/
-
-	/*.course-container {
-		display: grid;
-		grid-template-columns: 85px 50% auto;
-		grid-template-rows: 100%;
-		padding: 0px 0px 0px 0px;
-		margin: 0px 0px 0px 0px;
-	}
-
-	.course-credits {
-		grid-column-start: 5;
-		margin: 0px 30px 0px 0px;
-		text-align: right;
-	}
-
-	.accordion__button::after {
-		margin: -31px 0px 0px 0px;
-	} */
 
 
 
@@ -2046,7 +2045,7 @@ footer {
 	}
 
 	#main-nav .dropdown a {
-		pointer-events: auto; /*allow links to work within dropdowns*/
+		pointer-events: all; /*allow links to work within dropdowns*/
 	}
 
 	/*remove '+' symbol after menu items*/
@@ -2094,6 +2093,7 @@ footer {
 	}
 
 
+
     /*!SBIT-GENERAL*/
 
 	/*!carousel*/
@@ -2119,7 +2119,7 @@ footer {
 	/*!programs*/
 
 	/*increase button size*/
-	#programs button {
+	.sbit-program {
 		height: 170px;
 		width: 170px;
 	}
