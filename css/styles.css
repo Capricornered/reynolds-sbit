@@ -640,84 +640,50 @@ header {
 }
 
 /*for images on career outlook pages*/
-#sbit-main-image .main_head_image_01 {
-    display: block;
-    position: relative;
-    max-width: 1200px;
-    height: 225px;
-    background-size: cover;
-    margin: 0px auto 0px auto;
+#sbit-main-image .main-image-automotive {
+	object-position: 0% 40%;
 }
 
-.main_head_image_01_welding {
-    background-image: url("../images/benjamin-wedemeyer-bzzSg8hTKKY-unsplash.jpg");
-    background-position: 50% 60%;
+#sbit-main-image .main-image-diesel {
+	object-position: 0% 52%;
 }
 
-.main_head_image_01_automotive {
-    background-image: url("../images/kato-blackmore-qcF-19BvViE-unsplash.jpg");
-    background-position: 50% 40%;
+#sbit-main-image .main-image-accounting-outlook {
+	object-position: 50% 50%;
 }
 
-.main_head_image_01_paralegal {
-    background-image: url("../images/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg");
-    background-position: 50% 40%;
+#sbit-main-image .main-image-admin-justice-outlook {
+	object-position: 50% 40%;
 }
 
-.main_head_image_01_diesel {
-    background-image: url("../images/pexels-kelly-4320464.jpg");
-    background-position: 50% 40%;
+#sbit-main-image .main-image-automotive-outlook {
+    object-position: 50% 50%;
 }
 
-.main_head_image_01_admin_justice {
-    background-image: url("../images/pexels-joshua-santos-4581213.jpg");
-    background-position: 50% 40%;
+#sbit-main-image .main-image-business-outlook {
+    object-position: 50% 60%;
 }
 
-.main_head_image_01_admin_justice_outlook {
-    background-image: url("../images/pexels-joshua-santos-4581211.jpg");
-    background-position: 50% 40%;
+#sbit-main-image .main-image-culinary-outlook {
+	object-position: 50% 80%;
 }
 
-.main_head_image_01_automotive_outlook {
-    background-image: url("../images/tim-mossholder-OwBRQ0bykX8-unsplash.jpg");
-    background-position: 50% 45%;
+#sbit-main-image .main-image-diesel-outlook {
+	object-position: 50% 45%;
 }
 
-.main_head_image_01_diesel_outlook {
-    background-image: url("../images/pexels-pixabay-279949.jpg");
-    background-position: 50% 45%;
+#sbit-main-image .main-image-management-outlook {
+	object-position: 50% 35%;
 }
 
-.main_head_image_01_welding_outlook {
-    background-image: url("../images/christopher-burns-Wiu3w-99tNg-unsplash.jpg");
-    background-position: 50% 80%;
+#sbit-main-image .main-image-paralegal-outlook {
+	object-position: 50% 65%;
 }
 
-.main_head_image_01_culinary_outlook {
-    background-image: url("../images/pexels-alex-green-5692293.jpg");
-    background-position: 50% 80%;
+#sbit-main-image .main-image-welding-outlook {
+	object-position: 50% 80%;
 }
 
-.main_head_image_01_paralegal_outlook {
-    background-image: url("../images/pexels-sora-shimazaki-5673492.jpg");
-    background-position: 50% 80%;
-}
-
-.main_head_image_01_business_outlook {
-    background-image: url("../images/pexels-michaal-ludwiczak-1239162.jpg");
-    background-position: 50% 63%;
-}
-
-.main_head_image_01_management_outlook {
-    background-image: url("../images/pexels-kampus-production-8190804.jpg");
-    background-position: 50% 35%;
-}
-
-.main_head_image_01_accounting_outlook {
-    background-image: url("../images/pexels-tima-miroshnichenko-6694543.jpg");
-    background-position: 50% 50%;
-}
 
 
 /*content*/
@@ -1050,6 +1016,7 @@ header {
     border-radius: 0px 0px 0px 0px;
     height: fit-content;
     z-index: 1 !important;
+	/* outline: 1px solid red; */
 }
 
 .accordion h2 {
@@ -1062,6 +1029,7 @@ header {
 
 .accordion-button:focus {
     box-shadow: inherit;
+	outline: 2px solid blue;
 }
 
 .accordion-item {
@@ -1119,7 +1087,9 @@ header {
 }
 
 .accordion__button {
-    display: block;
+    display: flex;
+	justify-content: space-between;
+	/* grid-template-columns: auto 32px; */
     width: 100%;
     padding: 15px 20px;
     border: none;
@@ -1129,6 +1099,12 @@ header {
     text-align: left;
 	line-height: 30px;
     transition: background 0.2s;
+	overflow: hidden;
+}
+
+.course-container-wrapper {
+	display: inline-block;
+	width: calc(100% - 30px);
 }
 
 .accordion__button:hover { 
@@ -1136,11 +1112,18 @@ header {
 }
 
 .accordion__button::after {
+	position: relative;
+	display: inline-block;
     content: '\25be';
     color: rgb(220, 220, 220);
-    float: right;
     transform: scale(1.5);
-    margin: -62px 0px 0px 0px;
+    margin: auto 0px auto 0px;
+	padding: 0px 0px 0px 0px;
+	width: 10px;
+	height: auto;
+	vertical-align: middle;
+	padding: 0px 0px 2px 0px;
+	transition: color 0.2s, transform 0.2s;
 }
 
 .accordion__button--active + .accordion__content {
@@ -1166,10 +1149,12 @@ header {
 .accordion__button--active::after {
     content: '\25be';
     color: rgb(0, 0, 0);
+	transform: scale(1.5) rotate(-180deg);
+	/* transition-duration: 0.2s; */
 }
 
 .accordion__content {
-    font-size: 16px;
+	font-size: 16px;
     /* overflow: hidden;
     max-height: 0px;
     transition: max-height 0.2s; */
@@ -1225,6 +1210,7 @@ header {
 }
 
 .or {
+	font-weight: 700;
     padding: 20px 0px 0px 20px;
 }
 
@@ -1570,31 +1556,40 @@ footer {
 
 	/*=custom accordion*/
 
+	.accordion__button {
+		display: block;
+	}
+
 	.course-container {
+		position: relative;
 		display: grid;
-		grid-template-columns: 85px 50% auto;
+		grid-template-columns: 85px auto 1fr;
 		grid-template-rows: 100%;
+	}
+
+	.accordion__button .course-container {
 		padding: 0px 0px 0px 0px;
 		margin: 0px 0px 0px 0px;
 	}
 
 	.course-credits {
 		grid-column-start: 5;
-		margin: 0px 30px 0px 0px;
 		text-align: right !important;
+		margin: 0px 0px 0px 20px;
 	}
 
 	.accordion__button::after {
-		margin: -31px 0px 0px 0px;
+		position: relative;
+		margin: 0px 0px 0px 0px;
+		float: right;
 	}
 
-	/*=FOOTER*/
-
-	/*footer shift to the left*/
+	/*Footer shift to the left*/
 	.footer-locations {
 		left: 5%;
 	}
 
+	/*Removes the breaks in the lines of text in the statistics on the Career Outlook pages.*/
 	.break {
 		display: none;
 	}
@@ -1729,71 +1724,56 @@ footer {
 		grid-column: 1 / span 4;
 	}
 
-	/*adjust image positioning*/
+	/*adjust main head image positioning*/
 	#sbit-main-image img {
 		object-position: 0px -130px;
 	}
 
-	#sbit-main-image .main_head_image_01 {
-		height: 320px;
+	#sbit-main-image .main-image-automotive {
+		object-position: 0% 40%;
 	}
 
-	.main_head_image_01_automotive {
-		background-position: 50% 40%;
+	#sbit-main-image .main-image-diesel {
+		object-position: 0% 52%;
 	}
 
-	.main_head_image_01_welding {
-		background-position: 50% 65%;
-	}
-
-	.main_head_image_01_paralegal {
-		background-position: 50% 30%;
-	}
-
-	.main_head_image_01_diesel {
-		background-position: 50% 70%;
+	#sbit-main-image .main-image-accounting-outlook {
+		object-position: 50% 50%;
 	}
 	
-	.main_head_image_01_admin_justice {
-		background-position: 50% 35%;
+	#sbit-main-image .main-image-admin-justice-outlook {
+		object-position: 50% 35%;
 	}
 	
-	.main_head_image_01_admin_justice_outlook {
-		background-position: 50% 35%;
+	#sbit-main-image .main-image-automotive-outlook {
+		object-position: 50% 45%;
 	}
 	
-	.main_head_image_01_automotive_outlook {
-		background-position: 50% 45%;
+	#sbit-main-image .main-image-business-outlook {
+		object-position: 50% 63%;
 	}
 	
-	.main_head_image_01_diesel_outlook {
-		background-position: 50% 55%;
+	#sbit-main-image .main-image-culinary-outlook {
+		object-position: 50% 80%;
 	}
 	
-	.main_head_image_01_welding_outlook {
-		background-position: 50% 85%;
-	}
-
-	.main_head_image_01_culinary_outlook {
-		background-position: 50% 70%;
-	}
-
-	.main_head_image_01_paralegal_outlook {
-		background-position: 50% 55%;
-	}
-
-	.main_head_image_01_business_outlook {
-		background-position: 50% 63%;
-	}
-
-	.main_head_image_01_management_outlook {
-		background-position: 50% 35%;
-	}
-
-	.main_head_image_01_accounting_outlook {
-		background-position: 50% 50%;
+	#sbit-main-image .main-image-diesel-outlook {
+		object-position: 50% 55%;
 	}
 	
+	#sbit-main-image .main-image-management-outlook {
+		object-position: 50% 35%;
+	}
+	
+	#sbit-main-image .main-image-paralegal-outlook {
+		object-position: 50% 55%;
+	}
+	
+	#sbit-main-image .main-image-welding-outlook {
+		object-position: 50% 85%;
+	}
+
+
 
 	/*&content*/
 
@@ -2106,7 +2086,7 @@ footer {
 	
 	/*!main image*/
 
-	/*increase main image size*/
+	/*increase main image height size*/
 	#sbit-main-image img {
 		height: 320px;
 	}
