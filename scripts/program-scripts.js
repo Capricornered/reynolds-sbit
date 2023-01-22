@@ -2,11 +2,11 @@
 
 /* JS for Reynolds Custom Accordion Inset. Commented out sections correspond to an animation effect not in use.*/
 
-document.querySelectorAll('.accordion__button').forEach(function accButton(button) {
-    button.addEventListener('click', function() {
+document.querySelectorAll(".accordion__button").forEach(function accButton(button) {
+    button.addEventListener("click", function() {
       // const accordionContent = button.nextElementSibling;
 
-      button.classList.toggle('accordion__button--active');
+      button.classList.toggle("accordion__button--active");
 
       // if (button.classList.contains('accordion__button--active')) {
       //   accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
@@ -15,7 +15,7 @@ document.querySelectorAll('.accordion__button').forEach(function accButton(butto
       // }
     }
     );
-}      
+}
 );
 
 
@@ -33,12 +33,12 @@ function readMoreFunction() {
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
-    btnText.innerHTML = "Read More"; 
+    btnText.innerHTML = "Read More";
     moreText.style.display = "none";
     moreContent.style.display = "none";
   } else {
     dots.style.display = "none";
-    btnText.innerHTML = "Read Less"; 
+    btnText.innerHTML = "Read Less";
     moreText.style.display = "inline";
     moreContent.style.display = "inline";
   }

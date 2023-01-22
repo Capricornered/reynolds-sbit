@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/frz4ami.css">
 
     <!-- Bootstrap CSS Link-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     
     <!--Custom CSS Link-->
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
@@ -231,8 +231,7 @@
           </div>
 
           <figure id="sbit-main-image">
-              <!-- <img src="../images/automotive-placeholder.jpg" alt="ALTTEXT"> -->
-              <div class="main_head_image_01  main_head_image_01_automotive"></div>
+              <img class="main-image-automotive" src="../images/automotive-main-image.jpg" alt="A photo of a automotive mechanic working underneath the dashboard of a car who has stopped for a moment to smile at the camera a have his picture taken.">
           </figure>
 
           <section class="content">
@@ -257,7 +256,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               <p>In quis autem vel dolor ex augue quis iusto lorem commodo nostrud crisare? Commodo nisl duis, minim facilisi. Ut erat, nulla euismod dignissim minim ea feugait ullamcorper veniam. Consequat ad nisl vero luptatum dolor praesent dolor eros enim. Augue duis, magna duis eum feugiat wisi at ut iusto eum illum wisi in commodo feugait.</p>
               
-              <img class="story-image" src="../images/towfiqu-barbhuiya-VBjfOtGtmc4-unsplash.jpg" alt="ALTTEXT">
+              <img class="story-image" src="../images/towfiqu-barbhuiya-VBjfOtGtmc4-unsplash.jpg" alt="A close up of a person's hand with a pair of needle nose plyers about ready to pull a black wire attached to a car battery.">
               
               <p>Minim dolore autem vel ex enim delenit minim, eros odio aliquip blandit lobortis at ut qui minim ut suscipit wisi velit at illum. Dolore augue ad magna lobortis vulputate elit, in vel tation. Feugiat esse crisare eros accumsan blandit dolore consequat in, te in augue veniam. Ut et illum consequatvel ut, in feugait aliquip iriuredolor illum ea quis tation, iriuredolor nisl eum eros te dolore at molestie, amet vero, lobortis ad, autem delenit?</p>
               <p>
@@ -265,7 +264,7 @@
               </p>
               
               <div id="more-content">
-              <img class="story-image" src="../images/pexels-artem-podrez-8985457.jpg" alt="ALTTEXT">
+              <img class="story-image" src="../images/pexels-artem-podrez-8985457.jpg" alt="A man with blue coveralls looking to the right while working on a car's engine under the hood.">
               <p>Adipiscing delenit luptatum consequat commodo tation lobortis dignissim qui lobortis esse, molestie duis feugait feugiat esse dolore wisi. Eum enim commodo iriure molestie nonummy ullamcorper iusto. Hendrerit vulputate eum hendrerit, te ullamcorper et feugait dignissim?</p>
               </div>
 
@@ -300,291 +299,321 @@
 
                     <!-- Custom Accordion Item 1 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 101</p>
-                        <p class="course-name">Introduction to Automotive Systems</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 101</span>
+                          <span class="course-name">Introduction to Automotive Systems</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Introduces fundamental systems of automobile, the engine fuel, exhaust, electric, ignition, lubrication, cooling, transmission, steering, brake, and suspension systems. Teaches theory and function of each system. Demonstrates operation.</p>
 
-                      <p>Lecture Hours: Lecture 2 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 2 hours.
                       <br>
-                        Recitation and Laboratory Hours: Laboratory 2 hours.
+                      <strong>Recitation and Laboratory Hours:</strong> Laboratory 2 hours.
                       <br>
-                        Semester(s) Offered: Fall Spring Summer</p>
+                      <strong>Semester(s) Offered:</strong> Fall Spring Summer</p>
                     </div>
 
                     <!-- Custom Accordion Item 2 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 241</p>
-                        <p class="course-name">Automotive Electricity I</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                    </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 241</span>
+                          <span class="course-name">Automotive Electricity I</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Introduces electricity and magnetism, symbols and circuitry as applied to alternators, regulators, starters, lighting systems, instruments and gauges, and accessories. Part I of II.</p>
 
-                      <p>Lecture Hours: Lecture 2 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 2 hours.
                       <br>
-                        Recitation and Laboratory Hours: Laboratory 3 hours.
+                      <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours.
                       <br>
-                        Semester(s) Offered: Fall Spring Summer</p>
+                      <strong>Semester(s) Offered:</strong> Fall Spring Summer</p>
                     </div>
 
                     <!-- Custom Accordion Item 3 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 265</p>
-                        <p class="course-name">Automotive Braking Systems</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 265</span>
+                          <span class="course-name">Automotive Braking Systems</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Presents operation, design, construction, repair, and servicing of braking system, including Anti-Lock Brake Systems (ABS). Explains uses of tools and test equipment, evaluation of test results, and estimation of repair cost for power, standard, and disc brakes.</p>
 
-                      <p>Lecture Hours: Lecture 2 total-credit-hours-last.
+                      <p><strong>Lecture Hours:</strong> Lecture 2 total-credit-hours-last.
                         <br>
-                          Recitation and Laboratory Hours: Laboratory 3 hours.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours.
                         <br>
-                          Semester(s) Offered: Fall Spring</p>
+                        <strong>Semester(s) Offered:</strong> Fall Spring</p>
                     </div>
 
                     <!-- Custom Accordion Item 4 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">MTH 103</p>
-                        <p class="course-name">Applied Technical Math</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">MTH 103</span>
+                          <span class="course-name">Applied Technical Math</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Unknown</p>
 
-                      <p>Lecture Hours: Lecture 2 hour.
+                      <p><strong>Lecture Hours:</strong> Lecture 2 hour.
                         <br>
-                          Recitation and Laboratory Hours: Laboratory 3 hours.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours.
                         <br>
-                          Semester(s) Offered: Fall Spring</p>
+                        <strong>Semester(s) Offered:</strong> Fall Spring</p>
                     </div>
 
                     <!-- Custom Accordion Item 5 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">WEL 120</p>
-                        <p class="course-name">Introduction to Welding</p>
-                        <p class="course-credits">Credit Hours: 2</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">WEL 120</span>
+                          <span class="course-name">Introduction to Welding</span>
+                          <span class="course-credits">Credit Hours: 2</span>
+                        </span>
+                      </span>
                     </button>
                     
                     <div class="accordion__content">
                       <p>Introduces history of welding processes. Covers types of equipment and assembly of units. Stresses welding procedures such as fusion, non-fusion, and cutting oxyacetylene. Introduces arc welding and plasma arc cutting. Emphasizes procedures in the use of tools and equipment.</p>
 
-                      <p>Lecture Hours: Lecture 1 hour.
+                      <p><strong>Lecture Hours:</strong> Lecture 1 hour.
                         <br>
-                          Recitation and Laboratory Hours: Laboratory 3 hours.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours.
                         <br>
-                          Semester(s) Offered: Fall Spring Summer</p>
+                        <strong>Semester(s) Offered:</strong> Fall Spring Summer</p>
                     </div>
 
                     <!-- Custom Accordion Item 6 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">SDV 100</p>
-                        <p class="course-name">College Success Skills</p>
-                        <p class="course-credits">Credit Hours: 1</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">SDV 100</span>
+                          <span class="course-name">College Success Skills</span>
+                          <span class="course-credits">Credit Hours: 1</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Assists students in transition to college. Provides overviews of college policies, procedures, and curricular offerings. Encourages contacts with other students and staff. Assists students toward college success through information regarding effective study habits, career and academic planning, and other college resources available to students. Strongly recommended for beginning students. Required for graduation.</p>
 
-                      <p>Lecture Hours: Lecture 1 hour per week.
+                      <p><strong>Lecture Hours:</strong> Lecture 1 hour per week.
                         <br>
-                        Semester(s) Offered: Fall Spring Summer</p>
+                        <strong>Semester(s) Offered:</strong> Fall Spring Summer</p>
                     </div>
 
                     <!-- Custom Accordion Item 7 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 111</p>
-                        <p class="course-name kerning-01">Automotive Engines I</p>
-                        <p class="course-credits">Credit Hours: 4</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 111</span>
+                          <span class="course-name kerning-01">Automotive Engines I</span>
+                          <span class="course-credits">Credit Hours: 4</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Presents analysis of power, cylinder condition, valves, and bearings in the automotive engine to establish the present condition, repairs, or adjustments.</p>
 
-                      <p>Lecture Hours: Lecture 3 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 3 hours.
                         <br>
-                          Recitation and Laboratory Hours: Laboratory 3 hours. Total 6 hours per week.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours. Total 6 hours per week.
                         <br>
-                          Semester(s) Offered: Fall Spring Summer</p>
+                        <strong>Semester(s) Offered:</strong> Fall Spring Summer</p>
                     </div>
 
                     <!-- Custom Accordion Item 7 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 111</p>
-                        <p class="course-name kerning-01">Automotive Engines I</p>
-                        <p class="course-credits">Credit Hours: 4</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 111</span>
+                          <span class="course-name kerning-01">Automotive Engines I</span>
+                          <span class="course-credits">Credit Hours: 4</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Presents analysis of power, cylinder condition, valves, and bearings in the automotive engine to establish the present condition, repairs, or adjustments.</p>
 
-                      <p>Lecture Hours: Lecture 3 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 3 hours.
                         <br>
-                          Recitation and Laboratory Hours: Laboratory 3 hours. Total 6 hours per week.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours. Total 6 hours per week.
                         <br>
-                          Semester(s) Offered: Fall Spring Summer</p>
+                        <strong>Semester(s) Offered:</strong> Fall Spring Summer</p>
                     </div>
 
                     <!-- Custom Accordion Item 8 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 266</p>
-                        <p class="course-name kerning-01">Auto Alignment, Suspension, and Steering</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 266</span>
+                          <span class="course-name kerning-01">Auto Alignment, Suspension, and Steering</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Introduces use of alignment equipment in diagnosing, adjusting, and repairing front and rear suspensions. Deals with repair and servicing of power and standard steering systems.</p>
 
-                      <p>Lecture Hours: Lecture 1 hour.
+                      <p><strong>Lecture Hours:</strong> Lecture 1 hour.
                         <br>
-                          Recitation and Laboratory Hours: Laboratory 6 hours.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 6 hours.
                         <br>
-                          Semester(s) Offered: Fall Spring</p>
+                        <strong>Semester(s) Offered:</strong> Fall Spring</p>
                     </div>
 
                     <!-- Custom Accordion Item 9 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">ITE 152</p>
-                        <p class="course-name kerning-01">Introduction to Digital Literacy</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">ITE 152</span>
+                          <span class="course-name kerning-01">Introduction to Digital Literacy</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Develops understanding of digital literacy. Introduces basic computer concepts in hardware, software, cyber, cloud, database, and operating systems. Includes hands-on experience developing word processing, spreadsheet and presentation documents.  Evaluates the reliability of sources. Covers creating a simple web page. Examines topics such as social, legal, and ethical issues.</p>
 
-                      <p>Lecture Hours: Lecture 3 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 3 hours.
                         <br>
-                        Semester(s) Offered: Fall Spring Summer
+                        <strong>Semester(s) Offered:</strong> Fall Spring Summer
                     </div>
 
                     <!-- Custom Accordion Item 10 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">ENG 111</p>
-                        <p class="course-name kerning-01">College Composition I</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">ENG 111</span>
+                          <span class="course-name kerning-01">College Composition I</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Introduces and prepares students to the critical processes and fundamentals of writing in academic and professional contexts. Teaches the use of print and digital technologies to promote inquiry. Requires the production of a variety of academic texts, totaling at least 4500 words (15 pages typed) of polished writing. This course requires proficiency in using word processing and learning management software. This is a Passport Transfer course.</p>
 
-                      <p>Lecture Hours: Lecture 3 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 3 hours.
                         <br>
-                          Semester(s) Offered: Fall Spring Summer
+                        <strong>Semester(s) Offered:</strong> Fall Spring Summer
                         <br>
-                        Prerequisites: Placement recommendation for ENG 111 or placement recommendation for co-requisites ENG 111 and EDE 11.</p>
+                        <strong>Prerequisites:</strong> Placement recommendation for ENG 111 or placement recommendation for co-requisites ENG 111 and EDE 11.</p>
                       </div> 
                     
                       <p class="or">OR</p>
 
                     <!-- Custom Accordion Item 11 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 137</p>
-                        <p class="course-name kerning-01">Communication Processes I</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 137</span>
+                          <span class="course-name kerning-01">Communication Processes I</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Covers content, form, and procedures for research writings, which may include reports, articles, summaries, essays, and correspondence. Stresses editing, proofreading skills, sentence structure, and paragraph development. Offers instruction and practice in oral communication skills. May use reading selections for discussions and writing assignments.</p>
 
-                      <p>Lecture Hours: Lecture 3 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 3 hours.
                         <br>
-                          Semester(s) Offered: Fall Only
+                        <strong>Semester(s) Offered:</strong> Fall Only
                         <br>
-                        Prerequisites: Departmental placement recommendation.</p>
+                        <strong>Prerequisites:</strong> Departmental placement recommendation.</p>
                     </div>     
                     
                     
                     <!-- Custom Accordion Item 12 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 197</p>
-                        <p class="course-name kerning-01">Cooperative Education in Automotive Mechanics</p>
-                        <p class="course-credits">Credit Hours: 1</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 197</span>
+                          <span class="course-name kerning-01">Cooperative Education in Automotive Mechanics</span>
+                          <span class="course-credits">Credit Hours: 1</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Provides on-the-job training for pay in approved business, industrial and service firms. Applies to all career-technical curricula at the discretion of the college. Laboratory hours 5 per week.</p>
 
-                        <p>Recitation and Laboratory Hours: Laboratory 5 hours per week.
+                        <p><strong>Recitation and Laboratory Hours:</strong> Laboratory 5 hours per week.
                         <br>
-                          Semester(s) Offered: Fall Spring Summer</p>
+                        <strong>Semester(s) Offered:</strong> Fall Spring Summer</p>
                     </div>            
 
                     <p class="or">OR</p>
 
                     <!-- Custom Accordion Item 13 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 136</p>
-                        <p class="course-name kerning-01">Automotive Vehicle Inspection</p>
-                        <p class="course-credits">Credit Hours: 2</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 136</span>
+                          <span class="course-name kerning-01">Automotive Vehicle Inspection</span>
+                          <span class="course-credits">Credit Hours: 2</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Presents information on methods for performing automotive vehicle safety inspection.
                       </p>
 
-                        <p>Lecture Hours: Lecture 1 hour.
+                        <p><strong>Lecture Hours:</strong> Lecture 1 hour.
                         <br>  
-                          Recitation and Laboratory Hours: Laboratory 2 hours.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 2 hours.
                         <br>
-                          Semester(s) Offered: Fall Spring</p>
+                        <strong>Semester(s) Offered:</strong> Fall Spring</p>
                     </div>            
 
 
 
                     <!-- Custom Accordion Item 14 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 126</p>
-                        <p class="course-name kerning-01">Auto Fuel and Ignition Systems</p>
-                        <p class="course-credits">Credit Hours: 5</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 126</span>
+                          <span class="course-name kerning-01">Auto Fuel and Ignition Systems</span>
+                          <span class="course-credits">Credit Hours: 5</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Studies automobile ignition and fuel systems and their functions in operation of the engine. Includes carburetors, fuel pumps, ignition systems, troubleshooting, engine testing and adjustment, and tune-up.</p>
 
-                        <p>Lecture Hours: Lecture 1 hour.
+                        <p><strong>Lecture Hours:</strong> Lecture 1 hour.
                         <br>
-                          Recitation and Laboratory Hours: Laboratory 3 hours.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours.
                         <br>
-                          Semester(s) Offered: Fall Spring
+                        <strong>Semester(s) Offered:</strong> Fall Spring
                         <br>
-                          Prerequisites: AUT 242.
+                        <strong>Prerequisites:</strong> AUT 242.
                         </p>
                     </div>            
 
@@ -592,23 +621,25 @@
 
                     <!-- Custom Accordion Item 15 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 178</p>
-                        <p class="course-name kerning-01">Automotive Final Drive and Manual Transmission Systems</p>
-                        <p class="course-credits">Credit Hours: 4</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 178</span>
+                          <span class="course-name kerning-01">Automotive Final Drive and Manual Transmission Systems</span>
+                          <span class="course-credits">Credit Hours: 4</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Presents the operation, design, construction, and repair of manual transmissions and final drive systems, for both front and rear drive vehicles including clutches, synchronizers, and torque multiplication/gear reduction, along with differentials, transmission/ transaxles, drive axles, U-joints, CV joints, four-wheel drive, and all-wheel drive systems.</p>
 
-                      <p>Lecture Hours: Lecture 3 total-credit-hours-last.
+                      <p><strong>Lecture Hours:</strong> Lecture 3 total-credit-hours-last.
                         <br>
-                          Recitation and Laboratory Hours: Laboratory 3 hours.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours.
                         <br>
-                          Semester(s) Offered: Fall Spring
+                        <strong>Semester(s) Offered:</strong> Fall Spring
                         <br>
-                        Prerequisites: Completion of AUT 101 - Introduction to Automotive Systems is preferred.
+                        <strong>Prerequisites:</strong> Completion of AUT 101 - Introduction to Automotive Systems is preferred.
                         </p>
                     </div>            
 
@@ -616,23 +647,25 @@
 
                     <!-- Custom Accordion Item 16 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 236</p>
-                        <p class="course-name kerning-01">Automotive Climate Control</p>
-                        <p class="course-credits">Credit Hours: 4</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 236</span>
+                          <span class="course-name kerning-01">Automotive Climate Control</span>
+                          <span class="course-credits">Credit Hours: 4</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Introduces principles of refrigeration, air-conditioning controls, and adjustment and general servicing of automotive air-conditioning systems.</p>
 
-                      <p>Lecture Hours: Lecture 3 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 3 hours.
                         <br>
-                          Recitation and Laboratory Hours: Laboratory 3 hours.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours.
                         <br>
-                          Semester(s) Offered: Fall Spring Summer
+                        <strong>Semester(s) Offered:</strong> Fall Spring Summer
                         <br>
-                          Prerequisites: AUT 241.
+                        <strong>Prerequisites:</strong> AUT 241.
                         </p>
                     </div>            
 
@@ -640,34 +673,41 @@
 
                     <!-- Custom Accordion Item 17 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">ELECTIVE</p>
-                        <p class="course-name kerning-01">Social/Behavioral Sciences Elective</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">Elective</span>
+                          <span class="course-name kerning-01">Social/Behavioral Sciences Elective</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
+                    <div class="accordion__content">
+                      <p>Course content to come.</p>
+                    </div>
 
 
                     <!-- Custom Accordion Item 18 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 251</p>
-                        <p class="course-name kerning-01">Automatic Transmissions</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 251</span>
+                          <span class="course-name kerning-01">Automatic Transmissions</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Studies several types of automatic transmissions/transaxles, torque converters, and their principles of operation. Includes adjustment, maintenance, and rebuilding.</p>
 
-                      <p>Lecture Hours: Lecture 2 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 2 hours.
                         <br>
-                          Recitation and Laboratory Hours: Laboratory 3 hours.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours.
                         <br>
-                          Semester(s) Offered: Fall Spring
+                        <strong>Semester(s) Offered:</strong> Fall Spring
                         <br>
-                        Prerequisites: Completion of AUT 101 and AUT 241 is preferred.
+                        <strong>Prerequisites:</strong> Completion of AUT 101 and AUT 241 is preferred.
                         </p>
                     </div>            
 
@@ -675,21 +715,23 @@
 
                     <!-- Custom Accordion Item 19 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 165</p>
-                        <p class="course-name kerning-01">Auto Diagnosis and Tune-Up</p>
-                        <p class="course-credits">Credit Hours: 2</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 165</span>
+                          <span class="course-name kerning-01">Auto Diagnosis and Tune-Up</span>
+                          <span class="course-credits">Credit Hours: 2</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Presents the techniques for diagnosis of malfunctions in systems of the automobile. Uses dynamometers, oscilloscopes, and other specialized diagnostic and testing equipment. Demonstrates tune-up of conventional and rotary engines.</p>
 
-                      <p>Lecture Hours: Lecture 1 hour.
+                      <p><strong>Lecture Hours:</strong> Lecture 1 hour.
                         <br>
-                          Recitation and Laboratory Hours: Laboratory 3 hours.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours.
                         <br>
-                          Semester(s) Offered: Fall Spring
+                        <strong>Semester(s) Offered:</strong> Fall Spring
                         </p>
                     </div>            
 
@@ -697,23 +739,25 @@
 
                     <!-- Custom Accordion Item 20 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 245</p>
-                        <p class="course-name kerning-01">Automotive Electronics</p>
-                        <p class="course-credits">Credit Hours: 4</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 245</span>
+                          <span class="course-name kerning-01">Automotive Electronics</span>
+                          <span class="course-credits">Credit Hours: 4</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Introduces the field of electronics as it applies to the modern automobile. Emphasizes basic circuit operation, diagnosis, and repair of digital indicator and warning systems.</p>
 
-                      <p>Lecture Hours: Lecture 3 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 3 hours.
                         <br>
-                          Recitation and Laboratory Hours: Laboratory 3 hours.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours.
                         <br>
-                          Semester(s) Offered: Fall Spring
+                        <strong>Semester(s) Offered:</strong> Fall Spring
                         <br>
-                        Prerequisites: AUT 241.
+                        <strong>Prerequisites:</strong> AUT 241.
                         </p>
                     </div>
                     
@@ -721,41 +765,55 @@
 
                     <!-- Custom Accordion Item 21 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 297</p>
-                        <p class="course-name kerning-01">Cooperative Education in Automotive Mechanics</p>
-                        <p class="course-credits">Credit Hours: 2</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 297</span>
+                          <span class="course-name kerning-01">Cooperative Education in Automotive Mechanics</span>
+                          <span class="course-credits">Credit Hours: 2</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Supervises on-the-job training for pay in approved business, industrial, and service firms, coordinated by the college’s cooperative education office. Applies to all occupational-technical curricula at the discretion of the college. Provides on-the-job training for automotive technology students.</p>
 
-                      <p>Recitation and Laboratory Hours: Laboratory 10 hours per week.
+                      <p><strong>Recitation and Laboratory Hours:</strong> Laboratory 10 hours per week.
                         <br>
-                          Semester(s) Offered: Fall Spring
+                        <strong>Semester(s) Offered:</strong> Fall Spring
                         </p>
                     </div>
 
 
                     <!-- Custom Accordion Item 22 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">ELECTIVE</p>
-                        <p class="course-name kerning-01">Humanities/Fine Arts Elective</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">Elective</span>
+                          <span class="course-name kerning-01">Humanities/Fine Arts Elective</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
+
+                    <div class="accordion__content">
+                      <p>Course content to come.</p>
+                    </div>
 
 
                     <!-- Custom Accordion Item 23 Within Bootstrap Accordion Item 1 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">ELECTIVE</p>
-                        <p class="course-name kerning-01">Personal Wellness Elective</p>
-                        <p class="course-credits">Credit Hours: 1</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">Elective</span>
+                          <span class="course-name kerning-01">Personal Wellness Elective</span>
+                          <span class="course-credits">Credit Hours: 1</span>
+                        </span>
+                      </span>
                     </button>
+
+                    <div class="accordion__content">
+                      <p>Course content to come.</p>
+                    </div>
 
 
                     <div class="total-credit-hours">Total: 67 Credit Hours</div>
@@ -782,17 +840,17 @@
                   aria-labelledby="panelsStayOpen-headingTwo">
                   <div class="accordion-body">
                     <div class="purpose-and-other">
-                      <p><span>PURPOSE:</span> The Automotive Certificate curriculum trains future technicians to help meet the community’s transportation needs. An automotive technician ensures that automobiles and trucks are safe to operate on roads and highways and is responsible for educating vehicle owners regarding the status of their vehicle. The curriculum covers both theory and shop training with an emphasis on service and minor repair. As a result of instruction, students should be able to describe the purpose and function of each vehicle system and identify the parts involved and how they work. The program will provide students with experience and sufficient hands-on experience in the maintenance and repair of a wide variety of automobiles, as well as light to medium duty trucks.</p>
+                      <p><strong>PURPOSE:</strong> The Automotive Certificate curriculum trains future technicians to help meet the community’s transportation needs. An automotive technician ensures that automobiles and trucks are safe to operate on roads and highways and is responsible for educating vehicle owners regarding the status of their vehicle. The curriculum covers both theory and shop training with an emphasis on service and minor repair. As a result of instruction, students should be able to describe the purpose and function of each vehicle system and identify the parts involved and how they work. The program will provide students with experience and sufficient hands-on experience in the maintenance and repair of a wide variety of automobiles, as well as light to medium duty trucks.</p>
 
-                      <p><span>OCCUPATIONAL OBJECTIVES:</span> Automotive technicians are typically employed at automotive repair shops or dealerships where they collaborate to meet the needs of customers. They may work in a wide variety of positions, such as quick lube technicians, maintenance technicians, diagnostic experts, parts department workers, service advisors, shop foremen, or service managers.</p>
+                      <p><strong>OCCUPATIONAL OBJECTIVES:</strong> Automotive technicians are typically employed at automotive repair shops or dealerships where they collaborate to meet the needs of customers. They may work in a wide variety of positions, such as quick lube technicians, maintenance technicians, diagnostic experts, parts department workers, service advisors, shop foremen, or service managers.</p>
 
-                      <p><span>ADMISSION REQUIREMENTS:</span> General college curricular admission</p>
+                      <p><strong>ADMISSION REQUIREMENTS:</strong> General college curricular admission</p>
 
-                      <p><span>PROGRAM NOTES:</span> Students are required to meet with the program head either before registering for their first semester or early in their first semester of study.</p>
+                      <p><strong>PROGRAM NOTES:</strong> Students are required to meet with the program head either before registering for their first semester or early in their first semester of study.</p>
 
-                      <p><span>COMPUTER COMPETENCY REQUIREMENT:</span> Students in this program will meet the college’s computer competency requirement by successfully completing ITE 152. Students can also meet this requirement by successfully passing the college’s computer competency exam, administered in the testing centers on each campus, in which case they will receive college credit for ITE 152. Students not passing the computer competency exam may retake the exam only once.</p>
+                      <p><strong>COMPUTER COMPETENCY REQUIREMENT:</strong> Students in this program will meet the college’s computer competency requirement by successfully completing ITE 152. Students can also meet this requirement by successfully passing the college’s computer competency exam, administered in the testing centers on each campus, in which case they will receive college credit for ITE 152. Students not passing the computer competency exam may retake the exam only once.</p>
 
-                      <p><span>GAINFUL EMPLOYMENT DISCLOSURE INFORMATION:</span> Please see www.reynolds.edu/curriculum/gainful-employment-html/ge_info_902.html to access gainful employment disclosure information for this program.</p>
+                      <p><strong>GAINFUL EMPLOYMENT DISCLOSURE INFORMATION:</strong> Please see www.reynolds.edu/curriculum/gainful-employment-html/ge_info_902.html to access gainful employment disclosure information for this program.</p>
 
                       <h3>Curriculum</h3>
 
@@ -803,385 +861,429 @@
 
                     <!-- Custom Accordion Item 1 Within Bootstrap Accordion Item 2 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 101</p>
-                        <p class="course-name">Introduction to Automotive Systems</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 101</span>
+                          <span class="course-name">Introduction to Automotive Systems</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Introduces fundamental systems of automobile, the engine fuel, exhaust, electric, ignition, lubrication, cooling, transmission, steering, brake, and suspension systems. Teaches theory and function of each system. Demonstrates operation.</p>
 
-                      <p>Lecture Hours: Lecture 2 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 2 hours.
                       <br>
-                        Recitation and Laboratory Hours: Laboratory 2 hours.
+                      <strong>Recitation and Laboratory Hours:</strong> Laboratory 2 hours.
                       <br>
-                        Semester(s) Offered: Fall Spring Summer</p>
+                      <strong>Semester(s) Offered:</strong> Fall Spring Summer</p>
                     </div>
 
                     <!-- Custom Accordion Item 2 Within Bootstrap Accordion Item 2 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 241</p>
-                        <p class="course-name">Automotive Electricity I</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                    </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 241</span>
+                          <span class="course-name">Automotive Electricity I</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Introduces electricity and magnetism, symbols and circuitry as applied to alternators, regulators, starters, lighting systems, instruments and gauges, and accessories. Part I of II.</p>
 
-                      <p>Lecture Hours: Lecture 2 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 2 hours.
                       <br>
-                        Recitation and Laboratory Hours: Laboratory 3 hours.
+                      <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours.
                       <br>
-                        Semester(s) Offered: Fall Spring Summer</p>
+                      <strong>Semester(s) Offered:</strong> Fall Spring Summer</p>
                     </div>
 
                     <!-- Custom Accordion Item 3 Within Bootstrap Accordion Item 2 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 265</p>
-                        <p class="course-name">Automotive Braking Systems</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 265</span>
+                          <span class="course-name">Automotive Braking Systems</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Presents operation, design, construction, repair, and servicing of braking system, including Anti-Lock Brake Systems (ABS). Explains uses of tools and test equipment, evaluation of test results, and estimation of repair cost for power, standard, and disc brakes.</p>
 
-                      <p>Lecture Hours: Lecture 2 total-credit-hours-last.
+                      <p><strong>Lecture Hours:</strong> Lecture 2 total-credit-hours-last.
                         <br>
-                          Recitation and Laboratory Hours: Laboratory 3 hours.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours.
                         <br>
-                          Semester(s) Offered: Fall Spring</p>
+                        <strong>Semester(s) Offered:</strong> Fall Spring</p>
                     </div>
 
                     <!-- Custom Accordion Item 4 Within Bootstrap Accordion Item 2 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">SDV 100</p>
-                        <p class="course-name">College Success Skills</p>
-                        <p class="course-credits">Credit Hours: 1</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">SDV 100</span>
+                          <span class="course-name">College Success Skills</span>
+                          <span class="course-credits">Credit Hours: 1</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Assists students in transition to college. Provides overviews of college policies, procedures, and curricular offerings. Encourages contacts with other students and staff. Assists students toward college success through information regarding effective study habits, career and academic planning, and other college resources available to students. Strongly recommended for beginning students. Required for graduation.</p>
 
-                      <p>Lecture Hours: Lecture 1 hour per week.
+                      <p><strong>Lecture Hours:</strong> Lecture 1 hour per week.
                         <br>
-                        Semester(s) Offered: Fall Spring Summer</p>
+                        <strong>Semester(s) Offered:</strong> Fall Spring Summer</p>
                     </div>
 
                     <!-- Custom Accordion Item 5 Within Bootstrap Accordion Item 2 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">MTH 111</p>
-                        <p class="course-name">Basic Technical Mathematics</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">MTH 111</span>
+                          <span class="course-name">Basic Technical Mathematics</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Provides a foundation in mathematics with emphasis in arithmetic, unit conversion, basic algebra, geometry and trigonometry. </p>
 
-                      <p>Lecture Hours: Lecture 3 hours per week.
+                      <p><strong>Lecture Hours:</strong> Lecture 3 hours per week.
                       <br>
-                        Semester(s) Offered: Fall Spring Summer
+                      <strong>Semester(s) Offered:</strong> Fall Spring Summer
                       <br>
-                      Prerequisites: Competency in Introductory Algebra MDE 10 as demonstrated through placement or by satisfactorily completing MDE 10.</p>
+                      <strong>Prerequisites:</strong> Competency in Introductory Algebra MDE 10 as demonstrated through placement or by satisfactorily completing MDE 10.</p>
                     </div>
 
                     <!-- Custom Accordion Item 6 Within Bootstrap Accordion Item 2 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 266</p>
-                        <p class="course-name kerning-01">Auto Alignment, Suspension, and Steering</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 266</span>
+                          <span class="course-name kerning-01">Auto Alignment, Suspension, and Steering</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Introduces use of alignment equipment in diagnosing, adjusting, and repairing front and rear suspensions. Deals with repair and servicing of power and standard steering systems.</p>
 
-                      <p>Lecture Hours: Lecture 1 hour.
+                      <p><strong>Lecture Hours:</strong> Lecture 1 hour.
                         <br>
-                          Recitation and Laboratory Hours: Laboratory 6 hours.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 6 hours.
                         <br>
-                          Semester(s) Offered: Fall Spring</p>
+                        <strong>Semester(s) Offered:</strong> Fall Spring</p>
                     </div>
 
                     <!-- Custom Accordion Item 7 Within Bootstrap Accordion Item 2 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 111</p>
-                        <p class="course-name kerning-01">Automotive Engines I</p>
-                        <p class="course-credits">Credit Hours: 4</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 111</span>
+                          <span class="course-name kerning-01">Automotive Engines I</span>
+                          <span class="course-credits">Credit Hours: 4</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Presents analysis of power, cylinder condition, valves, and bearings in the automotive engine to establish the present condition, repairs, or adjustments.</p>
 
-                      <p>Lecture Hours: Lecture 3 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 3 hours.
                         <br>
-                          Recitation and Laboratory Hours: Laboratory 3 hours. Total 6 hours per week.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours. Total 6 hours per week.
                         <br>
-                          Semester(s) Offered: Fall Spring Summer</p>
+                        <strong>Semester(s) Offered:</strong> Fall Spring Summer</p>
                     </div>
 
                     <!-- Custom Accordion Item 8 Within Bootstrap Accordion Item 2 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">ITE 152</p>
-                        <p class="course-name kerning-01">Introduction to Digital Literacy</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">ITE 152</span>
+                          <span class="course-name kerning-01">Introduction to Digital Literacy</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Develops understanding of digital literacy. Introduces basic computer concepts in hardware, software, cyber, cloud, database, and operating systems. Includes hands-on experience developing word processing, spreadsheet and presentation documents.  Evaluates the reliability of sources. Covers creating a simple web page. Examines topics such as social, legal, and ethical issues.</p>
 
-                      <p>Lecture Hours: Lecture 3 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 3 hours.
                         <br>
-                          Semester(s) Offered: Fall Spring Summer</p>
+                        <strong>Semester(s) Offered:</strong> Fall Spring Summer</p>
                     </div>
 
 
                     <!-- Custom Accordion Item 9 Within Bootstrap Accordion Item 2 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">ENG 111</p>
-                        <p class="course-name kerning-01">College Composition I</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">ENG 111</span>
+                          <span class="course-name kerning-01">College Composition I</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Introduces and prepares students to the critical processes and fundamentals of writing in academic and professional contexts. Teaches the use of print and digital technologies to promote inquiry. Requires the production of a variety of academic texts, totaling at least 4500 words (15 pages typed) of polished writing. This course requires proficiency in using word processing and learning management software. This is a Passport Transfer course.</p>
 
-                      <p>Lecture Hours: Lecture 3 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 3 hours.
                         <br>
-                          Semester(s) Offered: Fall Spring Summer
+                        <strong>Semester(s) Offered:</strong> Fall Spring Summer
                         <br>
-                          Prerequisites: Placement recommendation for ENG 111 or placement recommendation for co-requisites ENG 111 and EDE 11.
+                        <strong>Prerequisites:</strong> Placement recommendation for ENG 111 or placement recommendation for co-requisites ENG 111 and EDE 11.
                         </p>
                     </div>
 
                     <!-- Custom Accordion Item 10 Within Bootstrap Accordion Item 2 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 275</p>
-                        <p class="course-name kerning-01">Shop Management</p>
-                        <p class="course-credits">Credit Hours: 2</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 275</span>
+                          <span class="course-name kerning-01">Shop Management</span>
+                          <span class="course-credits">Credit Hours: 2</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Studies shop layout, personnel management, cost analysis, record keeping and quality control. Discusses shop manager, service salesman, and service writer roles in customer relations.</p>
 
-                      <p>Lecture Hours: Lecture 2 hours per week.
+                      <p><strong>Lecture Hours:</strong> Lecture 2 hours per week.
                         <br>
-                          Semester(s) Offered: Fall Summer</p>
+                        <strong>Semester(s) Offered:</strong> Fall Summer</p>
                     </div>
 
 
                     <!-- Custom Accordion Item 11 Within Bootstrap Accordion Item 2 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 230</p>
-                        <p class="course-name kerning-01">Introduction to Alternative Fuels and Hybrid Vehicles</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 230</span>
+                          <span class="course-name kerning-01">Introduction to Alternative Fuels and Hybrid Vehicles</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Introduces current trends in alternative fueled vehicles, including current alternative fueled vehicles and the implication and safety precautions necessary for working on hybrid vehicle systems.</p>
 
-                      <p>Lecture Hours: Lecture 3 hours per week.</p>
+                      <p><strong>Lecture Hours:</strong> Lecture 3 hours per week.</p>
                     </div>
 
 
                     <!-- Custom Accordion Item 12 Within Bootstrap Accordion Item 2 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 197</p>
-                        <p class="course-name kerning-01">Cooperative Education in Automotive Mechanics</p>
-                        <p class="course-credits">Credit Hours: 1</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 197</span>
+                          <span class="course-name kerning-01">Cooperative Education in Automotive Mechanics</span>
+                          <span class="course-credits">Credit Hours: 1</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Provides on-the-job training for pay in approved business, industrial and service firms. Applies to all career-technical curricula at the discretion of the college. Laboratory hours 5 per week.</p>
 
-                      <p>Recitation and Laboratory Hours: Laboratory 5 hours per week.
+                      <p><strong>Recitation and Laboratory Hours:</strong> Laboratory 5 hours per week.
                         <br>
-                        Semester(s) Offered: Fall Spring Summer</p>
+                        <strong>Semester(s) Offered:</strong> Fall Spring Summer</p>
                     </div>
 
                     <!-- Custom Accordion Item 13 Within Bootstrap Accordion Item 2 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 235</p>
-                        <p class="course-name kerning-01">Automotive Heating and Air Conditioning</p>
-                        <p class="course-credits">Credit Hours: 2</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 235</span>
+                          <span class="course-name kerning-01">Automotive Heating and Air Conditioning</span>
+                          <span class="course-credits">Credit Hours: 2</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Studies separate and combined automotive heaters and air conditioning, including direct and vacuum-operated controls, basic principles of refrigeration, adjustment, general servicing, and charging of air-conditioning systems.</p>
 
                       <p>
-                        Lecture Hours: Lecture 1 hour.
+                        <strong>Lecture Hours:</strong> Lecture 1 hour.
                         <br>
-                        Recitation and Laboratory Hours: Laboratory 2 hours.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 2 hours.
                         <br>
-                        Semester(s) Offered: Spring Summer</p>
+                        <strong>Semester(s) Offered:</strong> Spring Summer</p>
                     </div>
 
 
                     <!-- Custom Accordion Item 14 Within Bootstrap Accordion Item 2 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 245</p>
-                        <p class="course-name kerning-01">Automotive Electronics</p>
-                        <p class="course-credits">Credit Hours: 4</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 245</span>
+                          <span class="course-name kerning-01">Automotive Electronics</span>
+                          <span class="course-credits">Credit Hours: 4</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Introduces the field of electronics as it applies to the modern automobile. Emphasizes basic circuit operation, diagnosis, and repair of digital indicator and warning systems.</p>
 
-                      <p>Lecture Hours: Lecture 3 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 3 hours.
                         <br>
-                          Recitation and Laboratory Hours: Laboratory 3 hours.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours.
                         <br>
-                          Semester(s) Offered: Fall Spring
+                        <strong>Semester(s) Offered:</strong> Fall Spring
                         <br>
-                        Prerequisites: AUT 241.
+                        <strong>Prerequisites:</strong> AUT 241.
                         </p>
                     </div>
 
 
                     <!-- Custom Accordion Item 15 Within Bootstrap Accordion Item 2 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 243</p>
-                        <p class="course-name kerning-01">Automotive Control Electronics</p>
-                        <p class="course-credits">Credit Hours: 4</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 243</span>
+                          <span class="course-name kerning-01">Automotive Control Electronics</span>
+                          <span class="course-credits">Credit Hours: 4</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Introduces advanced automotive technologies, and covers the electronic control systems found in hybrid electric vehicle systems, battery electric vehicle systems, and fuel cell electric vehicle systems. Teaches theory, function, and operation of each electronic control system and provides students an opportunity to perform diagnostic procedures and maintenance for these systems. Focuses on safety.</p>
 
-                      <p>Lecture Hours: Lecture 3 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 3 hours.
                         <br>
-                        Recitation and Laboratory Hours: Laboratory 3 hours.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours.
                         <br>
-                        Semester(s) Offered: Check Availability
+                        <strong>Semester(s) Offered:</strong> Check Availability
                         <br>
-                        Prerequisites: AUT 245 or program head approval.
+                        <strong>Prerequisites:</strong> AUT 245 or program head approval.
                       </p>
                     </div>
 
 
                     <!-- Custom Accordion Item 16 Within Bootstrap Accordion Item 2 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">WEL 155</p>
-                        <p class="course-name">Ornamental Welding</p>
-                        <p class="course-credits">Credit Hours: 2</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">WEL 155</span>
+                          <span class="course-name">Ornamental Welding</span>
+                          <span class="course-credits">Credit Hours: 2</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Introduces students to basic equipment, safety, and processes useful in the fabrication of welded ornamental objects.</p>
 
-                      <p>Lecture Hours: Lecture 1 hour.
+                      <p><strong>Lecture Hours:</strong> Lecture 1 hour.
                         <br>
-                          Recitation and Laboratory Hours: Laboratory 3 hours.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours.
                         <br>
-                          Semester(s) Offered: Fall Spring</p>
+                        <strong>Semester(s) Offered:</strong> Fall Spring</p>
                     </div>
 
 
                     <!-- Custom Accordion Item 17 Within Bootstrap Accordion Item 2 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 155</p>
-                        <p class="course-name kerning-01">Basic Automotive Engine Performance Diagnostics</p>
-                        <p class="course-credits">Credit Hours: 5</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 155</span>
+                          <span class="course-name kerning-01">Basic Automotive Engine Performance Diagnostics</span>
+                          <span class="course-credits">Credit Hours: 5</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Introduces basic engine performance concepts, including theory and practical application. Covers vehicle communications, scan-tool diagnostics, basic engine mechanical tests, and diagnosing and repairing vehicle drivability issues. Provides preparation for the Automotive Service Excellence (ASE) A8 Engine Performance Certification examination.</p>
 
-                      <p>Lecture Hours: Lecture 2 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 2 hours.
                         <br>
-                        Recitation and Laboratory Hours: Laboratory 6 hours.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 6 hours.
                         <br>
-                        Semester(s) Offered: Fall Spring
+                        <strong>Semester(s) Offered:</strong> Fall Spring
                         <br>
-                        Prerequisites: AUT 111 and AUT 245, or program head approval.</p>
+                        <strong>Prerequisites:</strong> AUT 111 and AUT 245, or program head approval.</p>
                     </div>
 
 
                     <!-- Custom Accordion Item 18 Within Bootstrap Accordion Item 2 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">ELECTIVE</p>
-                        <p class="course-name kerning-01">Humanities/Social Science Elective</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">Elective</span>
+                          <span class="course-name kerning-01">Humanities/Social Science Elective</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
+
+                    <div class="accordion__content">
+                      <p>Course content to come.</p>
+                    </div>
 
 
                     <!-- Custom Accordion Item 19 Within Bootstrap Accordion Item 2 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 178</p>
-                        <p class="course-name kerning-01">Automotive Final Drive and Manual Transmission Systems</p>
-                        <p class="course-credits">Credit Hours: 4</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 178</span>
+                          <span class="course-name kerning-01">Automotive Final Drive and Manual Transmission Systems</span>
+                          <span class="course-credits">Credit Hours: 4</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Presents the operation, design, construction, and repair of manual transmissions and final drive systems, for both front and rear drive vehicles including clutches, synchronizers, and torque multiplication/gear reduction, along with differentials, transmission/ transaxles, drive axles, U-joints, CV joints, four-wheel drive, and all-wheel drive systems.</p>
 
-                      <p>Lecture Hours: Lecture 3 total-credit-hours-last.
+                      <p><strong>Lecture Hours:</strong> Lecture 3 total-credit-hours-last.
                         <br>
-                          Recitation and Laboratory Hours: Laboratory 3 hours.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours.
                         <br>
-                          Semester(s) Offered: Fall Spring
+                        <strong>Semester(s) Offered:</strong> Fall Spring
                         <br>
-                        Prerequisites: Completion of AUT 101 - Introduction to Automotive Systems is preferred.
+                        <strong>Prerequisites:</strong> Completion of AUT 101 - Introduction to Automotive Systems is preferred.
                         </p>
                     </div>            
 
 
                     <!-- Custom Accordion Item 20 Within Bootstrap Accordion Item 2 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 251</p>
-                        <p class="course-name kerning-01">Automatic Transmissions</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 251</span>
+                          <span class="course-name kerning-01">Automatic Transmissions</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Studies several types of automatic transmissions/transaxles, torque converters, and their principles of operation. Includes adjustment, maintenance, and rebuilding.</p>
 
-                      <p>Lecture Hours: Lecture 2 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 2 hours.
                         <br>
-                          Recitation and Laboratory Hours: Laboratory 3 hours.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours.
                         <br>
-                          Semester(s) Offered: Fall Spring
+                        <strong>Semester(s) Offered:</strong> Fall Spring
                         <br>
-                        Prerequisites: Completion of AUT 101 and AUT 241 is preferred.
+                        <strong>Prerequisites:</strong> Completion of AUT 101 and AUT 241 is preferred.
                         </p>
                     </div>            
 
@@ -1209,13 +1311,13 @@
                   aria-labelledby="panelsStayOpen-headingThree">
                   <div class="accordion-body">
                     <div class="purpose-and-other">
-                      <p><span>PURPOSE:</span> This career studies certificate is designed to train individuals for employment in express service light repair and maintenance positions at dealerships and independent repair shops. The curriculum covers both theory and shop training with an emphasis on service and minor repair. As a result of instruction, students will be able to describe the purpose and function of each vehicle system and identify the parts involved and how they work. Additionally, students will learn how to perform basic diagnosis with the end goal of determining if a system is working as designed or if further service is required.</p>
+                      <p><strong>PURPOSE:</strong> This career studies certificate is designed to train individuals for employment in express service light repair and maintenance positions at dealerships and independent repair shops. The curriculum covers both theory and shop training with an emphasis on service and minor repair. As a result of instruction, students will be able to describe the purpose and function of each vehicle system and identify the parts involved and how they work. Additionally, students will learn how to perform basic diagnosis with the end goal of determining if a system is working as designed or if further service is required.</p>
 
-                      <p><span>OCCUPATIONAL OBJECTIVES:</span> Auto Mechanic, Service Advisor, Maintenance Technician, Parts Clerk, and Service Writer.</p>
+                      <p><strong>OCCUPATIONAL OBJECTIVES:</strong> Auto Mechanic, Service Advisor, Maintenance Technician, Parts Clerk, and Service Writer.</p>
 
-                      <p><span>ADMISSION REQUIREMENTS:</span> General college curricular admission.</p>
+                      <p><strong>ADMISSION REQUIREMENTS:</strong> General college curricular admission.</p>
 
-                      <p><span>PROGRAM NOTES:</span> Students are required to meet with the program head either before registering for their first semester or early in their first semester of study.</p>
+                      <p><strong>PROGRAM NOTES:</strong> Students are required to meet with the program head either before registering for their first semester or early in their first semester of study.</p>
 
                       <h3>Curriculum</h3>
 
@@ -1224,97 +1326,107 @@
 
                     <!-- Custom Accordion Item 1 Within Bootstrap Accordion Item 3 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 101</p>
-                        <p class="course-name">Introduction to Automotive Systems</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 101</span>
+                          <span class="course-name">Introduction to Automotive Systems</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Introduces fundamental systems of automobile, the engine fuel, exhaust, electric, ignition, lubrication, cooling, transmission, steering, brake, and suspension systems. Teaches theory and function of each system. Demonstrates operation.</p>
 
-                      <p>Lecture Hours: Lecture 2 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 2 hours.
                       <br>
-                        Recitation and Laboratory Hours: Laboratory 2 hours.
+                      <strong>Recitation and Laboratory Hours:</strong> Laboratory 2 hours.
                         <br>
-                        Semester(s) Offered: Fall Spring Summer</p>
+                        <strong>Semester(s) Offered:</strong> Fall Spring Summer</p>
                     </div>
 
                     <!-- Custom Accordion Item 2 Within Bootstrap Accordion Item 3 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 241</p>
-                        <p class="course-name">Automotive Electricity I</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                    </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 241</span>
+                          <span class="course-name">Automotive Electricity I</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Introduces electricity and magnetism, symbols and circuitry as applied to alternators, regulators, starters, lighting systems, instruments and gauges, and accessories. Part I of II.</p>
 
-                      <p>Lecture Hours: Lecture 2 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 2 hours.
                       <br>
-                        Recitation and Laboratory Hours: Laboratory 3 hours.
+                      <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours.
                       <br>
-                        Semester(s) Offered: Fall Spring Summer</p>
+                      <strong>Semester(s) Offered:</strong> Fall Spring Summer</p>
                     </div>
 
                     <!-- Custom Accordion Item 3 Within Bootstrap Accordion Item 3 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 265</p>
-                        <p class="course-name">Automotive Braking Systems</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 265</span>
+                          <span class="course-name">Automotive Braking Systems</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Presents operation, design, construction, repair, and servicing of braking system, including Anti-Lock Brake Systems (ABS). Explains uses of tools and test equipment, evaluation of test results, and estimation of repair cost for power, standard, and disc brakes.</p>
 
-                      <p>Lecture Hours: Lecture 2 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 2 hours.
                         <br>
-                          Recitation and Laboratory Hours: Laboratory 3 hours.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours.
                         <br>
-                          Semester(s) Offered: Fall Spring</p>
+                        <strong>Semester(s) Offered:</strong> Fall Spring</p>
                     </div>
 
                     <!-- Custom Accordion Item 4 Within Bootstrap Accordion Item 3 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 266</p>
-                        <p class="course-name">Auto Alignment, Suspension, and Steering</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 266</span>
+                          <span class="course-name">Auto Alignment, Suspension, and Steering</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Introduces use of alignment equipment in diagnosing, adjusting, and repairing front and rear suspensions. Deals with repair and servicing of power and standard steering systems.</p>
 
-                      <p>Lecture Hours: Lecture 1 hour.
+                      <p><strong>Lecture Hours:</strong> Lecture 1 hour.
                         <br>
-                          Recitation and Laboratory Hours: Laboratory 6 hours.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 6 hours.
                         <br>
-                          Semester(s) Offered: Fall Spring</p>
+                        <strong>Semester(s) Offered:</strong> Fall Spring</p>
                     </div>
 
                     <!-- Custom Accordion Item 5 Within Bootstrap Accordion Item 3 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 111</p>
-                        <p class="course-name">Automotive Engines I</p>
-                        <p class="course-credits">Credit Hours: 4</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 111</span>
+                          <span class="course-name">Automotive Engines I</span>
+                          <span class="course-credits">Credit Hours: 4</span>
+                        </span>
+                      </span>
                     </button>
                     
                     <div class="accordion__content">
                       <p>Presents analysis of power, cylinder condition, valves, and bearings in the automotive engine to establish the present condition, repairs, or adjustments.</p>
 
-                      <p>Lecture Hours: Lecture 3 hours.
+                      <p><strong>Lecture Hours:</strong> Lecture 3 hours.
                         <br>
-                        Recitation and Laboratory Hours: Laboratory 3 hours. Total 6 hours per week.
+                        <strong>Recitation and Laboratory Hours:</strong> Laboratory 3 hours. Total 6 hours per week.
                         <br>
-                          Semester(s) Offered: Fall Spring Summer</p>
+                        <strong>Semester(s) Offered:</strong> Fall Spring Summer</p>
                     </div>             
 
                     <div class="total-credit-hours">Total: 16 Credit Hours</div>
@@ -1340,11 +1452,11 @@
                   aria-labelledby="panelsStayOpen-headingFour">
                   <div class="accordion-body">
                     <div class="purpose-and-other">
-                      <p><span>PURPOSE:</span> Employment opportunities exist for individuals proficient in advanced welding techniques. This program is designed for students with no previous experience in welding, as well as for individuals currently employed in the welding field who wish to upgrade their skills. Individuals entering the Welding Career Studies Certificate (CSC) should consider this program as a means of developing or advancing their job skills over a one-year period of time and as a means of acquiring the skills necessary to test for the various levels of welding certification.</p>
+                      <p><strong>PURPOSE:</strong> Employment opportunities exist for individuals proficient in advanced welding techniques. This program is designed for students with no previous experience in welding, as well as for individuals currently employed in the welding field who wish to upgrade their skills. Individuals entering the Welding Career Studies Certificate (CSC) should consider this program as a means of developing or advancing their job skills over a one-year period of time and as a means of acquiring the skills necessary to test for the various levels of welding certification.</p>
 
-                      <p><span>OCCUPATIONAL OBJECTIVES:</span> Opportunities for graduates include construction welder, fabrication welder, and welding supply salesperson.</p>
+                      <p><strong>OCCUPATIONAL OBJECTIVES:</strong> Opportunities for graduates include construction welder, fabrication welder, and welding supply salesperson.</p>
 
-                      <p><span>ADMISSION REQUIREMENTS:</span> General college curricular admission</p>
+                      <p><strong>ADMISSION REQUIREMENTS:</strong> General college curricular admission</p>
 
                       <h3>Curriculum</h3>
 
@@ -1353,53 +1465,59 @@
 
                     <!-- Custom Accordion Item 1 Within Bootstrap Accordion Item 4 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 001</p>
-                        <p class="course-name">Automotive Course</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 001</span>
+                          <span class="course-name">Automotive Course</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Accumsan, sed nulla consequat? Erat hendrerit vero nibh ut vulputate accumsan aliquip vero, consequatvel iusto velit molestie, illum et feugait ut feugait hendrerit? Wisi accumsan dignissim ea enim at in eum. Suscipit luptatum praesent, et illum nulla qui dolor iriure. Enim, ut diam.</p>
 
-                      <p>Lecture Hours: Lecture 6 hour per week.
+                      <p><strong>Lecture Hours:</strong> Lecture 6 hour per week.
                       <br>
-                        Semester(s) Offered: Fall Spring</p>
+                      <strong>Semester(s) Offered:</strong> Fall Spring</p>
                     </div>
 
                     <!-- Custom Accordion Item 2 Within Bootstrap Accordion Item 4 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 002</p>
-                        <p class="course-name">Automotive Course</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 002</span>
+                          <span class="course-name">Automotive Course</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Accumsan, sed nulla consequat? Erat hendrerit vero nibh ut vulputate accumsan aliquip vero, consequatvel iusto velit molestie, illum et feugait ut feugait hendrerit? Wisi accumsan dignissim ea enim at in eum. Suscipit luptatum praesent, et illum nulla qui dolor iriure. Enim, ut diam.</p>
 
-                      <p>Lecture Hours: Lecture 6 hour per week.
+                      <p><strong>Lecture Hours:</strong> Lecture 6 hour per week.
                       <br>
-                        Semester(s) Offered: Fall Spring</p>
+                      <strong>Semester(s) Offered:</strong> Fall Spring</p>
                     </div>
 
                     <!-- Custom Accordion Item 3 Within Bootstrap Accordion Item 4 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 003</p>
-                        <p class="course-name">Automotive Course</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 003</span>
+                          <span class="course-name">Automotive Course</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Accumsan, sed nulla consequat? Erat hendrerit vero nibh ut vulputate accumsan aliquip vero, consequatvel iusto velit molestie, illum et feugait ut feugait hendrerit? Wisi accumsan dignissim ea enim at in eum. Suscipit luptatum praesent, et illum nulla qui dolor iriure. Enim, ut diam.</p>
 
-                      <p>Lecture Hours: Lecture 6 hour per week.
+                      <p><strong>Lecture Hours:</strong> Lecture 6 hour per week.
                       <br>
-                        Semester(s) Offered: Fall Spring</p>
+                      <strong>Semester(s) Offered:</strong> Fall Spring</p>
                     </div>
 
                     <div class="total-credit-hours">Total: 16 Credit Hours</div>
@@ -1425,11 +1543,11 @@
                   aria-labelledby="panelsStayOpen-headingThree">
                   <div class="accordion-body">
                     <div class="purpose-and-other">
-                      <p><span>PURPOSE:</span> Employment opportunities exist for individuals proficient in advanced welding techniques. This program is designed for students with no previous experience in welding, as well as for individuals currently employed in the welding field who wish to upgrade their skills. Individuals entering the Welding Career Studies Certificate (CSC) should consider this program as a means of developing or advancing their job skills over a one-year period of time and as a means of acquiring the skills necessary to test for the various levels of welding certification.</p>
+                      <p><strong>PURPOSE:</strong> Employment opportunities exist for individuals proficient in advanced welding techniques. This program is designed for students with no previous experience in welding, as well as for individuals currently employed in the welding field who wish to upgrade their skills. Individuals entering the Welding Career Studies Certificate (CSC) should consider this program as a means of developing or advancing their job skills over a one-year period of time and as a means of acquiring the skills necessary to test for the various levels of welding certification.</p>
 
-                      <p><span>OCCUPATIONAL OBJECTIVES:</span> Opportunities for graduates include construction welder, fabrication welder, and welding supply salesperson.</p>
+                      <p><strong>OCCUPATIONAL OBJECTIVES:</strong> Opportunities for graduates include construction welder, fabrication welder, and welding supply salesperson.</p>
 
-                      <p><span>ADMISSION REQUIREMENTS:</span> General college curricular admission</p>
+                      <p><strong>ADMISSION REQUIREMENTS:</strong> General college curricular admission</p>
 
                       <h3>Curriculum</h3>
 
@@ -1438,53 +1556,59 @@
 
                     <!-- Custom Accordion Item 1 Within Bootstrap Accordion Item 5 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 001</p>
-                        <p class="course-name">Automotive Course</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 001</span>
+                          <span class="course-name">Automotive Course</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Accumsan, sed nulla consequat? Erat hendrerit vero nibh ut vulputate accumsan aliquip vero, consequatvel iusto velit molestie, illum et feugait ut feugait hendrerit? Wisi accumsan dignissim ea enim at in eum. Suscipit luptatum praesent, et illum nulla qui dolor iriure. Enim, ut diam.</p>
 
-                      <p>Lecture Hours: Lecture 6 hour per week.
+                      <p><strong>Lecture Hours:</strong> Lecture 6 hour per week.
                       <br>
-                        Semester(s) Offered: Fall Spring</p>
+                      <strong>Semester(s) Offered:</strong> Fall Spring</p>
                     </div>
 
                     <!-- Custom Accordion Item 2 Within Bootstrap Accordion Item 5 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 002</p>
-                        <p class="course-name">Automotive Course</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 002</span>
+                          <span class="course-name">Automotive Course</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Accumsan, sed nulla consequat? Erat hendrerit vero nibh ut vulputate accumsan aliquip vero, consequatvel iusto velit molestie, illum et feugait ut feugait hendrerit? Wisi accumsan dignissim ea enim at in eum. Suscipit luptatum praesent, et illum nulla qui dolor iriure. Enim, ut diam.</p>
 
-                      <p>Lecture Hours: Lecture 6 hour per week.
+                      <p><strong>Lecture Hours:</strong> Lecture 6 hour per week.
                       <br>
-                        Semester(s) Offered: Fall Spring</p>
+                      <strong>Semester(s) Offered:</strong> Fall Spring</p>
                     </div>
 
                     <!-- Custom Accordion Item 3 Within Bootstrap Accordion Item 5 -->
                     <button type="button" class="accordion__button">
-                      <div class="course-container">
-                        <p class="course-number">AUT 003</p>
-                        <p class="course-name">Automotive Course</p>
-                        <p class="course-credits">Credit Hours: 3</p>
-                      </div>
+                      <span class="course-container-wrapper">
+                        <span class="course-container">
+                          <span class="course-number">AUT 003</span>
+                          <span class="course-name">Automotive Course</span>
+                          <span class="course-credits">Credit Hours: 3</span>
+                        </span>
+                      </span>
                     </button>
 
                     <div class="accordion__content">
                       <p>Accumsan, sed nulla consequat? Erat hendrerit vero nibh ut vulputate accumsan aliquip vero, consequatvel iusto velit molestie, illum et feugait ut feugait hendrerit? Wisi accumsan dignissim ea enim at in eum. Suscipit luptatum praesent, et illum nulla qui dolor iriure. Enim, ut diam.</p>
 
-                      <p>Lecture Hours: Lecture 6 hour per week.
+                      <p><strong>Lecture Hours:</strong> Lecture 6 hour per week.
                       <br>
-                        Semester(s) Offered: Fall Spring</p>
+                      <strong>Semester(s) Offered:</strong> Fall Spring</p>
                     </div>
 
                     <div class="total-credit-hours-last">Total: 16 Credit Hours</div>
@@ -1584,6 +1708,6 @@
     </footer>
 
     <!-- Bootstrap JS Link-->    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
